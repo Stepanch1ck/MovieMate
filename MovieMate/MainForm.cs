@@ -5,29 +5,49 @@ namespace MovieMate
 {
     public partial class MainForm : Form
     {
-        private MovieDbContext _dbContext;
+
         Thread gh;
+        Thread th;
         public MainForm()
         {
             InitializeComponent();
-            _dbContext = new MovieDbContext();
+
         }
         private void newUserButton_Click(object sender, EventArgs e)
         {
             this.Close();
-            gh = new Thread(open1);
-            gh.SetApartmentState(ApartmentState.STA);
-            gh.Start();
+            th = new Thread(open);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
         }
-        public void open1(object obj)
+        public void open(object obj)
         {
             Application.Run(new NewUserForm());
         }
 
+        private void enterButton_Click(object sender, EventArgs e)
+        {
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Show();
+        }
+        private void Form_Load(object sender, EventArgs e)
+        {
+            using (var context = new MovieDbContext())
+            {
+                var nicknames = context.People.Select(p => p.Nickname).ToList();
+
+                // Установите свойство DisplayMember для ListBox
+                listBox1.DisplayMember = "Nickname"; // Замените на имя поля в вашем классе Person
+
+                listBox1.DataSource = nicknames;
+            }
+        }
+
+        
     }
 
 
-    
 
-    
+
+
 }

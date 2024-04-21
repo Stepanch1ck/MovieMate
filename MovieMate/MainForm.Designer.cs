@@ -31,7 +31,8 @@
             newUserButton = new RoundedButton();
             enterButton = new RoundedButton();
             listBox1 = new ListBox();
-            label1 = new Label();
+            nickNameLabel = new Label();
+            roundedButton1 = new RoundedButton();
             SuspendLayout();
             // 
             // newUserButton
@@ -42,7 +43,7 @@
             newUserButton.TabIndex = 0;
             newUserButton.Text = "Новый пользователь";
             newUserButton.UseVisualStyleBackColor = true;
-            newUserButton.Click += this.newUserButton_Click;
+            newUserButton.Click += newUserButton_Click;
             // 
             // enterButton
             // 
@@ -61,22 +62,33 @@
             listBox1.Size = new Size(249, 184);
             listBox1.TabIndex = 2;
             // 
-            // label1
+            // nickNameLabel
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 22.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label1.Location = new Point(615, 32);
-            label1.Name = "label1";
-            label1.Size = new Size(120, 50);
-            label1.TabIndex = 3;
-            label1.Text = "label1";
+            nickNameLabel.AutoSize = true;
+            nickNameLabel.BackColor = SystemColors.ActiveCaptionText;
+            nickNameLabel.Font = new Font("Segoe UI Semibold", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            nickNameLabel.ForeColor = SystemColors.ButtonHighlight;
+            nickNameLabel.Location = new Point(196, 114);
+            nickNameLabel.Name = "nickNameLabel";
+            nickNameLabel.Size = new Size(140, 60);
+            nickNameLabel.TabIndex = 3;
+            nickNameLabel.Text = "label1";
+            // 
+            // roundedButton1
+            // 
+            roundedButton1.Location = new Point(103, 209);
+            roundedButton1.Name = "roundedButton1";
+            roundedButton1.Size = new Size(297, 83);
+            roundedButton1.TabIndex = 4;
+            roundedButton1.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label1);
+            Controls.Add(roundedButton1);
+            Controls.Add(nickNameLabel);
             Controls.Add(listBox1);
             Controls.Add(enterButton);
             Controls.Add(newUserButton);
@@ -91,6 +103,7 @@
         private RoundedButton newUserButton;
         private RoundedButton enterButton;
         private ListBox listBox1;
-        private Label label1;
+        private Label nickNameLabel;
+        private RoundedButton roundedButton1;
     }
 }
