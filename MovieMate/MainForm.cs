@@ -37,7 +37,7 @@ namespace MovieMate
                 var nicknames = context.People.Select(p => p.Nickname).ToList();
 
                 // Установите свойство DisplayMember для ListBox
-                listBox1.DisplayMember = "Nickname"; // Замените на имя поля в вашем классе Person
+                listBox1.DisplayMember = "nickname"; // Замените на имя поля в вашем классе Person
 
                 listBox1.DataSource = nicknames;
             }

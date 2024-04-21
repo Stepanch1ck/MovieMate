@@ -68,15 +68,15 @@
             nickNameLabel.BackColor = SystemColors.ActiveCaptionText;
             nickNameLabel.Font = new Font("Segoe UI Semibold", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 204);
             nickNameLabel.ForeColor = SystemColors.ButtonHighlight;
-            nickNameLabel.Location = new Point(196, 114);
+            nickNameLabel.Location = new Point(475, 23);
             nickNameLabel.Name = "nickNameLabel";
-            nickNameLabel.Size = new Size(140, 60);
+            nickNameLabel.Size = new Size(226, 60);
             nickNameLabel.TabIndex = 3;
-            nickNameLabel.Text = "label1";
+            nickNameLabel.Text = "Nickname";
             // 
             // roundedButton1
             // 
-            roundedButton1.Location = new Point(103, 209);
+            roundedButton1.Location = new Point(438, 12);
             roundedButton1.Name = "roundedButton1";
             roundedButton1.Size = new Size(297, 83);
             roundedButton1.TabIndex = 4;
@@ -87,8 +87,8 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(roundedButton1);
             Controls.Add(nickNameLabel);
+            Controls.Add(roundedButton1);
             Controls.Add(listBox1);
             Controls.Add(enterButton);
             Controls.Add(newUserButton);
