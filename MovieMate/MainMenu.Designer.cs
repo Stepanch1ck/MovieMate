@@ -37,6 +37,7 @@
             englishButton = new RoundedButton();
             russianButton = new RoundedButton();
             upateButton = new RoundedButton();
+            secondNicknameLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).BeginInit();
             SuspendLayout();
             // 
@@ -113,11 +114,22 @@
             upateButton.TabIndex = 7;
             upateButton.UseVisualStyleBackColor = true;
             // 
+            // secondNicknameLabel
+            // 
+            secondNicknameLabel.AutoSize = true;
+            secondNicknameLabel.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            secondNicknameLabel.Location = new Point(714, 9);
+            secondNicknameLabel.Name = "secondNicknameLabel";
+            secondNicknameLabel.Size = new Size(59, 25);
+            secondNicknameLabel.TabIndex = 8;
+            secondNicknameLabel.Text = "label1";
+            // 
             // MainMenu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(secondNicknameLabel);
             Controls.Add(upateButton);
             Controls.Add(russianButton);
             Controls.Add(englishButton);
@@ -130,6 +142,7 @@
             Text = "MainMenu";
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -142,5 +155,6 @@
         private RoundedButton englishButton;
         private RoundedButton russianButton;
         private RoundedButton upateButton;
+        private Label secondNicknameLabel;
     }
 }
