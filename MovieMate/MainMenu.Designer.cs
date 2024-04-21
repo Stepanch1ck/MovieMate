@@ -34,112 +34,75 @@
             blackListButton = new RoundedButton();
             roundedButton1 = new RoundedButton();
             filmsDataGridView = new DataGridView();
-            englishButton = new RoundedButton();
-            russianButton = new RoundedButton();
             upateButton = new RoundedButton();
             secondNicknameLabel = new Label();
+            languageComboBox = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).BeginInit();
             SuspendLayout();
             // 
             // favouritesButton
             // 
-            favouritesButton.Location = new Point(419, 61);
+            resources.ApplyResources(favouritesButton, "favouritesButton");
             favouritesButton.Name = "favouritesButton";
-            favouritesButton.Size = new Size(132, 43);
-            favouritesButton.TabIndex = 0;
-            favouritesButton.Text = "Добавить в избранное";
             favouritesButton.UseVisualStyleBackColor = true;
             // 
             // openButton
             // 
-            openButton.Location = new Point(281, 61);
+            resources.ApplyResources(openButton, "openButton");
             openButton.Name = "openButton";
-            openButton.Size = new Size(132, 43);
-            openButton.TabIndex = 1;
-            openButton.Text = "Открыть";
             openButton.UseVisualStyleBackColor = true;
             // 
             // blackListButton
             // 
-            blackListButton.Location = new Point(557, 61);
+            resources.ApplyResources(blackListButton, "blackListButton");
             blackListButton.Name = "blackListButton";
-            blackListButton.Size = new Size(132, 43);
-            blackListButton.TabIndex = 2;
-            blackListButton.Text = "Добавить в чёрный список";
-            blackListButton.UseVisualStyleBackColor = true;
             // 
             // roundedButton1
             // 
-            roundedButton1.Location = new Point(172, 121);
+            resources.ApplyResources(roundedButton1, "roundedButton1");
             roundedButton1.Name = "roundedButton1";
-            roundedButton1.Size = new Size(592, 269);
-            roundedButton1.TabIndex = 3;
-            roundedButton1.Text = "roundedButton1";
             roundedButton1.UseVisualStyleBackColor = true;
             // 
             // filmsDataGridView
             // 
             filmsDataGridView.BackgroundColor = SystemColors.ButtonHighlight;
             filmsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            filmsDataGridView.Location = new Point(197, 133);
+            resources.ApplyResources(filmsDataGridView, "filmsDataGridView");
             filmsDataGridView.Name = "filmsDataGridView";
-            filmsDataGridView.RowHeadersWidth = 51;
-            filmsDataGridView.Size = new Size(537, 240);
-            filmsDataGridView.TabIndex = 4;
-            // 
-            // englishButton
-            // 
-            englishButton.Location = new Point(670, 396);
-            englishButton.Name = "englishButton";
-            englishButton.Size = new Size(94, 42);
-            englishButton.TabIndex = 5;
-            englishButton.Text = "English";
-            englishButton.UseVisualStyleBackColor = true;
-            // 
-            // russianButton
-            // 
-            russianButton.Location = new Point(570, 396);
-            russianButton.Name = "russianButton";
-            russianButton.Size = new Size(94, 42);
-            russianButton.TabIndex = 6;
-            russianButton.Text = "Русский";
-            russianButton.UseVisualStyleBackColor = true;
             // 
             // upateButton
             // 
-            upateButton.Image = (Image)resources.GetObject("upateButton.Image");
-            upateButton.Location = new Point(729, 57);
+            resources.ApplyResources(upateButton, "upateButton");
             upateButton.Name = "upateButton";
-            upateButton.Size = new Size(59, 50);
-            upateButton.TabIndex = 7;
             upateButton.UseVisualStyleBackColor = true;
             // 
             // secondNicknameLabel
             // 
-            secondNicknameLabel.AutoSize = true;
-            secondNicknameLabel.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            secondNicknameLabel.Location = new Point(714, 9);
+            resources.ApplyResources(secondNicknameLabel, "secondNicknameLabel");
             secondNicknameLabel.Name = "secondNicknameLabel";
-            secondNicknameLabel.Size = new Size(59, 25);
-            secondNicknameLabel.TabIndex = 8;
-            secondNicknameLabel.Text = "label1";
+            // 
+            // languageComboBox
+            // 
+            languageComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            languageComboBox.FormattingEnabled = true;
+            resources.ApplyResources(languageComboBox, "languageComboBox");
+            languageComboBox.Name = "languageComboBox";
+            languageComboBox.SelectedIndexChanged += languageComboBox_SelectedIndexChanged;
             // 
             // MainMenu
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            Controls.Add(languageComboBox);
             Controls.Add(secondNicknameLabel);
             Controls.Add(upateButton);
-            Controls.Add(russianButton);
-            Controls.Add(englishButton);
             Controls.Add(filmsDataGridView);
             Controls.Add(roundedButton1);
             Controls.Add(blackListButton);
             Controls.Add(openButton);
             Controls.Add(favouritesButton);
             Name = "MainMenu";
-            Text = "MainMenu";
+            Load += MainMenu_Load;
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -152,9 +115,8 @@
         private RoundedButton blackListButton;
         private RoundedButton roundedButton1;
         private DataGridView filmsDataGridView;
-        private RoundedButton englishButton;
-        private RoundedButton russianButton;
         private RoundedButton upateButton;
         private Label secondNicknameLabel;
+        private ComboBox languageComboBox;
     }
 }
