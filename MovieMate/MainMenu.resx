@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="favouritesButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 108</value>
+    <value>407, 44</value>
   </data>
   <data name="favouritesButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 43</value>
@@ -141,10 +141,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;favouritesButton.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>11</value>
   </data>
   <data name="openButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>296, 108</value>
+    <value>250, 44</value>
   </data>
   <data name="openButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 43</value>
@@ -165,10 +165,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;openButton.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
   </data>
   <data name="blackListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>572, 108</value>
+    <value>565, 44</value>
   </data>
   <data name="blackListButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 43</value>
@@ -189,10 +189,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;blackListButton.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>9</value>
   </data>
   <data name="roundedButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 169</value>
+    <value>197, 97</value>
   </data>
   <data name="roundedButton1.Size" type="System.Drawing.Size, System.Drawing">
     <value>592, 269</value>
@@ -213,10 +213,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;roundedButton1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>8</value>
   </data>
   <data name="filmsDataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>227, 186</value>
+    <value>223, 115</value>
   </data>
   <data name="filmsDataGridView.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
@@ -237,10 +237,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;filmsDataGridView.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
   <data name="upateButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>723, 108</value>
+    <value>739, 44</value>
   </data>
   <data name="upateButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 43</value>
@@ -258,7 +258,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;upateButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <data name="secondNicknameLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -288,27 +288,126 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;secondNicknameLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
-  <data name="languageComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>601, 6</value>
+  <data name="englishButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>674, 391</value>
   </data>
-  <data name="languageComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 28</value>
+  <data name="englishButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 47</value>
   </data>
-  <data name="languageComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="englishButton.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
-  <data name="&gt;&gt;languageComboBox.Name" xml:space="preserve">
-    <value>languageComboBox</value>
+  <data name="englishButton.Text" xml:space="preserve">
+    <value>English</value>
   </data>
-  <data name="&gt;&gt;languageComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;englishButton.Name" xml:space="preserve">
+    <value>englishButton</value>
   </data>
-  <data name="&gt;&gt;languageComboBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;englishButton.Type" xml:space="preserve">
+    <value>MovieMate.RoundedButton, MovieMate, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;englishButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;languageComboBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;englishButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="russianButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>531, 391</value>
+  </data>
+  <data name="russianButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 47</value>
+  </data>
+  <data name="russianButton.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="russianButton.Text" xml:space="preserve">
+    <value>Русский</value>
+  </data>
+  <data name="&gt;&gt;russianButton.Name" xml:space="preserve">
+    <value>russianButton</value>
+  </data>
+  <data name="&gt;&gt;russianButton.Type" xml:space="preserve">
+    <value>MovieMate.RoundedButton, MovieMate, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;russianButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;russianButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="roundedButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-1, 78</value>
+  </data>
+  <data name="roundedButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 66</value>
+  </data>
+  <data name="roundedButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="roundedButton2.Text" xml:space="preserve">
+    <value>roundedButton2</value>
+  </data>
+  <data name="&gt;&gt;roundedButton2.Name" xml:space="preserve">
+    <value>roundedButton2</value>
+  </data>
+  <data name="&gt;&gt;roundedButton2.Type" xml:space="preserve">
+    <value>MovieMate.RoundedButton, MovieMate, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;roundedButton2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;roundedButton2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="roundedButton3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-1, 236</value>
+  </data>
+  <data name="roundedButton3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 66</value>
+  </data>
+  <data name="roundedButton3.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="roundedButton3.Text" xml:space="preserve">
+    <value>roundedButton3</value>
+  </data>
+  <data name="&gt;&gt;roundedButton3.Name" xml:space="preserve">
+    <value>roundedButton3</value>
+  </data>
+  <data name="&gt;&gt;roundedButton3.Type" xml:space="preserve">
+    <value>MovieMate.RoundedButton, MovieMate, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;roundedButton3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;roundedButton3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="roundedButton4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-1, 150</value>
+  </data>
+  <data name="roundedButton4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 66</value>
+  </data>
+  <data name="roundedButton4.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="roundedButton4.Text" xml:space="preserve">
+    <value>roundedButton4</value>
+  </data>
+  <data name="&gt;&gt;roundedButton4.Name" xml:space="preserve">
+    <value>roundedButton4</value>
+  </data>
+  <data name="&gt;&gt;roundedButton4.Type" xml:space="preserve">
+    <value>MovieMate.RoundedButton, MovieMate, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;roundedButton4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;roundedButton4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -321,7 +420,7 @@
     <value>800, 450</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>MainMenu</value>
+    <value>Главное меню</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainMenu</value>

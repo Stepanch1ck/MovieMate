@@ -36,7 +36,11 @@
             filmsDataGridView = new DataGridView();
             upateButton = new RoundedButton();
             secondNicknameLabel = new Label();
-            languageComboBox = new ComboBox();
+            englishButton = new RoundedButton();
+            russianButton = new RoundedButton();
+            roundedButton2 = new RoundedButton();
+            roundedButton3 = new RoundedButton();
+            roundedButton4 = new RoundedButton();
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).BeginInit();
             SuspendLayout();
             // 
@@ -69,6 +73,7 @@
             filmsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             resources.ApplyResources(filmsDataGridView, "filmsDataGridView");
             filmsDataGridView.Name = "filmsDataGridView";
+            filmsDataGridView.CellContentClick += filmsDataGridView_CellContentClick;
             // 
             // upateButton
             // 
@@ -81,19 +86,45 @@
             resources.ApplyResources(secondNicknameLabel, "secondNicknameLabel");
             secondNicknameLabel.Name = "secondNicknameLabel";
             // 
-            // languageComboBox
+            // englishButton
             // 
-            languageComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            languageComboBox.FormattingEnabled = true;
-            resources.ApplyResources(languageComboBox, "languageComboBox");
-            languageComboBox.Name = "languageComboBox";
-            languageComboBox.SelectedIndexChanged += languageComboBox_SelectedIndexChanged;
+            resources.ApplyResources(englishButton, "englishButton");
+            englishButton.Name = "englishButton";
+            englishButton.UseVisualStyleBackColor = true;
+            // 
+            // russianButton
+            // 
+            resources.ApplyResources(russianButton, "russianButton");
+            russianButton.Name = "russianButton";
+            russianButton.UseVisualStyleBackColor = true;
+            // 
+            // roundedButton2
+            // 
+            resources.ApplyResources(roundedButton2, "roundedButton2");
+            roundedButton2.Name = "roundedButton2";
+            roundedButton2.UseVisualStyleBackColor = true;
+            // 
+            // roundedButton3
+            // 
+            resources.ApplyResources(roundedButton3, "roundedButton3");
+            roundedButton3.Name = "roundedButton3";
+            roundedButton3.UseVisualStyleBackColor = true;
+            // 
+            // roundedButton4
+            // 
+            resources.ApplyResources(roundedButton4, "roundedButton4");
+            roundedButton4.Name = "roundedButton4";
+            roundedButton4.UseVisualStyleBackColor = true;
             // 
             // MainMenu
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(languageComboBox);
+            Controls.Add(roundedButton4);
+            Controls.Add(roundedButton3);
+            Controls.Add(roundedButton2);
+            Controls.Add(russianButton);
+            Controls.Add(englishButton);
             Controls.Add(secondNicknameLabel);
             Controls.Add(upateButton);
             Controls.Add(filmsDataGridView);
@@ -117,6 +148,10 @@
         private DataGridView filmsDataGridView;
         private RoundedButton upateButton;
         private Label secondNicknameLabel;
-        private ComboBox languageComboBox;
+        private RoundedButton englishButton;
+        private RoundedButton russianButton;
+        private RoundedButton roundedButton2;
+        private RoundedButton roundedButton3;
+        private RoundedButton roundedButton4;
     }
 }

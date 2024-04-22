@@ -16,6 +16,7 @@ namespace MovieMate
         public NewUserForm()
         {
             InitializeComponent();
+            richTextBox1.KeyDown += richTextBox1_KeyDown;
         }
 
         private void NewUserForm_Load(object sender, EventArgs e)
@@ -33,6 +34,28 @@ namespace MovieMate
         public void open(object obj)
         {
             Application.Run(new MainMenu());
+        }
+        private void SaveTextToDatabase(string text)
+        {
+            
+            using (var context = new MovieDbContext())
+            {
+                var person = new Person { Nickname = text };
+                context.People.Add(person);
+                context.SaveChanges();
+            }
+        }
+        private void richTextBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                string enteredText = richTextBox1.Text.Trim(); 
+                if (!string.IsNullOrEmpty(enteredText))
+                {
+                    SaveTextToDatabase(enteredText); 
+                    richTextBox1.Clear(); 
+                }
+            }
         }
     }
 }

@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
@@ -13,10 +15,10 @@ namespace MovieMate
 {
     public partial class MainMenu : Form
     {
+        MovieDbContext db = new MovieDbContext();
         public MainMenu()
         {
-            System.Threading.Thread.CurrentThread.CurrentUICulture = System.Globalization.CultureInfo.GetCultureInfo("en-US");
-            System.Threading.Thread.CurrentThread.CurrentCulture = System.Globalization.CultureInfo.GetCultureInfo("en-US");
+
             InitializeComponent();
         }
 
@@ -31,14 +33,16 @@ namespace MovieMate
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
-            languageComboBox.DataSource = new System.Globalization.CultureInfo[]
-            {
-                System.Globalization.CultureInfo.GetCultureInfo("ru-RU"),
-                System.Globalization.CultureInfo.GetCultureInfo("en-US")
-
-            };
-            languageComboBox.DisplayMember = "NativeName";
-            languageComboBox.ValueMember = "Name";
+            
         }
+
+        private void filmsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var allFilms = db.Movies.ToList();
+            filmsDataGridView.DataSource = allFilms;
+            filmsDataGridView.Refresh();
+            
+        }
+        
     }
 }

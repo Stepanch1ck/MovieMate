@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using System.Reflection.Emit;
 using System.Windows.Forms;
 
 namespace MovieMate
@@ -6,19 +7,15 @@ namespace MovieMate
     public partial class MainForm : Form
     {
 
-        Thread gh;
-        Thread th;
         public MainForm()
         {
             InitializeComponent();
-
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
         }
         private void newUserButton_Click(object sender, EventArgs e)
         {
-            this.Close();
-            th = new Thread(open);
-            th.SetApartmentState(ApartmentState.STA);
-            th.Start();
+            NewUserForm newUserForm = new NewUserForm();
+            newUserForm.Show();
         }
         public void open(object obj)
         {
@@ -36,14 +33,22 @@ namespace MovieMate
             {
                 var nicknames = context.People.Select(p => p.Nickname).ToList();
 
-                // Установите свойство DisplayMember для ListBox
-                listBox1.DisplayMember = "nickname"; // Замените на имя поля в вашем классе Person
+                
+                listBox1.DisplayMember = "Nickname"; 
 
                 listBox1.DataSource = nicknames;
             }
         }
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedItems.Count > 0)
+            {
+                string selectedNickname = listBox1.SelectedItem.ToString();
+                nickNameLabel.Text = selectedNickname;
+            }
+        }
 
-        
+
     }
 
 
