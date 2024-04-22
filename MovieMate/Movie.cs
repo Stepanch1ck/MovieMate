@@ -16,4 +16,5 @@ public partial class Movie
     public string? Genre { get; set; }
 
     public byte[]? Picture { get; set; }
+    public int Year { get; set; }
 }

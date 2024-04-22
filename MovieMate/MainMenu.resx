@@ -215,14 +215,50 @@
   <data name="&gt;&gt;roundedButton1.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <metadata name="filmName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="filmName.HeaderText" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="filmName.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="filmName.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <metadata name="Year.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Year.HeaderText" xml:space="preserve">
+    <value>Год</value>
+  </data>
+  <data name="Year.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="Year.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <metadata name="Grade.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Grade.HeaderText" xml:space="preserve">
+    <value>Рейтинг</value>
+  </data>
+  <data name="Grade.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="Grade.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
   <data name="filmsDataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>223, 115</value>
+    <value>236, 112</value>
   </data>
   <data name="filmsDataGridView.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
   <data name="filmsDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>537, 240</value>
+    <value>503, 240</value>
   </data>
   <data name="filmsDataGridView.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -339,7 +375,7 @@
     <value>3</value>
   </data>
   <data name="roundedButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 78</value>
+    <value>-1, 97</value>
   </data>
   <data name="roundedButton2.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 66</value>
@@ -363,7 +399,7 @@
     <value>2</value>
   </data>
   <data name="roundedButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 236</value>
+    <value>-1, 241</value>
   </data>
   <data name="roundedButton3.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 66</value>
@@ -387,7 +423,7 @@
     <value>1</value>
   </data>
   <data name="roundedButton4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 150</value>
+    <value>-1, 169</value>
   </data>
   <data name="roundedButton4.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 66</value>
@@ -421,6 +457,24 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Главное меню</value>
+  </data>
+  <data name="&gt;&gt;filmName.Name" xml:space="preserve">
+    <value>filmName</value>
+  </data>
+  <data name="&gt;&gt;filmName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Year.Name" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="&gt;&gt;Year.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Grade.Name" xml:space="preserve">
+    <value>Grade</value>
+  </data>
+  <data name="&gt;&gt;Grade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainMenu</value>

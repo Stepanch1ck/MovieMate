@@ -43,6 +43,29 @@ namespace MovieMate
             filmsDataGridView.Refresh();
             
         }
-        
+        private void DisplayMoviesByGenre(string movieName)
+        {
+            using (var context = new MovieDbContext())
+            {
+
+                var movie = context.Movies.FirstOrDefault(m => m.Name == movieName);
+                if (movie == null)
+                {
+                    return;
+                }
+
+                var genreId = movie.Genre; 
+                var moviesWithSameGenre = context.Movies
+                    .Where(m => m.Genre == genreId)
+                    .ToList();
+                filmsDataGridView.Rows.Clear();
+
+                foreach (var movieItem in moviesWithSameGenre)
+                {
+                    filmsDataGridView.Rows.Add(movieItem.Name,movieItem.Year, movieItem.Grade);
+                }
+            }
+        }
+
     }
 }

@@ -49,7 +49,6 @@
             secondEnterButton.TabIndex = 0;
             secondEnterButton.Text = "Войти";
             secondEnterButton.UseVisualStyleBackColor = true;
-            secondEnterButton.Click += secondEnterButton_Click;
             // 
             // moviesCheckBox1
             // 
@@ -124,6 +123,7 @@
             // 
             // richTextBox1
             // 
+            richTextBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
             richTextBox1.Location = new Point(0, 103);
             richTextBox1.Name = "richTextBox1";
             richTextBox1.Size = new Size(382, 39);

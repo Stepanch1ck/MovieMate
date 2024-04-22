@@ -41,6 +41,9 @@
             roundedButton2 = new RoundedButton();
             roundedButton3 = new RoundedButton();
             roundedButton4 = new RoundedButton();
+            filmName = new DataGridViewTextBoxColumn();
+            Year = new DataGridViewTextBoxColumn();
+            Grade = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).BeginInit();
             SuspendLayout();
             // 
@@ -71,6 +74,7 @@
             // 
             filmsDataGridView.BackgroundColor = SystemColors.ButtonHighlight;
             filmsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            filmsDataGridView.Columns.AddRange(new DataGridViewColumn[] { filmName, Year, Grade });
             resources.ApplyResources(filmsDataGridView, "filmsDataGridView");
             filmsDataGridView.Name = "filmsDataGridView";
             filmsDataGridView.CellContentClick += filmsDataGridView_CellContentClick;
@@ -116,6 +120,21 @@
             roundedButton4.Name = "roundedButton4";
             roundedButton4.UseVisualStyleBackColor = true;
             // 
+            // filmName
+            // 
+            resources.ApplyResources(filmName, "filmName");
+            filmName.Name = "filmName";
+            // 
+            // Year
+            // 
+            resources.ApplyResources(Year, "Year");
+            Year.Name = "Year";
+            // 
+            // Grade
+            // 
+            resources.ApplyResources(Grade, "Grade");
+            Grade.Name = "Grade";
+            // 
             // MainMenu
             // 
             resources.ApplyResources(this, "$this");
@@ -153,5 +172,8 @@
         private RoundedButton roundedButton2;
         private RoundedButton roundedButton3;
         private RoundedButton roundedButton4;
+        private DataGridViewTextBoxColumn filmName;
+        private DataGridViewTextBoxColumn Year;
+        private DataGridViewTextBoxColumn Grade;
     }
 }

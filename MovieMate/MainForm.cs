@@ -34,7 +34,7 @@ namespace MovieMate
                 var nicknames = context.People.Select(p => p.Nickname).ToList();
 
                 
-                listBox1.DisplayMember = "Nickname"; 
+                listBox1.DisplayMember = "nickname"; 
 
                 listBox1.DataSource = nicknames;
             }

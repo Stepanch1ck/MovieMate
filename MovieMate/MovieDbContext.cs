@@ -45,6 +45,7 @@ public partial class MovieDbContext : DbContext
             entity.Property(e => e.Picture)
                 .HasColumnType("IMAGE")
                 .HasColumnName("picture");
+            entity.Property(e => e.Year).HasColumnName("year");
         });
 
         modelBuilder.Entity<Person>(entity =>
@@ -67,6 +68,7 @@ public partial class MovieDbContext : DbContext
             entity.Property(e => e.Picture)
                 .HasColumnType("IMAGE")
                 .HasColumnName("picture");
+            
         });
 
         OnModelCreatingPartial(modelBuilder);

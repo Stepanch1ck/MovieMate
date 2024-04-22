@@ -23,18 +23,6 @@ namespace MovieMate
         {
 
         }
-
-        private void secondEnterButton_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            th = new Thread(open);
-            th.SetApartmentState(ApartmentState.STA);
-            th.Start();
-        }
-        public void open(object obj)
-        {
-            Application.Run(new MainMenu());
-        }
         private void SaveTextToDatabase(string text)
         {
             
@@ -57,5 +45,39 @@ namespace MovieMate
                 }
             }
         }
+        private void secondEnterButton_Click(object sender, EventArgs e)
+        {
+            using (var context = new MovieDbContext())
+            {
+                var newUser = new Person { Nickname = richTextBox1.Text };
+                context.People.Add(newUser);
+                context.SaveChanges();
+
+                int userId = newUser.Id;
+
+                if (moviesCheckBox1.Checked)
+                {
+                    context.People.Find(userId).IdFavorites = "1";
+                }
+                if(moviesCheckBox2.Checked)
+                {
+                    context.People.Find(userId).IdFavorites = "3";
+                }
+                if (moviesCheckBox3.Checked)
+                {
+                    context.People.Find(userId).IdFavorites = "4";
+                }
+                if (moviesCheckBox4.Checked)
+                {
+                    context.People.Find(userId).IdFavorites = "2";
+                }
+                context.SaveChanges();
+                var mainMenuForm = new MainMenu();
+                mainMenuForm.Show();
+                this.Close();
+            }
+
+        }
+        
     }
 }
