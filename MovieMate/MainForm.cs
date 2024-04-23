@@ -1,3 +1,4 @@
+
 using Microsoft.EntityFrameworkCore;
 using System.Reflection.Emit;
 using System.Windows.Forms;
@@ -31,13 +32,21 @@ namespace MovieMate
         {
             using (var context = new MovieDbContext())
             {
-                var nicknames = context.People.Select(p => p.Nickname).ToList();
 
-                
-                listBox1.DisplayMember = "nickname"; 
+                if (context.Database.CanConnect())
+                {
+                    var nicknames = context.People.Select(p => p.Nickname).ToList();
+                    listBox1.DisplayMember = "Nickname";
+                    listBox1.DataSource = nicknames;
+                    RefreshListBox();
+                }
+                else
+                {
+                    MessageBox.Show("?? ????????? ???? ??????");
 
-                listBox1.DataSource = nicknames;
+                }
             }
+
         }
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -47,8 +56,15 @@ namespace MovieMate
                 nickNameLabel.Text = selectedNickname;
             }
         }
-
-
+        private void RefreshListBox()
+        {
+            using (var context = new MovieDbContext())
+            {
+                var nicknames = context.People.Select(p => p.Nickname).ToList();
+                listBox1.DataSource = null;
+                listBox1.DataSource = nicknames;
+            }
+        }
     }
 
 

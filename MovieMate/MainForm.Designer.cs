@@ -94,6 +94,7 @@
             Controls.Add(newUserButton);
             Name = "MainForm";
             Text = "Form1";
+            Load += MainForm_Load_1;
             ResumeLayout(false);
             PerformLayout();
         }
