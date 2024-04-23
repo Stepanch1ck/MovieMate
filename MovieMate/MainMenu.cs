@@ -18,7 +18,7 @@ namespace MovieMate
         MovieDbContext db = new MovieDbContext();
         public MainMenu()
         {
-
+            
             InitializeComponent();
         }
 

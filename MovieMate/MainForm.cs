@@ -11,6 +11,8 @@ namespace MovieMate
         {
             InitializeComponent();
             listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            RefreshListBox();
+
         }
         private void newUserButton_Click(object sender, EventArgs e)
         {
@@ -31,13 +33,21 @@ namespace MovieMate
         {
             using (var context = new MovieDbContext())
             {
-                var nicknames = context.People.Select(p => p.Nickname).ToList();
-
                 
-                listBox1.DisplayMember = "nickname"; 
-
-                listBox1.DataSource = nicknames;
+                if (context.Database.CanConnect())
+                {
+                    var nicknames = context.People.Select(p => p.Nickname).ToList();
+                    listBox1.DisplayMember = "Nickname";
+                    listBox1.DataSource = nicknames;
+                    RefreshListBox();
+                }
+                else
+                {
+                    MessageBox.Show("Не подлючена база данных");
+                    
+                }
             }
+            
         }
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -45,6 +55,15 @@ namespace MovieMate
             {
                 string selectedNickname = listBox1.SelectedItem.ToString();
                 nickNameLabel.Text = selectedNickname;
+            }
+        }
+        private void RefreshListBox()
+        {
+            using (var context = new MovieDbContext())
+            {
+                var nicknames = context.People.Select(p => p.Nickname).ToList();
+                listBox1.DataSource = null;
+                listBox1.DataSource = nicknames;
             }
         }
 

@@ -21,7 +21,7 @@ namespace MovieMate
 
         private void NewUserForm_Load(object sender, EventArgs e)
         {
-
+            
         }
         private void SaveTextToDatabase(string text)
         {
