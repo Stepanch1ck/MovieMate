@@ -39,9 +39,10 @@ namespace MovieMate
         private void filmsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             var allFilms = db.Movies.ToList();
+            var person = db.People.ToList();
             filmsDataGridView.DataSource = allFilms;
             filmsDataGridView.Refresh();
-            int idMovieLike = IdMovieLike;
+            int idMovieLike = person[0].IdMovieLike;
             DisplayMoviesByGenre(idMovieLike);
 
         }
