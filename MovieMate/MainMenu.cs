@@ -17,11 +17,13 @@ namespace MovieMate
     {
         public string UserNickname { get; set; }
         MovieDbContext db = new MovieDbContext();
+        Person currentUser;
         public MainMenu(string nickname)
         {
             
             InitializeComponent();
             UserNickname = nickname;
+            currentUser = db.People.FirstOrDefault(p => p.Nickname == UserNickname);
         }
 
         private void russianButton_Click(object sender, EventArgs e)
@@ -35,7 +37,8 @@ namespace MovieMate
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
-            
+            string idMovieLike = currentUser.IdMovieLike;
+            DisplaySimilarMovies(idMovieLike);
         }
 
         private void filmsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -66,6 +69,30 @@ namespace MovieMate
                 {
                     filmsDataGridView.Rows.Add(movieItem.Name,movieItem.Year, movieItem.Grade);
                 }
+            }
+        }
+        private void DisplaySimilarMovies(string idMovieLike)
+        {
+            // Разделить строку IdMovieLike на список ID
+            List<int> movieIds = idMovieLike.Split(',').Select(int.Parse).ToList();
+
+            // Получить жанры понравившихся фильмов
+            var likedGenres = db.Movies
+                .Where(m => movieIds.Contains(m.Id))
+                .Select(m => m.Genre)
+                .Distinct()
+                .ToList();
+
+            // Найти фильмы с похожими жанрами, исключая уже понравившиеся
+            var similarMovies = db.Movies
+                .Where(m => likedGenres.Contains(m.Genre) && !movieIds.Contains(m.Id))
+                .ToList();
+
+            // Очистить DataGridView и заполнить его похожими фильмами
+            filmsDataGridView.Rows.Clear();
+            foreach (var movie in similarMovies)
+            {
+                filmsDataGridView.Rows.Add(movie.Name, movie.Year, movie.Grade);
             }
         }
 
