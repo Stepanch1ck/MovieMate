@@ -133,6 +133,7 @@
             Controls.Add(moviePictureBox);
             Name = "MovieCard";
             Text = "MovieCard";
+            Load += MovieCard_Load;
             ((System.ComponentModel.ISupportInitialize)moviePictureBox).EndInit();
             ResumeLayout(false);
             PerformLayout();

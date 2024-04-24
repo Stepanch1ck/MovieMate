@@ -34,6 +34,9 @@
             blackListButton = new RoundedButton();
             roundedButton1 = new RoundedButton();
             filmsDataGridView = new DataGridView();
+            filmName = new DataGridViewTextBoxColumn();
+            Year = new DataGridViewTextBoxColumn();
+            Grade = new DataGridViewTextBoxColumn();
             upateButton = new RoundedButton();
             secondNicknameLabel = new Label();
             englishButton = new RoundedButton();
@@ -41,9 +44,6 @@
             roundedButton2 = new RoundedButton();
             roundedButton3 = new RoundedButton();
             roundedButton4 = new RoundedButton();
-            filmName = new DataGridViewTextBoxColumn();
-            Year = new DataGridViewTextBoxColumn();
-            Grade = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).BeginInit();
             SuspendLayout();
             // 
@@ -58,6 +58,7 @@
             resources.ApplyResources(openButton, "openButton");
             openButton.Name = "openButton";
             openButton.UseVisualStyleBackColor = true;
+            openButton.Click += openButton_Click;
             // 
             // blackListButton
             // 
@@ -78,6 +79,21 @@
             resources.ApplyResources(filmsDataGridView, "filmsDataGridView");
             filmsDataGridView.Name = "filmsDataGridView";
             filmsDataGridView.CellContentClick += filmsDataGridView_CellContentClick;
+            // 
+            // filmName
+            // 
+            resources.ApplyResources(filmName, "filmName");
+            filmName.Name = "filmName";
+            // 
+            // Year
+            // 
+            resources.ApplyResources(Year, "Year");
+            Year.Name = "Year";
+            // 
+            // Grade
+            // 
+            resources.ApplyResources(Grade, "Grade");
+            Grade.Name = "Grade";
             // 
             // upateButton
             // 
@@ -119,21 +135,6 @@
             resources.ApplyResources(roundedButton4, "roundedButton4");
             roundedButton4.Name = "roundedButton4";
             roundedButton4.UseVisualStyleBackColor = true;
-            // 
-            // filmName
-            // 
-            resources.ApplyResources(filmName, "filmName");
-            filmName.Name = "filmName";
-            // 
-            // Year
-            // 
-            resources.ApplyResources(Year, "Year");
-            Year.Name = "Year";
-            // 
-            // Grade
-            // 
-            resources.ApplyResources(Grade, "Grade");
-            Grade.Name = "Grade";
             // 
             // MainMenu
             // 
