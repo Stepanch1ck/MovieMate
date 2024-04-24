@@ -15,11 +15,13 @@ namespace MovieMate
 {
     public partial class MainMenu : Form
     {
+        public string UserNickname { get; set; }
         MovieDbContext db = new MovieDbContext();
-        public MainMenu()
+        public MainMenu(string nickname)
         {
             
             InitializeComponent();
+            UserNickname = nickname;
         }
 
         private void russianButton_Click(object sender, EventArgs e)

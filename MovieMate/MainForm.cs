@@ -6,7 +6,7 @@ namespace MovieMate
 {
     public partial class MainForm : Form
     {
-
+        public string selectedNickname= string.Empty;
         public MainForm()
         {
             InitializeComponent();
@@ -19,15 +19,19 @@ namespace MovieMate
             NewUserForm newUserForm = new NewUserForm();
             newUserForm.Show();
         }
-        public void open(object obj)
-        {
-            Application.Run(new NewUserForm());
-        }
+        //public void open(object obj)
+        //{
+        //    Application.Run(new NewUserForm());
+        //}
 
         private void enterButton_Click(object sender, EventArgs e)
         {
-            MainMenu mainMenu = new MainMenu();
-            mainMenu.Show();
+            if (listBox1.SelectedItem != null)
+            {
+                selectedNickname = listBox1.SelectedItem.ToString();
+                MainMenu mainMenu = new MainMenu(selectedNickname);
+                mainMenu.Show();
+            }
         }
         private void Form_Load(object sender, EventArgs e)
         {
@@ -53,7 +57,7 @@ namespace MovieMate
         {
             if (listBox1.SelectedItems.Count > 0)
             {
-                string selectedNickname = listBox1.SelectedItem.ToString();
+                selectedNickname = listBox1.SelectedItem.ToString();
                 nickNameLabel.Text = selectedNickname;
             }
         }

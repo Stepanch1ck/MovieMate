@@ -72,7 +72,7 @@ namespace MovieMate
                     context.People.Find(userId).IdFavorites = "2";
                 }
                 context.SaveChanges();
-                var mainMenuForm = new MainMenu();
+                var mainMenuForm = new MainMenu(richTextBox1.Text);
                 mainMenuForm.Show();
                 this.Close();
             }
