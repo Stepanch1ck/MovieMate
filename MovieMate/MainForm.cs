@@ -1,4 +1,3 @@
-
 using Microsoft.EntityFrameworkCore;
 using System.Reflection.Emit;
 using System.Windows.Forms;
@@ -12,6 +11,8 @@ namespace MovieMate
         {
             InitializeComponent();
             listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            RefreshListBox();
+
         }
         private void newUserButton_Click(object sender, EventArgs e)
         {
@@ -32,7 +33,7 @@ namespace MovieMate
         {
             using (var context = new MovieDbContext())
             {
-
+                
                 if (context.Database.CanConnect())
                 {
                     var nicknames = context.People.Select(p => p.Nickname).ToList();
@@ -42,11 +43,11 @@ namespace MovieMate
                 }
                 else
                 {
-                    MessageBox.Show("?? ????????? ???? ??????");
-
+                    MessageBox.Show("Не подлючена база данных");
+                    
                 }
             }
-
+            
         }
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -65,6 +66,8 @@ namespace MovieMate
                 listBox1.DataSource = nicknames;
             }
         }
+
+
     }
 
 
