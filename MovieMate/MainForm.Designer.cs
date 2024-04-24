@@ -53,7 +53,7 @@
             enterButton.TabIndex = 1;
             enterButton.Text = "Войти";
             enterButton.UseVisualStyleBackColor = true;
-            enterButton.Click += enterButton_Click_1;
+            enterButton.Click += enterButton_Click;
             // 
             // listBox1
             // 
