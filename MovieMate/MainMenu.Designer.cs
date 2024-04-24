@@ -153,7 +153,6 @@
             Controls.Add(openButton);
             Controls.Add(favouritesButton);
             Name = "MainMenu";
-            Load += MainMenu_Load;
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -23,17 +23,11 @@ namespace MovieMate
         {
             Application.Run(new NewUserForm());
         }
-
-        private void enterButton_Click(object sender, EventArgs e)
-        {
-            MainMenu mainMenu = new MainMenu();
-            mainMenu.Show();
-        }
         private void Form_Load(object sender, EventArgs e)
         {
             using (var context = new MovieDbContext())
             {
-                
+
                 if (context.Database.CanConnect())
                 {
                     var nicknames = context.People.Select(p => p.Nickname).ToList();
@@ -44,10 +38,10 @@ namespace MovieMate
                 else
                 {
                     MessageBox.Show("Не подлючена база данных");
-                    
+
                 }
             }
-            
+
         }
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -67,7 +61,11 @@ namespace MovieMate
             }
         }
 
-
+        private void enterButton_Click_1(object sender, EventArgs e)
+        {
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Show();
+        }
     }
 
 

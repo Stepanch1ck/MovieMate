@@ -13,17 +13,20 @@ namespace MovieMate
     public partial class MovieCard : Form
     {
         private readonly int selectedMovieId;
-        public MovieCard()
+        public MovieCard(int movieId)
         {
             InitializeComponent();
-            selectedMovieId = Id;
+            selectedMovieId = movieId;
         }
 
         private void label8_Click(object sender, EventArgs e)
         {
 
         }
-
+        private Movie GetMovieDetails(int movieId)
+        {
+            return new Movie();
+        }
         private void MovieCard_Load(object sender, EventArgs e)
         {
             var movie = GetMovieDetails(selectedMovieId); 
