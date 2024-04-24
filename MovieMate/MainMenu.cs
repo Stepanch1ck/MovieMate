@@ -24,8 +24,6 @@ namespace MovieMate
             InitializeComponent();
             UserNickname = nickname;
             currentUser = db.People.FirstOrDefault(p => p.Nickname == UserNickname);
-            string idMovieLike = currentUser.IdMovieLike;
-            DisplaySimilarMovies(idMovieLike);
         }
 
         private void russianButton_Click(object sender, EventArgs e)
@@ -48,30 +46,43 @@ namespace MovieMate
             var allFilms = db.Movies.ToList();
             filmsDataGridView.DataSource = allFilms;
             filmsDataGridView.Refresh();
-            
+            int idMovieLike = IdMovieLike;
+            DisplayMoviesByGenre(idMovieLike);
+
         }
-        private void DisplayMoviesByGenre(string movieName)
+        private void DisplayMoviesByGenre(string selectedMovieId)
         {
             using (var context = new MovieDbContext())
             {
-
-                var movie = context.Movies.FirstOrDefault(m => m.Name == movieName);
-                if (movie == null)
+                // Retrieve the selected movie
+                var selectedMovie = context.Movies.FirstOrDefault(m => m.Name == selectedMovieId);
+                if (selectedMovie == null)
                 {
-                    return;
+                    return; // Movie not found
                 }
-
-                var genreId = movie.Genre; 
+                var genre = selectedMovie.Genre;
                 var moviesWithSameGenre = context.Movies
-                    .Where(m => m.Genre == genreId)
+                    .Where(m => m.Genre == genre)
                     .ToList();
                 filmsDataGridView.Rows.Clear();
-
                 foreach (var movieItem in moviesWithSameGenre)
                 {
-                    filmsDataGridView.Rows.Add(movieItem.Name,movieItem.Year, movieItem.Grade);
+                    filmsDataGridView.Rows.Add(movieItem.Name, movieItem.Year, movieItem.Grade);
                 }
             }
+        }
+        private void filmsDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Получение информации о фильме из выбранной строки
+            int selectedMovieId = Convert.ToInt32(filmsDataGridView.Rows[e.RowIndex].Cells["Id"].Value);
+
+
+        }
+        private void openButton_Click(object sender, EventArgs e)
+        {
+            var movieDetailsForm = new MovieCard(selectedMovieId);
+            movieDetailsForm.Show();
+            this.Close();
         }
         private void DisplaySimilarMovies(string idMovieLike)
         {
