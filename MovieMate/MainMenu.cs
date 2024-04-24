@@ -24,6 +24,8 @@ namespace MovieMate
             InitializeComponent();
             UserNickname = nickname;
             currentUser = db.People.FirstOrDefault(p => p.Nickname == UserNickname);
+            string idMovieLike = currentUser.IdMovieLike;
+            DisplaySimilarMovies(idMovieLike);
         }
 
         private void russianButton_Click(object sender, EventArgs e)
