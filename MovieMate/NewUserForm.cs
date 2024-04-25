@@ -54,6 +54,34 @@ namespace MovieMate
             }
 
         }
+
+
+        private string GetSelectedMovieIds()
+        {
+            List<string> selectedIds = new List<string>();
+            if (moviesCheckBox1.Checked) selectedIds.Add("1");
+            if (moviesCheckBox2.Checked) selectedIds.Add("2");
+            if (moviesCheckBox3.Checked) selectedIds.Add("3");
+            if (moviesCheckBox4.Checked) selectedIds.Add("4");
+            return string.Join(",", selectedIds); 
+        }
+
+        // Функция для получения данных изображения (пример)
+        //private byte[] GetPictureData()
+        //{
+        //    if (pictureBox1.Image != null) // Проверка, выбрано ли изображение
+        //    {
+        //        using (MemoryStream ms = new MemoryStream())
+        //        {
+        //            pictureBox1.Image.Save(ms, pictureBox1.Image.RawFormat);
+        //            return ms.ToArray();
+        //        }
+        //    }
+        //    else
+        //    {
+        //        return null; // Возвращаем null, если изображение не выбрано
+        //    }
+        //}
         void SaveTextToDatabase(string text)
         {
 
@@ -79,7 +107,26 @@ namespace MovieMate
 
         void secondEnterButton_Click(object sender, EventArgs e)
         {
-            var mainMenu = new MainMenu(selectedNickname);
+            // 1. Собрать данные из формы
+            string nickname = richTextBox1.Text.Trim();
+            string idMovieLike = GetSelectedMovieIds(); // Функция для получения ID выбранных фильмов
+            //byte[] picture = GetPictureData(); // Функция для получения данных изображения
+
+            // 2. Сохранить данные в базе данных
+            using (var context = new MovieDbContext())
+            {
+                var newUser = new Person
+                {
+                    Nickname = nickname,
+                    IdMovieLike = idMovieLike,
+                    //Picture = picture
+                };
+                context.People.Add(newUser);
+                context.SaveChanges();
+            }
+
+            // 3. Открыть MainMenu и передать nickname
+            var mainMenu = new MainMenu(nickname);
             mainMenu.Show();
             this.Close();
         }
