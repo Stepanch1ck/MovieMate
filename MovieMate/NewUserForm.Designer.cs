@@ -50,7 +50,7 @@
             secondEnterButton.TabIndex = 0;
             secondEnterButton.Text = "Войти";
             secondEnterButton.UseVisualStyleBackColor = true;
-            //secondEnterButton.Click += secondEnterButton_Click_1;
+            secondEnterButton.Click += secondEnterButton_Click;
             // 
             // moviesCheckBox1
             // 

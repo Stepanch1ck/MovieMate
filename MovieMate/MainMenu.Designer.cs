@@ -75,10 +75,10 @@
             // 
             // filmsDataGridView
             // 
+            resources.ApplyResources(filmsDataGridView, "filmsDataGridView");
             filmsDataGridView.BackgroundColor = SystemColors.ButtonHighlight;
             filmsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             filmsDataGridView.Columns.AddRange(new DataGridViewColumn[] { filmName, Year, Grade });
-            resources.ApplyResources(filmsDataGridView, "filmsDataGridView");
             filmsDataGridView.Name = "filmsDataGridView";
             filmsDataGridView.CellContentClick += filmsDataGridView_CellContentClick;
             // 
@@ -107,6 +107,7 @@
             resources.ApplyResources(englishButton, "englishButton");
             englishButton.Name = "englishButton";
             englishButton.UseVisualStyleBackColor = true;
+            englishButton.Click += englishButton_Click;
             // 
             // russianButton
             // 

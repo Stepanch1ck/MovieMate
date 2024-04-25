@@ -31,12 +31,10 @@ namespace MovieMate
 
         private void russianButton_Click(object sender, EventArgs e)
         {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("US");
 
         }
-        private void languageComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
@@ -92,11 +90,16 @@ namespace MovieMate
 
         private void favoritesButton_Click(object sender, EventArgs e)
         {
-
+            FavouritesListForm favouritesListForm = new FavouritesListForm(UserNickname);
+            favouritesListForm.Show();
+            this.Close();
 
 
         }
 
-        
+        private void englishButton_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("ru");
+        }
     }
 }
