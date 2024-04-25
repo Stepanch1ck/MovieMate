@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewUserForm));
             secondEnterButton = new RoundedButton();
             moviesCheckBox1 = new CheckBox();
             moviesCheckBox2 = new CheckBox();
@@ -49,6 +50,7 @@
             secondEnterButton.TabIndex = 0;
             secondEnterButton.Text = "Войти";
             secondEnterButton.UseVisualStyleBackColor = true;
+            //secondEnterButton.Click += secondEnterButton_Click_1;
             // 
             // moviesCheckBox1
             // 
@@ -163,8 +165,9 @@
             Controls.Add(moviesCheckBox2);
             Controls.Add(moviesCheckBox1);
             Controls.Add(secondEnterButton);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "NewUserForm";
-            Text = "NewUserForm";
+            Text = "MovieMate";
             Load += NewUserForm_Load;
             ResumeLayout(false);
             PerformLayout();

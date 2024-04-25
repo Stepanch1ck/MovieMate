@@ -12,7 +12,7 @@ namespace MovieMate
 {
     public partial class NewUserForm : Form
     {
-        Thread th;
+        public string selectedNickname = string.Empty;
         public NewUserForm()
         {
             InitializeComponent();
@@ -21,11 +21,11 @@ namespace MovieMate
 
         private void NewUserForm_Load(object sender, EventArgs e)
         {
-            
+
         }
         private void SaveTextToDatabase(string text)
         {
-            
+
             using (var context = new MovieDbContext())
             {
                 var person = new Person { Nickname = text };
@@ -37,47 +37,55 @@ namespace MovieMate
         {
             if (e.KeyCode == Keys.Enter)
             {
-                string enteredText = richTextBox1.Text.Trim(); 
+                string enteredText = richTextBox1.Text.Trim();
                 if (!string.IsNullOrEmpty(enteredText))
                 {
-                    SaveTextToDatabase(enteredText); 
-                    richTextBox1.Clear(); 
+                    SaveTextToDatabase(enteredText);
+                    richTextBox1.Clear();
                 }
             }
         }
         private void secondEnterButton_Click(object sender, EventArgs e)
         {
-            using (var context = new MovieDbContext())
+            if (!string.IsNullOrEmpty(richTextBox1.Text))
             {
-                var newUser = new Person { Nickname = richTextBox1.Text };
-                context.People.Add(newUser);
-                context.SaveChanges();
+                selectedNickname = richTextBox1.Text.ToString();
+                using (var context = new MovieDbContext())
+                {
+                    var newUser = new Person { Nickname = selectedNickname };
+                    context.People.Add(newUser);
+                    context.SaveChanges();
 
-                int userId = newUser.Id;
+                    int userId = newUser.Id;
 
-                if (moviesCheckBox1.Checked)
-                {
-                    context.People.Find(userId).IdFavorites = "1";
+                    if (moviesCheckBox1.Checked)
+                    {
+                        context.People.Find(userId).IdFavorites = "1";
+                    }
+                    if (moviesCheckBox2.Checked)
+                    {
+                        context.People.Find(userId).IdFavorites = "3";
+                    }
+                    if (moviesCheckBox3.Checked)
+                    {
+                        context.People.Find(userId).IdFavorites = "4";
+                    }
+                    if (moviesCheckBox4.Checked)
+                    {
+                        context.People.Find(userId).IdFavorites = "2";
+                    }
+                    context.SaveChanges();
                 }
-                if(moviesCheckBox2.Checked)
-                {
-                    context.People.Find(userId).IdFavorites = "3";
-                }
-                if (moviesCheckBox3.Checked)
-                {
-                    context.People.Find(userId).IdFavorites = "4";
-                }
-                if (moviesCheckBox4.Checked)
-                {
-                    context.People.Find(userId).IdFavorites = "2";
-                }
-                context.SaveChanges();
-                var mainMenuForm = new MainMenu(richTextBox1.Text);
-                mainMenuForm.Show();
+
+                MainMenu mainMenu = new MainMenu(selectedNickname);
+                mainMenu.Show();
                 this.Close();
             }
-
         }
-        
+
+        //private void secondEnterButton_Click_1(object sender, EventArgs e)
+        //{
+            
+        //}
     }
 }

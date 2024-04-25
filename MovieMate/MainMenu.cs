@@ -20,12 +20,13 @@ namespace MovieMate
         Person currentUser;
         public MainMenu(string nickname)
         {
-            
+
             InitializeComponent();
             UserNickname = nickname;
             currentUser = db.People.FirstOrDefault(p => p.Nickname == UserNickname);
             string idMovieLike = currentUser.IdMovieLike;
             DisplaySimilarMovies(idMovieLike);
+            secondNicknameLabel.Text = nickname;
         }
 
         private void russianButton_Click(object sender, EventArgs e)
@@ -48,31 +49,9 @@ namespace MovieMate
             var allFilms = db.Movies.ToList();
             filmsDataGridView.DataSource = allFilms;
             filmsDataGridView.Refresh();
-            //int idMovieLike = IdMovieLike;
-            //DisplayMoviesByGenre(idMovieLike);
 
         }
-        //private void DisplayMoviesByGenre(string selectedMovieId)
-        //{
-        //    using (var context = new MovieDbContext())
-        //    {
-        //        // Retrieve the selected movie
-        //        var selectedMovie = context.Movies.FirstOrDefault(m => m.Name == selectedMovieId);
-        //        if (selectedMovie == null)
-        //        {
-        //            return; // Movie not found
-        //        }
-        //        var genre = selectedMovie.Genre;
-        //        var moviesWithSameGenre = context.Movies
-        //            .Where(m => m.Genre == genre)
-        //            .ToList();
-        //        filmsDataGridView.Rows.Clear();
-        //        foreach (var movieItem in moviesWithSameGenre)
-        //        {
-        //            filmsDataGridView.Rows.Add(movieItem.Name, movieItem.Year, movieItem.Grade);
-        //        }
-        //    }
-        //}
+
         private void filmsDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             // Получение информации о фильме из выбранной строки
@@ -111,5 +90,13 @@ namespace MovieMate
             }
         }
 
+        private void favoritesButton_Click(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+        
     }
 }

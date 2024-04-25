@@ -37,14 +37,16 @@
             filmName = new DataGridViewTextBoxColumn();
             Year = new DataGridViewTextBoxColumn();
             Grade = new DataGridViewTextBoxColumn();
-            upateButton = new RoundedButton();
             secondNicknameLabel = new Label();
             englishButton = new RoundedButton();
             russianButton = new RoundedButton();
-            roundedButton2 = new RoundedButton();
-            roundedButton3 = new RoundedButton();
-            roundedButton4 = new RoundedButton();
+            button1 = new Button();
+            button2 = new Button();
+            favoritesButton = new Button();
+            pictureBox1 = new PictureBox();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // favouritesButton
@@ -95,12 +97,6 @@
             resources.ApplyResources(Grade, "Grade");
             Grade.Name = "Grade";
             // 
-            // upateButton
-            // 
-            resources.ApplyResources(upateButton, "upateButton");
-            upateButton.Name = "upateButton";
-            upateButton.UseVisualStyleBackColor = true;
-            // 
             // secondNicknameLabel
             // 
             resources.ApplyResources(secondNicknameLabel, "secondNicknameLabel");
@@ -118,35 +114,49 @@
             russianButton.Name = "russianButton";
             russianButton.UseVisualStyleBackColor = true;
             // 
-            // roundedButton2
+            // button1
             // 
-            resources.ApplyResources(roundedButton2, "roundedButton2");
-            roundedButton2.Name = "roundedButton2";
-            roundedButton2.UseVisualStyleBackColor = true;
+            resources.ApplyResources(button1, "button1");
+            button1.Name = "button1";
+            button1.UseVisualStyleBackColor = true;
             // 
-            // roundedButton3
+            // button2
             // 
-            resources.ApplyResources(roundedButton3, "roundedButton3");
-            roundedButton3.Name = "roundedButton3";
-            roundedButton3.UseVisualStyleBackColor = true;
+            resources.ApplyResources(button2, "button2");
+            button2.Name = "button2";
+            button2.UseVisualStyleBackColor = true;
             // 
-            // roundedButton4
+            // favoritesButton
             // 
-            resources.ApplyResources(roundedButton4, "roundedButton4");
-            roundedButton4.Name = "roundedButton4";
-            roundedButton4.UseVisualStyleBackColor = true;
+            resources.ApplyResources(favoritesButton, "favoritesButton");
+            favoritesButton.Name = "favoritesButton";
+            favoritesButton.UseVisualStyleBackColor = true;
+            favoritesButton.Click += favoritesButton_Click;
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(pictureBox1, "pictureBox1");
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.TabStop = false;
+            // 
+            // button4
+            // 
+            resources.ApplyResources(button4, "button4");
+            button4.Name = "button4";
+            button4.UseVisualStyleBackColor = true;
             // 
             // MainMenu
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(roundedButton4);
-            Controls.Add(roundedButton3);
-            Controls.Add(roundedButton2);
+            Controls.Add(button4);
+            Controls.Add(pictureBox1);
+            Controls.Add(favoritesButton);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(russianButton);
             Controls.Add(englishButton);
             Controls.Add(secondNicknameLabel);
-            Controls.Add(upateButton);
             Controls.Add(filmsDataGridView);
             Controls.Add(roundedButton1);
             Controls.Add(blackListButton);
@@ -154,6 +164,7 @@
             Controls.Add(favouritesButton);
             Name = "MainMenu";
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -165,15 +176,16 @@
         private RoundedButton blackListButton;
         private RoundedButton roundedButton1;
         private DataGridView filmsDataGridView;
-        private RoundedButton upateButton;
         private Label secondNicknameLabel;
         private RoundedButton englishButton;
         private RoundedButton russianButton;
-        private RoundedButton roundedButton2;
-        private RoundedButton roundedButton3;
-        private RoundedButton roundedButton4;
         private DataGridViewTextBoxColumn filmName;
         private DataGridViewTextBoxColumn Year;
         private DataGridViewTextBoxColumn Grade;
+        private Button button1;
+        private Button button2;
+        private Button favoritesButton;
+        private PictureBox pictureBox1;
+        private Button button4;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             newUserButton = new RoundedButton();
             enterButton = new RoundedButton();
             listBox1 = new ListBox();
@@ -93,8 +94,9 @@
             Controls.Add(listBox1);
             Controls.Add(enterButton);
             Controls.Add(newUserButton);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MainForm";
-            Text = "Form1";
+            Text = "MovieMate";
             ResumeLayout(false);
             PerformLayout();
         }

@@ -33,7 +33,7 @@ namespace MovieMate
                 mainMenu.Show();
             }
         }
-        private void Form_Load(object sender, EventArgs e)
+        private void Form_Load(object sender, EventArgs e )
         {
             using (var context = new MovieDbContext())
             {
