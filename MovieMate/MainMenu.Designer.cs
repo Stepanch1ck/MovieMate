@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
-            favouritesButton = new RoundedButton();
+            addToFavouritesButton = new RoundedButton();
             openButton = new RoundedButton();
-            blackListButton = new RoundedButton();
+            addToBlackListButton = new RoundedButton();
             roundedButton1 = new RoundedButton();
             filmsDataGridView = new DataGridView();
             filmName = new DataGridViewTextBoxColumn();
@@ -40,7 +40,7 @@
             secondNicknameLabel = new Label();
             englishButton = new RoundedButton();
             russianButton = new RoundedButton();
-            button1 = new Button();
+            blackListButton = new Button();
             button2 = new Button();
             favoritesButton = new Button();
             pictureBox1 = new PictureBox();
@@ -49,11 +49,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // favouritesButton
+            // addToFavouritesButton
             // 
-            resources.ApplyResources(favouritesButton, "favouritesButton");
-            favouritesButton.Name = "favouritesButton";
-            favouritesButton.UseVisualStyleBackColor = true;
+            resources.ApplyResources(addToFavouritesButton, "addToFavouritesButton");
+            addToFavouritesButton.Name = "addToFavouritesButton";
+            addToFavouritesButton.UseVisualStyleBackColor = true;
+            addToFavouritesButton.Click += addToFavouritesButton_Click;
             // 
             // openButton
             // 
@@ -62,10 +63,11 @@
             openButton.UseVisualStyleBackColor = true;
             openButton.Click += openButton_Click;
             // 
-            // blackListButton
+            // addToBlackListButton
             // 
-            resources.ApplyResources(blackListButton, "blackListButton");
-            blackListButton.Name = "blackListButton";
+            resources.ApplyResources(addToBlackListButton, "addToBlackListButton");
+            addToBlackListButton.Name = "addToBlackListButton";
+            addToBlackListButton.Click += addToBlackListButton_Click;
             // 
             // roundedButton1
             // 
@@ -115,11 +117,12 @@
             russianButton.Name = "russianButton";
             russianButton.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // blackListButton
             // 
-            resources.ApplyResources(button1, "button1");
-            button1.Name = "button1";
-            button1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(blackListButton, "blackListButton");
+            blackListButton.Name = "blackListButton";
+            blackListButton.UseVisualStyleBackColor = true;
+            blackListButton.Click += blackListButton_Click;
             // 
             // button2
             // 
@@ -154,15 +157,15 @@
             Controls.Add(pictureBox1);
             Controls.Add(favoritesButton);
             Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(blackListButton);
             Controls.Add(russianButton);
             Controls.Add(englishButton);
             Controls.Add(secondNicknameLabel);
             Controls.Add(filmsDataGridView);
             Controls.Add(roundedButton1);
-            Controls.Add(blackListButton);
+            Controls.Add(addToBlackListButton);
             Controls.Add(openButton);
-            Controls.Add(favouritesButton);
+            Controls.Add(addToFavouritesButton);
             Name = "MainMenu";
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -172,9 +175,9 @@
 
         #endregion
 
-        private RoundedButton favouritesButton;
+        private RoundedButton addToFavouritesButton;
         private RoundedButton openButton;
-        private RoundedButton blackListButton;
+        private RoundedButton addToBlackListButton;
         private RoundedButton roundedButton1;
         private DataGridView filmsDataGridView;
         private Label secondNicknameLabel;
@@ -183,7 +186,7 @@
         private DataGridViewTextBoxColumn filmName;
         private DataGridViewTextBoxColumn Year;
         private DataGridViewTextBoxColumn Grade;
-        private Button button1;
+        private Button blackListButton;
         private Button button2;
         private Button favoritesButton;
         private PictureBox pictureBox1;
