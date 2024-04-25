@@ -19,15 +19,15 @@ namespace MovieMate
             selectedMovieId = movieId;
         }
 
-        private void label8_Click(object sender, EventArgs e)
+        void label8_Click(object sender, EventArgs e)
         {
 
         }
-        private Movie GetMovieDetails(int movieId)
+        Movie GetMovieDetails(int movieId)
         {
             return new Movie();
         }
-        private void MovieCard_Load(object sender, EventArgs e)
+        void MovieCard_Load(object sender, EventArgs e)
         {
             var movie = GetMovieDetails(selectedMovieId); 
             label8.Text = $"Название: {movie.Name}";

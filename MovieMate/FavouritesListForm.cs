@@ -26,13 +26,13 @@ namespace MovieMate
         }
 
 
-        private void FavouritesListForm_Load(object sender, EventArgs e)
+        void FavouritesListForm_Load(object sender, EventArgs e)
         {
-            string idFavorites = currentUser.IdFavorites;
+            var idFavorites = currentUser.IdFavorites;
             DisplaySimilarMovies(idFavorites);
         }
 
-        private void DisplaySimilarMovies(string idFavorites)
+        void DisplaySimilarMovies(string idFavorites)
         {
             List<int> movieIds = idFavorites.Split(',').Select(int.Parse).ToList();
 

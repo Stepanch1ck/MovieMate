@@ -14,9 +14,9 @@ namespace MovieMate
             RefreshListBox();
 
         }
-        private void newUserButton_Click(object sender, EventArgs e)
+        void newUserButton_Click(object sender, EventArgs e)
         {
-            NewUserForm newUserForm = new NewUserForm();
+            var newUserForm = new NewUserForm();
             newUserForm.Show();
         }
         //public void open(object obj)
@@ -24,16 +24,16 @@ namespace MovieMate
         //    Application.Run(new NewUserForm());
         //}
 
-        private void enterButton_Click(object sender, EventArgs e)
+        void enterButton_Click(object sender, EventArgs e)
         {
             if (listBox1.SelectedItem != null)
             {
                 selectedNickname = listBox1.SelectedItem.ToString();
-                MainMenu mainMenu = new MainMenu(selectedNickname);
+                var mainMenu = new MainMenu(selectedNickname);
                 mainMenu.Show();
             }
         }
-        private void Form_Load(object sender, EventArgs e )
+        void Form_Load(object sender, EventArgs e )
         {
             using (var context = new MovieDbContext())
             {
@@ -47,13 +47,13 @@ namespace MovieMate
                 }
                 else
                 {
-                    MessageBox.Show("Не подлючена база данных");
+                    MessageBox.Show("Не подключена база данных");
                     
                 }
             }
             
         }
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listBox1.SelectedItems.Count > 0)
             {
@@ -61,7 +61,7 @@ namespace MovieMate
                 nickNameLabel.Text = selectedNickname;
             }
         }
-        private void RefreshListBox()
+        void RefreshListBox()
         {
             using (var context = new MovieDbContext())
             {
@@ -70,12 +70,5 @@ namespace MovieMate
                 listBox1.DataSource = nicknames;
             }
         }
-
-
     }
-
-
-
-
-
 }

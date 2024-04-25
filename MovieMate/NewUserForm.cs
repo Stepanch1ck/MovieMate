@@ -19,7 +19,7 @@ namespace MovieMate
             richTextBox1.KeyDown += richTextBox1_KeyDown;
         }
 
-        private void NewUserForm_Load(object sender, EventArgs e)
+        void NewUserForm_Load(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(richTextBox1.Text))
             {
@@ -30,7 +30,7 @@ namespace MovieMate
                     context.People.Add(newUser);
                     context.SaveChanges();
 
-                    int userId = newUser.Id;
+                    var userId = newUser.Id;
 
                     if (moviesCheckBox1.Checked)
                     {
@@ -54,7 +54,7 @@ namespace MovieMate
             }
 
         }
-        private void SaveTextToDatabase(string text)
+        void SaveTextToDatabase(string text)
         {
 
             using (var context = new MovieDbContext())
@@ -64,11 +64,11 @@ namespace MovieMate
                 context.SaveChanges();
             }
         }
-        private void richTextBox1_KeyDown(object sender, KeyEventArgs e)
+        void richTextBox1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                string enteredText = richTextBox1.Text.Trim();
+                var enteredText = richTextBox1.Text.Trim();
                 if (!string.IsNullOrEmpty(enteredText))
                 {
                     SaveTextToDatabase(enteredText);
@@ -77,9 +77,9 @@ namespace MovieMate
             }
         }
 
-        private void secondEnterButton_Click(object sender, EventArgs e)
+        void secondEnterButton_Click(object sender, EventArgs e)
         {
-            MainMenu mainMenu = new MainMenu(selectedNickname);
+            var mainMenu = new MainMenu(selectedNickname);
             mainMenu.Show();
             this.Close();
         }

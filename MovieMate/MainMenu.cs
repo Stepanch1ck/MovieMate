@@ -24,25 +24,25 @@ namespace MovieMate
             InitializeComponent();
             UserNickname = nickname;
             currentUser = db.People.FirstOrDefault(p => p.Nickname == UserNickname);
-            string idMovieLike = currentUser.IdMovieLike;
+            var idMovieLike = currentUser.IdMovieLike;
             DisplaySimilarMovies(idMovieLike);
             secondNicknameLabel.Text = nickname;
         }
 
-        private void russianButton_Click(object sender, EventArgs e)
+        void russianButton_Click(object sender, EventArgs e)
         {
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("US");
 
         }
 
 
-        private void MainMenu_Load(object sender, EventArgs e)
+        void MainMenu_Load(object sender, EventArgs e)
         {
-            string idMovieLike = currentUser.IdMovieLike;
+            var idMovieLike = currentUser.IdMovieLike;
             DisplaySimilarMovies(idMovieLike);
         }
 
-        private void filmsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        void filmsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             var allFilms = db.Movies.ToList();
             filmsDataGridView.DataSource = allFilms;
@@ -50,20 +50,20 @@ namespace MovieMate
 
         }
 
-        private void filmsDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        void filmsDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             // Получение информации о фильме из выбранной строки
-            int selectedMovieId = Convert.ToInt32(filmsDataGridView.Rows[e.RowIndex].Cells["Id"].Value);
+            var selectedMovieId = Convert.ToInt32(filmsDataGridView.Rows[e.RowIndex].Cells["Id"].Value);
 
 
         }
-        private void openButton_Click(object sender, EventArgs e)
+        void openButton_Click(object sender, EventArgs e)
         {
             //var movieDetailsForm = new MovieCard(selectedMovieId);
             //movieDetailsForm.Show();
             //this.Close();
         }
-        private void DisplaySimilarMovies(string idMovieLike)
+        void DisplaySimilarMovies(string idMovieLike)
         {
             // Разделить строку IdMovieLike на список ID
             List<int> movieIds = idMovieLike.Split(',').Select(int.Parse).ToList();
@@ -88,16 +88,16 @@ namespace MovieMate
             }
         }
 
-        private void favoritesButton_Click(object sender, EventArgs e)
+        void favoritesButton_Click(object sender, EventArgs e)
         {
-            FavouritesListForm favouritesListForm = new FavouritesListForm(UserNickname);
+            var favouritesListForm = new FavouritesListForm(UserNickname);
             favouritesListForm.Show();
             this.Close();
 
 
         }
 
-        private void englishButton_Click(object sender, EventArgs e)
+        void englishButton_Click(object sender, EventArgs e)
         {
             Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("ru");
         }
