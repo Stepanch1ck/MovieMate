@@ -118,6 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="addToFavouritesButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 43</value>
+  </data>
+  <data name="addToFavouritesButton.Text" xml:space="preserve">
+    <value>Add to favorites</value>
+  </data>
+  <data name="addToBlackListButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 43</value>
+  </data>
+  <data name="addToBlackListButton.Text" xml:space="preserve">
+    <value>Add to black list</value>
+  </data>
   <data name="russianButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAXgBeAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
@@ -144,7 +156,7 @@
         oAKKKKAP/9k=
 </value>
   </data>
-  <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="blackListButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
         JC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIy
@@ -183,6 +195,16 @@
         KAPPNE0uDUr5YZmkVSedhAP6ivpLwp8FfBlnZ299cWk+oTMgfF5LuQH/AHVABH1zRRQB6fbww29vHDBE
         kUSLhEjXaqj0AHQVNRRQAUUUUAf/2Q==
 </value>
+  </data>
+  <data name="blackListButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 298</value>
+  </data>
+  <data name="blackListButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 68</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="blackListButton.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
   <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

@@ -101,5 +101,29 @@ namespace MovieMate
         {
             Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("ru");
         }
+
+        private void addToFavouritesButton_Click(object sender, EventArgs e)
+        {
+            int selectedMovieId = Convert.ToInt32(filmsDataGridView.Rows[filmsDataGridView.CurrentCell.RowIndex].Cells["Id"].Value);
+            currentUser.IdFavorites += "," + selectedMovieId;
+            db.SaveChanges();
+            DisplaySimilarMovies(currentUser.IdMovieLike);
+        }
+
+        private void addToBlackListButton_Click(object sender, EventArgs e)
+        {
+            int selectedMovieId = Convert.ToInt32(filmsDataGridView.Rows[filmsDataGridView.CurrentCell.RowIndex].Cells["Id"].Value);
+            currentUser.IdBlackList += "," + selectedMovieId;
+            db.SaveChanges();
+            DisplaySimilarMovies(currentUser.IdBlackList);
+        }
+
+        private void blackListButton_Click(object sender, EventArgs e)
+        {
+            BlackListForm blackListForm = new BlackListForm(UserNickname);
+            blackListForm.Show();
+            this.Close();
+
+        }
     }
 }
