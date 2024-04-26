@@ -39,22 +39,26 @@
             richTextBox1 = new RichTextBox();
             roundedButton1 = new RoundedButton();
             roundedButton2 = new RoundedButton();
+            pictureBox1 = new PictureBox();
+            pictureButton = new RoundedButton();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // secondEnterButton
             // 
-            secondEnterButton.Location = new Point(107, 414);
+            secondEnterButton.Location = new Point(100, 456);
             secondEnterButton.Name = "secondEnterButton";
             secondEnterButton.Size = new Size(183, 59);
             secondEnterButton.TabIndex = 0;
             secondEnterButton.Text = "Войти";
             secondEnterButton.UseVisualStyleBackColor = true;
+            secondEnterButton.Click += secondEnterButton_Click;
             // 
             // moviesCheckBox1
             // 
             moviesCheckBox1.AutoSize = true;
             moviesCheckBox1.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            moviesCheckBox1.Location = new Point(41, 272);
+            moviesCheckBox1.Location = new Point(41, 316);
             moviesCheckBox1.Name = "moviesCheckBox1";
             moviesCheckBox1.Size = new Size(155, 29);
             moviesCheckBox1.TabIndex = 1;
@@ -65,7 +69,7 @@
             // 
             moviesCheckBox2.AutoSize = true;
             moviesCheckBox2.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            moviesCheckBox2.Location = new Point(41, 302);
+            moviesCheckBox2.Location = new Point(41, 351);
             moviesCheckBox2.Name = "moviesCheckBox2";
             moviesCheckBox2.Size = new Size(73, 29);
             moviesCheckBox2.TabIndex = 2;
@@ -76,7 +80,7 @@
             // 
             moviesCheckBox3.AutoSize = true;
             moviesCheckBox3.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            moviesCheckBox3.Location = new Point(41, 332);
+            moviesCheckBox3.Location = new Point(41, 386);
             moviesCheckBox3.Name = "moviesCheckBox3";
             moviesCheckBox3.Size = new Size(101, 29);
             moviesCheckBox3.TabIndex = 3;
@@ -87,7 +91,7 @@
             // 
             moviesCheckBox4.AutoSize = true;
             moviesCheckBox4.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            moviesCheckBox4.Location = new Point(41, 362);
+            moviesCheckBox4.Location = new Point(41, 421);
             moviesCheckBox4.Name = "moviesCheckBox4";
             moviesCheckBox4.Size = new Size(117, 29);
             moviesCheckBox4.TabIndex = 4;
@@ -143,18 +147,39 @@
             // roundedButton2
             // 
             roundedButton2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            roundedButton2.Location = new Point(0, 160);
+            roundedButton2.Location = new Point(0, 255);
             roundedButton2.Name = "roundedButton2";
             roundedButton2.Size = new Size(382, 55);
             roundedButton2.TabIndex = 7;
             roundedButton2.Text = "  Выберите фильмы, \r\nкоторые вам нравятся";
             roundedButton2.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = SystemColors.ButtonShadow;
+            pictureBox1.Location = new Point(12, 148);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(125, 101);
+            pictureBox1.TabIndex = 8;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureButton
+            // 
+            pictureButton.Location = new Point(156, 195);
+            pictureButton.Name = "pictureButton";
+            pictureButton.Size = new Size(217, 54);
+            pictureButton.TabIndex = 9;
+            pictureButton.Text = "Выбрать \r\nкартинку профиля";
+            pictureButton.UseVisualStyleBackColor = true;
+            pictureButton.Click += pictureButton_Click;
+            // 
             // NewUserForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(385, 474);
+            ClientSize = new Size(385, 527);
+            Controls.Add(pictureButton);
+            Controls.Add(pictureBox1);
             Controls.Add(roundedButton2);
             Controls.Add(roundedButton1);
             Controls.Add(richTextBox1);
@@ -166,6 +191,7 @@
             Name = "NewUserForm";
             Text = "NewUserForm";
             Load += NewUserForm_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -183,5 +209,7 @@
         private RichTextBox richTextBox1;
         private RoundedButton roundedButton1;
         private RoundedButton roundedButton2;
+        private PictureBox pictureBox1;
+        private RoundedButton pictureButton;
     }
 }

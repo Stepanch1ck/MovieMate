@@ -6,7 +6,7 @@ namespace MovieMate
 {
     public partial class MainForm : Form
     {
-        public string selectedNickname= string.Empty;
+        public string selectedNickname = string.Empty;
         public MainForm()
         {
             InitializeComponent();
@@ -19,11 +19,7 @@ namespace MovieMate
             NewUserForm newUserForm = new NewUserForm();
             newUserForm.Show();
         }
-        //public void open(object obj)
-        //{
-        //    Application.Run(new NewUserForm());
-        //}
-
+        
         private void enterButton_Click(object sender, EventArgs e)
         {
             if (listBox1.SelectedItem != null)
@@ -37,21 +33,22 @@ namespace MovieMate
         {
             using (var context = new MovieDbContext())
             {
-                
+
                 if (context.Database.CanConnect())
                 {
                     var nicknames = context.People.Select(p => p.Nickname).ToList();
                     listBox1.DisplayMember = "Nickname";
                     listBox1.DataSource = nicknames;
+
                     RefreshListBox();
                 }
                 else
                 {
-                    MessageBox.Show("Не подлючена база данных");
-                    
+                    MessageBox.Show("Не подключена база данных");
+
                 }
             }
-            
+
         }
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -71,7 +68,10 @@ namespace MovieMate
             }
         }
 
+        private void MainForm_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 
 

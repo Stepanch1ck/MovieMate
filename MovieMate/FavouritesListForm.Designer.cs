@@ -30,16 +30,15 @@
         {
             roundedButton1 = new RoundedButton();
             FavouritesDataGridView = new DataGridView();
-            openFavouritesButton = new RoundedButton();
-            deleteFromFavouritesButton = new RoundedButton();
             filmName = new DataGridViewTextBoxColumn();
             Year = new DataGridViewTextBoxColumn();
             Grade = new DataGridViewTextBoxColumn();
+            openFavouritesButton = new RoundedButton();
+            deleteFromFavouritesButton = new RoundedButton();
             roundedButton2 = new RoundedButton();
             roundedButton3 = new RoundedButton();
             roundedButton4 = new RoundedButton();
             ((System.ComponentModel.ISupportInitialize)FavouritesDataGridView).BeginInit();
-            SuspendLayout();
             // 
             // roundedButton1
             // 
@@ -61,24 +60,6 @@
             FavouritesDataGridView.Size = new Size(504, 240);
             FavouritesDataGridView.TabIndex = 1;
             // 
-            // openFavouritesButton
-            // 
-            openFavouritesButton.Location = new Point(432, 30);
-            openFavouritesButton.Name = "openFavouritesButton";
-            openFavouritesButton.Size = new Size(123, 46);
-            openFavouritesButton.TabIndex = 2;
-            openFavouritesButton.Text = "Открыть";
-            openFavouritesButton.UseVisualStyleBackColor = true;
-            // 
-            // deleteFromFavouritesButton
-            // 
-            deleteFromFavouritesButton.Location = new Point(606, 30);
-            deleteFromFavouritesButton.Name = "deleteFromFavouritesButton";
-            deleteFromFavouritesButton.Size = new Size(119, 46);
-            deleteFromFavouritesButton.TabIndex = 3;
-            deleteFromFavouritesButton.Text = "Удалить из избранного";
-            deleteFromFavouritesButton.UseVisualStyleBackColor = true;
-            // 
             // filmName
             // 
             filmName.HeaderText = "Название";
@@ -99,6 +80,24 @@
             Grade.MinimumWidth = 6;
             Grade.Name = "Grade";
             Grade.Width = 150;
+            // 
+            // openFavouritesButton
+            // 
+            openFavouritesButton.Location = new Point(432, 30);
+            openFavouritesButton.Name = "openFavouritesButton";
+            openFavouritesButton.Size = new Size(123, 46);
+            openFavouritesButton.TabIndex = 2;
+            openFavouritesButton.Text = "Открыть";
+            openFavouritesButton.UseVisualStyleBackColor = true;
+            // 
+            // deleteFromFavouritesButton
+            // 
+            deleteFromFavouritesButton.Location = new Point(606, 30);
+            deleteFromFavouritesButton.Name = "deleteFromFavouritesButton";
+            deleteFromFavouritesButton.Size = new Size(119, 46);
+            deleteFromFavouritesButton.TabIndex = 3;
+            deleteFromFavouritesButton.Text = "Удалить из избранного";
+            deleteFromFavouritesButton.UseVisualStyleBackColor = true;
             // 
             // roundedButton2
             // 
@@ -141,6 +140,7 @@
             Controls.Add(roundedButton1);
             Name = "FavouritesListForm";
             Text = "FavouritesListForm";
+            Load += FavouritesListForm_Load;
             ((System.ComponentModel.ISupportInitialize)FavouritesDataGridView).EndInit();
             ResumeLayout(false);
         }
