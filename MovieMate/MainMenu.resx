@@ -118,29 +118,29 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="favouritesButton.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="addToFavouritesButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>407, 44</value>
   </data>
-  <data name="favouritesButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="addToFavouritesButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 43</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="favouritesButton.TabIndex" type="System.Int32, mscorlib">
+  <data name="addToFavouritesButton.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="favouritesButton.Text" xml:space="preserve">
+  <data name="addToFavouritesButton.Text" xml:space="preserve">
     <value>Добавить в избранное</value>
   </data>
-  <data name="&gt;&gt;favouritesButton.Name" xml:space="preserve">
-    <value>favouritesButton</value>
+  <data name="&gt;&gt;addToFavouritesButton.Name" xml:space="preserve">
+    <value>addToFavouritesButton</value>
   </data>
-  <data name="&gt;&gt;favouritesButton.Type" xml:space="preserve">
+  <data name="&gt;&gt;addToFavouritesButton.Type" xml:space="preserve">
     <value>MovieMate.RoundedButton, MovieMate, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;favouritesButton.Parent" xml:space="preserve">
+  <data name="&gt;&gt;addToFavouritesButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;favouritesButton.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;addToFavouritesButton.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
   <data name="openButton.Location" type="System.Drawing.Point, System.Drawing">
@@ -480,6 +480,39 @@
   <metadata name="filmName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="Year.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Grade.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="filmsDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>239, 136</value>
+  </data>
+  <data name="filmsDataGridView.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="filmsDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>492, 216</value>
+  </data>
+  <data name="filmsDataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;filmsDataGridView.Name" xml:space="preserve">
+    <value>filmsDataGridView</value>
+  </data>
+  <data name="&gt;&gt;filmsDataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;filmsDataGridView.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;filmsDataGridView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="filmName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="filmName.HeaderText" xml:space="preserve">
     <value>Название</value>
   </data>
@@ -512,30 +545,6 @@
   </data>
   <data name="Grade.Width" type="System.Int32, mscorlib">
     <value>145</value>
-  </data>
-  <data name="filmsDataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>239, 136</value>
-  </data>
-  <data name="filmsDataGridView.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="filmsDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>492, 216</value>
-  </data>
-  <data name="filmsDataGridView.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;filmsDataGridView.Name" xml:space="preserve">
-    <value>filmsDataGridView</value>
-  </data>
-  <data name="&gt;&gt;filmsDataGridView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;filmsDataGridView.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;filmsDataGridView.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

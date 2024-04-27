@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
-            favouritesButton = new RoundedButton();
+            addToFavouritesButton = new RoundedButton();
             openButton = new RoundedButton();
             AddToblackListButton = new RoundedButton();
             roundedButton1 = new RoundedButton();
@@ -47,12 +47,11 @@
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).BeginInit();
             SuspendLayout();
             // 
-            // favouritesButton
+            // addToFavouritesButton
             // 
-            resources.ApplyResources(favouritesButton, "favouritesButton");
-            favouritesButton.Name = "favouritesButton";
-            favouritesButton.UseVisualStyleBackColor = true;
-            favouritesButton.Click += favouritesButton_Click;
+            resources.ApplyResources(addToFavouritesButton, "addToFavouritesButton");
+            addToFavouritesButton.Name = "addToFavouritesButton";
+            addToFavouritesButton.UseVisualStyleBackColor = true;
             // 
             // openButton
             // 
@@ -152,7 +151,7 @@
             Controls.Add(roundedButton1);
             Controls.Add(AddToblackListButton);
             Controls.Add(openButton);
-            Controls.Add(favouritesButton);
+            Controls.Add(addToFavouritesButton);
             Name = "MainMenu";
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).EndInit();
             ResumeLayout(false);
@@ -161,7 +160,7 @@
 
         #endregion
 
-        private RoundedButton favouritesButton;
+        private RoundedButton addToFavouritesButton;
         private RoundedButton openButton;
         private RoundedButton AddToblackListButton;
         private RoundedButton roundedButton1;
