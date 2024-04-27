@@ -34,9 +34,6 @@
             moviesCheckBox2 = new CheckBox();
             moviesCheckBox3 = new CheckBox();
             moviesCheckBox4 = new CheckBox();
-            roundedRichTextBox1 = new RoundedRichTextBox();
-            roundedRichTextBox2 = new RoundedRichTextBox();
-            roundedRichTextBox3 = new RoundedRichTextBox();
             richTextBox1 = new RichTextBox();
             roundedButton1 = new RoundedButton();
             roundedButton2 = new RoundedButton();
@@ -98,36 +95,9 @@
             moviesCheckBox4.TabIndex = 4;
             moviesCheckBox4.Text = "Мстители";
             moviesCheckBox4.UseVisualStyleBackColor = true;
-            // 
-            // roundedRichTextBox1
-            // 
-            roundedRichTextBox1.BackColor = Color.White;
-            roundedRichTextBox1.BorderStyle = BorderStyle.None;
-            roundedRichTextBox1.Location = new Point(12, 86);
-            roundedRichTextBox1.Name = "roundedRichTextBox1";
-            roundedRichTextBox1.Size = new Size(343, 1);
-            roundedRichTextBox1.TabIndex = 0;
-            roundedRichTextBox1.Text = "";
-            roundedRichTextBox1.Visible = false;
-            // 
-            // roundedRichTextBox2
-            // 
-            roundedRichTextBox2.Location = new Point(0, 0);
-            roundedRichTextBox2.Name = "roundedRichTextBox2";
-            roundedRichTextBox2.Size = new Size(100, 96);
-            roundedRichTextBox2.TabIndex = 0;
-            roundedRichTextBox2.Text = "";
-            // 
-            // roundedRichTextBox3
-            // 
-            roundedRichTextBox3.Location = new Point(0, 0);
-            roundedRichTextBox3.Name = "roundedRichTextBox3";
-            roundedRichTextBox3.Size = new Size(100, 96);
-            roundedRichTextBox3.TabIndex = 0;
-            roundedRichTextBox3.Text = "";
-            // 
-            // richTextBox1
-            // 
+            //
+            //richTextBox1
+            //
             richTextBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
             richTextBox1.Location = new Point(0, 103);
             richTextBox1.Name = "richTextBox1";
@@ -205,9 +175,6 @@
         private CheckBox moviesCheckBox2;
         private CheckBox moviesCheckBox3;
         private CheckBox moviesCheckBox4;
-        private RoundedRichTextBox roundedRichTextBox1;
-        private RoundedRichTextBox roundedRichTextBox2;
-        private RoundedRichTextBox roundedRichTextBox3;
         private RichTextBox richTextBox1;
         private RoundedButton roundedButton1;
         private RoundedButton roundedButton2;

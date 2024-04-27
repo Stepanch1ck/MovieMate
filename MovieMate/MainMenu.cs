@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,7 +22,6 @@ namespace MovieMate
         MovieDbContext db = new MovieDbContext();
         Person currentUser;
         Movie selectedMovie;
-        
         public MainMenu(string nickname)
         {
 
@@ -56,18 +56,23 @@ namespace MovieMate
 
         void filmsDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Получение информации о фильме из выбранной строки
+            
             var selectedMovieId = Convert.ToInt32(filmsDataGridView.Rows[e.RowIndex].Cells["Id"].Value);
+            Movie selectedMovie = db.Movies.Find(selectedMovieId);
             var idMovieLike = currentUser.IdMovieLike;
             DisplaySimilarMovies(idMovieLike);
 
         }
-        void openButton_Click(object sender, EventArgs e)
+        private void openButton_Click(object sender, EventArgs e)
         {
-            //var movieDetailsForm = new MovieCard(selectedMovieId);
-            //movieDetailsForm.Show();
-            //this.Close();
+            //var selectedMovieId = Convert.ToInt32(filmsDataGridView.Rows[e.RowIndex].Cells["Id"].Value);
+            //Movie selectedMovie = db.Movies.Find(selectedMovieId);
+            //MovieCard movieDetailsForm = new MovieCard(selectedMovie);
+            //movieDetailsForm.ShowDialog();
+                
+            
         }
+        
         void DisplaySimilarMovies(string idMovieLike)
         {
             if (string.IsNullOrEmpty(idMovieLike))
@@ -100,17 +105,7 @@ namespace MovieMate
             }
         }
         
-    //if (string.IsNullOrEmpty(idMovieLike))
-    //{
-    //    var allMovies = db.Movies.ToList();
-
-    //    filmsDataGridView.Rows.Clear();
-    //    foreach (var movie in allMovies)
-    //    {
-    //        filmsDataGridView.Rows.Add(movie.Name, movie.Year, movie.Grade);
-    //    }
-    //}
-
+   
     
         void favoritesButton_Click(object sender, EventArgs e)
         {

@@ -15,6 +15,7 @@ namespace MovieMate
         public string UserNickname { get; set; }
         MovieDbContext db = new MovieDbContext();
         Person currentUser;
+        Movie selectedMovie;
         public FavouritesListForm(string nickname)
         {
             InitializeComponent();
@@ -35,7 +36,6 @@ namespace MovieMate
             if (string.IsNullOrEmpty(idFavorites))
             {
                 FavouritesDataGridView.Rows.Clear();
-                MessageBox.Show("У вас ещё нет фильмов в избранном!");
                 return;
             }
             List<int> movieIds = idFavorites.Split(',').Select(int.Parse).ToList();
@@ -49,7 +49,23 @@ namespace MovieMate
             }
         }
 
+        private void deleteFromFavouritesButton_Click(object sender, EventArgs e)
+        {
+            if (selectedMovie == null)
+            {
+                MessageBox.Show("Выберите фильм для удаления из избранного!");
+                return;
+            }
+            currentUser.IdFavorites = currentUser.IdFavorites.Replace(selectedMovie.Id.ToString() + ",", "");
+            if (currentUser.IdFavorites.EndsWith(","))
+            {
+                currentUser.IdFavorites = currentUser.IdFavorites.Remove(currentUser.IdFavorites.Length - 1);
+            }
+            db.SaveChanges();
+            DisplaySimilarMovies(currentUser.IdMovieLike);
 
+            MessageBox.Show("Фильм удален из избранного!");
+        }
 
         private void blackListButton_Click(object sender, EventArgs e)
         {

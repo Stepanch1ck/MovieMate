@@ -37,7 +37,6 @@ namespace MovieMate
             if (string.IsNullOrEmpty(idBlackList))
             {
                 BlackListDataGridView.Rows.Clear();
-                MessageBox.Show("У вас ещё нет фильмов в чёрном списке!");
                 return;
             }
             List<int> movieIds = idBlackList.Split(',').Select(int.Parse).ToList();
@@ -70,34 +69,23 @@ namespace MovieMate
 
 
         }
+
         private void deleteFromBlackListButton_Click(object sender, EventArgs e)
         {
             if (selectedMovie == null)
             {
-                MessageBox.Show("Выберите фильм двойным кликом!");
+                MessageBox.Show("Выберите фильм для удаления из избранного!");
                 return;
             }
-            if (currentUser.IdBlackList != null && currentUser.IdBlackList.Contains(selectedMovie.Id.ToString()))
+            currentUser.IdBlackList = currentUser.IdBlackList.Replace(selectedMovie.Id.ToString() + ",", "");
+            if (currentUser.IdBlackList.EndsWith(","))
             {
+                currentUser.IdBlackList = currentUser.IdBlackList.Remove(currentUser.IdBlackList.Length - 1);
+            }
+            db.SaveChanges();
+            DisplaySimilarMovies(currentUser.IdBlackList);
 
-                var blackListIds = currentUser.IdBlackList.Split(',');
-                var updatedBlackList = new List<string>();
-                foreach (var id in blackListIds)
-                {
-                    if (id != selectedMovie.Id.ToString())
-                    {
-                        updatedBlackList.Add(id);
-                    }
-                }
-                currentUser.IdBlackList = string.Join(",", updatedBlackList);
-                db.SaveChanges();
-                DisplaySimilarMovies(currentUser.IdMovieLike);
-                MessageBox.Show("Фильм удалён из чёрного списка!");
-            }
-            else
-            {
-                MessageBox.Show("Этот фильм не находится в чёрном списке!");
-            }
+            MessageBox.Show("Фильм удален из избранного!");
         }
         private void BlackListForm_Load_1(object sender, EventArgs e)
         {

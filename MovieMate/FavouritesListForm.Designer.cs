@@ -102,6 +102,7 @@
             deleteFromFavouritesButton.TabIndex = 3;
             deleteFromFavouritesButton.Text = "Удалить из избранного";
             deleteFromFavouritesButton.UseVisualStyleBackColor = true;
+            deleteFromFavouritesButton.Click += deleteFromFavouritesButton_Click;
             // 
             // mainMenuButton
             // 

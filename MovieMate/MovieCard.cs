@@ -12,28 +12,40 @@ namespace MovieMate
 {
     public partial class MovieCard : Form
     {
+        private readonly Movie _movie;
         private readonly int selectedMovieId;
-        public MovieCard(int movieId)
+        private Movie selectedMovie;
+
+        public class Movie
+        {
+            public string Name { get; set; } 
+
+            public string? Link { get; set; }
+            public double? Grade { get; set; }
+            public string? Genre { get; set; }
+
+            public byte[] Picture { get; set; }
+        }
+        public MovieCard(Movie movie)
         {
             InitializeComponent();
-            selectedMovieId = movieId;
+            movie = _movie;
+            LoadMovieDetails();
         }
 
-        void label8_Click(object sender, EventArgs e)
+        private void LoadMovieDetails()
         {
+            label8.Text = $"Название: {_movie.Name}";
+            label4.Text = $"Жанр: {_movie.Genre}";
+            label5.Text = $"Оценка: {_movie.Grade}";
+            label6.Text = _movie.Link;
 
+            if (_movie.Picture != null)
+            {
+                moviePictureBox.Image = Image.FromStream(new MemoryStream(_movie.Picture));
+
+            }
         }
-        Movie GetMovieDetails(int movieId)
-        {
-            return new Movie();
-        }
-        void MovieCard_Load(object sender, EventArgs e)
-        {
-            var movie = GetMovieDetails(selectedMovieId); 
-            label8.Text = $"Название: {movie.Name}";
-            label4.Text = $"Жанр: {movie.Genre}";
-            label5.Text = $"Оценка: {movie.Grade}";
-            label6.Text = movie.Link;
-        }
+
     }
 }

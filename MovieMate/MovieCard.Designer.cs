@@ -117,7 +117,6 @@
             label8.Size = new Size(91, 38);
             label8.TabIndex = 10;
             label8.Text = "label8";
-            label8.Click += label8_Click;
             // 
             // MovieCard
             // 
@@ -135,7 +134,6 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MovieCard";
             Text = "MovieMate";
-            Load += MovieCard_Load;
             ((System.ComponentModel.ISupportInitialize)moviePictureBox).EndInit();
             ResumeLayout(false);
             PerformLayout();

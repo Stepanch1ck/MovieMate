@@ -58,6 +58,7 @@
             resources.ApplyResources(openButton, "openButton");
             openButton.Name = "openButton";
             openButton.UseVisualStyleBackColor = true;
+            openButton.Click += openButton_Click;
             // 
             // AddToblackListButton
             // 
