@@ -42,7 +42,21 @@ namespace MovieMate
                 BlackListDataGridView.Rows.Add(movie.Name, movie.Year, movie.Grade);
             }
         }
+
+        private void favouritesListButton_Click(object sender, EventArgs e)
+        {
+            var favouritesListForm = new FavouritesListForm(UserNickname);
+            favouritesListForm.Show();
+            this.Close();
+        }
+
+        private void mainMenuButton_Click(object sender, EventArgs e)
+        {
+            var mainMenu = new MainMenu(UserNickname);
+            mainMenu.Show();
+            this.Close();
+        }
     }
-      
+
 }
 

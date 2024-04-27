@@ -42,5 +42,19 @@ namespace MovieMate
                 FavouritesDataGridView.Rows.Add(movie.Name, movie.Year, movie.Grade);
             }
         }
+
+        private void mainMenuButton_Click(object sender, EventArgs e)
+        {
+            var mainMenuForm = new MainMenu(UserNickname);
+            mainMenuForm.Show();
+            this.Close();
+        }
+
+        private void blackListButton_Click(object sender, EventArgs e)
+        {
+            var blackListForm = new BlackListForm(UserNickname);
+            blackListForm.Show();
+            this.Close();
+        }
     }
 }

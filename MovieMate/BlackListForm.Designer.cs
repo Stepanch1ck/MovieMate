@@ -28,17 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BlackListForm));
             roundedButton1 = new RoundedButton();
             BlackListDataGridView = new DataGridView();
-            blackListOpenButton = new RoundedButton();
-            deleteFromBlackListButton = new RoundedButton();
             filmName = new DataGridViewTextBoxColumn();
             year = new DataGridViewTextBoxColumn();
             grade = new DataGridViewTextBoxColumn();
-            roundedButton2 = new RoundedButton();
-            roundedButton3 = new RoundedButton();
-            roundedButton4 = new RoundedButton();
+            blackListOpenButton = new RoundedButton();
+            deleteFromBlackListButton = new RoundedButton();
+            favouritesListButton = new Button();
+            button2 = new Button();
+            mainMenuButton = new Button();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)BlackListDataGridView).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // roundedButton1
@@ -59,24 +62,6 @@
             BlackListDataGridView.RowHeadersWidth = 51;
             BlackListDataGridView.Size = new Size(429, 228);
             BlackListDataGridView.TabIndex = 1;
-            // 
-            // blackListOpenButton
-            // 
-            blackListOpenButton.Location = new Point(448, 29);
-            blackListOpenButton.Name = "blackListOpenButton";
-            blackListOpenButton.Size = new Size(134, 50);
-            blackListOpenButton.TabIndex = 2;
-            blackListOpenButton.Text = "Открыть";
-            blackListOpenButton.UseVisualStyleBackColor = true;
-            // 
-            // deleteFromBlackListButton
-            // 
-            deleteFromBlackListButton.Location = new Point(614, 29);
-            deleteFromBlackListButton.Name = "deleteFromBlackListButton";
-            deleteFromBlackListButton.Size = new Size(134, 50);
-            deleteFromBlackListButton.TabIndex = 3;
-            deleteFromBlackListButton.Text = "Удалить из чёрного списка";
-            deleteFromBlackListButton.UseVisualStyleBackColor = true;
             // 
             // filmName
             // 
@@ -99,41 +84,71 @@
             grade.Name = "grade";
             grade.Width = 125;
             // 
-            // roundedButton2
+            // blackListOpenButton
             // 
-            roundedButton2.Location = new Point(12, 127);
-            roundedButton2.Name = "roundedButton2";
-            roundedButton2.Size = new Size(68, 62);
-            roundedButton2.TabIndex = 4;
-            roundedButton2.Text = "roundedButton2";
-            roundedButton2.UseVisualStyleBackColor = true;
+            blackListOpenButton.Location = new Point(448, 29);
+            blackListOpenButton.Name = "blackListOpenButton";
+            blackListOpenButton.Size = new Size(134, 50);
+            blackListOpenButton.TabIndex = 2;
+            blackListOpenButton.Text = "Открыть";
+            blackListOpenButton.UseVisualStyleBackColor = true;
             // 
-            // roundedButton3
+            // deleteFromBlackListButton
             // 
-            roundedButton3.Location = new Point(12, 215);
-            roundedButton3.Name = "roundedButton3";
-            roundedButton3.Size = new Size(68, 62);
-            roundedButton3.TabIndex = 5;
-            roundedButton3.Text = "roundedButton3";
-            roundedButton3.UseVisualStyleBackColor = true;
+            deleteFromBlackListButton.Location = new Point(614, 29);
+            deleteFromBlackListButton.Name = "deleteFromBlackListButton";
+            deleteFromBlackListButton.Size = new Size(134, 50);
+            deleteFromBlackListButton.TabIndex = 3;
+            deleteFromBlackListButton.Text = "Удалить из чёрного списка";
+            deleteFromBlackListButton.UseVisualStyleBackColor = true;
             // 
-            // roundedButton4
+            // favouritesListButton
             // 
-            roundedButton4.Location = new Point(12, 303);
-            roundedButton4.Name = "roundedButton4";
-            roundedButton4.Size = new Size(68, 62);
-            roundedButton4.TabIndex = 6;
-            roundedButton4.Text = "roundedButton4";
-            roundedButton4.UseVisualStyleBackColor = true;
+            favouritesListButton.BackgroundImage = (Image)resources.GetObject("favouritesListButton.BackgroundImage");
+            favouritesListButton.Location = new Point(12, 148);
+            favouritesListButton.Name = "favouritesListButton";
+            favouritesListButton.Size = new Size(68, 68);
+            favouritesListButton.TabIndex = 4;
+            favouritesListButton.UseVisualStyleBackColor = true;
+            favouritesListButton.Click += favouritesListButton_Click;
+            // 
+            // button2
+            // 
+            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
+            button2.Location = new Point(12, 296);
+            button2.Name = "button2";
+            button2.Size = new Size(68, 68);
+            button2.TabIndex = 5;
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // mainMenuButton
+            // 
+            mainMenuButton.BackgroundImage = (Image)resources.GetObject("mainMenuButton.BackgroundImage");
+            mainMenuButton.Location = new Point(12, 222);
+            mainMenuButton.Name = "mainMenuButton";
+            mainMenuButton.Size = new Size(68, 68);
+            mainMenuButton.TabIndex = 6;
+            mainMenuButton.UseVisualStyleBackColor = true;
+            mainMenuButton.Click += mainMenuButton_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.Location = new Point(12, 29);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(87, 74);
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
             // 
             // BlackListForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(roundedButton4);
-            Controls.Add(roundedButton3);
-            Controls.Add(roundedButton2);
+            Controls.Add(pictureBox1);
+            Controls.Add(mainMenuButton);
+            Controls.Add(button2);
+            Controls.Add(favouritesListButton);
             Controls.Add(deleteFromBlackListButton);
             Controls.Add(blackListOpenButton);
             Controls.Add(BlackListDataGridView);
@@ -141,6 +156,7 @@
             Name = "BlackListForm";
             Text = "BlackListForm";
             ((System.ComponentModel.ISupportInitialize)BlackListDataGridView).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -153,8 +169,9 @@
         private DataGridViewTextBoxColumn filmName;
         private DataGridViewTextBoxColumn year;
         private DataGridViewTextBoxColumn grade;
-        private RoundedButton roundedButton2;
-        private RoundedButton roundedButton3;
-        private RoundedButton roundedButton4;
+        private Button favouritesListButton;
+        private Button button2;
+        private Button mainMenuButton;
+        private PictureBox pictureBox1;
     }
 }
