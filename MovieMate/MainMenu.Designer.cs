@@ -33,7 +33,6 @@
             openButton = new RoundedButton();
             AddToblackListButton = new RoundedButton();
             roundedButton1 = new RoundedButton();
-            upateButton = new RoundedButton();
             secondNicknameLabel = new Label();
             englishButton = new RoundedButton();
             russianButton = new RoundedButton();
@@ -70,12 +69,6 @@
             resources.ApplyResources(roundedButton1, "roundedButton1");
             roundedButton1.Name = "roundedButton1";
             roundedButton1.UseVisualStyleBackColor = true;
-            // 
-            // upateButton
-            // 
-            resources.ApplyResources(upateButton, "upateButton");
-            upateButton.Name = "upateButton";
-            upateButton.UseVisualStyleBackColor = true;
             // 
             // secondNicknameLabel
             // 
@@ -149,7 +142,6 @@
             Controls.Add(russianButton);
             Controls.Add(englishButton);
             Controls.Add(secondNicknameLabel);
-            Controls.Add(upateButton);
             Controls.Add(roundedButton1);
             Controls.Add(AddToblackListButton);
             Controls.Add(openButton);
@@ -166,7 +158,6 @@
         private RoundedButton openButton;
         private RoundedButton AddToblackListButton;
         private RoundedButton roundedButton1;
-        private RoundedButton upateButton;
         private Label secondNicknameLabel;
         private RoundedButton englishButton;
         private RoundedButton russianButton;

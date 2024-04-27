@@ -52,10 +52,10 @@
             // 
             // BlackListDataGridView
             // 
+            resources.ApplyResources(BlackListDataGridView, "BlackListDataGridView");
             BlackListDataGridView.BackgroundColor = SystemColors.ButtonHighlight;
             BlackListDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             BlackListDataGridView.Columns.AddRange(new DataGridViewColumn[] { filmName, year, grade });
-            resources.ApplyResources(BlackListDataGridView, "BlackListDataGridView");
             BlackListDataGridView.Name = "BlackListDataGridView";
             // 
             // filmName
@@ -90,6 +90,7 @@
             resources.ApplyResources(button1, "button1");
             button1.Name = "button1";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -102,6 +103,7 @@
             resources.ApplyResources(button3, "button3");
             button3.Name = "button3";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // pictureBox1
             // 
@@ -122,6 +124,7 @@
             Controls.Add(BlackListDataGridView);
             Controls.Add(roundedButton1);
             Name = "BlackListForm";
+            Load += BlackListForm_Load_1;
             ((System.ComponentModel.ISupportInitialize)BlackListDataGridView).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

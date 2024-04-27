@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace MovieMate
 {
@@ -20,6 +21,7 @@ namespace MovieMate
         MovieDbContext db = new MovieDbContext();
         Person currentUser;
         Movie selectedMovie;
+        
         public MainMenu(string nickname)
         {
 
@@ -56,17 +58,29 @@ namespace MovieMate
         {
             // Получение информации о фильме из выбранной строки
             var selectedMovieId = Convert.ToInt32(filmsDataGridView.Rows[e.RowIndex].Cells["Id"].Value);
-
+            var idMovieLike = currentUser.IdMovieLike;
+            DisplaySimilarMovies(idMovieLike);
 
         }
         void openButton_Click(object sender, EventArgs e)
         {
-            //var movieDetailsForm = new MovieCard(selectedMovie);
+            //var movieDetailsForm = new MovieCard(selectedMovieId);
             //movieDetailsForm.Show();
             //this.Close();
         }
         void DisplaySimilarMovies(string idMovieLike)
         {
+            if (string.IsNullOrEmpty(idMovieLike))
+            {
+                var allMovies = db.Movies.ToList();
+                filmsDataGridView.Rows.Clear();
+                foreach (var movie in allMovies)
+                {
+                    filmsDataGridView.Rows.Add(movie.Name, movie.Year, movie.Grade);
+                }
+                return;
+                
+            }
             List<int> movieIds = idMovieLike.Split(',').Select(int.Parse).ToList();
 
             var likedGenres = db.Movies
@@ -85,7 +99,19 @@ namespace MovieMate
                 filmsDataGridView.Rows.Add(movie.Name, movie.Year, movie.Grade);
             }
         }
+        
+    //if (string.IsNullOrEmpty(idMovieLike))
+    //{
+    //    var allMovies = db.Movies.ToList();
 
+    //    filmsDataGridView.Rows.Clear();
+    //    foreach (var movie in allMovies)
+    //    {
+    //        filmsDataGridView.Rows.Add(movie.Name, movie.Year, movie.Grade);
+    //    }
+    //}
+
+    
         void favoritesButton_Click(object sender, EventArgs e)
         {
             var favouritesListForm = new FavouritesListForm(UserNickname);
@@ -124,7 +150,7 @@ namespace MovieMate
             DisplaySimilarMovies(currentUser.IdMovieLike);
 
             MessageBox.Show("Фильм добавлен в избранное!");
-            
+
         }
 
         private void addToBlackListButton_Click(object sender, EventArgs e)
@@ -173,5 +199,7 @@ namespace MovieMate
                 selectedMovie = db.Movies.FirstOrDefault(m => m.Name == selectedMovieName && m.Year == selectedMovieYear);
             }
         }
+
+        
     }
 }

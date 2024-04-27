@@ -35,7 +35,7 @@ namespace MovieMate
             if (string.IsNullOrEmpty(idFavorites))
             {
                 FavouritesDataGridView.Rows.Clear();
-                MessageBox.Show("You have no favorites yet!");
+                MessageBox.Show("У вас ещё нет фильмов в избранном!");
                 return;
             }
             List<int> movieIds = idFavorites.Split(',').Select(int.Parse).ToList();
@@ -47,6 +47,22 @@ namespace MovieMate
             {
                 FavouritesDataGridView.Rows.Add(movie.Name, movie.Year, movie.Grade);
             }
+        }
+
+
+
+        private void blackListButton_Click(object sender, EventArgs e)
+        {
+            BlackListForm blackListForm = new BlackListForm(UserNickname);
+            blackListForm.Show();
+            this.Close();
+        }
+
+        private void mainMenuButton_Click(object sender, EventArgs e)
+        {
+            MainMenu mainMenu = new MainMenu(UserNickname);
+            mainMenu.Show();
+            this.Close();
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FavouritesListForm));
             roundedButton1 = new RoundedButton();
             FavouritesDataGridView = new DataGridView();
             filmName = new DataGridViewTextBoxColumn();
@@ -35,10 +36,13 @@
             Grade = new DataGridViewTextBoxColumn();
             openFavouritesButton = new RoundedButton();
             deleteFromFavouritesButton = new RoundedButton();
-            roundedButton2 = new RoundedButton();
-            roundedButton3 = new RoundedButton();
-            roundedButton4 = new RoundedButton();
+            mainMenuButton = new Button();
+            blackListButton = new Button();
+            button3 = new Button();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)FavouritesDataGridView).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // roundedButton1
             // 
@@ -99,41 +103,53 @@
             deleteFromFavouritesButton.Text = "Удалить из избранного";
             deleteFromFavouritesButton.UseVisualStyleBackColor = true;
             // 
-            // roundedButton2
+            // mainMenuButton
             // 
-            roundedButton2.Location = new Point(12, 136);
-            roundedButton2.Name = "roundedButton2";
-            roundedButton2.Size = new Size(68, 62);
-            roundedButton2.TabIndex = 4;
-            roundedButton2.Text = "roundedButton2";
-            roundedButton2.UseVisualStyleBackColor = true;
+            mainMenuButton.BackgroundImage = (Image)resources.GetObject("mainMenuButton.BackgroundImage");
+            mainMenuButton.Location = new Point(2, 195);
+            mainMenuButton.Name = "mainMenuButton";
+            mainMenuButton.Size = new Size(68, 68);
+            mainMenuButton.TabIndex = 4;
+            mainMenuButton.UseVisualStyleBackColor = true;
+            mainMenuButton.Click += mainMenuButton_Click;
             // 
-            // roundedButton3
+            // blackListButton
             // 
-            roundedButton3.Location = new Point(12, 230);
-            roundedButton3.Name = "roundedButton3";
-            roundedButton3.Size = new Size(68, 62);
-            roundedButton3.TabIndex = 5;
-            roundedButton3.Text = "roundedButton3";
-            roundedButton3.UseVisualStyleBackColor = true;
+            blackListButton.BackgroundImage = (Image)resources.GetObject("blackListButton.BackgroundImage");
+            blackListButton.Location = new Point(2, 269);
+            blackListButton.Name = "blackListButton";
+            blackListButton.Size = new Size(68, 68);
+            blackListButton.TabIndex = 5;
+            blackListButton.UseVisualStyleBackColor = true;
+            blackListButton.Click += blackListButton_Click;
             // 
-            // roundedButton4
+            // button3
             // 
-            roundedButton4.Location = new Point(12, 325);
-            roundedButton4.Name = "roundedButton4";
-            roundedButton4.Size = new Size(68, 62);
-            roundedButton4.TabIndex = 6;
-            roundedButton4.Text = "roundedButton4";
-            roundedButton4.UseVisualStyleBackColor = true;
+            button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
+            button3.Location = new Point(2, 121);
+            button3.Name = "button3";
+            button3.Size = new Size(68, 68);
+            button3.TabIndex = 6;
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(2, 30);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(89, 71);
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
             // 
             // FavouritesListForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(roundedButton4);
-            Controls.Add(roundedButton3);
-            Controls.Add(roundedButton2);
+            Controls.Add(pictureBox1);
+            Controls.Add(button3);
+            Controls.Add(blackListButton);
+            Controls.Add(mainMenuButton);
             Controls.Add(deleteFromFavouritesButton);
             Controls.Add(openFavouritesButton);
             Controls.Add(FavouritesDataGridView);
@@ -142,6 +158,7 @@
             Text = "FavouritesListForm";
             Load += FavouritesListForm_Load;
             ((System.ComponentModel.ISupportInitialize)FavouritesDataGridView).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -154,8 +171,9 @@
         private DataGridViewTextBoxColumn filmName;
         private DataGridViewTextBoxColumn Year;
         private DataGridViewTextBoxColumn Grade;
-        private RoundedButton roundedButton2;
-        private RoundedButton roundedButton3;
-        private RoundedButton roundedButton4;
+        private Button mainMenuButton;
+        private Button blackListButton;
+        private Button button3;
+        private PictureBox pictureBox1;
     }
 }
