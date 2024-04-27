@@ -13,6 +13,7 @@ using System.Windows.Forms;
 
 namespace MovieMate
 {
+
     public partial class MainMenu : Form
     {
         public string UserNickname { get; set; }
@@ -54,7 +55,7 @@ namespace MovieMate
         {
             // Получение информации о фильме из выбранной строки
             var selectedMovieId = Convert.ToInt32(filmsDataGridView.Rows[e.RowIndex].Cells["Id"].Value);
-
+            
 
         }
         void openButton_Click(object sender, EventArgs e)
@@ -118,12 +119,14 @@ namespace MovieMate
             DisplaySimilarMovies(currentUser.IdBlackList);
         }
 
-        private void blackListButton_Click(object sender, EventArgs e)
+       
+        private void button3_Click(object sender, EventArgs e)
         {
             BlackListForm blackListForm = new BlackListForm(UserNickname);
             blackListForm.Show();
             this.Close();
-
         }
+
+        
     }
 }

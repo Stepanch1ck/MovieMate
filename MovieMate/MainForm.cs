@@ -6,7 +6,7 @@ namespace MovieMate
 {
     public partial class MainForm : Form
     {
-        public string selectedNickname= string.Empty;
+        public string selectedNickname = string.Empty;
         public MainForm()
         {
             InitializeComponent();
@@ -14,30 +14,26 @@ namespace MovieMate
             RefreshListBox();
 
         }
-        void newUserButton_Click(object sender, EventArgs e)
+        private void newUserButton_Click(object sender, EventArgs e)
         {
-            var newUserForm = new NewUserForm();
+            NewUserForm newUserForm = new NewUserForm();
             newUserForm.Show();
         }
-        //public void open(object obj)
-        //{
-        //    Application.Run(new NewUserForm());
-        //}
-
-        void enterButton_Click(object sender, EventArgs e)
+        
+        private void enterButton_Click(object sender, EventArgs e)
         {
             if (listBox1.SelectedItem != null)
             {
                 selectedNickname = listBox1.SelectedItem.ToString();
-                var mainMenu = new MainMenu(selectedNickname);
+                MainMenu mainMenu = new MainMenu(selectedNickname);
                 mainMenu.Show();
             }
         }
-        void Form_Load(object sender, EventArgs e )
+        private void Form_Load(object sender, EventArgs e)
         {
             using (var context = new MovieDbContext())
             {
-                
+
                 if (context.Database.CanConnect())
                 {
                     var nicknames = context.People.Select(p => p.Nickname).ToList();
@@ -48,12 +44,12 @@ namespace MovieMate
                 else
                 {
                     MessageBox.Show("Не подключена база данных");
-                    
+
                 }
             }
-            
+
         }
-        void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listBox1.SelectedItems.Count > 0)
             {
@@ -61,7 +57,7 @@ namespace MovieMate
                 nickNameLabel.Text = selectedNickname;
             }
         }
-        void RefreshListBox()
+        private void RefreshListBox()
         {
             using (var context = new MovieDbContext())
             {
@@ -70,5 +66,15 @@ namespace MovieMate
                 listBox1.DataSource = nicknames;
             }
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
+
+
+
+
+
 }

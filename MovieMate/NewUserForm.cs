@@ -63,25 +63,8 @@ namespace MovieMate
             if (moviesCheckBox2.Checked) selectedIds.Add("2");
             if (moviesCheckBox3.Checked) selectedIds.Add("3");
             if (moviesCheckBox4.Checked) selectedIds.Add("4");
-            return string.Join(",", selectedIds); 
+            return string.Join(",", selectedIds);
         }
-
-        // Функция для получения данных изображения (пример)
-        //private byte[] GetPictureData()
-        //{
-        //    if (pictureBox1.Image != null) // Проверка, выбрано ли изображение
-        //    {
-        //        using (MemoryStream ms = new MemoryStream())
-        //        {
-        //            pictureBox1.Image.Save(ms, pictureBox1.Image.RawFormat);
-        //            return ms.ToArray();
-        //        }
-        //    }
-        //    else
-        //    {
-        //        return null; // Возвращаем null, если изображение не выбрано
-        //    }
-        //}
         void SaveTextToDatabase(string text)
         {
 
@@ -104,13 +87,27 @@ namespace MovieMate
                 }
             }
         }
-
+        private byte[] GetPictureData()
+        {
+            if (pictureBox1.Image != null) // Проверка, выбрано ли изображение
+            {
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    pictureBox1.Image.Save(ms, pictureBox1.Image.RawFormat);
+                    return ms.ToArray();
+                }
+            }
+            else
+            {
+                return null; // Возвращаем null, если изображение не выбрано
+            }
+        }
         void secondEnterButton_Click(object sender, EventArgs e)
         {
             // 1. Собрать данные из формы
             string nickname = richTextBox1.Text.Trim();
             string idMovieLike = GetSelectedMovieIds(); // Функция для получения ID выбранных фильмов
-            //byte[] picture = GetPictureData(); // Функция для получения данных изображения
+            byte[] picture = GetPictureData(); // Функция для получения данных изображения
 
             // 2. Сохранить данные в базе данных
             using (var context = new MovieDbContext())
@@ -119,7 +116,7 @@ namespace MovieMate
                 {
                     Nickname = nickname,
                     IdMovieLike = idMovieLike,
-                    //Picture = picture
+                    Picture = picture
                 };
                 context.People.Add(newUser);
                 context.SaveChanges();
@@ -131,15 +128,17 @@ namespace MovieMate
             this.Close();
         }
 
-
-
-
-
-
-
-        //private void secondEnterButton_Click_1(object sender, EventArgs e)
-        //{
-
-        //}
+        private void pictureButton_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    // Load the selected image into the pictureBox1
+                    pictureBox1.Image = Image.FromFile(openFileDialog.FileName);
+                }
+            }
+        }
     }
 }

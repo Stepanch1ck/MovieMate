@@ -29,45 +29,41 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
-            addToFavouritesButton = new RoundedButton();
+            favouritesButton = new RoundedButton();
             openButton = new RoundedButton();
-            addToBlackListButton = new RoundedButton();
+            AddToblackListButton = new RoundedButton();
             roundedButton1 = new RoundedButton();
+            upateButton = new RoundedButton();
+            secondNicknameLabel = new Label();
+            englishButton = new RoundedButton();
+            russianButton = new RoundedButton();
+            button1 = new Button();
+            favoritesButton = new Button();
+            button3 = new Button();
             filmsDataGridView = new DataGridView();
             filmName = new DataGridViewTextBoxColumn();
             Year = new DataGridViewTextBoxColumn();
             Grade = new DataGridViewTextBoxColumn();
-            secondNicknameLabel = new Label();
-            englishButton = new RoundedButton();
-            russianButton = new RoundedButton();
-            blackListButton = new Button();
-            button2 = new Button();
-            favoritesButton = new Button();
-            pictureBox1 = new PictureBox();
-            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // addToFavouritesButton
+            // favouritesButton
             // 
-            resources.ApplyResources(addToFavouritesButton, "addToFavouritesButton");
-            addToFavouritesButton.Name = "addToFavouritesButton";
-            addToFavouritesButton.UseVisualStyleBackColor = true;
-            addToFavouritesButton.Click += addToFavouritesButton_Click;
+            resources.ApplyResources(favouritesButton, "favouritesButton");
+            favouritesButton.Name = "favouritesButton";
+            favouritesButton.UseVisualStyleBackColor = true;
+            favouritesButton.Click += favouritesButton_Click;
             // 
             // openButton
             // 
             resources.ApplyResources(openButton, "openButton");
             openButton.Name = "openButton";
             openButton.UseVisualStyleBackColor = true;
-            openButton.Click += openButton_Click;
             // 
-            // addToBlackListButton
+            // AddToblackListButton
             // 
-            resources.ApplyResources(addToBlackListButton, "addToBlackListButton");
-            addToBlackListButton.Name = "addToBlackListButton";
-            addToBlackListButton.Click += addToBlackListButton_Click;
+            resources.ApplyResources(AddToblackListButton, "AddToblackListButton");
+            AddToblackListButton.Name = "AddToblackListButton";
             // 
             // roundedButton1
             // 
@@ -75,14 +71,56 @@
             roundedButton1.Name = "roundedButton1";
             roundedButton1.UseVisualStyleBackColor = true;
             // 
+            // upateButton
+            // 
+            resources.ApplyResources(upateButton, "upateButton");
+            upateButton.Name = "upateButton";
+            upateButton.UseVisualStyleBackColor = true;
+            // 
+            // secondNicknameLabel
+            // 
+            resources.ApplyResources(secondNicknameLabel, "secondNicknameLabel");
+            secondNicknameLabel.Name = "secondNicknameLabel";
+            // 
+            // englishButton
+            // 
+            resources.ApplyResources(englishButton, "englishButton");
+            englishButton.Name = "englishButton";
+            englishButton.UseVisualStyleBackColor = true;
+            // 
+            // russianButton
+            // 
+            resources.ApplyResources(russianButton, "russianButton");
+            russianButton.Name = "russianButton";
+            russianButton.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            resources.ApplyResources(button1, "button1");
+            button1.Name = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // favoritesButton
+            // 
+            resources.ApplyResources(favoritesButton, "favoritesButton");
+            favoritesButton.Name = "favoritesButton";
+            favoritesButton.UseVisualStyleBackColor = true;
+            favoritesButton.Click += favoritesButton_Click;
+            // 
+            // button3
+            // 
+            resources.ApplyResources(button3, "button3");
+            button3.Name = "button3";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // filmsDataGridView
             // 
-            resources.ApplyResources(filmsDataGridView, "filmsDataGridView");
-            filmsDataGridView.BackgroundColor = SystemColors.ButtonHighlight;
+            filmsDataGridView.BackgroundColor = SystemColors.Control;
             filmsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             filmsDataGridView.Columns.AddRange(new DataGridViewColumn[] { filmName, Year, Grade });
+            resources.ApplyResources(filmsDataGridView, "filmsDataGridView");
             filmsDataGridView.Name = "filmsDataGridView";
-            filmsDataGridView.CellContentClick += filmsDataGridView_CellContentClick;
             // 
             // filmName
             // 
@@ -99,97 +137,44 @@
             resources.ApplyResources(Grade, "Grade");
             Grade.Name = "Grade";
             // 
-            // secondNicknameLabel
-            // 
-            resources.ApplyResources(secondNicknameLabel, "secondNicknameLabel");
-            secondNicknameLabel.Name = "secondNicknameLabel";
-            // 
-            // englishButton
-            // 
-            resources.ApplyResources(englishButton, "englishButton");
-            englishButton.Name = "englishButton";
-            englishButton.UseVisualStyleBackColor = true;
-            englishButton.Click += englishButton_Click;
-            // 
-            // russianButton
-            // 
-            resources.ApplyResources(russianButton, "russianButton");
-            russianButton.Name = "russianButton";
-            russianButton.UseVisualStyleBackColor = true;
-            // 
-            // blackListButton
-            // 
-            resources.ApplyResources(blackListButton, "blackListButton");
-            blackListButton.Name = "blackListButton";
-            blackListButton.UseVisualStyleBackColor = true;
-            blackListButton.Click += blackListButton_Click;
-            // 
-            // button2
-            // 
-            resources.ApplyResources(button2, "button2");
-            button2.Name = "button2";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // favoritesButton
-            // 
-            resources.ApplyResources(favoritesButton, "favoritesButton");
-            favoritesButton.Name = "favoritesButton";
-            favoritesButton.UseVisualStyleBackColor = true;
-            favoritesButton.Click += favoritesButton_Click;
-            // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(pictureBox1, "pictureBox1");
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.TabStop = false;
-            // 
-            // button4
-            // 
-            resources.ApplyResources(button4, "button4");
-            button4.Name = "button4";
-            button4.UseVisualStyleBackColor = true;
-            // 
             // MainMenu
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(button4);
-            Controls.Add(pictureBox1);
+            Controls.Add(filmsDataGridView);
+            Controls.Add(button3);
             Controls.Add(favoritesButton);
-            Controls.Add(button2);
-            Controls.Add(blackListButton);
+            Controls.Add(button1);
             Controls.Add(russianButton);
             Controls.Add(englishButton);
             Controls.Add(secondNicknameLabel);
-            Controls.Add(filmsDataGridView);
+            Controls.Add(upateButton);
             Controls.Add(roundedButton1);
-            Controls.Add(addToBlackListButton);
+            Controls.Add(AddToblackListButton);
             Controls.Add(openButton);
-            Controls.Add(addToFavouritesButton);
+            Controls.Add(favouritesButton);
             Name = "MainMenu";
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private RoundedButton addToFavouritesButton;
+        private RoundedButton favouritesButton;
         private RoundedButton openButton;
-        private RoundedButton addToBlackListButton;
+        private RoundedButton AddToblackListButton;
         private RoundedButton roundedButton1;
-        private DataGridView filmsDataGridView;
+        private RoundedButton upateButton;
         private Label secondNicknameLabel;
         private RoundedButton englishButton;
         private RoundedButton russianButton;
+        private Button button1;
+        private Button favoritesButton;
+        private Button button3;
+        private DataGridView filmsDataGridView;
         private DataGridViewTextBoxColumn filmName;
         private DataGridViewTextBoxColumn Year;
         private DataGridViewTextBoxColumn Grade;
-        private Button blackListButton;
-        private Button button2;
-        private Button favoritesButton;
-        private PictureBox pictureBox1;
-        private Button button4;
     }
 }

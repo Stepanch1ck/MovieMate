@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             newUserButton = new RoundedButton();
             enterButton = new RoundedButton();
             listBox1 = new ListBox();
             nickNameLabel = new Label();
             roundedButton1 = new RoundedButton();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // newUserButton
@@ -84,19 +85,30 @@
             roundedButton1.TabIndex = 4;
             roundedButton1.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = SystemColors.ButtonShadow;
+            pictureBox1.Location = new Point(-4, -1);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(366, 453);
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
             Controls.Add(nickNameLabel);
             Controls.Add(roundedButton1);
             Controls.Add(listBox1);
             Controls.Add(enterButton);
             Controls.Add(newUserButton);
-            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MainForm";
-            Text = "MovieMate";
+            Text = "Form1";
+            Load += MainForm_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -108,5 +120,6 @@
         private ListBox listBox1;
         private Label nickNameLabel;
         private RoundedButton roundedButton1;
+        private PictureBox pictureBox1;
     }
 }

@@ -1,5 +1,4 @@
-﻿using Microsoft.VisualBasic.Devices;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,7 +10,6 @@ using System.Windows.Forms;
 
 namespace MovieMate
 {
-
     public partial class FavouritesListForm : Form
     {
         public string UserNickname { get; set; }
@@ -22,36 +20,27 @@ namespace MovieMate
             InitializeComponent();
             UserNickname = nickname;
             currentUser = db.People.FirstOrDefault(p => p.Nickname == UserNickname);
-            DisplaySimilarMovies(currentUser.IdFavorites);
+            var idFavorites = currentUser.IdFavorites;
+            DisplaySimilarMovies(idFavorites);
         }
 
-
-        void FavouritesListForm_Load(object sender, EventArgs e)
+        private void FavouritesListForm_Load(object sender, EventArgs e)
         {
             var idFavorites = currentUser.IdFavorites;
             DisplaySimilarMovies(idFavorites);
         }
 
-        void DisplaySimilarMovies(string idFavorites)
+        private void DisplaySimilarMovies(string idFavorites)
         {
             List<int> movieIds = idFavorites.Split(',').Select(int.Parse).ToList();
-
-            if (currentUser != null && !string.IsNullOrEmpty(currentUser.IdFavorites))
+            var similarMovies = db.Movies
+             .Where(m => movieIds.Contains(m.Id))
+             .ToList();
+            FavouritesDataGridView.Rows.Clear();
+            foreach (var movie in similarMovies)
             {
-                var favoriteMovieIds = currentUser.IdFavorites.Split(',');
-
-                var favoriteMovies = db.Movies.Where(m => favoriteMovieIds.Contains(m.Id.ToString())).ToList();
-
-                FavouritesDataGridView.DataSource = favoriteMovies;
-
-
-                
-            }
-            else
-            {
-                MessageBox.Show("Список пуст!");
+                FavouritesDataGridView.Rows.Add(movie.Name, movie.Year, movie.Grade);
             }
         }
     }
-
 }

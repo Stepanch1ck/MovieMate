@@ -20,30 +20,22 @@ namespace MovieMate
             InitializeComponent();
             UserNickname = nickname;
             currentUser = db.People.FirstOrDefault(p => p.Nickname == UserNickname);
-            var idFavorites = currentUser.IdFavorites;
-            DisplaySimilarMovies(idFavorites);
+            var idBlackList = currentUser.IdBlackList;
+            DisplaySimilarMovies(idBlackList);
         }
 
-        void FavouritesListForm_Load(object sender, EventArgs e)
+        private void BlackListForm_Load(object sender, EventArgs e)
         {
-            var idFavorites = currentUser.IdFavorites;
-            DisplaySimilarMovies(idFavorites);
+            var idBlackList = currentUser.IdBlackList;
+            DisplaySimilarMovies(idBlackList);
         }
-        void DisplaySimilarMovies(string idFavorites)
+
+        private void DisplaySimilarMovies(string idBlackList)
         {
-            List<int> movieIds = idFavorites.Split(',').Select(int.Parse).ToList();
-
-
-            var likedGenres = db.Movies
-                .Where(m => movieIds.Contains(m.Id))
-                .Select(m => m.Genre)
-                .Distinct()
-                .ToList();
-
+            List<int> movieIds = idBlackList.Split(',').Select(int.Parse).ToList();
             var similarMovies = db.Movies
-                .Where(m => likedGenres.Contains(m.Genre) && !movieIds.Contains(m.Id))
-                .ToList();
-
+             .Where(m => movieIds.Contains(m.Id))
+             .ToList();
             BlackListDataGridView.Rows.Clear();
             foreach (var movie in similarMovies)
             {
@@ -51,4 +43,6 @@ namespace MovieMate
             }
         }
     }
+      
 }
+
