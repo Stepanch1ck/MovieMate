@@ -55,7 +55,7 @@ namespace MovieMate
         {
             // Получение информации о фильме из выбранной строки
             var selectedMovieId = Convert.ToInt32(filmsDataGridView.Rows[e.RowIndex].Cells["Id"].Value);
-
+            
 
         }
         void openButton_Click(object sender, EventArgs e)
@@ -119,14 +119,7 @@ namespace MovieMate
             DisplaySimilarMovies(currentUser.IdBlackList);
         }
 
-        //private void blackListButton_Click(object sender, EventArgs e)
-        //{
-        //    BlackListForm blackListForm = new BlackListForm(UserNickname);
-        //    blackListForm.Show();
-        //    this.Close();
-
-        //}
-
+       
         private void button3_Click(object sender, EventArgs e)
         {
             BlackListForm blackListForm = new BlackListForm(UserNickname);
@@ -134,34 +127,6 @@ namespace MovieMate
             this.Close();
         }
 
-        private void favouritesButton_Click(object sender, EventArgs e)
-        {
-            using (var context = new MovieDbContext())
-            {
-                int filmIdToAdd = GetFilmIdFromButton(sender);
-                var currentUser = context.People.FirstOrDefault(p => p.Nickname == UserNickname);
-                if (!string.IsNullOrEmpty(currentUser.IdFavorites))
-                {
-                    currentUser.IdFavorites += "," + filmIdToAdd;
-                }
-                else
-                {
-                    currentUser.IdFavorites = filmIdToAdd.ToString();
-                }
-                context.SaveChanges();
-
-                
-            }
-        }
-        private int GetFilmIdFromButton(object button)
-        {
-            if (button != null && button is Button)
-            {
-                return (int)((Button)button).Tag;
-            }
-            return -1;
-        }
-
-
+        
     }
 }
