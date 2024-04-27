@@ -52,7 +52,7 @@
             resources.ApplyResources(favouritesButton, "favouritesButton");
             favouritesButton.Name = "favouritesButton";
             favouritesButton.UseVisualStyleBackColor = true;
-            favouritesButton.Click += favouritesButton_Click;
+            favouritesButton.Click += addToFavouritesButton_Click;
             // 
             // openButton
             // 
@@ -121,6 +121,7 @@
             filmsDataGridView.Columns.AddRange(new DataGridViewColumn[] { filmName, Year, Grade });
             resources.ApplyResources(filmsDataGridView, "filmsDataGridView");
             filmsDataGridView.Name = "filmsDataGridView";
+            filmsDataGridView.CellDoubleClick += filmsDataGridView_CellDoubleClick;
             // 
             // filmName
             // 

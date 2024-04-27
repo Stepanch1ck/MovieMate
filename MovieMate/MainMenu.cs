@@ -19,6 +19,7 @@ namespace MovieMate
         public string UserNickname { get; set; }
         MovieDbContext db = new MovieDbContext();
         Person currentUser;
+        Movie selectedMovie;
         public MainMenu(string nickname)
         {
 
@@ -55,33 +56,29 @@ namespace MovieMate
         {
             // Получение информации о фильме из выбранной строки
             var selectedMovieId = Convert.ToInt32(filmsDataGridView.Rows[e.RowIndex].Cells["Id"].Value);
-            
+
 
         }
         void openButton_Click(object sender, EventArgs e)
         {
-            //var movieDetailsForm = new MovieCard(selectedMovieId);
+            //var movieDetailsForm = new MovieCard(selectedMovie);
             //movieDetailsForm.Show();
             //this.Close();
         }
         void DisplaySimilarMovies(string idMovieLike)
         {
-            // Разделить строку IdMovieLike на список ID
             List<int> movieIds = idMovieLike.Split(',').Select(int.Parse).ToList();
 
-            // Получить жанры понравившихся фильмов
             var likedGenres = db.Movies
                 .Where(m => movieIds.Contains(m.Id))
                 .Select(m => m.Genre)
                 .Distinct()
                 .ToList();
 
-            // Найти фильмы с похожими жанрами, исключая уже понравившиеся
             var similarMovies = db.Movies
                 .Where(m => likedGenres.Contains(m.Genre) && !movieIds.Contains(m.Id))
                 .ToList();
 
-            // Очистить DataGridView и заполнить его похожими фильмами
             filmsDataGridView.Rows.Clear();
             foreach (var movie in similarMovies)
             {
@@ -105,21 +102,58 @@ namespace MovieMate
 
         private void addToFavouritesButton_Click(object sender, EventArgs e)
         {
-            int selectedMovieId = Convert.ToInt32(filmsDataGridView.Rows[filmsDataGridView.CurrentCell.RowIndex].Cells["Id"].Value);
-            currentUser.IdFavorites += "," + selectedMovieId;
+            if (selectedMovie == null)
+            {
+                MessageBox.Show("Выберите фильм двойным кликом!");
+                return;
+            }
+            if (currentUser.IdFavorites != null && currentUser.IdFavorites.Contains(selectedMovie.Id.ToString()))
+            {
+                MessageBox.Show("Этот фильм уже в избранном!");
+                return;
+            }
+            if (currentUser.IdFavorites == null)
+            {
+                currentUser.IdFavorites = selectedMovie.Id.ToString();
+            }
+            else
+            {
+                currentUser.IdFavorites += "," + selectedMovie.Id;
+            }
             db.SaveChanges();
             DisplaySimilarMovies(currentUser.IdMovieLike);
+
+            MessageBox.Show("Фильм добавлен в избранное!");
+            
         }
 
         private void addToBlackListButton_Click(object sender, EventArgs e)
         {
-            int selectedMovieId = Convert.ToInt32(filmsDataGridView.Rows[filmsDataGridView.CurrentCell.RowIndex].Cells["Id"].Value);
-            currentUser.IdBlackList += "," + selectedMovieId;
+            if (selectedMovie == null)
+            {
+                MessageBox.Show("Выберите фильм двойным кликом!");
+                return;
+            }
+            if (currentUser.IdBlackList != null && currentUser.IdBlackList.Contains(selectedMovie.Id.ToString()))
+            {
+                MessageBox.Show("Этот фильм уже в чёрном списке!");
+                return;
+            }
+            if (currentUser.IdBlackList == null)
+            {
+                currentUser.IdBlackList = selectedMovie.Id.ToString();
+            }
+            else
+            {
+                currentUser.IdBlackList += "," + selectedMovie.Id;
+            }
             db.SaveChanges();
-            DisplaySimilarMovies(currentUser.IdBlackList);
+            DisplaySimilarMovies(currentUser.IdMovieLike);
+
+            MessageBox.Show("Фильм добавлен в чёрный список!");
         }
 
-       
+
         private void button3_Click(object sender, EventArgs e)
         {
             BlackListForm blackListForm = new BlackListForm(UserNickname);
@@ -127,6 +161,17 @@ namespace MovieMate
             this.Close();
         }
 
-        
+        private void filmsDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                filmsDataGridView.Rows[e.RowIndex].Selected = true;
+
+                string selectedMovieName = filmsDataGridView.Rows[e.RowIndex].Cells["filmname"].Value.ToString();
+                int selectedMovieYear = Convert.ToInt32(filmsDataGridView.Rows[e.RowIndex].Cells["Year"].Value);
+
+                selectedMovie = db.Movies.FirstOrDefault(m => m.Name == selectedMovieName && m.Year == selectedMovieYear);
+            }
+        }
     }
 }

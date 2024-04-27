@@ -32,6 +32,12 @@ namespace MovieMate
 
         private void DisplaySimilarMovies(string idFavorites)
         {
+            if (string.IsNullOrEmpty(idFavorites))
+            {
+                FavouritesDataGridView.Rows.Clear();
+                MessageBox.Show("You have no favorites yet!");
+                return;
+            }
             List<int> movieIds = idFavorites.Split(',').Select(int.Parse).ToList();
             var similarMovies = db.Movies
              .Where(m => movieIds.Contains(m.Id))

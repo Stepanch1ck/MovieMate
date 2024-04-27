@@ -15,6 +15,7 @@ namespace MovieMate
         public string UserNickname { get; set; }
         MovieDbContext db = new MovieDbContext();
         Person currentUser;
+        
         public BlackListForm(string nickname)
         {
             InitializeComponent();
