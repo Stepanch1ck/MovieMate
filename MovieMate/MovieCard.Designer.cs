@@ -30,12 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MovieCard));
             moviePictureBox = new PictureBox();
-            roundedButton1 = new RoundedButton();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            roundedButton2 = new RoundedButton();
             label8 = new Label();
             ((System.ComponentModel.ISupportInitialize)moviePictureBox).BeginInit();
             SuspendLayout();
@@ -46,17 +44,9 @@
             moviePictureBox.Location = new Point(25, 31);
             moviePictureBox.Name = "moviePictureBox";
             moviePictureBox.Size = new Size(218, 265);
+            moviePictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
             moviePictureBox.TabIndex = 0;
             moviePictureBox.TabStop = false;
-            // 
-            // roundedButton1
-            // 
-            roundedButton1.Location = new Point(282, 107);
-            roundedButton1.Name = "roundedButton1";
-            roundedButton1.Size = new Size(479, 189);
-            roundedButton1.TabIndex = 1;
-            roundedButton1.Text = " ";
-            roundedButton1.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -94,19 +84,11 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label6.Location = new Point(491, 255);
+            label6.Location = new Point(324, 255);
             label6.Name = "label6";
             label6.Size = new Size(65, 28);
             label6.TabIndex = 7;
             label6.Text = "label6";
-            // 
-            // roundedButton2
-            // 
-            roundedButton2.Location = new Point(282, 31);
-            roundedButton2.Name = "roundedButton2";
-            roundedButton2.Size = new Size(479, 70);
-            roundedButton2.TabIndex = 8;
-            roundedButton2.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -124,12 +106,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 308);
             Controls.Add(label8);
-            Controls.Add(roundedButton2);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(roundedButton1);
             Controls.Add(moviePictureBox);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MovieCard";

@@ -35,8 +35,8 @@ namespace MovieMate
 
         void russianButton_Click(object sender, EventArgs e)
         {
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("US");
-
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ru");
+            UpdateLanguage();
         }
 
 
@@ -56,7 +56,7 @@ namespace MovieMate
 
         void filmsDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
             var selectedMovieId = Convert.ToInt32(filmsDataGridView.Rows[e.RowIndex].Cells["Id"].Value);
             Movie selectedMovie = db.Movies.Find(selectedMovieId);
             var idMovieLike = currentUser.IdMovieLike;
@@ -72,10 +72,10 @@ namespace MovieMate
             }
 
             int selectedMovieId = selectedMovie.Id;
-            var movieDetailsForm = new MovieCard(selectedMovieId); 
+            var movieDetailsForm = new MovieCard(selectedMovieId);
             movieDetailsForm.Show();
         }
-        
+
         void DisplaySimilarMovies(string idMovieLike)
         {
             if (string.IsNullOrEmpty(idMovieLike))
@@ -87,7 +87,7 @@ namespace MovieMate
                     filmsDataGridView.Rows.Add(movie.Name, movie.Year, movie.Grade);
                 }
                 return;
-                
+
             }
             List<int> movieIds = idMovieLike.Split(',').Select(int.Parse).ToList();
 
@@ -107,9 +107,9 @@ namespace MovieMate
                 filmsDataGridView.Rows.Add(movie.Name, movie.Year, movie.Grade);
             }
         }
-        
-   
-    
+
+
+
         void favoritesButton_Click(object sender, EventArgs e)
         {
             var favouritesListForm = new FavouritesListForm(UserNickname);
@@ -121,7 +121,8 @@ namespace MovieMate
 
         void englishButton_Click(object sender, EventArgs e)
         {
-            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("ru");
+            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en");
+            UpdateLanguage();
         }
 
         private void addToFavouritesButton_Click(object sender, EventArgs e)
@@ -197,7 +198,13 @@ namespace MovieMate
                 selectedMovie = db.Movies.FirstOrDefault(m => m.Name == selectedMovieName && m.Year == selectedMovieYear);
             }
         }
+        private void UpdateLanguage()
+        {
+            
+            //Controls.Clear();
+            InitializeComponent();
+            
+        }
 
-        
     }
 }

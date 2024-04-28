@@ -102,7 +102,22 @@ namespace MovieMate
                 return null; // Возвращаем null, если изображение не выбрано
             }
         }
-        void secondEnterButton_Click(object sender, EventArgs e)
+        
+
+        private void pictureButton_Click_1(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    // Load the selected image into the pictureBox1
+                    pictureBox1.Image = Image.FromFile(openFileDialog.FileName);
+                }
+            }
+        }
+
+        private void secondEnterButton_Click_1(object sender, EventArgs e)
         {
             // 1. Собрать данные из формы
             string nickname = richTextBox1.Text.Trim();
@@ -126,19 +141,6 @@ namespace MovieMate
             var mainMenu = new MainMenu(nickname);
             mainMenu.Show();
             this.Close();
-        }
-
-        private void pictureButton_Click(object sender, EventArgs e)
-        {
-            using (OpenFileDialog openFileDialog = new OpenFileDialog())
-            {
-                openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
-                {
-                    // Load the selected image into the pictureBox1
-                    pictureBox1.Image = Image.FromFile(openFileDialog.FileName);
-                }
-            }
         }
     }
 }

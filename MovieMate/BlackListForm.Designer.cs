@@ -31,15 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BlackListForm));
             roundedButton1 = new RoundedButton();
             BlackListDataGridView = new DataGridView();
-            filmName = new DataGridViewTextBoxColumn();
-            year = new DataGridViewTextBoxColumn();
-            grade = new DataGridViewTextBoxColumn();
             blackListOpenButton = new RoundedButton();
             deleteFromBlackListButton = new RoundedButton();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
             pictureBox1 = new PictureBox();
+            filmName = new DataGridViewTextBoxColumn();
+            year = new DataGridViewTextBoxColumn();
+            grade = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)BlackListDataGridView).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -58,21 +58,6 @@
             BlackListDataGridView.Columns.AddRange(new DataGridViewColumn[] { filmName, year, grade });
             BlackListDataGridView.Name = "BlackListDataGridView";
             BlackListDataGridView.CellDoubleClick += filmsDataGridView_CellDoubleClick;
-            // 
-            // filmName
-            // 
-            resources.ApplyResources(filmName, "filmName");
-            filmName.Name = "filmName";
-            // 
-            // year
-            // 
-            resources.ApplyResources(year, "year");
-            year.Name = "year";
-            // 
-            // grade
-            // 
-            resources.ApplyResources(grade, "grade");
-            grade.Name = "grade";
             // 
             // blackListOpenButton
             // 
@@ -114,6 +99,21 @@
             pictureBox1.Name = "pictureBox1";
             pictureBox1.TabStop = false;
             // 
+            // filmName
+            // 
+            resources.ApplyResources(filmName, "filmName");
+            filmName.Name = "filmName";
+            // 
+            // year
+            // 
+            resources.ApplyResources(year, "year");
+            year.Name = "year";
+            // 
+            // grade
+            // 
+            resources.ApplyResources(grade, "grade");
+            grade.Name = "grade";
+            // 
             // BlackListForm
             // 
             resources.ApplyResources(this, "$this");
@@ -139,12 +139,12 @@
         private DataGridView BlackListDataGridView;
         private RoundedButton blackListOpenButton;
         private RoundedButton deleteFromBlackListButton;
-        private DataGridViewTextBoxColumn filmName;
-        private DataGridViewTextBoxColumn year;
-        private DataGridViewTextBoxColumn grade;
         private Button button1;
         private Button button2;
         private Button button3;
         private PictureBox pictureBox1;
+        private DataGridViewTextBoxColumn filmName;
+        private DataGridViewTextBoxColumn year;
+        private DataGridViewTextBoxColumn grade;
     }
 }

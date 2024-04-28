@@ -117,10 +117,128 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;roundedButton1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BlackListDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>429, 228</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="year.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 68</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="button3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEAKQApAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
+        JC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIy
+        MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABEAEQDASIAAhEBAxEB/8QA
+        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
+        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
+        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
+        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
+        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
+        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
+        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
+        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+uB8fazr9vr/AIZ0HQdQi0+bVpZxJdSQLNtEaBgArcY5/lXf
+        V5341/5Kp8PP+u17/wCiVoAX/hG/iZ/0P1n/AOCiOj/hG/iZ/wBD9Z/+CiOvQu1LQB55/wAI38TP+h+s
+        /wDwUR0f8I38TP8AofrP/wAFEdeh0UAeWSXvjfwt4s8OW2seJLXVrTVLtrZ4lsEhK/LncGXnNepds157
+        8Qv+Ry8A/wDYVb/0CvQh0oAWiiigArzvxr/yVT4ef9dr3/0SteiV5341/wCSqfDz/rte/wDolaAPQ+1L
+        SdqWgAooooA88+IX/I5eAf8AsKt/6BXoQ6V578Qv+Ry8A/8AYVb/ANAr0IdKAFooooAK878a/wDJVPh5
+        /wBdr3/0SteiV5341/5Kp8PP+u17/wCiVoA9D7UtJ2rm/GPjCz8IaUs8iNc31w3lWVlFzJcSnooHXHTJ
+        xxn1wKAOlorzzwn431ZNaXw342tIdP1mdfOs5Iv9TcoedgOSN69MZ5x+fodAHnnxC/5HLwD/ANhVv/QK
+        9CHSvPfiF/yOXgH/ALCrf+gV6EOlAC0UUUAFed+Nf+SqfDz/AK7Xv/ola9Eryj4q63beHPGvgjV7tZGh
+        tnvWZYlyzExqAB9SQKAO28W+LNP8IaMb+93SSOfLt7WPmS4kPRVHf69qwPB3hPULjVX8Y+LQsmvTri3t
+        +senxHoiD+9g8n39yTH4R8L6jq+sL4z8YRgaoy4sNPOSmnxnpwesh7nr+PA9EoA57xb4S0/xfoxsL3dH
+        Ih8y3uY+JLeQdGU9vp3rA8HeLNQt9Vbwd4tKx67Auba56R6hEM4dT/ewOR9fQgegVzXjHwfZ+L9LWCV2
+        t723bzbK9i4ktpB0YHrjIGR3x9DQBg/EL/kcfAP/AGFW/wDQK9CHSvCrnxLqd9418HaB4jtvJ1/TNUPm
+        uiny7mMr8kyH3wcj19OQPdR0oAWiiigArMvtD0vVdRsb2/sori5092ktXfJ8piBkgdM8Dr0wCOaKKANO
+        iiigAooooAy7/QtL1LUrG/vLKKa7sJC9tMwO6Mkc4x/I8dD1rUoooAKKKKAP/9k=
+</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;deleteFromBlackListButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="roundedButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>258, 95</value>
+  </data>
+  <data name="deleteFromBlackListButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>614, 29</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 29</value>
+  </data>
+  <data name="&gt;&gt;filmName.Name" xml:space="preserve">
+    <value>filmName</value>
+  </data>
+  <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
+        JC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIy
+        MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABEAEQDASIAAhEBAxEB/8QA
+        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
+        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
+        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
+        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
+        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
+        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
+        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
+        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigDz3UfjR4M0vU7rT7q+uFuLWVoZVFq5AZTg849RVb/he
+        /gT/AKCFz/4CP/hWZrHwB0TWdbvtTl1bUI5Ly4kuGRAmAXYsQOPeqf8AwzdoH/Qa1P8A75j/AMKAN/8A
+        4Xv4E/6CFz/4CP8A4Uf8L38Cf9BC5/8AAR/8KwP+GbtA/wCg1qf/AHzH/hR/wzdoH/Qa1P8A75j/AMKA
+        PTfC3izSfGOmSaho0zy28cphZnjKHcAD0PswrdrlvAvgm08B6JNplldT3EctwZy8wGQSFXHH+6K6mgAo
+        oooAK8V+M1r45uPEGnt4V/tr7MLQ+b9gkdU37z12nGcYr1zVtUs9E0q51LUJhDaW0ZklkPOB/U9gB1rx
+        24/aS0lZ3W30C8kiB+V3nVCfqMHH50Aed/2d8Yv+ps/7/wAv/wAVR/Z3xi/6mz/v/L/8VXf/APDSun/9
+        C1c/+BS//E0f8NK6f/0LVz/4FL/8TQBwH9nfGL/qbP8Av/L/APFUf2d8Yv8AqbP+/wDL/wDFV3//AA0r
+        p/8A0LVz/wCBS/8AxNH/AA0rp/8A0LVz/wCBS/8AxNAHAf2d8Yu//CWf9/5f/iq+pNDFwugacLvzPtQt
+        Y/O8w5bftG7PvnOa8a/4aV0//oW7n/wKX/4muy8B/FzRfHN8+nRwTWOoBC6QTEMJFHXaw6kdcED2zzQB
+        6HRRRQB5r8dmI+Fd+AeGmgB9/nFfJVfWnx4/5JZff9d4P/QxXyXQAV1ng3wFqfjiLUhpMsP2myRJBDK2
+        3zdxIwG6A8d/zFcnXuv7NX/IW8Qf9cIf/QmoA8a1bRtS0K+ex1SymtLlOscy4OPUeo9xwaz6+6Ne8M6N
+        4nsDZ6zYQ3cP8O8fMh9VYcqfoa+Vvid4N0Hwhq/kaLr0d6WbElmw3S2/+8y/KfocHpwetAHAV2/wiYr8
+        VdBIJB89h+aNXEV23wj/AOSqaB/13b/0BqAPsgdKKB0ooA81+PH/ACSy+/67wf8AoYr5Lr7Z8d+F/wDh
+        MPB99oolEUkwVoZGHCupDDPtkYP1r5iuPg948t53i/sCWTacBo5UZW9wd1AHB16l8HPG2jeCH1291aSQ
+        ebDEsMMSbnlYM2QOw69yKw/+FR+PP+hbuv8AvtP/AIqj/hUfjz/oW7r/AL7T/wCKoA2PGnxr8ReKPMtb
+        BzpOnNx5cDnzHH+0/X8BgfWvMsknJrtf+FR+PP8AoW7r/vtP/iqP+FR+PP8AoW7r/vtP/iqAOJrtvhH/
+        AMlU0D/ru3/oDUf8Kj8ef9C3df8Afaf/ABVei/CP4R67pfiqDX/EFt9ijs9xggLqzyOVKgnaTgDJPJzn
+        HFAH0GOlFLRQAUYHpRRQAnHoKOPQUUUAHHoKOPQUUUAHHoKWiigAooooA//Z
+</value>
+  </data>
+  <data name="&gt;&gt;deleteFromBlackListButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="grade.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="filmName.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="filmName.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;roundedButton1.Name" xml:space="preserve">
+    <value>roundedButton1</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 85</value>
+  </data>
+  <data name="grade.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAsMIAAAAAIABnCwEAFgAAAIlQTkcNChoKAAAADUlIRFIAAASwAAADwggGAAAAaGwhiwAAAAlw
@@ -1267,251 +1385,38 @@
         QvVsjaUAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="&gt;&gt;grade.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="blackListOpenButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>448, 29</value>
-  </data>
   <data name="&gt;&gt;deleteFromBlackListButton.Type" xml:space="preserve">
     <value>MovieMate.RoundedButton, MovieMate, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 85</value>
-  </data>
-  <data name="blackListOpenButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 50</value>
-  </data>
-  <data name="&gt;&gt;deleteFromBlackListButton.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="year.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 68</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>BlackListForm</value>
-  </data>
-  <data name="&gt;&gt;blackListOpenButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;year.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>800, 450</value>
   </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="blackListOpenButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="pictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        /9j/4AAQSkZJRgABAQEARwBHAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
-        JC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIy
-        MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABEAFUDASIAAhEBAxEB/8QA
-        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
-        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
-        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
-        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
-        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
-        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
-        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
-        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA4TxH8
-        SLbwzoseqXFg80MkqxiOGX5wWyQTuAHbsT1rkv8AhovR/wDoA6j/AN/Y/wDGqvxgnd/hnYo0t8wW6hO2
-        a32Rj5X6NtGfzP415ovwr8YvoH9srpDfZjH5oj8xfOKdc7Ov4dfagD6A8NfEy18TaNcalbWDwRQyNGyT
-        y/OdoDEjaCO/cj8ua7wHIzXhPwcndPhxqqrLfKDdSnENvvTmNOrbTg+vI4xXuy/dH0oAWiiigAooooAK
-        KKKACiiigDw74uJJD8N9PmMV9gXcBH2iZWiPysfuhuAfpVsfFXwa90nix9S1BNRSxFt/Y6KwVmyzZY42
-        ty2AxPA9zVf4oadeah4DtbSx0qaW5S5iLLbtLK+ArA5TbwM46HjNeMf8Ij4lx/yL2rf+AUn/AMTQB7F8
-        IxJdeANauBDffPezuRbTKka5RTjaWBOM+h4xXuS/dH0rw74W6Ze6d4G1K1v9ImiuJLmRkW4eWFyCi4wm
-        0gjIPOeeR2r3Ffuj6UALRRRQAUUUUAFZ+s3AtNGvLg3sdj5cLN9qlXckXH3mB6gelaFRyxRzwvFNGskb
-        jDI4yCPcGgDzp/Gfiizu9ROo6RBB9l0iS5jtlYuZZo3VWkyOfKO7KjGcDJ5NS3Gv+ISup6fpmqWGp3aa
-        St/Bc20AwrggbCu4qRIASnPHPXrXf+TEZxMY0MgUpv2/NjOSM+n+FR2tjaWSslpaw26scsIowgPp09qA
-        OE0jxZqN/ZWmox38c2nXOpW1jbzG2Cm4Xb+9fGcLlyVGOmw9c1Y0/XNTfXtTS+1SSCxt4533SwWqpGFP
-        BykzOQo5+ZRwDnB4rs0srWOGOFLaFYom3xoqAKhznIA6HNV49C0iK5kuY9KsUnlDCSVbdAzhvvZIGTnv
-        60AcfpfirxB/wkWn2msQWtvp7Wc7vcxtkXbRhG85B/DGVcEDrkkfw5LvC3irU/EKahZ3F1a2t/iO/tfK
-        CyFLV24Rxn767SrZ6FhXbS2NrMgSa1gkURtEFeNSNjdV+hAGR7VBZaJpWnSNJY6ZZ2sjDazQQKhI9DgD
-        igDiI9c8Qf8ACB6Tqz6mZLq/KTZgtLcBEZM7MSyoCAedwJPtjJrt9Gmln0azmnlMszwqzuVQZJHojMo/
-        Ake5pbjR9Mu7SK1udOtJreH/AFUMkCsqY4GARgccVZgghtYEt7eJIYYxtSONQqqPQAcCgCaiiigAoooo
-        AKKKKACiiigAooooAKKKKACiiigD/9k=
-</value>
+  <data name="year.HeaderText" xml:space="preserve">
+    <value>Год</value>
   </data>
-  <data name="&gt;&gt;blackListOpenButton.Type" xml:space="preserve">
-    <value>MovieMate.RoundedButton, MovieMate, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="button3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        /9j/4AAQSkZJRgABAQEAKQApAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
-        JC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIy
-        MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABEAEQDASIAAhEBAxEB/8QA
-        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
-        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
-        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
-        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
-        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
-        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
-        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
-        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+uB8fazr9vr/AIZ0HQdQi0+bVpZxJdSQLNtEaBgArcY5/lXf
-        V5341/5Kp8PP+u17/wCiVoAX/hG/iZ/0P1n/AOCiOj/hG/iZ/wBD9Z/+CiOvQu1LQB55/wAI38TP+h+s
-        /wDwUR0f8I38TP8AofrP/wAFEdeh0UAeWSXvjfwt4s8OW2seJLXVrTVLtrZ4lsEhK/LncGXnNepds157
-        8Qv+Ry8A/wDYVb/0CvQh0oAWiiigArzvxr/yVT4ef9dr3/0SteiV5341/wCSqfDz/rte/wDolaAPQ+1L
-        SdqWgAooooA88+IX/I5eAf8AsKt/6BXoQ6V578Qv+Ry8A/8AYVb/ANAr0IdKAFooooAK878a/wDJVPh5
-        /wBdr3/0SteiV5341/5Kp8PP+u17/wCiVoA9D7UtJ2rm/GPjCz8IaUs8iNc31w3lWVlFzJcSnooHXHTJ
-        xxn1wKAOlorzzwn431ZNaXw342tIdP1mdfOs5Iv9TcoedgOSN69MZ5x+fodAHnnxC/5HLwD/ANhVv/QK
-        9CHSvPfiF/yOXgH/ALCrf+gV6EOlAC0UUUAFed+Nf+SqfDz/AK7Xv/ola9Eryj4q63beHPGvgjV7tZGh
-        tnvWZYlyzExqAB9SQKAO28W+LNP8IaMb+93SSOfLt7WPmS4kPRVHf69qwPB3hPULjVX8Y+LQsmvTri3t
-        +senxHoiD+9g8n39yTH4R8L6jq+sL4z8YRgaoy4sNPOSmnxnpwesh7nr+PA9EoA57xb4S0/xfoxsL3dH
-        Ih8y3uY+JLeQdGU9vp3rA8HeLNQt9Vbwd4tKx67Auba56R6hEM4dT/ewOR9fQgegVzXjHwfZ+L9LWCV2
-        t723bzbK9i4ktpB0YHrjIGR3x9DQBg/EL/kcfAP/AGFW/wDQK9CHSvCrnxLqd9418HaB4jtvJ1/TNUPm
-        uiny7mMr8kyH3wcj19OQPdR0oAWiiigArMvtD0vVdRsb2/sori5092ktXfJ8piBkgdM8Dr0wCOaKKANO
-        iiigAooooAy7/QtL1LUrG/vLKKa7sJC9tMwO6Mkc4x/I8dD1rUoooAKKKKAP/9k=
-</value>
-  </data>
-  <data name="roundedButton1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;filmName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="BlackListDataGridView.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 220</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="&gt;&gt;BlackListDataGridView.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BlackListDataGridView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 29</value>
-  </data>
-  <data name="&gt;&gt;deleteFromBlackListButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;deleteFromBlackListButton.Name" xml:space="preserve">
-    <value>deleteFromBlackListButton</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="year.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="filmName.HeaderText" xml:space="preserve">
-    <value>Название</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>MovieMate</value>
   </data>
   <data name="BlackListDataGridView.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
-  <data name="roundedButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>258, 95</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="filmName.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="deleteFromBlackListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>614, 29</value>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 220</value>
   </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 146</value>
   </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;filmName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;button3.Name" xml:space="preserve">
     <value>button3</value>
-  </data>
-  <data name="deleteFromBlackListButton.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="grade.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="BlackListDataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>302, 127</value>
-  </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 68</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 20</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;grade.Name" xml:space="preserve">
-    <value>grade</value>
-  </data>
-  <data name="&gt;&gt;year.Name" xml:space="preserve">
-    <value>year</value>
-  </data>
-  <data name="deleteFromBlackListButton.Text" xml:space="preserve">
-    <value>Delete from black list</value>
-  </data>
-  <data name="grade.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;BlackListDataGridView.Name" xml:space="preserve">
-    <value>BlackListDataGridView</value>
-  </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 294</value>
-  </data>
-  <data name="roundedButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>490, 302</value>
-  </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;roundedButton1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="grade.HeaderText" xml:space="preserve">
-    <value>Рейтинг</value>
-  </data>
-  <data name="&gt;&gt;blackListOpenButton.Name" xml:space="preserve">
-    <value>blackListOpenButton</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1553,14 +1458,89 @@
         kUSLhEjXaqj0AHQVNRRQAUUUUAf/2Q==
 </value>
   </data>
-  <data name="&gt;&gt;roundedButton1.Type" xml:space="preserve">
+  <data name="deleteFromBlackListButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="deleteFromBlackListButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 50</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BlackListDataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 68</value>
+  </data>
+  <data name="&gt;&gt;blackListOpenButton.Name" xml:space="preserve">
+    <value>blackListOpenButton</value>
+  </data>
+  <data name="&gt;&gt;blackListOpenButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="grade.HeaderText" xml:space="preserve">
+    <value>Рейтинг</value>
+  </data>
+  <data name="&gt;&gt;blackListOpenButton.Type" xml:space="preserve">
     <value>MovieMate.RoundedButton, MovieMate, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;BlackListDataGridView.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="roundedButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;grade.Name" xml:space="preserve">
+    <value>grade</value>
+  </data>
+  <data name="&gt;&gt;BlackListDataGridView.Name" xml:space="preserve">
+    <value>BlackListDataGridView</value>
+  </data>
+  <data name="year.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;blackListOpenButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;year.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="BlackListDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>302, 127</value>
+  </data>
+  <data name="blackListOpenButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>448, 29</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 294</value>
+  </data>
+  <data name="pictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        /9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
+        /9j/4AAQSkZJRgABAQEARwBHAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
         JC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIy
-        MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABEAEQDASIAAhEBAxEB/8QA
+        MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABEAFUDASIAAhEBAxEB/8QA
         HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
         MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
         V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
@@ -1568,79 +1548,99 @@
         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
-        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
+        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
+        AKKKKACiiigAooooAKKKKACiiigD/9k=
 </value>
   </data>
-  <data name="year.HeaderText" xml:space="preserve">
-    <value>Год</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 20</value>
   </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+  <data name="&gt;&gt;BlackListDataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="BlackListDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 228</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>BlackListForm</value>
   </data>
-  <data name="filmName.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;deleteFromBlackListButton.Name" xml:space="preserve">
+    <value>deleteFromBlackListButton</value>
   </data>
-  <data name="&gt;&gt;roundedButton1.Name" xml:space="preserve">
-    <value>roundedButton1</value>
+  <data name="deleteFromBlackListButton.Text" xml:space="preserve">
+    <value>Delete from black list</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>MovieMate</value>
+  <data name="&gt;&gt;roundedButton1.Type" xml:space="preserve">
+    <value>MovieMate.RoundedButton, MovieMate, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;filmName.Name" xml:space="preserve">
-    <value>filmName</value>
-  </data>
-  <data name="deleteFromBlackListButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="blackListOpenButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 50</value>
-  </data>
-  <data name="&gt;&gt;blackListOpenButton.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="blackListOpenButton.Text" xml:space="preserve">
     <value>Open</value>
   </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+  <data name="filmName.HeaderText" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 68</value>
-  </data>
-  <data name="&gt;&gt;roundedButton1.ZOrder" xml:space="preserve">
-    <value>7</value>
   </data>
   <data name="&gt;&gt;BlackListDataGridView.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="blackListOpenButton.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;grade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;year.Name" xml:space="preserve">
+    <value>year</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;roundedButton1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="roundedButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 302</value>
   </data>
   <metadata name="filmName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="year.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
@@ -1649,7 +1649,7 @@
   <metadata name="grade.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="year.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
 </root>

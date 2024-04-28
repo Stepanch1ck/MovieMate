@@ -118,42 +118,23 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="roundedButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 71</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="roundedButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
   <data name="roundedButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 226</value>
+    <value>490, 301</value>
   </data>
-  <data name="BlackListDataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>264, 95</value>
+  <data name="filmName.HeaderText" xml:space="preserve">
+    <value>Name</value>
   </data>
-  <data name="BlackListDataGridView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+  <data name="year.HeaderText" xml:space="preserve">
+    <value>Year</value>
   </data>
-  <data name="BlackListDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>375, 171</value>
-  </data>
-  <data name="blackListOpenButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>392, 22</value>
-  </data>
-  <data name="blackListOpenButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+  <data name="grade.HeaderText" xml:space="preserve">
+    <value>Grade</value>
   </data>
   <data name="blackListOpenButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 38</value>
-  </data>
-  <data name="deleteFromBlackListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>537, 22</value>
-  </data>
-  <data name="deleteFromBlackListButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>134, 51</value>
   </data>
   <data name="deleteFromBlackListButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 38</value>
+    <value>134, 51</value>
   </data>
   <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -187,14 +168,8 @@
         HFAH0GOlFLRQAUYHpRRQAnHoKOPQUUUAHHoKOPQUUUAHHoKWiigAooooA//Z
 </value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 165</value>
-  </data>
-  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 51</value>
+    <value>69, 68</value>
   </data>
   <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -237,13 +212,10 @@
 </value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 220</value>
-  </data>
-  <data name="button2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>16, 293</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 51</value>
+    <value>69, 68</value>
   </data>
   <data name="button3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -274,13 +246,10 @@
 </value>
   </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 110</value>
-  </data>
-  <data name="button3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>16, 147</value>
   </data>
   <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 51</value>
+    <value>69, 68</value>
   </data>
   <data name="pictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -313,20 +282,8 @@
         AKKKKACiiigAooooAKKKKACiiigD/9k=
 </value>
   </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 22</value>
-  </data>
-  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 64</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>700, 338</value>
+    <value>800, 451</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
