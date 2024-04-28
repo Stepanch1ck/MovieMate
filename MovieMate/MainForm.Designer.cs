@@ -39,9 +39,10 @@
             // 
             // newUserButton
             // 
-            newUserButton.Location = new Point(552, 379);
+            newUserButton.Location = new Point(322, 322);
+            newUserButton.Margin = new Padding(3, 2, 3, 2);
             newUserButton.Name = "newUserButton";
-            newUserButton.Size = new Size(183, 59);
+            newUserButton.Size = new Size(160, 44);
             newUserButton.TabIndex = 0;
             newUserButton.Text = "Новый пользователь";
             newUserButton.UseVisualStyleBackColor = true;
@@ -49,9 +50,10 @@
             // 
             // enterButton
             // 
-            enterButton.Location = new Point(552, 308);
+            enterButton.Location = new Point(322, 274);
+            enterButton.Margin = new Padding(3, 2, 3, 2);
             enterButton.Name = "enterButton";
-            enterButton.Size = new Size(183, 59);
+            enterButton.Size = new Size(160, 44);
             enterButton.TabIndex = 1;
             enterButton.Text = "Войти";
             enterButton.UseVisualStyleBackColor = true;
@@ -60,9 +62,11 @@
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(486, 108);
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(322, 104);
+            listBox1.Margin = new Padding(3, 2, 3, 2);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(249, 184);
+            listBox1.Size = new Size(160, 139);
             listBox1.TabIndex = 2;
             // 
             // nickNameLabel
@@ -71,17 +75,18 @@
             nickNameLabel.BackColor = SystemColors.ActiveCaptionText;
             nickNameLabel.Font = new Font("Segoe UI Semibold", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 204);
             nickNameLabel.ForeColor = SystemColors.ButtonHighlight;
-            nickNameLabel.Location = new Point(475, 23);
+            nickNameLabel.Location = new Point(228, 30);
             nickNameLabel.Name = "nickNameLabel";
-            nickNameLabel.Size = new Size(226, 60);
+            nickNameLabel.Size = new Size(178, 47);
             nickNameLabel.TabIndex = 3;
             nickNameLabel.Text = "Nickname";
             // 
             // roundedButton1
             // 
-            roundedButton1.Location = new Point(438, 12);
+            roundedButton1.Location = new Point(190, 30);
+            roundedButton1.Margin = new Padding(3, 2, 3, 2);
             roundedButton1.Name = "roundedButton1";
-            roundedButton1.Size = new Size(297, 83);
+            roundedButton1.Size = new Size(260, 62);
             roundedButton1.TabIndex = 4;
             roundedButton1.UseVisualStyleBackColor = true;
             // 
@@ -89,22 +94,25 @@
             // 
             pictureBox1.BackColor = SystemColors.ButtonShadow;
             pictureBox1.Location = new Point(-4, -1);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(366, 453);
+            pictureBox1.Size = new Size(262, 412);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
             // MainForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(pictureBox1);
+            ClientSize = new Size(557, 411);
             Controls.Add(nickNameLabel);
             Controls.Add(roundedButton1);
+            Controls.Add(pictureBox1);
             Controls.Add(listBox1);
             Controls.Add(enterButton);
             Controls.Add(newUserButton);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "MainForm";
             Text = "Form1";
             Load += MainForm_Load;

@@ -55,6 +55,19 @@ namespace MovieMate
             {
                 selectedNickname = listBox1.SelectedItem.ToString();
                 nickNameLabel.Text = selectedNickname;
+                using (var context = new MovieDbContext())
+                {
+                    var selectedUser = context.People.FirstOrDefault(p => p.Nickname == selectedNickname);
+                    if (selectedUser != null && selectedUser.Picture != null)
+                    {
+                        pictureBox1.Image = Image.FromStream(new MemoryStream(selectedUser.Picture));
+                    }
+                    else
+                    {
+                        
+                        pictureBox1.Image = null; 
+                    }
+                }
             }
         }
         private void RefreshListBox()
