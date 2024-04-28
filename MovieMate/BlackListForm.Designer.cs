@@ -127,7 +127,6 @@
             Controls.Add(BlackListDataGridView);
             Controls.Add(roundedButton1);
             Name = "BlackListForm";
-            Load += BlackListForm_Load_1;
             ((System.ComponentModel.ISupportInitialize)BlackListDataGridView).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

@@ -89,7 +89,7 @@ namespace MovieMate
         }
         private byte[] GetPictureData()
         {
-            if (pictureBox1.Image != null) // Проверка, выбрано ли изображение
+            if (pictureBox1.Image != null) 
             {
                 using (MemoryStream ms = new MemoryStream())
                 {
@@ -99,7 +99,7 @@ namespace MovieMate
             }
             else
             {
-                return null; // Возвращаем null, если изображение не выбрано
+                return null; 
             }
         }
         
@@ -111,7 +111,6 @@ namespace MovieMate
                 openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    // Load the selected image into the pictureBox1
                     pictureBox1.Image = Image.FromFile(openFileDialog.FileName);
                 }
             }
@@ -119,12 +118,11 @@ namespace MovieMate
 
         private void secondEnterButton_Click_1(object sender, EventArgs e)
         {
-            // 1. Собрать данные из формы
             string nickname = richTextBox1.Text.Trim();
-            string idMovieLike = GetSelectedMovieIds(); // Функция для получения ID выбранных фильмов
-            byte[] picture = GetPictureData(); // Функция для получения данных изображения
+            string idMovieLike = GetSelectedMovieIds(); 
+            byte[] picture = GetPictureData(); 
 
-            // 2. Сохранить данные в базе данных
+
             using (var context = new MovieDbContext())
             {
                 var newUser = new Person
@@ -137,7 +135,7 @@ namespace MovieMate
                 context.SaveChanges();
             }
 
-            // 3. Открыть MainMenu и передать nickname
+
             var mainMenu = new MainMenu(nickname);
             mainMenu.Show();
             this.Close();

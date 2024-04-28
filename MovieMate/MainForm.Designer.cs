@@ -115,7 +115,6 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "MainForm";
             Text = "Form1";
-            Load += MainForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

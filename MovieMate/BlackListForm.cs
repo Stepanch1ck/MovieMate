@@ -73,10 +73,7 @@ namespace MovieMate
             MessageBox.Show("Фильм удален из чёрного списка!");
             
         }
-        private void BlackListForm_Load_1(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void button3_Click(object sender, EventArgs e)
         {

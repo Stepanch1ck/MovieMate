@@ -36,7 +36,6 @@ namespace MovieMate
         void russianButton_Click(object sender, EventArgs e)
         {
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ru");
-            UpdateLanguage();
         }
 
 
@@ -122,7 +121,6 @@ namespace MovieMate
         void englishButton_Click(object sender, EventArgs e)
         {
             Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en");
-            UpdateLanguage();
         }
 
         private void addToFavouritesButton_Click(object sender, EventArgs e)
@@ -198,13 +196,7 @@ namespace MovieMate
                 selectedMovie = db.Movies.FirstOrDefault(m => m.Name == selectedMovieName && m.Year == selectedMovieYear);
             }
         }
-        private void UpdateLanguage()
-        {
-            
-            //Controls.Clear();
-            InitializeComponent();
-            
-        }
+        
 
     }
 }
