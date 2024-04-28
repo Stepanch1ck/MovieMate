@@ -12,38 +12,37 @@ namespace MovieMate
 {
     public partial class MovieCard : Form
     {
-        private readonly Movie _movie;
         private readonly int selectedMovieId;
         private Movie selectedMovie;
+        MovieDbContext db = new MovieDbContext();
 
-        public class Movie
-        {
-            public string Name { get; set; } 
-
-            public string? Link { get; set; }
-            public double? Grade { get; set; }
-            public string? Genre { get; set; }
-
-            public byte[] Picture { get; set; }
-        }
-        public MovieCard(Movie movie)
+        public MovieCard(int movieId)
         {
             InitializeComponent();
-            movie = _movie;
+            selectedMovieId = movieId;
             LoadMovieDetails();
         }
 
         private void LoadMovieDetails()
         {
-            label8.Text = $"Название: {_movie.Name}";
-            label4.Text = $"Жанр: {_movie.Genre}";
-            label5.Text = $"Оценка: {_movie.Grade}";
-            label6.Text = _movie.Link;
+            selectedMovie = db.Movies.FirstOrDefault(m => m.Id == selectedMovieId);
 
-            if (_movie.Picture != null)
+            if (selectedMovie != null)
             {
-                moviePictureBox.Image = Image.FromStream(new MemoryStream(_movie.Picture));
+                label8.Text = $"Название: {selectedMovie.Name}";
+                label4.Text = $"Жанр: {selectedMovie.Genre}";
+                label5.Text = $"Оценка: {selectedMovie.Grade}";
+                label6.Text = selectedMovie.Link;
 
+                if (selectedMovie.Picture != null)
+                {
+                    moviePictureBox.Image = Image.FromStream(new MemoryStream(selectedMovie.Picture));
+                }
+            }
+            else
+            {
+                MessageBox.Show("Фильм не найден!");
+                this.Close();
             }
         }
 

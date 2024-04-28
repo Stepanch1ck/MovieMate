@@ -65,12 +65,15 @@ namespace MovieMate
         }
         private void openButton_Click(object sender, EventArgs e)
         {
-            //var selectedMovieId = Convert.ToInt32(filmsDataGridView.Rows[e.RowIndex].Cells["Id"].Value);
-            //Movie selectedMovie = db.Movies.Find(selectedMovieId);
-            //MovieCard movieDetailsForm = new MovieCard(selectedMovie);
-            //movieDetailsForm.ShowDialog();
-                
-            
+            if (selectedMovie == null)
+            {
+                MessageBox.Show("Пожалуйста выберите фильм!");
+                return;
+            }
+
+            int selectedMovieId = selectedMovie.Id;
+            var movieDetailsForm = new MovieCard(selectedMovieId); 
+            movieDetailsForm.Show();
         }
         
         void DisplaySimilarMovies(string idMovieLike)
