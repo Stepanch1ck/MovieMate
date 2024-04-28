@@ -28,24 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FavouritesListForm));
             roundedButton1 = new RoundedButton();
             FavouritesDataGridView = new DataGridView();
-            openFavouritesButton = new RoundedButton();
-            deleteFromFavouritesButton = new RoundedButton();
             filmName = new DataGridViewTextBoxColumn();
             Year = new DataGridViewTextBoxColumn();
             Grade = new DataGridViewTextBoxColumn();
-            roundedButton2 = new RoundedButton();
-            roundedButton3 = new RoundedButton();
-            roundedButton4 = new RoundedButton();
+            openFavouritesButton = new RoundedButton();
+            deleteFromFavouritesButton = new RoundedButton();
+            mainMenuButton = new Button();
+            blackListButton = new Button();
+            button3 = new Button();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)FavouritesDataGridView).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // roundedButton1
             // 
-            roundedButton1.Location = new Point(230, 100);
+            roundedButton1.Location = new Point(201, 75);
+            roundedButton1.Margin = new Padding(3, 2, 3, 2);
             roundedButton1.Name = "roundedButton1";
-            roundedButton1.Size = new Size(538, 301);
+            roundedButton1.Size = new Size(471, 226);
             roundedButton1.TabIndex = 0;
             roundedButton1.Text = "roundedButton1";
             roundedButton1.UseVisualStyleBackColor = true;
@@ -55,29 +59,13 @@
             FavouritesDataGridView.BackgroundColor = SystemColors.ButtonHighlight;
             FavouritesDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             FavouritesDataGridView.Columns.AddRange(new DataGridViewColumn[] { filmName, Year, Grade });
-            FavouritesDataGridView.Location = new Point(253, 136);
+            FavouritesDataGridView.Location = new Point(221, 102);
+            FavouritesDataGridView.Margin = new Padding(3, 2, 3, 2);
             FavouritesDataGridView.Name = "FavouritesDataGridView";
             FavouritesDataGridView.RowHeadersWidth = 51;
-            FavouritesDataGridView.Size = new Size(504, 240);
+            FavouritesDataGridView.Size = new Size(441, 180);
             FavouritesDataGridView.TabIndex = 1;
-            // 
-            // openFavouritesButton
-            // 
-            openFavouritesButton.Location = new Point(432, 30);
-            openFavouritesButton.Name = "openFavouritesButton";
-            openFavouritesButton.Size = new Size(123, 46);
-            openFavouritesButton.TabIndex = 2;
-            openFavouritesButton.Text = "Открыть";
-            openFavouritesButton.UseVisualStyleBackColor = true;
-            // 
-            // deleteFromFavouritesButton
-            // 
-            deleteFromFavouritesButton.Location = new Point(606, 30);
-            deleteFromFavouritesButton.Name = "deleteFromFavouritesButton";
-            deleteFromFavouritesButton.Size = new Size(119, 46);
-            deleteFromFavouritesButton.TabIndex = 3;
-            deleteFromFavouritesButton.Text = "Удалить из избранного";
-            deleteFromFavouritesButton.UseVisualStyleBackColor = true;
+            FavouritesDataGridView.CellDoubleClick += filmsDataGridView_CellDoubleClick;
             // 
             // filmName
             // 
@@ -100,48 +88,89 @@
             Grade.Name = "Grade";
             Grade.Width = 150;
             // 
-            // roundedButton2
+            // openFavouritesButton
             // 
-            roundedButton2.Location = new Point(12, 136);
-            roundedButton2.Name = "roundedButton2";
-            roundedButton2.Size = new Size(68, 62);
-            roundedButton2.TabIndex = 4;
-            roundedButton2.Text = "roundedButton2";
-            roundedButton2.UseVisualStyleBackColor = true;
+            openFavouritesButton.Location = new Point(378, 22);
+            openFavouritesButton.Margin = new Padding(3, 2, 3, 2);
+            openFavouritesButton.Name = "openFavouritesButton";
+            openFavouritesButton.Size = new Size(108, 34);
+            openFavouritesButton.TabIndex = 2;
+            openFavouritesButton.Text = "Открыть";
+            openFavouritesButton.UseVisualStyleBackColor = true;
+            openFavouritesButton.Click += openFavouritesButton_Click;
             // 
-            // roundedButton3
+            // deleteFromFavouritesButton
             // 
-            roundedButton3.Location = new Point(12, 230);
-            roundedButton3.Name = "roundedButton3";
-            roundedButton3.Size = new Size(68, 62);
-            roundedButton3.TabIndex = 5;
-            roundedButton3.Text = "roundedButton3";
-            roundedButton3.UseVisualStyleBackColor = true;
+            deleteFromFavouritesButton.Location = new Point(530, 22);
+            deleteFromFavouritesButton.Margin = new Padding(3, 2, 3, 2);
+            deleteFromFavouritesButton.Name = "deleteFromFavouritesButton";
+            deleteFromFavouritesButton.Size = new Size(104, 34);
+            deleteFromFavouritesButton.TabIndex = 3;
+            deleteFromFavouritesButton.Text = "Удалить из избранного";
+            deleteFromFavouritesButton.UseVisualStyleBackColor = true;
+            deleteFromFavouritesButton.Click += deleteFromFavouritesButton_Click;
             // 
-            // roundedButton4
+            // mainMenuButton
             // 
-            roundedButton4.Location = new Point(12, 325);
-            roundedButton4.Name = "roundedButton4";
-            roundedButton4.Size = new Size(68, 62);
-            roundedButton4.TabIndex = 6;
-            roundedButton4.Text = "roundedButton4";
-            roundedButton4.UseVisualStyleBackColor = true;
+            mainMenuButton.BackgroundImage = (Image)resources.GetObject("mainMenuButton.BackgroundImage");
+            mainMenuButton.Location = new Point(2, 146);
+            mainMenuButton.Margin = new Padding(3, 2, 3, 2);
+            mainMenuButton.Name = "mainMenuButton";
+            mainMenuButton.Size = new Size(60, 51);
+            mainMenuButton.TabIndex = 4;
+            mainMenuButton.UseVisualStyleBackColor = true;
+            mainMenuButton.Click += mainMenuButton_Click;
+            // 
+            // blackListButton
+            // 
+            blackListButton.BackgroundImage = (Image)resources.GetObject("blackListButton.BackgroundImage");
+            blackListButton.Location = new Point(2, 202);
+            blackListButton.Margin = new Padding(3, 2, 3, 2);
+            blackListButton.Name = "blackListButton";
+            blackListButton.Size = new Size(60, 51);
+            blackListButton.TabIndex = 5;
+            blackListButton.UseVisualStyleBackColor = true;
+            blackListButton.Click += blackListButton_Click;
+            // 
+            // button3
+            // 
+            button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
+            button3.Location = new Point(2, 91);
+            button3.Margin = new Padding(3, 2, 3, 2);
+            button3.Name = "button3";
+            button3.Size = new Size(60, 51);
+            button3.TabIndex = 6;
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(2, 22);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(78, 53);
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
             // 
             // FavouritesListForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(roundedButton4);
-            Controls.Add(roundedButton3);
-            Controls.Add(roundedButton2);
+            ClientSize = new Size(700, 338);
+            Controls.Add(pictureBox1);
+            Controls.Add(button3);
+            Controls.Add(blackListButton);
+            Controls.Add(mainMenuButton);
             Controls.Add(deleteFromFavouritesButton);
             Controls.Add(openFavouritesButton);
             Controls.Add(FavouritesDataGridView);
             Controls.Add(roundedButton1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FavouritesListForm";
             Text = "FavouritesListForm";
+            Load += FavouritesListForm_Load;
             ((System.ComponentModel.ISupportInitialize)FavouritesDataGridView).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -154,8 +183,9 @@
         private DataGridViewTextBoxColumn filmName;
         private DataGridViewTextBoxColumn Year;
         private DataGridViewTextBoxColumn Grade;
-        private RoundedButton roundedButton2;
-        private RoundedButton roundedButton3;
-        private RoundedButton roundedButton4;
+        private Button mainMenuButton;
+        private Button blackListButton;
+        private Button button3;
+        private PictureBox pictureBox1;
     }
 }

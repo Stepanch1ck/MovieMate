@@ -28,119 +28,108 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BlackListForm));
             roundedButton1 = new RoundedButton();
             BlackListDataGridView = new DataGridView();
-            blackListOpenButton = new RoundedButton();
-            deleteFromBlackListButton = new RoundedButton();
             filmName = new DataGridViewTextBoxColumn();
             year = new DataGridViewTextBoxColumn();
             grade = new DataGridViewTextBoxColumn();
-            roundedButton2 = new RoundedButton();
-            roundedButton3 = new RoundedButton();
-            roundedButton4 = new RoundedButton();
+            blackListOpenButton = new RoundedButton();
+            deleteFromBlackListButton = new RoundedButton();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)BlackListDataGridView).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // roundedButton1
             // 
-            roundedButton1.Location = new Point(258, 95);
+            resources.ApplyResources(roundedButton1, "roundedButton1");
             roundedButton1.Name = "roundedButton1";
-            roundedButton1.Size = new Size(490, 302);
-            roundedButton1.TabIndex = 0;
             roundedButton1.UseVisualStyleBackColor = true;
             // 
             // BlackListDataGridView
             // 
+            resources.ApplyResources(BlackListDataGridView, "BlackListDataGridView");
             BlackListDataGridView.BackgroundColor = SystemColors.ButtonHighlight;
             BlackListDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             BlackListDataGridView.Columns.AddRange(new DataGridViewColumn[] { filmName, year, grade });
-            BlackListDataGridView.Location = new Point(302, 127);
             BlackListDataGridView.Name = "BlackListDataGridView";
-            BlackListDataGridView.RowHeadersWidth = 51;
-            BlackListDataGridView.Size = new Size(429, 228);
-            BlackListDataGridView.TabIndex = 1;
-            // 
-            // blackListOpenButton
-            // 
-            blackListOpenButton.Location = new Point(448, 29);
-            blackListOpenButton.Name = "blackListOpenButton";
-            blackListOpenButton.Size = new Size(134, 50);
-            blackListOpenButton.TabIndex = 2;
-            blackListOpenButton.Text = "Открыть";
-            blackListOpenButton.UseVisualStyleBackColor = true;
-            // 
-            // deleteFromBlackListButton
-            // 
-            deleteFromBlackListButton.Location = new Point(614, 29);
-            deleteFromBlackListButton.Name = "deleteFromBlackListButton";
-            deleteFromBlackListButton.Size = new Size(134, 50);
-            deleteFromBlackListButton.TabIndex = 3;
-            deleteFromBlackListButton.Text = "Удалить из чёрного списка";
-            deleteFromBlackListButton.UseVisualStyleBackColor = true;
+            BlackListDataGridView.CellDoubleClick += filmsDataGridView_CellDoubleClick;
             // 
             // filmName
             // 
-            filmName.HeaderText = "Название";
-            filmName.MinimumWidth = 6;
+            resources.ApplyResources(filmName, "filmName");
             filmName.Name = "filmName";
-            filmName.Width = 125;
             // 
             // year
             // 
-            year.HeaderText = "Год";
-            year.MinimumWidth = 6;
+            resources.ApplyResources(year, "year");
             year.Name = "year";
-            year.Width = 125;
             // 
             // grade
             // 
-            grade.HeaderText = "Рейтинг";
-            grade.MinimumWidth = 6;
+            resources.ApplyResources(grade, "grade");
             grade.Name = "grade";
-            grade.Width = 125;
             // 
-            // roundedButton2
+            // blackListOpenButton
             // 
-            roundedButton2.Location = new Point(12, 127);
-            roundedButton2.Name = "roundedButton2";
-            roundedButton2.Size = new Size(68, 62);
-            roundedButton2.TabIndex = 4;
-            roundedButton2.Text = "roundedButton2";
-            roundedButton2.UseVisualStyleBackColor = true;
+            resources.ApplyResources(blackListOpenButton, "blackListOpenButton");
+            blackListOpenButton.Name = "blackListOpenButton";
+            blackListOpenButton.UseVisualStyleBackColor = true;
+            blackListOpenButton.Click += blackListOpenButton_Click;
             // 
-            // roundedButton3
+            // deleteFromBlackListButton
             // 
-            roundedButton3.Location = new Point(12, 215);
-            roundedButton3.Name = "roundedButton3";
-            roundedButton3.Size = new Size(68, 62);
-            roundedButton3.TabIndex = 5;
-            roundedButton3.Text = "roundedButton3";
-            roundedButton3.UseVisualStyleBackColor = true;
+            resources.ApplyResources(deleteFromBlackListButton, "deleteFromBlackListButton");
+            deleteFromBlackListButton.Name = "deleteFromBlackListButton";
+            deleteFromBlackListButton.UseVisualStyleBackColor = true;
+            deleteFromBlackListButton.Click += deleteFromBlackListButton_Click;
             // 
-            // roundedButton4
+            // button1
             // 
-            roundedButton4.Location = new Point(12, 303);
-            roundedButton4.Name = "roundedButton4";
-            roundedButton4.Size = new Size(68, 62);
-            roundedButton4.TabIndex = 6;
-            roundedButton4.Text = "roundedButton4";
-            roundedButton4.UseVisualStyleBackColor = true;
+            resources.ApplyResources(button1, "button1");
+            button1.Name = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            resources.ApplyResources(button2, "button2");
+            button2.Name = "button2";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            resources.ApplyResources(button3, "button3");
+            button3.Name = "button3";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(pictureBox1, "pictureBox1");
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.TabStop = false;
             // 
             // BlackListForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(roundedButton4);
-            Controls.Add(roundedButton3);
-            Controls.Add(roundedButton2);
+            Controls.Add(pictureBox1);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(deleteFromBlackListButton);
             Controls.Add(blackListOpenButton);
             Controls.Add(BlackListDataGridView);
             Controls.Add(roundedButton1);
             Name = "BlackListForm";
-            Text = "BlackListForm";
+            Load += BlackListForm_Load_1;
             ((System.ComponentModel.ISupportInitialize)BlackListDataGridView).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -153,8 +142,9 @@
         private DataGridViewTextBoxColumn filmName;
         private DataGridViewTextBoxColumn year;
         private DataGridViewTextBoxColumn grade;
-        private RoundedButton roundedButton2;
-        private RoundedButton roundedButton3;
-        private RoundedButton roundedButton4;
+        private Button button1;
+        private Button button2;
+        private Button button3;
+        private PictureBox pictureBox1;
     }
 }

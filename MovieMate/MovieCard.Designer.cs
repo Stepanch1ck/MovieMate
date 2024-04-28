@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MovieCard));
             moviePictureBox = new PictureBox();
             roundedButton1 = new RoundedButton();
             label3 = new Label();
@@ -116,7 +117,6 @@
             label8.Size = new Size(91, 38);
             label8.TabIndex = 10;
             label8.Text = "label8";
-            label8.Click += label8_Click;
             // 
             // MovieCard
             // 
@@ -131,8 +131,9 @@
             Controls.Add(label3);
             Controls.Add(roundedButton1);
             Controls.Add(moviePictureBox);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MovieCard";
-            Text = "MovieCard";
+            Text = "MovieMate";
             ((System.ComponentModel.ISupportInitialize)moviePictureBox).EndInit();
             ResumeLayout(false);
             PerformLayout();

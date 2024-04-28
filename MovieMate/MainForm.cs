@@ -6,7 +6,7 @@ namespace MovieMate
 {
     public partial class MainForm : Form
     {
-        public string selectedNickname= string.Empty;
+        public string selectedNickname = string.Empty;
         public MainForm()
         {
             InitializeComponent();
@@ -19,11 +19,7 @@ namespace MovieMate
             NewUserForm newUserForm = new NewUserForm();
             newUserForm.Show();
         }
-        //public void open(object obj)
-        //{
-        //    Application.Run(new NewUserForm());
-        //}
-
+        
         private void enterButton_Click(object sender, EventArgs e)
         {
             if (listBox1.SelectedItem != null)
@@ -37,7 +33,7 @@ namespace MovieMate
         {
             using (var context = new MovieDbContext())
             {
-                
+
                 if (context.Database.CanConnect())
                 {
                     var nicknames = context.People.Select(p => p.Nickname).ToList();
@@ -47,11 +43,11 @@ namespace MovieMate
                 }
                 else
                 {
-                    MessageBox.Show("Не подлючена база данных");
-                    
+                    MessageBox.Show("Не подключена база данных");
+
                 }
             }
-            
+
         }
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -59,6 +55,19 @@ namespace MovieMate
             {
                 selectedNickname = listBox1.SelectedItem.ToString();
                 nickNameLabel.Text = selectedNickname;
+                using (var context = new MovieDbContext())
+                {
+                    var selectedUser = context.People.FirstOrDefault(p => p.Nickname == selectedNickname);
+                    if (selectedUser != null && selectedUser.Picture != null)
+                    {
+                        pictureBox1.Image = Image.FromStream(new MemoryStream(selectedUser.Picture));
+                    }
+                    else
+                    {
+                        
+                        pictureBox1.Image = null; 
+                    }
+                }
             }
         }
         private void RefreshListBox()
@@ -71,7 +80,10 @@ namespace MovieMate
             }
         }
 
+        private void MainForm_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 
 
