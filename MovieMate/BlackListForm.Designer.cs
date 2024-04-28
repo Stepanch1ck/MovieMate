@@ -57,6 +57,7 @@
             BlackListDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             BlackListDataGridView.Columns.AddRange(new DataGridViewColumn[] { filmName, year, grade });
             BlackListDataGridView.Name = "BlackListDataGridView";
+            BlackListDataGridView.CellDoubleClick += filmsDataGridView_CellDoubleClick;
             // 
             // filmName
             // 
@@ -78,12 +79,14 @@
             resources.ApplyResources(blackListOpenButton, "blackListOpenButton");
             blackListOpenButton.Name = "blackListOpenButton";
             blackListOpenButton.UseVisualStyleBackColor = true;
+            blackListOpenButton.Click += blackListOpenButton_Click;
             // 
             // deleteFromBlackListButton
             // 
             resources.ApplyResources(deleteFromBlackListButton, "deleteFromBlackListButton");
             deleteFromBlackListButton.Name = "deleteFromBlackListButton";
             deleteFromBlackListButton.UseVisualStyleBackColor = true;
+            deleteFromBlackListButton.Click += deleteFromBlackListButton_Click;
             // 
             // button1
             // 

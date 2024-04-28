@@ -119,10 +119,14 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="favouritesButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>407, 44</value>
+    <value>356, 33</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="favouritesButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="favouritesButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 43</value>
+    <value>116, 32</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="favouritesButton.TabIndex" type="System.Int32, mscorlib">
@@ -144,10 +148,13 @@
     <value>10</value>
   </data>
   <data name="openButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 44</value>
+    <value>219, 33</value>
+  </data>
+  <data name="openButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="openButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 43</value>
+    <value>116, 32</value>
   </data>
   <data name="openButton.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -168,10 +175,13 @@
     <value>9</value>
   </data>
   <data name="AddToblackListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>565, 44</value>
+    <value>494, 33</value>
+  </data>
+  <data name="AddToblackListButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="AddToblackListButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 43</value>
+    <value>116, 32</value>
   </data>
   <data name="AddToblackListButton.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -192,10 +202,13 @@
     <value>8</value>
   </data>
   <data name="roundedButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 109</value>
+    <value>172, 82</value>
+  </data>
+  <data name="roundedButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="roundedButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>592, 269</value>
+    <value>518, 202</value>
   </data>
   <data name="roundedButton1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -222,10 +235,10 @@
     <value>Segoe UI Semibold, 10.8pt, style=Bold</value>
   </data>
   <data name="secondNicknameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>714, 9</value>
+    <value>625, 7</value>
   </data>
   <data name="secondNicknameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 25</value>
+    <value>48, 20</value>
   </data>
   <data name="secondNicknameLabel.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -246,10 +259,13 @@
     <value>6</value>
   </data>
   <data name="englishButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>674, 391</value>
+    <value>590, 293</value>
+  </data>
+  <data name="englishButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="englishButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 47</value>
+    <value>112, 35</value>
   </data>
   <data name="englishButton.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -270,10 +286,13 @@
     <value>5</value>
   </data>
   <data name="russianButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>531, 391</value>
+    <value>465, 293</value>
+  </data>
+  <data name="russianButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="russianButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 47</value>
+    <value>112, 35</value>
   </data>
   <data name="russianButton.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -326,10 +345,13 @@
 </value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 211</value>
+    <value>3, 158</value>
+  </data>
+  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 68</value>
+    <value>60, 51</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -375,10 +397,13 @@
 </value>
   </data>
   <data name="favoritesButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 136</value>
+    <value>3, 102</value>
+  </data>
+  <data name="favoritesButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="favoritesButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 68</value>
+    <value>60, 51</value>
   </data>
   <data name="favoritesButton.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -436,10 +461,13 @@
 </value>
   </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 284</value>
+    <value>3, 213</value>
+  </data>
+  <data name="button3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 68</value>
+    <value>60, 51</value>
   </data>
   <data name="button3.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -493,13 +521,16 @@
     <value>145</value>
   </data>
   <data name="filmsDataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>239, 136</value>
+    <value>209, 102</value>
+  </data>
+  <data name="filmsDataGridView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="filmsDataGridView.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
   <data name="filmsDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>491, 216</value>
+    <value>430, 162</value>
   </data>
   <data name="filmsDataGridView.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -520,10 +551,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 20</value>
+    <value>7, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 451</value>
+    <value>700, 338</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Главное меню</value>

@@ -64,6 +64,7 @@
             // 
             resources.ApplyResources(AddToblackListButton, "AddToblackListButton");
             AddToblackListButton.Name = "AddToblackListButton";
+            AddToblackListButton.Click += addToBlackListButton_Click;
             // 
             // roundedButton1
             // 

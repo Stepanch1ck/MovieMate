@@ -50,42 +50,28 @@ namespace MovieMate
             }
         }
 
-        private void blackListDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                BlackListDataGridView.Rows[e.RowIndex].Selected = true;
-
-                string selectedMovieName = BlackListDataGridView.Rows[e.RowIndex].Cells["filmname"].Value.ToString();
-                int selectedMovieYear = Convert.ToInt32(BlackListDataGridView.Rows[e.RowIndex].Cells["Year"].Value);
-
-                selectedMovie = db.Movies.FirstOrDefault(m => m.Name == selectedMovieName && m.Year == selectedMovieYear);
-            }
-        }
-        void BlackListDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            // Получение информации о фильме из выбранной строки
-            var selectedMovieId = Convert.ToInt32(BlackListDataGridView.Rows[e.RowIndex].Cells["Id"].Value);
-
-
-        }
+        
+        
 
         private void deleteFromBlackListButton_Click(object sender, EventArgs e)
         {
             if (selectedMovie == null)
             {
-                MessageBox.Show("Выберите фильм для удаления из избранного!");
+                MessageBox.Show("Выберите фильм для удаления из чёрного списка!");
                 return;
             }
-            currentUser.IdBlackList = currentUser.IdBlackList.Replace(selectedMovie.Id.ToString() + ",", "");
-            if (currentUser.IdBlackList.EndsWith(","))
+            List<int> movieIds = currentUser.IdBlackList.Split(',').Select(int.Parse).ToList();
+            movieIds.Remove(selectedMovie.Id);
+            currentUser.IdBlackList = string.Join(",", movieIds);
+            if (currentUser.IdBlackList.StartsWith(","))
             {
-                currentUser.IdBlackList = currentUser.IdBlackList.Remove(currentUser.IdBlackList.Length - 1);
+                currentUser.IdBlackList = currentUser.IdBlackList.Substring(1);
             }
             db.SaveChanges();
             DisplaySimilarMovies(currentUser.IdBlackList);
 
-            MessageBox.Show("Фильм удален из избранного!");
+            MessageBox.Show("Фильм удален из чёрного списка!");
+            
         }
         private void BlackListForm_Load_1(object sender, EventArgs e)
         {
@@ -104,6 +90,31 @@ namespace MovieMate
             MainMenu blackListForm = new MainMenu(UserNickname);
             blackListForm.Show();
             this.Close();
+        }
+
+        private void blackListOpenButton_Click(object sender, EventArgs e)
+        {
+            if (selectedMovie == null)
+            {
+                MessageBox.Show("Пожалуйста выберите фильм!");
+                return;
+            }
+
+            int selectedMovieId = selectedMovie.Id;
+            var movieDetailsForm = new MovieCard(selectedMovieId);
+            movieDetailsForm.Show();
+        }
+        private void filmsDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                BlackListDataGridView.Rows[e.RowIndex].Selected = true;
+
+                string selectedMovieName = BlackListDataGridView.Rows[e.RowIndex].Cells["filmname"].Value.ToString();
+                int selectedMovieYear = Convert.ToInt32(BlackListDataGridView.Rows[e.RowIndex].Cells["Year"].Value);
+
+                selectedMovie = db.Movies.FirstOrDefault(m => m.Name == selectedMovieName && m.Year == selectedMovieYear);
+            }
         }
     }
 

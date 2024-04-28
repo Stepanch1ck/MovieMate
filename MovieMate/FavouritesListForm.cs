@@ -56,13 +56,15 @@ namespace MovieMate
                 MessageBox.Show("Выберите фильм для удаления из избранного!");
                 return;
             }
-            currentUser.IdFavorites = currentUser.IdFavorites.Replace(selectedMovie.Id.ToString() + ",", "");
-            if (currentUser.IdFavorites.EndsWith(","))
+            List<int> movieIds = currentUser.IdFavorites.Split(',').Select(int.Parse).ToList();
+            movieIds.Remove(selectedMovie.Id);
+            currentUser.IdFavorites = string.Join(",", movieIds);
+            if (currentUser.IdFavorites.StartsWith(","))
             {
-                currentUser.IdFavorites = currentUser.IdFavorites.Remove(currentUser.IdFavorites.Length - 1);
+                currentUser.IdFavorites = currentUser.IdFavorites.Substring(1);
             }
             db.SaveChanges();
-            DisplaySimilarMovies(currentUser.IdMovieLike);
+            DisplaySimilarMovies(currentUser.IdFavorites);
 
             MessageBox.Show("Фильм удален из избранного!");
         }
@@ -79,6 +81,31 @@ namespace MovieMate
             MainMenu mainMenu = new MainMenu(UserNickname);
             mainMenu.Show();
             this.Close();
+        }
+        private void filmsDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                FavouritesDataGridView.Rows[e.RowIndex].Selected = true;
+
+                string selectedMovieName = FavouritesDataGridView.Rows[e.RowIndex].Cells["filmname"].Value.ToString();
+                int selectedMovieYear = Convert.ToInt32(FavouritesDataGridView.Rows[e.RowIndex].Cells["Year"].Value);
+
+                selectedMovie = db.Movies.FirstOrDefault(m => m.Name == selectedMovieName && m.Year == selectedMovieYear);
+            }
+        }
+
+        private void openFavouritesButton_Click(object sender, EventArgs e)
+        {
+            if (selectedMovie == null)
+            {
+                MessageBox.Show("Пожалуйста выберите фильм!");
+                return;
+            }
+
+            int selectedMovieId = selectedMovie.Id;
+            var movieDetailsForm = new MovieCard(selectedMovieId);
+            movieDetailsForm.Show();
         }
     }
 }
