@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace MovieMate.DBConnect;
+﻿namespace MovieMate.DBConnect;
 
 public partial class Movie
 {

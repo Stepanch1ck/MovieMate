@@ -166,7 +166,7 @@
             PasswordRounded.Name = "PasswordRounded";
             PasswordRounded.Size = new Size(223, 28);
             PasswordRounded.TabIndex = 14;
-            PasswordRounded.Text = "Введите имя пользователя:";
+            PasswordRounded.Text = "Введите пароль:";
             PasswordRounded.UseVisualStyleBackColor = true;
             // 
             // NameTextBox
@@ -190,7 +190,7 @@
             PasswordRepeatRounded.Name = "PasswordRepeatRounded";
             PasswordRepeatRounded.Size = new Size(223, 28);
             PasswordRepeatRounded.TabIndex = 17;
-            PasswordRepeatRounded.Text = "Введите имя пользователя:";
+            PasswordRepeatRounded.Text = "Повторите пароль:";
             PasswordRepeatRounded.UseVisualStyleBackColor = true;
             // 
             // PasswordRepeatTextBox

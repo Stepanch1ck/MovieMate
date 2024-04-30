@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Text;
 using MovieMate.DBConnect;
+using System.Security.Cryptography;
 
 namespace MovieMate
 {
@@ -120,9 +113,28 @@ namespace MovieMate
         private void secondEnterButton_Click_1(object sender, EventArgs e)
         {
             string nickname = NameTextBox.Text.Trim();
+            string password = PasswordTextBox.Text;
+            string passwordRepeat = PasswordRepeatTextBox.Text;
             string idMovieLike = GetSelectedMovieIds(); 
-            byte[] picture = GetPictureData(); 
+            byte[] picture = GetPictureData();
 
+            if (string.IsNullOrEmpty(nickname))
+            {
+                MessageBox.Show("Имя не должно быть пустым!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (password != passwordRepeat)
+            {
+                MessageBox.Show("Пароли не совпадают!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (password.Length < 8)
+            {
+                MessageBox.Show("Пароль слишком короткий, должно быть минимум 8 символов!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            string hashedPassword = HashPassword(password);
 
             using (var context = new MovieDbContext())
             {
@@ -130,6 +142,7 @@ namespace MovieMate
                 {
                     Nickname = nickname,
                     IdMovieLike = idMovieLike,
+                    PasswordHash = hashedPassword,
                     Picture = picture
                 };
                 context.People.Add(newUser);
@@ -141,5 +154,22 @@ namespace MovieMate
             mainMenu.Show();
             this.Close();
         }
+
+
+        private string HashPassword(string password)
+        {
+            using (SHA256 sha256Hash = SHA256.Create())
+            {
+                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    builder.Append(bytes[i].ToString("x2"));
+                }
+                return builder.ToString();
+            }
+        }
+
     }
+
 }
