@@ -31,15 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FavouritesListForm));
             roundedButton1 = new RoundedButton();
             FavouritesDataGridView = new DataGridView();
+            filmName = new DataGridViewTextBoxColumn();
+            Year = new DataGridViewTextBoxColumn();
+            Grade = new DataGridViewTextBoxColumn();
             openFavouritesButton = new RoundedButton();
             deleteFromFavouritesButton = new RoundedButton();
             mainMenuButton = new Button();
             blackListButton = new Button();
             button3 = new Button();
             pictureBox1 = new PictureBox();
-            filmName = new DataGridViewTextBoxColumn();
-            Year = new DataGridViewTextBoxColumn();
-            Grade = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)FavouritesDataGridView).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -58,6 +58,21 @@
             FavouritesDataGridView.Columns.AddRange(new DataGridViewColumn[] { filmName, Year, Grade });
             FavouritesDataGridView.Name = "FavouritesDataGridView";
             FavouritesDataGridView.CellDoubleClick += filmsDataGridView_CellDoubleClick;
+            // 
+            // filmName
+            // 
+            resources.ApplyResources(filmName, "filmName");
+            filmName.Name = "filmName";
+            // 
+            // Year
+            // 
+            resources.ApplyResources(Year, "Year");
+            Year.Name = "Year";
+            // 
+            // Grade
+            // 
+            resources.ApplyResources(Grade, "Grade");
+            Grade.Name = "Grade";
             // 
             // openFavouritesButton
             // 
@@ -98,21 +113,6 @@
             resources.ApplyResources(pictureBox1, "pictureBox1");
             pictureBox1.Name = "pictureBox1";
             pictureBox1.TabStop = false;
-            // 
-            // filmName
-            // 
-            resources.ApplyResources(filmName, "filmName");
-            filmName.Name = "filmName";
-            // 
-            // Year
-            // 
-            resources.ApplyResources(Year, "Year");
-            Year.Name = "Year";
-            // 
-            // Grade
-            // 
-            resources.ApplyResources(Grade, "Grade");
-            Grade.Name = "Grade";
             // 
             // FavouritesListForm
             // 

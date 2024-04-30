@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using MovieMate.DBConnect;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

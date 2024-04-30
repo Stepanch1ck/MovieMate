@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MovieMate.DBConnect;
 
 namespace MovieMate
 {
@@ -16,14 +17,14 @@ namespace MovieMate
         public NewUserForm()
         {
             InitializeComponent();
-            richTextBox1.KeyDown += richTextBox1_KeyDown;
+            NameTextBox.KeyDown += richTextBox1_KeyDown;
         }
 
         void NewUserForm_Load(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(richTextBox1.Text))
+            if (!string.IsNullOrEmpty(NameTextBox.Text))
             {
-                selectedNickname = richTextBox1.Text.ToString();
+                selectedNickname = NameTextBox.Text.ToString();
                 using (var context = new MovieDbContext())
                 {
                     var newUser = new Person { Nickname = selectedNickname };
@@ -79,11 +80,11 @@ namespace MovieMate
         {
             if (e.KeyCode == Keys.Enter)
             {
-                var enteredText = richTextBox1.Text.Trim();
+                var enteredText = NameTextBox.Text.Trim();
                 if (!string.IsNullOrEmpty(enteredText))
                 {
                     SaveTextToDatabase(enteredText);
-                    richTextBox1.Clear();
+                    NameTextBox.Clear();
                 }
             }
         }
@@ -118,7 +119,7 @@ namespace MovieMate
 
         private void secondEnterButton_Click_1(object sender, EventArgs e)
         {
-            string nickname = richTextBox1.Text.Trim();
+            string nickname = NameTextBox.Text.Trim();
             string idMovieLike = GetSelectedMovieIds(); 
             byte[] picture = GetPictureData(); 
 

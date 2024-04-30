@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema 
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="secondNicknameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Grade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;filmsDataGridView.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="openButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="filmsDataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;secondNicknameLabel.Name" xml:space="preserve">
+    <value>secondNicknameLabel</value>
+  </data>
+  <data name="AddToblackListButton.Text" xml:space="preserve">
+    <value>Add to black list</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
+        JC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIy
+        MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABEAEQDASIAAhEBAxEB/8QA
+        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
+        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
+        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
+        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
+        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
+        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
+        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
+        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigDz3UfjR4M0vU7rT7q+uFuLWVoZVFq5AZTg849RVb/he
+        /gT/AKCFz/4CP/hWZrHwB0TWdbvtTl1bUI5Ly4kuGRAmAXYsQOPeqf8AwzdoH/Qa1P8A75j/AMKAN/8A
+        4Xv4E/6CFz/4CP8A4Uf8L38Cf9BC5/8AAR/8KwP+GbtA/wCg1qf/AHzH/hR/wzdoH/Qa1P8A75j/AMKA
+        PTfC3izSfGOmSaho0zy28cphZnjKHcAD0PswrdrlvAvgm08B6JNplldT3EctwZy8wGQSFXHH+6K6mgAo
+        oooAK8V+M1r45uPEGnt4V/tr7MLQ+b9gkdU37z12nGcYr1zVtUs9E0q51LUJhDaW0ZklkPOB/U9gB1rx
+        24/aS0lZ3W30C8kiB+V3nVCfqMHH50Aed/2d8Yv+ps/7/wAv/wAVR/Z3xi/6mz/v/L/8VXf/APDSun/9
+        C1c/+BS//E0f8NK6f/0LVz/4FL/8TQBwH9nfGL/qbP8Av/L/APFUf2d8Yv8AqbP+/wDL/wDFV3//AA0r
+        p/8A0LVz/wCBS/8AxNH/AA0rp/8A0LVz/wCBS/8AxNAHAf2d8Yu//CWf9/5f/iq+pNDFwugacLvzPtQt
+        Y/O8w5bftG7PvnOa8a/4aV0//oW7n/wKX/4muy8B/FzRfHN8+nRwTWOoBC6QTEMJFHXaw6kdcED2zzQB
+        6HRRRQB5r8dmI+Fd+AeGmgB9/nFfJVfWnx4/5JZff9d4P/QxXyXQAV1ng3wFqfjiLUhpMsP2myRJBDK2
+        3zdxIwG6A8d/zFcnXuv7NX/IW8Qf9cIf/QmoA8a1bRtS0K+ex1SymtLlOscy4OPUeo9xwaz6+6Ne8M6N
+        4nsDZ6zYQ3cP8O8fMh9VYcqfoa+Vvid4N0Hwhq/kaLr0d6WbElmw3S2/+8y/KfocHpwetAHAV2/wiYr8
+        VdBIJB89h+aNXEV23wj/AOSqaB/13b/0BqAPsgdKKB0ooA81+PH/ACSy+/67wf8AoYr5Lr7Z8d+F/wDh
+        MPB99oolEUkwVoZGHCupDDPtkYP1r5iuPg948t53i/sCWTacBo5UZW9wd1AHB16l8HPG2jeCH1291aSQ
+        ebDEsMMSbnlYM2QOw69yKw/+FR+PP+hbuv8AvtP/AIqj/hUfjz/oW7r/AL7T/wCKoA2PGnxr8ReKPMtb
+        BzpOnNx5cDnzHH+0/X8BgfWvMsknJrtf+FR+PP8AoW7r/vtP/iqP+FR+PP8AoW7r/vtP/iqAOJrtvhH/
+        AMlU0D/ru3/oDUf8Kj8ef9C3df8Afaf/ABVei/CP4R67pfiqDX/EFt9ijs9xggLqzyOVKgnaTgDJPJzn
+        HFAH0GOlFLRQAUYHpRRQAnHoKOPQUUUAHHoKOPQUUUAHHoKWiigAooooA//Z
+</value>
+  </data>
+  <data name="&gt;&gt;russianButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Grade.Name" xml:space="preserve">
+    <value>Grade</value>
+  </data>
+  <data name="openButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 43</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 211</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="&gt;&gt;favoritesButton.Name" xml:space="preserve">
+    <value>favoritesButton</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;openButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Year.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="filmsDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 216</value>
+  </data>
+  <data name="secondNicknameLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10.8pt, style=Bold</value>
+  </data>
+  <data name="secondNicknameLabel.Text" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="favoritesButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 68</value>
+  </data>
+  <data name="&gt;&gt;favouritesButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Year.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="Grade.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="englishButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 47</value>
+  </data>
+  <data name="&gt;&gt;roundedButton1.Type" xml:space="preserve">
+    <value>MovieMate.RoundedButton, MovieMate, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Главное меню</value>
+  </data>
+  <data name="filmsDataGridView.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;openButton.Name" xml:space="preserve">
+    <value>openButton</value>
+  </data>
+  <data name="favouritesButton.Text" xml:space="preserve">
+    <value>Add to favorites</value>
+  </data>
+  <data name="&gt;&gt;MovieMatePictureBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="AddToblackListButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>565, 44</value>
+  </data>
+  <data name="&gt;&gt;roundedButton1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 68</value>
+  </data>
+  <data name="favouritesButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>407, 44</value>
+  </data>
+  <data name="&gt;&gt;secondNicknameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="filmName.Width" type="System.Int32, mscorlib">
+    <value>145</value>
+  </data>
+  <data name="&gt;&gt;openButton.Type" xml:space="preserve">
+    <value>MovieMate.RoundedButton, MovieMate, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 20</value>
+  </data>
+  <data name="&gt;&gt;englishButton.Name" xml:space="preserve">
+    <value>englishButton</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;secondNicknameLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;favoritesButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="AddToblackListButton.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="Year.HeaderText" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="&gt;&gt;MovieMatePictureBox.Name" xml:space="preserve">
+    <value>MovieMatePictureBox</value>
+  </data>
+  <data name="favoritesButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEAKQApAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
+        JC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIy
+        MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABEAEQDASIAAhEBAxEB/8QA
+        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
+        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
+        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
+        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
+        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
+        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
+        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
+        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+uB8fazr9vr/AIZ0HQdQi0+bVpZxJdSQLNtEaBgArcY5/lXf
+        V5341/5Kp8PP+u17/wCiVoAX/hG/iZ/0P1n/AOCiOj/hG/iZ/wBD9Z/+CiOvQu1LQB55/wAI38TP+h+s
+        /wDwUR0f8I38TP8AofrP/wAFEdeh0UAeWSXvjfwt4s8OW2seJLXVrTVLtrZ4lsEhK/LncGXnNepds157
+        8Qv+Ry8A/wDYVb/0CvQh0oAWiiigArzvxr/yVT4ef9dr3/0SteiV5341/wCSqfDz/rte/wDolaAPQ+1L
+        SdqWgAooooA88+IX/I5eAf8AsKt/6BXoQ6V578Qv+Ry8A/8AYVb/ANAr0IdKAFooooAK878a/wDJVPh5
+        /wBdr3/0SteiV5341/5Kp8PP+u17/wCiVoA9D7UtJ2rm/GPjCz8IaUs8iNc31w3lWVlFzJcSnooHXHTJ
+        xxn1wKAOlorzzwn431ZNaXw342tIdP1mdfOs5Iv9TcoedgOSN69MZ5x+fodAHnnxC/5HLwD/ANhVv/QK
+        9CHSvPfiF/yOXgH/ALCrf+gV6EOlAC0UUUAFed+Nf+SqfDz/AK7Xv/ola9Eryj4q63beHPGvgjV7tZGh
+        tnvWZYlyzExqAB9SQKAO28W+LNP8IaMb+93SSOfLt7WPmS4kPRVHf69qwPB3hPULjVX8Y+LQsmvTri3t
+        +senxHoiD+9g8n39yTH4R8L6jq+sL4z8YRgaoy4sNPOSmnxnpwesh7nr+PA9EoA57xb4S0/xfoxsL3dH
+        Ih8y3uY+JLeQdGU9vp3rA8HeLNQt9Vbwd4tKx67Auba56R6hEM4dT/ewOR9fQgegVzXjHwfZ+L9LWCV2
+        t723bzbK9i4ktpB0YHrjIGR3x9DQBg/EL/kcfAP/AGFW/wDQK9CHSvCrnxLqd9418HaB4jtvJ1/TNUPm
+        uiny7mMr8kyH3wcj19OQPdR0oAWiiigArMvtD0vVdRsb2/sori5092ktXfJ8piBkgdM8Dr0wCOaKKANO
+        iiigAooooAy7/QtL1LUrG/vLKKa7sJC9tMwO6Mkc4x/I8dD1rUoooAKKKKAP/9k=
+</value>
+  </data>
+  <data name="Grade.HeaderText" xml:space="preserve">
+    <value>Grade</value>
+  </data>
+  <data name="englishButton.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;filmsDataGridView.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;openButton.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="favoritesButton.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="filmsDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>239, 136</value>
+  </data>
+  <data name="secondNicknameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 25</value>
+  </data>
+  <data name="favouritesButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 43</value>
+  </data>
+  <data name="roundedButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>592, 269</value>
+  </data>
+  <data name="MovieMatePictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 21</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;filmName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AddToblackListButton.Name" xml:space="preserve">
+    <value>AddToblackListButton</value>
+  </data>
+  <data name="russianButton.Text" xml:space="preserve">
+    <value>Русский</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;AddToblackListButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 451</value>
+  </data>
+  <data name="&gt;&gt;russianButton.Type" xml:space="preserve">
+    <value>MovieMate.RoundedButton, MovieMate, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 68</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="MovieMatePictureBox.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;filmName.Name" xml:space="preserve">
+    <value>filmName</value>
+  </data>
+  <data name="favouritesButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;secondNicknameLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="filmName.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;russianButton.Name" xml:space="preserve">
+    <value>russianButton</value>
+  </data>
+  <data name="&gt;&gt;filmsDataGridView.Name" xml:space="preserve">
+    <value>filmsDataGridView</value>
+  </data>
+  <data name="&gt;&gt;roundedButton1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="englishButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>674, 391</value>
+  </data>
+  <data name="russianButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 47</value>
+  </data>
+  <data name="Grade.Width" type="System.Int32, mscorlib">
+    <value>145</value>
+  </data>
+  <data name="roundedButton1.Text" xml:space="preserve">
+    <value>roundedButton1</value>
+  </data>
+  <data name="&gt;&gt;AddToblackListButton.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;Year.Name" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="filmName.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="&gt;&gt;favoritesButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AddToblackListButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 43</value>
+  </data>
+  <data name="&gt;&gt;englishButton.Type" xml:space="preserve">
+    <value>MovieMate.RoundedButton, MovieMate, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="secondNicknameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="favoritesButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 136</value>
+  </data>
+  <data name="&gt;&gt;favouritesButton.Type" xml:space="preserve">
+    <value>MovieMate.RoundedButton, MovieMate, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;AddToblackListButton.Type" xml:space="preserve">
+    <value>MovieMate.RoundedButton, MovieMate, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;russianButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;MovieMatePictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;englishButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;favouritesButton.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;favoritesButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="roundedButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="roundedButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>197, 109</value>
+  </data>
+  <data name="englishButton.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;roundedButton1.Name" xml:space="preserve">
+    <value>roundedButton1</value>
+  </data>
+  <data name="secondNicknameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>714, 9</value>
+  </data>
+  <data name="&gt;&gt;favouritesButton.Name" xml:space="preserve">
+    <value>favouritesButton</value>
+  </data>
+  <data name="&gt;&gt;filmsDataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="openButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 44</value>
+  </data>
+  <data name="russianButton.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="button3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        /9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
+        JC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIy
+        MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABEAEQDASIAAhEBAxEB/8QA
+        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
+        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
+        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
+        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
+        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
+        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
+        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
+        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+sXxJ4p0fwnpbahrF2tvD0ReryN/dVRyT/k4o8U+I7Hwn4eu
+        tY1Bv3MC8ID80jHgIvuT/U9q+VJ5/E3xh8bBFHmTyfcjyRDaRA9fZR3PUk9ycUAdR4r/AGgNe1SV4PD0
+        S6XadFkZRJOw/H5V+gB+tcunhr4k+MR9oks9avlflZLp2VD9C5A/KvojwR8J/D/g2CObyEvtUAy15OgJ
+        B/2F6IPpz713n4UAfH5+EXxCsf3y6FcKV7w3EZb/AMdfNOtPHnxE8DXa29zd6jFtP/HrqUbOpA9A/IH+
+        6RX19+FUdU0nT9Zsns9Ts4Lu2YcxzIGX/wCsfegDzbwH8b9I8TTRafrCJpepOQqEvmCU+isfun2P4Emv
+        WK+LPiFY+GdO8X3Vr4VuZZ7BOGLtuRXychG6so45PvyRzXrnwU+KUt9LF4V12cvMFxY3Mh5cAf6tj646
+        HvjHpQB7vRRRQB8xftAeK31TxVF4egk/0TTVDSKD96dhk/kpA/Fq9f8AhP4Hi8G+EYfOiA1S9VZrtyPm
+        BPKp9FB/PNfPHhpf+Ex+M1rJcfOl7qjXEinuoYyEfTAxX2IKAFoopOMUAHGK+ePi/wDF/wC2faPDXhq5
+        /wBG5jvL2M/63sY0P931bv0HHVPi/wDF/wC2faPDXhq4/wBG5S8vY2/1vYxof7vq3foOOr/hB8H/ALR5
+        HiXxLbfueJLOykX7/cSOP7vovfqeOoAfCH4P/aRB4k8TW37k4ezsZF+/6SSA/wAPovfqeOvHfFfwi/gT
+        x0lzpe6Czuj9rs2TjyXB5UH/AGTgj2Ir63ryT9oTSkvPh/Ff7f3tjdowb/ZfKkfiSv5UAdx4I8SDxX4O
+        03WVUeZPFiZQcBZF+Vx9Mg/hRXz/APDL4kyeFPDE2nN8wN00q57Aqox+YP50UAYPwjYWHxe0VZuCs0sR
+        z/eMbr/M19gdq+QfHlnceBvi/dXNuhXyrxdQtvQqzbwB7A5X8K+sdJ1O21rSLXU7OQPbXUSyxn2I7+/r
+        QBd4xXzx8X/i/wDbPtHhrw1c/wCjcx3l7G3+s7GNCP4fVu/QcdT4v/F/7Z9o8NeGrn/R+Y7y9jP+s7GN
+        CP4fVu/QcdXfCD4QfaPI8S+Jbb91xJZ2Ui/f7iRx/d9B36njqAHwg+EH2jyPEviW2/dcSWdlIv3+4kcf
+        3fRe/U8dfoaiigArzf46TJF8KdRRvvTTQIv18xW/kpr0ivn79ozxLG503w1A+WQ/a7kA9OCqA+/LH8qA
+        PF9M0S81K2aa3RiiuVOPXAP9RRX0n8FvCdvafDi1uL62jaa+le6HmDkKcKv4EKD+NFADfjh4Dk8T6Ams
+        afEX1HTVYlFGWmh6so9SOo/4EOprwSx+IfiDTvBVx4VtLry7GaQsXGfMVT96MN2Unk49+xOftOvCPil8
+        E2vp5td8KRKJ3Je408cBz3aP39V/LnggFH4P/CD7R9n8TeJLf9ycSWdlIv3/AEkcf3fQd+p4xn6Fr5I8
+        JfFnxT4Dk/su6ja7s4DsaxvAVeHHUK3VPoQR7V67pX7QfhG9jH26O+0+THzB4fMUfQqST+QoA9aorzef
+        46eAooyyapPM39yO0kz/AOPAD9a4fxL+0ZuieDwzpTIx4FzfY+X3CKTz7lvwoA9T8d+O9M8DaI93dusl
+        24ItbUNhpn/oo7n+uBXzX4T0DVfit8QpJr52dZJftGoXABARM/dHpnG1R/QGjQfCfi74r6899PLNLG7Y
+        uNSuQfLQei9ASOyr0z2619QeEPCGl+C9Dj0zTI/9qaZ/vzPjlmP8h2oA3LeCO2t47eBFjiiUIiKMBVAw
+        APwoqWigAooooA5zxH4J8OeLFUazpcNxIPlWYZWVR7OMH8M4r5++Jfw00TwnKDps16VfnbNIrAfT5QaK
+        KAPPNE0uDUr5YZmkVSedhAP6ivpLwp8FfBlnZ299cWk+oTMgfF5LuQH/AHVABH1zRRQB6fbww29vHDBE
+        kUSLhEjXaqj0AHQVNRRQAUUUUAf/2Q==
+</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 284</value>
+  </data>
+  <data name="Year.Width" type="System.Int32, mscorlib">
+    <value>145</value>
+  </data>
+  <data name="russianButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>531, 391</value>
+  </data>
+  <data name="openButton.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="&gt;&gt;MovieMatePictureBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;englishButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="Year.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Grade.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>en</value>
+  </metadata>
+  <metadata name="filmName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

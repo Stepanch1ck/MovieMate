@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.Reflection.Emit;
 using System.Windows.Forms;
+using MovieMate.DBConnect;
 
 namespace MovieMate
 {

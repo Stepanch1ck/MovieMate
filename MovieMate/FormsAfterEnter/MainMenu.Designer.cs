@@ -43,7 +43,9 @@
             filmName = new DataGridViewTextBoxColumn();
             Year = new DataGridViewTextBoxColumn();
             Grade = new DataGridViewTextBoxColumn();
+            MovieMatePictureBox = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)MovieMatePictureBox).BeginInit();
             SuspendLayout();
             // 
             // favouritesButton
@@ -135,10 +137,17 @@
             resources.ApplyResources(Grade, "Grade");
             Grade.Name = "Grade";
             // 
+            // MovieMatePictureBox
+            // 
+            resources.ApplyResources(MovieMatePictureBox, "MovieMatePictureBox");
+            MovieMatePictureBox.Name = "MovieMatePictureBox";
+            MovieMatePictureBox.TabStop = false;
+            // 
             // MainMenu
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(MovieMatePictureBox);
             Controls.Add(filmsDataGridView);
             Controls.Add(button3);
             Controls.Add(favoritesButton);
@@ -152,6 +161,7 @@
             Controls.Add(favouritesButton);
             Name = "MainMenu";
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).EndInit();
+            ((System.ComponentModel.ISupportInitialize)MovieMatePictureBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -172,5 +182,6 @@
         private DataGridViewTextBoxColumn filmName;
         private DataGridViewTextBoxColumn Year;
         private DataGridViewTextBoxColumn Grade;
+        private PictureBox MovieMatePictureBox;
     }
 }

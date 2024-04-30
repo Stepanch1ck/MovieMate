@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MovieMate;
+namespace MovieMate.DBConnect;
 
 public partial class Person
 {
