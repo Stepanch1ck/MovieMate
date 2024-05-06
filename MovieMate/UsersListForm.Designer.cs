@@ -29,49 +29,51 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsersListForm));
-            listBox1 = new ListBox();
             button1 = new Button();
-            label1 = new Label();
+            FavouritesDataGridView = new DataGridView();
+            menuLabel = new Label();
+            ((System.ComponentModel.ISupportInitialize)FavouritesDataGridView).BeginInit();
             SuspendLayout();
-            // 
-            // listBox1
-            // 
-            listBox1.BackColor = Color.Silver;
-            listBox1.FormattingEnabled = true;
-            resources.ApplyResources(listBox1, "listBox1");
-            listBox1.Name = "listBox1";
             // 
             // button1
             // 
+            resources.ApplyResources(button1, "button1");
             button1.BackColor = Color.Black;
             button1.ForeColor = Color.White;
-            resources.ApplyResources(button1, "button1");
             button1.Name = "button1";
             button1.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // FavouritesDataGridView
             // 
-            label1.BackColor = Color.Black;
-            resources.ApplyResources(label1, "label1");
-            label1.ForeColor = Color.White;
-            label1.Name = "label1";
+            resources.ApplyResources(FavouritesDataGridView, "FavouritesDataGridView");
+            FavouritesDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            FavouritesDataGridView.BackgroundColor = SystemColors.AppWorkspace;
+            FavouritesDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            FavouritesDataGridView.Name = "FavouritesDataGridView";
+            // 
+            // menuLabel
+            // 
+            resources.ApplyResources(menuLabel, "menuLabel");
+            menuLabel.BackColor = Color.Black;
+            menuLabel.ForeColor = Color.White;
+            menuLabel.Name = "menuLabel";
             // 
             // UsersListForm
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            Controls.Add(label1);
+            Controls.Add(menuLabel);
+            Controls.Add(FavouritesDataGridView);
             Controls.Add(button1);
-            Controls.Add(listBox1);
             Name = "UsersListForm";
+            ((System.ComponentModel.ISupportInitialize)FavouritesDataGridView).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private ListBox listBox1;
         private Button button1;
-        private Label label1;
+        private DataGridView FavouritesDataGridView;
+        private Label menuLabel;
     }
 }

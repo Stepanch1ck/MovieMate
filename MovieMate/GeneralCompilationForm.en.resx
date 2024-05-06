@@ -450,34 +450,19 @@
         NkG0KoBdAAAAAElFTkSuQmCC
 </value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="FavouritesDataGridView.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="openFavButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
   <data name="openFavButton.Text" xml:space="preserve">
-    <value>Add user</value>
-  </data>
-  <data name="addFilmToCompilation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+    <value>Open General Compilation</value>
   </data>
   <data name="addFilmToCompilation.Text" xml:space="preserve">
     <value>Add a movie to a selection</value>
   </data>
-  <data name="button2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
   <data name="button2.Text" xml:space="preserve">
     <value>Delete a movie from the collection</value>
-  </data>
-  <data name="menuLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
   </data>
   <data name="menuLabel.Text" xml:space="preserve">
     <value>Compilations</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="selectCompilationButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
@@ -489,9 +474,6 @@
   </data>
   <data name="createCompilationButton.Text" xml:space="preserve">
     <value>Create compilation</value>
-  </data>
-  <data name="button1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
     <value>Send by email</value>
