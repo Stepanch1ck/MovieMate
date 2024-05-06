@@ -29,37 +29,41 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BlackListForm));
-            roundedButton1 = new RoundedButton();
             BlackListDataGridView = new DataGridView();
             filmName = new DataGridViewTextBoxColumn();
             year = new DataGridViewTextBoxColumn();
             grade = new DataGridViewTextBoxColumn();
+<<<<<<< HEAD:MovieMate/FormsAfterEnter/BlackListForm.Designer.cs
             blackListOpenButton = new RoundedButton();
             deleteFromBlackListButton = new RoundedButton();
+=======
+>>>>>>> master:MovieMate/BlackListForm.Designer.cs
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
             pictureBox1 = new PictureBox();
+<<<<<<< HEAD:MovieMate/FormsAfterEnter/BlackListForm.Designer.cs
+=======
+            deleteBlackList = new Button();
+            openButton = new Button();
+            blacklistLabel = new Label();
+            generalCompilationButton = new Button();
+>>>>>>> master:MovieMate/BlackListForm.Designer.cs
             ((System.ComponentModel.ISupportInitialize)BlackListDataGridView).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // roundedButton1
-            // 
-            resources.ApplyResources(roundedButton1, "roundedButton1");
-            roundedButton1.Name = "roundedButton1";
-            roundedButton1.UseVisualStyleBackColor = true;
-            // 
             // BlackListDataGridView
             // 
             resources.ApplyResources(BlackListDataGridView, "BlackListDataGridView");
-            BlackListDataGridView.BackgroundColor = SystemColors.ButtonHighlight;
+            BlackListDataGridView.BackgroundColor = SystemColors.AppWorkspace;
             BlackListDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             BlackListDataGridView.Columns.AddRange(new DataGridViewColumn[] { filmName, year, grade });
             BlackListDataGridView.Name = "BlackListDataGridView";
             BlackListDataGridView.CellDoubleClick += filmsDataGridView_CellDoubleClick;
             // 
             // filmName
+<<<<<<< HEAD:MovieMate/FormsAfterEnter/BlackListForm.Designer.cs
             // 
             resources.ApplyResources(filmName, "filmName");
             filmName.Name = "filmName";
@@ -75,18 +79,21 @@
             grade.Name = "grade";
             // 
             // blackListOpenButton
+=======
+>>>>>>> master:MovieMate/BlackListForm.Designer.cs
             // 
-            resources.ApplyResources(blackListOpenButton, "blackListOpenButton");
-            blackListOpenButton.Name = "blackListOpenButton";
-            blackListOpenButton.UseVisualStyleBackColor = true;
-            blackListOpenButton.Click += blackListOpenButton_Click;
+            resources.ApplyResources(filmName, "filmName");
+            filmName.Name = "filmName";
             // 
-            // deleteFromBlackListButton
+            // year
             // 
-            resources.ApplyResources(deleteFromBlackListButton, "deleteFromBlackListButton");
-            deleteFromBlackListButton.Name = "deleteFromBlackListButton";
-            deleteFromBlackListButton.UseVisualStyleBackColor = true;
-            deleteFromBlackListButton.Click += deleteFromBlackListButton_Click;
+            resources.ApplyResources(year, "year");
+            year.Name = "year";
+            // 
+            // grade
+            // 
+            resources.ApplyResources(grade, "grade");
+            grade.Name = "grade";
             // 
             // button1
             // 
@@ -114,18 +121,55 @@
             pictureBox1.Name = "pictureBox1";
             pictureBox1.TabStop = false;
             // 
+<<<<<<< HEAD:MovieMate/FormsAfterEnter/BlackListForm.Designer.cs
+=======
+            // deleteBlackList
+            // 
+            resources.ApplyResources(deleteBlackList, "deleteBlackList");
+            deleteBlackList.BackColor = Color.Black;
+            deleteBlackList.ForeColor = Color.White;
+            deleteBlackList.Name = "deleteBlackList";
+            deleteBlackList.UseVisualStyleBackColor = false;
+            deleteBlackList.Click += deleteBlackList_Click;
+            // 
+            // openButton
+            // 
+            resources.ApplyResources(openButton, "openButton");
+            openButton.BackColor = Color.Black;
+            openButton.ForeColor = Color.White;
+            openButton.Name = "openButton";
+            openButton.UseVisualStyleBackColor = false;
+            openButton.Click += openButton_Click;
+            // 
+            // blacklistLabel
+            // 
+            resources.ApplyResources(blacklistLabel, "blacklistLabel");
+            blacklistLabel.BackColor = Color.Black;
+            blacklistLabel.ForeColor = Color.White;
+            blacklistLabel.Name = "blacklistLabel";
+            // 
+            // generalCompilationButton
+            // 
+            resources.ApplyResources(generalCompilationButton, "generalCompilationButton");
+            generalCompilationButton.Name = "generalCompilationButton";
+            generalCompilationButton.UseVisualStyleBackColor = true;
+            generalCompilationButton.Click += generalCompilationButton_Click;
+            // 
+>>>>>>> master:MovieMate/BlackListForm.Designer.cs
             // BlackListForm
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            Controls.Add(generalCompilationButton);
+            Controls.Add(blacklistLabel);
+            Controls.Add(openButton);
+            Controls.Add(deleteBlackList);
             Controls.Add(pictureBox1);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(deleteFromBlackListButton);
-            Controls.Add(blackListOpenButton);
             Controls.Add(BlackListDataGridView);
-            Controls.Add(roundedButton1);
             Name = "BlackListForm";
             ((System.ComponentModel.ISupportInitialize)BlackListDataGridView).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -133,11 +177,7 @@
         }
 
         #endregion
-
-        private RoundedButton roundedButton1;
         private DataGridView BlackListDataGridView;
-        private RoundedButton blackListOpenButton;
-        private RoundedButton deleteFromBlackListButton;
         private Button button1;
         private Button button2;
         private Button button3;
@@ -145,5 +185,9 @@
         private DataGridViewTextBoxColumn filmName;
         private DataGridViewTextBoxColumn year;
         private DataGridViewTextBoxColumn grade;
+        private Button deleteBlackList;
+        private Button openButton;
+        private Label blacklistLabel;
+        private Button generalCompilationButton;
     }
 }

@@ -13,6 +13,7 @@ namespace MovieMate
             RefreshListBox();
 
         }
+<<<<<<< HEAD:MovieMate/EnterForms/MainForm.cs
         private void newUserButton_Click(object sender, EventArgs e)
         {
             NewUserForm newUserForm = new NewUserForm();
@@ -28,6 +29,11 @@ namespace MovieMate
                 logIn.Show();
             }
         }
+=======
+
+
+
+>>>>>>> master:MovieMate/MainForm.cs
         private void Form_Load(object sender, EventArgs e)
         {
             using (var context = new MovieDbContext())
@@ -63,8 +69,8 @@ namespace MovieMate
                     }
                     else
                     {
-                        
-                        pictureBox1.Image = null; 
+
+                        pictureBox1.Image = null;
                     }
                 }
             }
@@ -79,11 +85,30 @@ namespace MovieMate
             }
         }
 
-     
+        private void newUserButton_Click(object sender, EventArgs e)
+        {
+            NewUserForm newUserForm = new NewUserForm();
+            newUserForm.Show();
+        }
+
+        private void enterUserButton_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedItem != null)
+            {
+                selectedNickname = listBox1.SelectedItem.ToString();
+                MainMenu mainMenu = new MainMenu(selectedNickname);
+                mainMenu.Show();
+            }
+        }
+
+        private void russianButton_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ru");
+        }
+
+        private void englishButton_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en");
+        }
     }
-
-
-
-
-
 }

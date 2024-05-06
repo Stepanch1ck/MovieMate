@@ -63,9 +63,25 @@ namespace MovieMate.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap MovieMate2 {
             get {
                 object obj = ResourceManager.GetObject("MovieMate2", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap VK_LOGO {
+            get {
+                object obj = ResourceManager.GetObject("VK-LOGO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ЛОГО {
+            get {
+                object obj = ResourceManager.GetObject("ЛОГО", resourceCulture);
+>>>>>>> master
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

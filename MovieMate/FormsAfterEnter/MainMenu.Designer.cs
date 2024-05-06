@@ -29,13 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
-            favouritesButton = new RoundedButton();
-            openButton = new RoundedButton();
-            AddToblackListButton = new RoundedButton();
-            roundedButton1 = new RoundedButton();
             secondNicknameLabel = new Label();
-            englishButton = new RoundedButton();
-            russianButton = new RoundedButton();
             button1 = new Button();
             favoritesButton = new Button();
             button3 = new Button();
@@ -43,55 +37,27 @@
             filmName = new DataGridViewTextBoxColumn();
             Year = new DataGridViewTextBoxColumn();
             Grade = new DataGridViewTextBoxColumn();
+<<<<<<< HEAD:MovieMate/FormsAfterEnter/MainMenu.Designer.cs
             MovieMatePictureBox = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).BeginInit();
             ((System.ComponentModel.ISupportInitialize)MovieMatePictureBox).BeginInit();
+=======
+            openButton = new Button();
+            favouritesButton = new Button();
+            addBlackListButton = new Button();
+            pictureBox1 = new PictureBox();
+            menuLabel = new Label();
+            generalCompilationButton = new Button();
+            ((System.ComponentModel.ISupportInitialize)filmsDataGridView).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+>>>>>>> master:MovieMate/MainMenu.Designer.cs
             SuspendLayout();
-            // 
-            // favouritesButton
-            // 
-            resources.ApplyResources(favouritesButton, "favouritesButton");
-            favouritesButton.Name = "favouritesButton";
-            favouritesButton.UseVisualStyleBackColor = true;
-            favouritesButton.Click += addToFavouritesButton_Click;
-            // 
-            // openButton
-            // 
-            resources.ApplyResources(openButton, "openButton");
-            openButton.Name = "openButton";
-            openButton.UseVisualStyleBackColor = true;
-            openButton.Click += openButton_Click;
-            // 
-            // AddToblackListButton
-            // 
-            resources.ApplyResources(AddToblackListButton, "AddToblackListButton");
-            AddToblackListButton.Name = "AddToblackListButton";
-            AddToblackListButton.Click += addToBlackListButton_Click;
-            // 
-            // roundedButton1
-            // 
-            resources.ApplyResources(roundedButton1, "roundedButton1");
-            roundedButton1.Name = "roundedButton1";
-            roundedButton1.UseVisualStyleBackColor = true;
             // 
             // secondNicknameLabel
             // 
             resources.ApplyResources(secondNicknameLabel, "secondNicknameLabel");
             secondNicknameLabel.Name = "secondNicknameLabel";
-            // 
-            // englishButton
-            // 
-            resources.ApplyResources(englishButton, "englishButton");
-            englishButton.Name = "englishButton";
-            englishButton.UseVisualStyleBackColor = true;
-            englishButton.Click += englishButton_Click;
-            // 
-            // russianButton
-            // 
-            resources.ApplyResources(russianButton, "russianButton");
-            russianButton.Name = "russianButton";
-            russianButton.UseVisualStyleBackColor = true;
-            russianButton.Click += russianButton_Click;
+            secondNicknameLabel.Click += secondNicknameLabel_Click;
             // 
             // button1
             // 
@@ -116,7 +82,7 @@
             // filmsDataGridView
             // 
             resources.ApplyResources(filmsDataGridView, "filmsDataGridView");
-            filmsDataGridView.BackgroundColor = SystemColors.Control;
+            filmsDataGridView.BackgroundColor = SystemColors.AppWorkspace;
             filmsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             filmsDataGridView.Columns.AddRange(new DataGridViewColumn[] { filmName, Year, Grade });
             filmsDataGridView.Name = "filmsDataGridView";
@@ -137,44 +103,95 @@
             resources.ApplyResources(Grade, "Grade");
             Grade.Name = "Grade";
             // 
+<<<<<<< HEAD:MovieMate/FormsAfterEnter/MainMenu.Designer.cs
             // MovieMatePictureBox
             // 
             resources.ApplyResources(MovieMatePictureBox, "MovieMatePictureBox");
             MovieMatePictureBox.Name = "MovieMatePictureBox";
             MovieMatePictureBox.TabStop = false;
+=======
+            // openButton
+            // 
+            resources.ApplyResources(openButton, "openButton");
+            openButton.BackColor = Color.Black;
+            openButton.ForeColor = Color.White;
+            openButton.Name = "openButton";
+            openButton.UseVisualStyleBackColor = false;
+            openButton.Click += openButton_Click_1;
+            // 
+            // favouritesButton
+            // 
+            resources.ApplyResources(favouritesButton, "favouritesButton");
+            favouritesButton.BackColor = Color.Black;
+            favouritesButton.ForeColor = Color.White;
+            favouritesButton.Name = "favouritesButton";
+            favouritesButton.UseVisualStyleBackColor = false;
+            favouritesButton.Click += favouritesButton_Click;
+            // 
+            // addBlackListButton
+            // 
+            resources.ApplyResources(addBlackListButton, "addBlackListButton");
+            addBlackListButton.BackColor = Color.Black;
+            addBlackListButton.ForeColor = Color.White;
+            addBlackListButton.Name = "addBlackListButton";
+            addBlackListButton.UseVisualStyleBackColor = false;
+            addBlackListButton.Click += addBlackListButton_Click;
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(pictureBox1, "pictureBox1");
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.TabStop = false;
+            // 
+            // menuLabel
+            // 
+            resources.ApplyResources(menuLabel, "menuLabel");
+            menuLabel.BackColor = Color.Black;
+            menuLabel.ForeColor = Color.White;
+            menuLabel.Name = "menuLabel";
+            // 
+            // generalCompilationButton
+            // 
+            resources.ApplyResources(generalCompilationButton, "generalCompilationButton");
+            generalCompilationButton.Name = "generalCompilationButton";
+            generalCompilationButton.UseVisualStyleBackColor = true;
+            generalCompilationButton.Click += generalCompilationButton_Click;
+>>>>>>> master:MovieMate/MainMenu.Designer.cs
             // 
             // MainMenu
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
+<<<<<<< HEAD:MovieMate/FormsAfterEnter/MainMenu.Designer.cs
             Controls.Add(MovieMatePictureBox);
+=======
+            BackColor = Color.White;
+            Controls.Add(generalCompilationButton);
+            Controls.Add(menuLabel);
+            Controls.Add(pictureBox1);
+            Controls.Add(addBlackListButton);
+            Controls.Add(favouritesButton);
+            Controls.Add(openButton);
+>>>>>>> master:MovieMate/MainMenu.Designer.cs
             Controls.Add(filmsDataGridView);
             Controls.Add(button3);
             Controls.Add(favoritesButton);
             Controls.Add(button1);
-            Controls.Add(russianButton);
-            Controls.Add(englishButton);
             Controls.Add(secondNicknameLabel);
-            Controls.Add(roundedButton1);
-            Controls.Add(AddToblackListButton);
-            Controls.Add(openButton);
-            Controls.Add(favouritesButton);
+            ForeColor = Color.Black;
             Name = "MainMenu";
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).EndInit();
+<<<<<<< HEAD:MovieMate/FormsAfterEnter/MainMenu.Designer.cs
             ((System.ComponentModel.ISupportInitialize)MovieMatePictureBox).EndInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+>>>>>>> master:MovieMate/MainMenu.Designer.cs
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private RoundedButton favouritesButton;
-        private RoundedButton openButton;
-        private RoundedButton AddToblackListButton;
-        private RoundedButton roundedButton1;
         private Label secondNicknameLabel;
-        private RoundedButton englishButton;
-        private RoundedButton russianButton;
         private Button button1;
         private Button favoritesButton;
         private Button button3;
@@ -182,6 +199,15 @@
         private DataGridViewTextBoxColumn filmName;
         private DataGridViewTextBoxColumn Year;
         private DataGridViewTextBoxColumn Grade;
+<<<<<<< HEAD:MovieMate/FormsAfterEnter/MainMenu.Designer.cs
         private PictureBox MovieMatePictureBox;
+=======
+        private Button openButton;
+        private Button favouritesButton;
+        private Button addBlackListButton;
+        private PictureBox pictureBox1;
+        private Label menuLabel;
+        private Button generalCompilationButton;
+>>>>>>> master:MovieMate/MainMenu.Designer.cs
     }
 }
