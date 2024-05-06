@@ -1,12 +1,25 @@
 ﻿using System.Text;
 using MovieMate.DBConnect;
 using System.Security.Cryptography;
+using System.Diagnostics;
+using Newtonsoft.Json.Linq;
+using RestSharp;
+using System.Text.RegularExpressions;
 
 namespace MovieMate
 {
     public partial class NewUserForm : Form
     {
+        private const string ClientId = "463ec85cc1f64b51a8eef87d5f7c7bab";
+        private const string ClientSecret = "3ea4fc2d9a794b7faad64c68f30e7255";
+        private const string RedirectUri = "myapp://auth";
+
+        private string yandexUsername;
+        private byte[] yandexProfilePicture;
+        private bool yandexAuthorized = false;
+
         public string selectedNickname = string.Empty;
+
         public NewUserForm()
         {
             InitializeComponent();
@@ -112,11 +125,21 @@ namespace MovieMate
 
         private void secondEnterButton_Click_1(object sender, EventArgs e)
         {
-            string nickname = NameTextBox.Text.Trim();
+            string nickname;
             string password = PasswordTextBox.Text;
             string passwordRepeat = PasswordRepeatTextBox.Text;
             string idMovieLike = GetSelectedMovieIds(); 
-            byte[] picture = GetPictureData();
+            byte[] picture;
+            if (yandexAuthorized)
+            {
+                nickname = yandexUsername;
+                picture = yandexProfilePicture;
+            }
+            else
+            {
+                nickname = NameTextBox.Text.Trim();
+                picture = GetPictureData();
+            }
 
             if (string.IsNullOrEmpty(nickname))
             {
@@ -140,6 +163,7 @@ namespace MovieMate
             {
                 var newUser = new Person
                 {
+
                     Nickname = nickname,
                     IdMovieLike = idMovieLike,
                     PasswordHash = hashedPassword,
@@ -168,6 +192,66 @@ namespace MovieMate
                 }
                 return builder.ToString();
             }
+        }
+        private void yandexAuthButton_Click(object sender, EventArgs e)
+        {
+            string authorizeUrl = $"https://oauth.yandex.ru/authorize?response_type=code&client_id={ClientId}&redirect_uri={RedirectUri}";
+            Process.Start(authorizeUrl);
+        }
+        private string ExtractCodeFromUrl(string url)
+        {
+            const string pattern = @"code=([^&]+)";
+            var match = Regex.Match(url, pattern);
+            return match.Success ? match.Groups[1].Value : null;
+        }
+
+        private async Task ProcessAuthResponse(string url)
+        {
+            string code = ExtractCodeFromUrl(url);
+
+            var tokenResponse = await GetAccessTokenAsync(code);
+            string accessToken = tokenResponse["access_token"].ToString();
+
+            var userInfo = await GetUserInfoAsync(accessToken);
+            yandexUsername = userInfo["login"].ToString();
+
+            string pictureUrl = userInfo["default_avatar_id"].ToString();
+            pictureUrl = $"https://avatars.yandex.net/get-yapic/{pictureUrl}/islands-200";
+            yandexProfilePicture = await DownloadImageAsync(pictureUrl);
+
+            NameTextBox.Text = yandexUsername;
+            pictureBox1.Image = Image.FromStream(new MemoryStream(yandexProfilePicture));
+
+            yandexAuthorized = true;
+        }
+
+        private async Task<JObject> GetAccessTokenAsync(string code)
+        {
+            var client = new RestClient("https://oauth.yandex.ru/token");
+            var request = new RestRequest("/token",Method.Post);
+            request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
+            request.AddParameter("grant_type", "authorization_code");
+            request.AddParameter("code", code);
+            request.AddParameter("client_id", ClientId);
+            request.AddParameter("client_secret", ClientSecret);
+            var response = await client.ExecuteAsync(request);
+            return JObject.Parse(response.Content);
+        }
+
+        private async Task<JObject> GetUserInfoAsync(string accessToken)
+        {
+            var client = new RestClient("https://login.yandex.ru/info");
+            var request = new RestRequest();
+            request.AddHeader("Authorization", $"OAuth {accessToken}");
+            var response = await client.ExecuteAsync(request);
+            return JObject.Parse(response.Content);
+        }
+        private async Task<byte[]> DownloadImageAsync(string url)
+        {
+            var client = new RestClient(url);
+            var request = new RestRequest();
+            var response = await client.ExecuteAsync(request);
+            return response.RawBytes;
         }
 
     }
