@@ -49,25 +49,6 @@ namespace MovieMate
             }
         }
 
-        private void deleteFromFavouritesButton_Click(object sender, EventArgs e)
-        {
-            if (selectedMovie == null)
-            {
-                MessageBox.Show("Выберите фильм для удаления из избранного!");
-                return;
-            }
-            List<int> movieIds = currentUser.IdFavorites.Split(',').Select(int.Parse).ToList();
-            movieIds.Remove(selectedMovie.Id);
-            currentUser.IdFavorites = string.Join(",", movieIds);
-            if (currentUser.IdFavorites.StartsWith(","))
-            {
-                currentUser.IdFavorites = currentUser.IdFavorites.Substring(1);
-            }
-            db.SaveChanges();
-            DisplaySimilarMovies(currentUser.IdFavorites);
-
-            MessageBox.Show("Фильм удален из избранного!");
-        }
 
         private void blackListButton_Click(object sender, EventArgs e)
         {
@@ -95,7 +76,8 @@ namespace MovieMate
             }
         }
 
-        private void openFavouritesButton_Click(object sender, EventArgs e)
+
+        private void openFavButton_Click(object sender, EventArgs e)
         {
             if (selectedMovie == null)
             {
@@ -106,6 +88,33 @@ namespace MovieMate
             int selectedMovieId = selectedMovie.Id;
             var movieDetailsForm = new MovieCard(selectedMovieId);
             movieDetailsForm.Show();
+        }
+
+        private void deleteFavButton_Click(object sender, EventArgs e)
+        {
+            if (selectedMovie == null)
+            {
+                MessageBox.Show("Выберите фильм для удаления из избранного!");
+                return;
+            }
+            List<int> movieIds = currentUser.IdFavorites.Split(',').Select(int.Parse).ToList();
+            movieIds.Remove(selectedMovie.Id);
+            currentUser.IdFavorites = string.Join(",", movieIds);
+            if (currentUser.IdFavorites.StartsWith(","))
+            {
+                currentUser.IdFavorites = currentUser.IdFavorites.Substring(1);
+            }
+            db.SaveChanges();
+            DisplaySimilarMovies(currentUser.IdFavorites);
+
+            MessageBox.Show("Фильм удален из избранного!");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GeneralCompilationForm gf = new GeneralCompilationForm();
+            gf.Show();
+            this.Close();
         }
     }
 }

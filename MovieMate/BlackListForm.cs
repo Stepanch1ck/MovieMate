@@ -50,10 +50,47 @@ namespace MovieMate
             }
         }
 
-        
-        
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FavouritesListForm favoritesListForm = new FavouritesListForm(UserNickname);
+            favoritesListForm.Show();
+            this.Close();
+        }
 
-        private void deleteFromBlackListButton_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MainMenu blackListForm = new MainMenu(UserNickname);
+            blackListForm.Show();
+            this.Close();
+        }
+
+        private void filmsDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                BlackListDataGridView.Rows[e.RowIndex].Selected = true;
+
+                string selectedMovieName = BlackListDataGridView.Rows[e.RowIndex].Cells["filmname"].Value.ToString();
+                int selectedMovieYear = Convert.ToInt32(BlackListDataGridView.Rows[e.RowIndex].Cells["Year"].Value);
+
+                selectedMovie = db.Movies.FirstOrDefault(m => m.Name == selectedMovieName && m.Year == selectedMovieYear);
+            }
+        }
+
+        private void openButton_Click(object sender, EventArgs e)
+        {
+            if (selectedMovie == null)
+            {
+                MessageBox.Show("Пожалуйста выберите фильм!");
+                return;
+            }
+
+            int selectedMovieId = selectedMovie.Id;
+            var movieDetailsForm = new MovieCard(selectedMovieId);
+            movieDetailsForm.Show();
+        }
+
+        private void deleteBlackList_Click(object sender, EventArgs e)
         {
             if (selectedMovie == null)
             {
@@ -71,47 +108,13 @@ namespace MovieMate
             DisplaySimilarMovies(currentUser.IdBlackList);
 
             MessageBox.Show("Фильм удален из чёрного списка!");
-            
         }
-        
 
-        private void button3_Click(object sender, EventArgs e)
+        private void generalCompilationButton_Click(object sender, EventArgs e)
         {
-            FavouritesListForm favoritesListForm = new FavouritesListForm(UserNickname);
-            favoritesListForm.Show();
+            GeneralCompilationForm gf = new GeneralCompilationForm();
+            gf.Show();
             this.Close();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MainMenu blackListForm = new MainMenu(UserNickname);
-            blackListForm.Show();
-            this.Close();
-        }
-
-        private void blackListOpenButton_Click(object sender, EventArgs e)
-        {
-            if (selectedMovie == null)
-            {
-                MessageBox.Show("Пожалуйста выберите фильм!");
-                return;
-            }
-
-            int selectedMovieId = selectedMovie.Id;
-            var movieDetailsForm = new MovieCard(selectedMovieId);
-            movieDetailsForm.Show();
-        }
-        private void filmsDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                BlackListDataGridView.Rows[e.RowIndex].Selected = true;
-
-                string selectedMovieName = BlackListDataGridView.Rows[e.RowIndex].Cells["filmname"].Value.ToString();
-                int selectedMovieYear = Convert.ToInt32(BlackListDataGridView.Rows[e.RowIndex].Cells["Year"].Value);
-
-                selectedMovie = db.Movies.FirstOrDefault(m => m.Name == selectedMovieName && m.Year == selectedMovieYear);
-            }
         }
     }
 

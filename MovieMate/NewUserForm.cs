@@ -89,7 +89,7 @@ namespace MovieMate
         }
         private byte[] GetPictureData()
         {
-            if (pictureBox1.Image != null) 
+            if (pictureBox1.Image != null)
             {
                 using (MemoryStream ms = new MemoryStream())
                 {
@@ -99,12 +99,11 @@ namespace MovieMate
             }
             else
             {
-                return null; 
+                return null;
             }
         }
-        
 
-        private void pictureButton_Click_1(object sender, EventArgs e)
+        private void pictureSelectButton_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
@@ -116,11 +115,18 @@ namespace MovieMate
             }
         }
 
-        private void secondEnterButton_Click_1(object sender, EventArgs e)
+        private void loginVKLabel_Click(object sender, EventArgs e)
+        {
+            VKLoginForm vk = new VKLoginForm();
+            vk.Show();
+            this.Close();
+        }
+
+        private void loginButton_Click(object sender, EventArgs e)
         {
             string nickname = richTextBox1.Text.Trim();
-            string idMovieLike = GetSelectedMovieIds(); 
-            byte[] picture = GetPictureData(); 
+            string idMovieLike = GetSelectedMovieIds();
+            byte[] picture = GetPictureData();
 
 
             using (var context = new MovieDbContext())

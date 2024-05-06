@@ -29,49 +29,45 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FavouritesListForm));
-            roundedButton1 = new RoundedButton();
             FavouritesDataGridView = new DataGridView();
-            openFavouritesButton = new RoundedButton();
-            deleteFromFavouritesButton = new RoundedButton();
+            filmName = new DataGridViewTextBoxColumn();
+            Year = new DataGridViewTextBoxColumn();
+            Grade = new DataGridViewTextBoxColumn();
             mainMenuButton = new Button();
             blackListButton = new Button();
             button3 = new Button();
             pictureBox1 = new PictureBox();
-            filmName = new DataGridViewTextBoxColumn();
-            Year = new DataGridViewTextBoxColumn();
-            Grade = new DataGridViewTextBoxColumn();
+            openFavButton = new Button();
+            deleteFavButton = new Button();
+            favoriteLabel = new Label();
+            generalCompilationButton = new Button();
             ((System.ComponentModel.ISupportInitialize)FavouritesDataGridView).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // roundedButton1
-            // 
-            resources.ApplyResources(roundedButton1, "roundedButton1");
-            roundedButton1.Name = "roundedButton1";
-            roundedButton1.UseVisualStyleBackColor = true;
-            // 
             // FavouritesDataGridView
             // 
             resources.ApplyResources(FavouritesDataGridView, "FavouritesDataGridView");
-            FavouritesDataGridView.BackgroundColor = SystemColors.ButtonHighlight;
+            FavouritesDataGridView.BackgroundColor = SystemColors.AppWorkspace;
             FavouritesDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             FavouritesDataGridView.Columns.AddRange(new DataGridViewColumn[] { filmName, Year, Grade });
             FavouritesDataGridView.Name = "FavouritesDataGridView";
             FavouritesDataGridView.CellDoubleClick += filmsDataGridView_CellDoubleClick;
             // 
-            // openFavouritesButton
+            // filmName
             // 
-            resources.ApplyResources(openFavouritesButton, "openFavouritesButton");
-            openFavouritesButton.Name = "openFavouritesButton";
-            openFavouritesButton.UseVisualStyleBackColor = true;
-            openFavouritesButton.Click += openFavouritesButton_Click;
+            resources.ApplyResources(filmName, "filmName");
+            filmName.Name = "filmName";
             // 
-            // deleteFromFavouritesButton
+            // Year
             // 
-            resources.ApplyResources(deleteFromFavouritesButton, "deleteFromFavouritesButton");
-            deleteFromFavouritesButton.Name = "deleteFromFavouritesButton";
-            deleteFromFavouritesButton.UseVisualStyleBackColor = true;
-            deleteFromFavouritesButton.Click += deleteFromFavouritesButton_Click;
+            resources.ApplyResources(Year, "Year");
+            Year.Name = "Year";
+            // 
+            // Grade
+            // 
+            resources.ApplyResources(Grade, "Grade");
+            Grade.Name = "Grade";
             // 
             // mainMenuButton
             // 
@@ -99,46 +95,62 @@
             pictureBox1.Name = "pictureBox1";
             pictureBox1.TabStop = false;
             // 
-            // filmName
+            // openFavButton
             // 
-            resources.ApplyResources(filmName, "filmName");
-            filmName.Name = "filmName";
+            resources.ApplyResources(openFavButton, "openFavButton");
+            openFavButton.BackColor = Color.Black;
+            openFavButton.ForeColor = Color.White;
+            openFavButton.Name = "openFavButton";
+            openFavButton.UseVisualStyleBackColor = false;
+            openFavButton.Click += openFavButton_Click;
             // 
-            // Year
+            // deleteFavButton
             // 
-            resources.ApplyResources(Year, "Year");
-            Year.Name = "Year";
+            resources.ApplyResources(deleteFavButton, "deleteFavButton");
+            deleteFavButton.BackColor = Color.Black;
+            deleteFavButton.ForeColor = Color.White;
+            deleteFavButton.Name = "deleteFavButton";
+            deleteFavButton.UseVisualStyleBackColor = false;
+            deleteFavButton.Click += deleteFavButton_Click;
             // 
-            // Grade
+            // favoriteLabel
             // 
-            resources.ApplyResources(Grade, "Grade");
-            Grade.Name = "Grade";
+            resources.ApplyResources(favoriteLabel, "favoriteLabel");
+            favoriteLabel.BackColor = Color.Black;
+            favoriteLabel.ForeColor = Color.White;
+            favoriteLabel.Name = "favoriteLabel";
+            // 
+            // generalCompilationButton
+            // 
+            resources.ApplyResources(generalCompilationButton, "generalCompilationButton");
+            generalCompilationButton.Name = "generalCompilationButton";
+            generalCompilationButton.UseVisualStyleBackColor = true;
+            generalCompilationButton.Click += button1_Click;
             // 
             // FavouritesListForm
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            Controls.Add(generalCompilationButton);
+            Controls.Add(favoriteLabel);
+            Controls.Add(deleteFavButton);
+            Controls.Add(openFavButton);
             Controls.Add(pictureBox1);
             Controls.Add(button3);
             Controls.Add(blackListButton);
             Controls.Add(mainMenuButton);
-            Controls.Add(deleteFromFavouritesButton);
-            Controls.Add(openFavouritesButton);
             Controls.Add(FavouritesDataGridView);
-            Controls.Add(roundedButton1);
             Name = "FavouritesListForm";
             Load += FavouritesListForm_Load;
             ((System.ComponentModel.ISupportInitialize)FavouritesDataGridView).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private RoundedButton roundedButton1;
         private DataGridView FavouritesDataGridView;
-        private RoundedButton openFavouritesButton;
-        private RoundedButton deleteFromFavouritesButton;
         private Button mainMenuButton;
         private Button blackListButton;
         private Button button3;
@@ -146,5 +158,9 @@
         private DataGridViewTextBoxColumn filmName;
         private DataGridViewTextBoxColumn Year;
         private DataGridViewTextBoxColumn Grade;
+        private Button openFavButton;
+        private Button deleteFavButton;
+        private Label favoriteLabel;
+        private Button generalCompilationButton;
     }
 }

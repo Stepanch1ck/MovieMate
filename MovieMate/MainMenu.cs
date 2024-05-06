@@ -33,10 +33,7 @@ namespace MovieMate
             secondNicknameLabel.Text = nickname;
         }
 
-        void russianButton_Click(object sender, EventArgs e)
-        {
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ru");
-        }
+
 
 
         void MainMenu_Load(object sender, EventArgs e)
@@ -61,18 +58,6 @@ namespace MovieMate
             var idMovieLike = currentUser.IdMovieLike;
             DisplaySimilarMovies(idMovieLike);
 
-        }
-        private void openButton_Click(object sender, EventArgs e)
-        {
-            if (selectedMovie == null)
-            {
-                MessageBox.Show("Пожалуйста выберите фильм!");
-                return;
-            }
-
-            int selectedMovieId = selectedMovie.Id;
-            var movieDetailsForm = new MovieCard(selectedMovieId);
-            movieDetailsForm.Show();
         }
 
         void DisplaySimilarMovies(string idMovieLike)
@@ -114,16 +99,44 @@ namespace MovieMate
             var favouritesListForm = new FavouritesListForm(UserNickname);
             favouritesListForm.Show();
             this.Close();
-
-
         }
 
-        void englishButton_Click(object sender, EventArgs e)
+
+
+        private void button3_Click(object sender, EventArgs e)
         {
-            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en");
+            BlackListForm blackListForm = new BlackListForm(UserNickname);
+            blackListForm.Show();
+            this.Close();
         }
 
-        private void addToFavouritesButton_Click(object sender, EventArgs e)
+        private void filmsDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                filmsDataGridView.Rows[e.RowIndex].Selected = true;
+
+                string selectedMovieName = filmsDataGridView.Rows[e.RowIndex].Cells["filmname"].Value.ToString();
+                int selectedMovieYear = Convert.ToInt32(filmsDataGridView.Rows[e.RowIndex].Cells["Year"].Value);
+
+                selectedMovie = db.Movies.FirstOrDefault(m => m.Name == selectedMovieName && m.Year == selectedMovieYear);
+            }
+        }
+
+        private void openButton_Click_1(object sender, EventArgs e)
+        {
+            if (selectedMovie == null)
+            {
+                MessageBox.Show("Пожалуйста выберите фильм!");
+                return;
+            }
+
+            int selectedMovieId = selectedMovie.Id;
+            var movieDetailsForm = new MovieCard(selectedMovieId);
+            movieDetailsForm.Show();
+        }
+
+        private void favouritesButton_Click(object sender, EventArgs e)
         {
             if (selectedMovie == null)
             {
@@ -147,10 +160,9 @@ namespace MovieMate
             DisplaySimilarMovies(currentUser.IdMovieLike);
 
             MessageBox.Show("Фильм добавлен в избранное!");
-
         }
 
-        private void addToBlackListButton_Click(object sender, EventArgs e)
+        private void addBlackListButton_Click(object sender, EventArgs e)
         {
             if (selectedMovie == null)
             {
@@ -176,27 +188,17 @@ namespace MovieMate
             MessageBox.Show("Фильм добавлен в чёрный список!");
         }
 
-
-        private void button3_Click(object sender, EventArgs e)
+        private void generalCompilationButton_Click(object sender, EventArgs e)
         {
-            BlackListForm blackListForm = new BlackListForm(UserNickname);
-            blackListForm.Show();
+            GeneralCompilationForm gf = new GeneralCompilationForm();
+            gf.Show();
             this.Close();
         }
 
-        private void filmsDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void secondNicknameLabel_Click(object sender, EventArgs e)
         {
-            if (e.RowIndex >= 0)
-            {
-                filmsDataGridView.Rows[e.RowIndex].Selected = true;
-
-                string selectedMovieName = filmsDataGridView.Rows[e.RowIndex].Cells["filmname"].Value.ToString();
-                int selectedMovieYear = Convert.ToInt32(filmsDataGridView.Rows[e.RowIndex].Cells["Year"].Value);
-
-                selectedMovie = db.Movies.FirstOrDefault(m => m.Name == selectedMovieName && m.Year == selectedMovieYear);
-            }
+            UserInfo info = new UserInfo();
+            info.Show();
         }
-        
-
     }
 }

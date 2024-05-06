@@ -28,105 +28,110 @@
         /// </summary>
         private void InitializeComponent()
         {
-            newUserButton = new RoundedButton();
-            enterButton = new RoundedButton();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             listBox1 = new ListBox();
             nickNameLabel = new Label();
-            roundedButton1 = new RoundedButton();
             pictureBox1 = new PictureBox();
+            newUserButton = new Button();
+            enterUserButton = new Button();
+            russianButton = new Button();
+            englishButton = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // newUserButton
-            // 
-            newUserButton.Location = new Point(322, 322);
-            newUserButton.Margin = new Padding(3, 2, 3, 2);
-            newUserButton.Name = "newUserButton";
-            newUserButton.Size = new Size(160, 44);
-            newUserButton.TabIndex = 0;
-            newUserButton.Text = "Новый пользователь";
-            newUserButton.UseVisualStyleBackColor = true;
-            newUserButton.Click += newUserButton_Click;
-            // 
-            // enterButton
-            // 
-            enterButton.Location = new Point(322, 274);
-            enterButton.Margin = new Padding(3, 2, 3, 2);
-            enterButton.Name = "enterButton";
-            enterButton.Size = new Size(160, 44);
-            enterButton.TabIndex = 1;
-            enterButton.Text = "Войти";
-            enterButton.UseVisualStyleBackColor = true;
-            enterButton.Click += enterButton_Click;
-            // 
             // listBox1
             // 
+            resources.ApplyResources(listBox1, "listBox1");
             listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(322, 104);
-            listBox1.Margin = new Padding(3, 2, 3, 2);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(160, 139);
-            listBox1.TabIndex = 2;
             // 
             // nickNameLabel
             // 
-            nickNameLabel.AutoSize = true;
-            nickNameLabel.BackColor = SystemColors.ActiveCaptionText;
-            nickNameLabel.Font = new Font("Segoe UI Semibold", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            nickNameLabel.ForeColor = SystemColors.ButtonHighlight;
-            nickNameLabel.Location = new Point(228, 30);
+            resources.ApplyResources(nickNameLabel, "nickNameLabel");
+            nickNameLabel.BackColor = Color.White;
+            nickNameLabel.ForeColor = Color.Black;
             nickNameLabel.Name = "nickNameLabel";
-            nickNameLabel.Size = new Size(178, 47);
-            nickNameLabel.TabIndex = 3;
-            nickNameLabel.Text = "Nickname";
-            // 
-            // roundedButton1
-            // 
-            roundedButton1.Location = new Point(190, 30);
-            roundedButton1.Margin = new Padding(3, 2, 3, 2);
-            roundedButton1.Name = "roundedButton1";
-            roundedButton1.Size = new Size(260, 62);
-            roundedButton1.TabIndex = 4;
-            roundedButton1.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
+            resources.ApplyResources(pictureBox1, "pictureBox1");
             pictureBox1.BackColor = SystemColors.ButtonShadow;
-            pictureBox1.Location = new Point(-4, -1);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(262, 412);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
+            // 
+            // newUserButton
+            // 
+            resources.ApplyResources(newUserButton, "newUserButton");
+            newUserButton.BackColor = SystemColors.ActiveCaptionText;
+            newUserButton.ForeColor = SystemColors.ButtonHighlight;
+            newUserButton.Name = "newUserButton";
+            newUserButton.UseVisualStyleBackColor = false;
+            newUserButton.Click += newUserButton_Click;
+            // 
+            // enterUserButton
+            // 
+            resources.ApplyResources(enterUserButton, "enterUserButton");
+            enterUserButton.BackColor = SystemColors.ActiveCaptionText;
+            enterUserButton.ForeColor = SystemColors.ButtonHighlight;
+            enterUserButton.Name = "enterUserButton";
+            enterUserButton.UseVisualStyleBackColor = false;
+            enterUserButton.Click += enterUserButton_Click;
+            // 
+            // russianButton
+            // 
+            resources.ApplyResources(russianButton, "russianButton");
+            russianButton.BackColor = Color.Black;
+            russianButton.ForeColor = Color.White;
+            russianButton.Name = "russianButton";
+            russianButton.UseVisualStyleBackColor = false;
+            russianButton.Click += RussianButton_Click;
+            // 
+            // englishButton
+            // 
+            resources.ApplyResources(englishButton, "englishButton");
+            englishButton.BackColor = Color.Black;
+            englishButton.ForeColor = Color.White;
+            englishButton.Name = "englishButton";
+            englishButton.UseVisualStyleBackColor = false;
+            englishButton.Click += EnglishButton_Click;
             // 
             // MainForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(557, 411);
+            BackColor = SystemColors.ButtonHighlight;
+            Controls.Add(englishButton);
+            Controls.Add(russianButton);
+            Controls.Add(enterUserButton);
+            Controls.Add(newUserButton);
             Controls.Add(nickNameLabel);
-            Controls.Add(roundedButton1);
             Controls.Add(pictureBox1);
             Controls.Add(listBox1);
-            Controls.Add(enterButton);
-            Controls.Add(newUserButton);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "MainForm";
-            Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
+        private void EnglishButton_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en");
+        }
+
+        private void RussianButton_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ru");
+        }
+
         #endregion
 
-        private RoundedButton newUserButton;
-        private RoundedButton enterButton;
         private ListBox listBox1;
         private Label nickNameLabel;
-        private RoundedButton roundedButton1;
         private PictureBox pictureBox1;
+        private Button button1;
+        private Button enterUserButton;
+        private Button newUserButton;
+        private Button russianButton;
+        private Button englishButton;
     }
 }
