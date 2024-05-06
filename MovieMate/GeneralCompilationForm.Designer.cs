@@ -79,6 +79,7 @@
             // FavouritesDataGridView
             // 
             resources.ApplyResources(FavouritesDataGridView, "FavouritesDataGridView");
+            FavouritesDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             FavouritesDataGridView.BackgroundColor = SystemColors.AppWorkspace;
             FavouritesDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             FavouritesDataGridView.Name = "FavouritesDataGridView";

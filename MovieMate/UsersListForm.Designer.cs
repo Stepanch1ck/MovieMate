@@ -36,23 +36,23 @@
             // 
             // listBox1
             // 
-            resources.ApplyResources(listBox1, "listBox1");
             listBox1.BackColor = Color.Silver;
             listBox1.FormattingEnabled = true;
+            resources.ApplyResources(listBox1, "listBox1");
             listBox1.Name = "listBox1";
             // 
             // button1
             // 
-            resources.ApplyResources(button1, "button1");
             button1.BackColor = Color.Black;
             button1.ForeColor = Color.White;
+            resources.ApplyResources(button1, "button1");
             button1.Name = "button1";
             button1.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
-            resources.ApplyResources(label1, "label1");
             label1.BackColor = Color.Black;
+            resources.ApplyResources(label1, "label1");
             label1.ForeColor = Color.White;
             label1.Name = "label1";
             // 

@@ -48,6 +48,7 @@
             // BlackListDataGridView
             // 
             resources.ApplyResources(BlackListDataGridView, "BlackListDataGridView");
+            BlackListDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             BlackListDataGridView.BackgroundColor = SystemColors.AppWorkspace;
             BlackListDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             BlackListDataGridView.Columns.AddRange(new DataGridViewColumn[] { filmName, year, grade });

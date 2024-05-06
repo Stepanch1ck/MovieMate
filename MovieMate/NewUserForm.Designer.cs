@@ -89,8 +89,8 @@
             // 
             // nameLabel
             // 
-            resources.ApplyResources(nameLabel, "nameLabel");
             nameLabel.BackColor = SystemColors.ActiveCaptionText;
+            resources.ApplyResources(nameLabel, "nameLabel");
             nameLabel.ForeColor = Color.White;
             nameLabel.Name = "nameLabel";
             // 
@@ -105,9 +105,9 @@
             // 
             // filmSelectLabel
             // 
-            resources.ApplyResources(filmSelectLabel, "filmSelectLabel");
             filmSelectLabel.BackColor = SystemColors.ActiveCaptionText;
             filmSelectLabel.ForeColor = Color.White;
+            resources.ApplyResources(filmSelectLabel, "filmSelectLabel");
             filmSelectLabel.Name = "filmSelectLabel";
             // 
             // pictureBox2
@@ -133,8 +133,8 @@
             // 
             // passwordLabel
             // 
-            resources.ApplyResources(passwordLabel, "passwordLabel");
             passwordLabel.BackColor = SystemColors.ActiveCaptionText;
+            resources.ApplyResources(passwordLabel, "passwordLabel");
             passwordLabel.ForeColor = Color.White;
             passwordLabel.Name = "passwordLabel";
             // 
@@ -145,8 +145,8 @@
             // 
             // label1
             // 
-            resources.ApplyResources(label1, "label1");
             label1.BackColor = SystemColors.ActiveCaptionText;
+            resources.ApplyResources(label1, "label1");
             label1.ForeColor = Color.White;
             label1.Name = "label1";
             // 

@@ -117,40 +117,269 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;emailRichTextBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="richTextBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
+  <data name="moviesCheckBox1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="moviesCheckBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10.8pt, style=Bold</value>
+  </data>
+  <data name="moviesCheckBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 429</value>
+  </data>
+  <data name="moviesCheckBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 29</value>
+  </data>
+  <data name="moviesCheckBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="moviesCheckBox1.Text" xml:space="preserve">
+    <value>Кунг-фу панда</value>
+  </data>
+  <data name="&gt;&gt;moviesCheckBox1.Name" xml:space="preserve">
+    <value>moviesCheckBox1</value>
+  </data>
+  <data name="&gt;&gt;moviesCheckBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;moviesCheckBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;moviesCheckBox1.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="moviesCheckBox2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="moviesCheckBox2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Semibold, 10.8pt, style=Bold</value>
   </data>
-  <data name="nameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>382, 38</value>
+  <data name="moviesCheckBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 464</value>
+  </data>
+  <data name="moviesCheckBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 29</value>
+  </data>
+  <data name="moviesCheckBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="moviesCheckBox2.Text" xml:space="preserve">
+    <value>Ёлки</value>
+  </data>
+  <data name="&gt;&gt;moviesCheckBox2.Name" xml:space="preserve">
+    <value>moviesCheckBox2</value>
+  </data>
+  <data name="&gt;&gt;moviesCheckBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;moviesCheckBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;moviesCheckBox2.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="moviesCheckBox3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="moviesCheckBox3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10.8pt, style=Bold</value>
+  </data>
+  <data name="moviesCheckBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 429</value>
+  </data>
+  <data name="moviesCheckBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 29</value>
+  </data>
+  <data name="moviesCheckBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="moviesCheckBox3.Text" xml:space="preserve">
+    <value>Форсаж</value>
+  </data>
+  <data name="&gt;&gt;moviesCheckBox3.Name" xml:space="preserve">
+    <value>moviesCheckBox3</value>
+  </data>
+  <data name="&gt;&gt;moviesCheckBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;moviesCheckBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;moviesCheckBox3.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="moviesCheckBox4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="moviesCheckBox4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10.8pt, style=Bold</value>
+  </data>
+  <data name="moviesCheckBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 464</value>
+  </data>
+  <data name="moviesCheckBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 29</value>
+  </data>
+  <data name="moviesCheckBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="moviesCheckBox4.Text" xml:space="preserve">
+    <value>Мстители</value>
+  </data>
+  <data name="&gt;&gt;moviesCheckBox4.Name" xml:space="preserve">
+    <value>moviesCheckBox4</value>
+  </data>
+  <data name="&gt;&gt;moviesCheckBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;moviesCheckBox4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;moviesCheckBox4.ZOrder" xml:space="preserve">
+    <value>14</value>
   </data>
   <data name="richTextBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
-  <data name="&gt;&gt;emailLabel.Name" xml:space="preserve">
-    <value>emailLabel</value>
+  <data name="richTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 141</value>
   </data>
-  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
-    <value>pictureBox2</value>
+  <data name="richTextBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 34</value>
   </data>
-  <data name="&gt;&gt;passwordLabel.Parent" xml:space="preserve">
+  <data name="richTextBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;richTextBox1.Name" xml:space="preserve">
+    <value>richTextBox1</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;loginVKLabel.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;richTextBox1.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>828, 598</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>492, 100</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 215</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="nameLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="nameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 100</value>
+  </data>
+  <data name="nameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 38</value>
+  </data>
+  <data name="nameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="nameLabel.Text" xml:space="preserve">
+    <value>Введите имя пользователя:</value>
+  </data>
+  <data name="nameLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;nameLabel.Name" xml:space="preserve">
+    <value>nameLabel</value>
+  </data>
+  <data name="&gt;&gt;nameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nameLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;nameLabel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="pictureSelectButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="pictureSelectButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>505, 321</value>
+  </data>
+  <data name="pictureSelectButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 46</value>
+  </data>
+  <data name="pictureSelectButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="pictureSelectButton.Text" xml:space="preserve">
+    <value>Выбрать изображение профиля:</value>
+  </data>
+  <data name="&gt;&gt;pictureSelectButton.Name" xml:space="preserve">
+    <value>pictureSelectButton</value>
+  </data>
+  <data name="&gt;&gt;pictureSelectButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureSelectButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureSelectButton.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="filmSelectLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 370</value>
+  </data>
+  <data name="filmSelectLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 41</value>
+  </data>
+  <data name="filmSelectLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="filmSelectLabel.Text" xml:space="preserve">
+    <value>Выберите фильмы, которые вам нравятся:</value>
+  </data>
+  <data name="filmSelectLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;filmSelectLabel.Name" xml:space="preserve">
+    <value>filmSelectLabel</value>
+  </data>
+  <data name="&gt;&gt;filmSelectLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;filmSelectLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;filmSelectLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="pictureBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
   </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -206,101 +435,41 @@
         c4xx+NL4U8G2nhIXQtdR1O8+07Sxvrjzdu3P3eBjqc/hXR0d6AACinjiigD/2Q==
 </value>
   </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>364, 3</value>
   </data>
-  <data name="passwordLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="filmSelectLabel.Text" xml:space="preserve">
-    <value>Выберите фильмы, которые вам нравятся:</value>
-  </data>
-  <data name="&gt;&gt;richTextBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="loginButton.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="nameLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;passwordLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="filmSelectLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 370</value>
-  </data>
-  <data name="moviesCheckBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 429</value>
-  </data>
-  <data name="&gt;&gt;emailRichTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="moviesCheckBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 10.8pt, style=Bold</value>
-  </data>
-  <data name="loginButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 63</value>
-  </data>
-  <data name="richTextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 141</value>
-  </data>
-  <data name="&gt;&gt;moviesCheckBox3.Name" xml:space="preserve">
-    <value>moviesCheckBox3</value>
-  </data>
-  <data name="emailLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;moviesCheckBox1.Name" xml:space="preserve">
-    <value>moviesCheckBox1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="moviesCheckBox3.Text" xml:space="preserve">
-    <value>Форсаж</value>
-  </data>
-  <data name="&gt;&gt;richTextBox2.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="emailRichTextBox.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;moviesCheckBox4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="pictureSelectButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>505, 321</value>
-  </data>
-  <data name="&gt;&gt;richTextBox3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="richTextBox2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="&gt;&gt;richTextBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;moviesCheckBox2.ZOrder" xml:space="preserve">
-    <value>16</value>
+  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 94</value>
   </data>
   <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="emailRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>492, 414</value>
+  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
+    <value>pictureBox2</value>
   </data>
-  <data name="&gt;&gt;passwordLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;moviesCheckBox4.ZOrder" xml:space="preserve">
-    <value>14</value>
+  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;filmSelectLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>277, 215</value>
+  <data name="loginVKLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="loginVKLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>343, 499</value>
+  </data>
+  <data name="loginVKLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 25</value>
+  </data>
+  <data name="loginVKLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="loginVKLabel.Text" xml:space="preserve">
+    <value>Войти через VK</value>
   </data>
   <data name="loginVKLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -308,279 +477,227 @@
   <data name="&gt;&gt;loginVKLabel.Name" xml:space="preserve">
     <value>loginVKLabel</value>
   </data>
-  <data name="emailRichTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
+  <data name="&gt;&gt;loginVKLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="moviesCheckBox1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;loginVKLabel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="moviesCheckBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 29</value>
+  <data name="&gt;&gt;loginVKLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>364, 3</value>
+  <data name="loginButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
+  <data name="loginButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>364, 527</value>
   </data>
-  <data name="nameLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="loginButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 63</value>
   </data>
-  <data name="pictureSelectButton.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="emailLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>277, 38</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="loginVKLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="richTextBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 318</value>
-  </data>
-  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="emailRichTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
+  <data name="loginButton.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
   </data>
   <data name="loginButton.Text" xml:space="preserve">
     <value>Войти</value>
   </data>
-  <data name="moviesCheckBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 29</value>
-  </data>
-  <data name="&gt;&gt;moviesCheckBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;moviesCheckBox4.Name" xml:space="preserve">
-    <value>moviesCheckBox4</value>
-  </data>
-  <data name="&gt;&gt;pictureSelectButton.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="filmSelectLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="richTextBox2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="emailLabel.Text" xml:space="preserve">
-    <value>Введите почту:</value>
-  </data>
-  <data name="emailLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="loginVKLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 25</value>
-  </data>
-  <data name="&gt;&gt;passwordLabel.Name" xml:space="preserve">
-    <value>passwordLabel</value>
-  </data>
-  <data name="moviesCheckBox2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;richTextBox3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;richTextBox1.Name" xml:space="preserve">
-    <value>richTextBox1</value>
-  </data>
-  <data name="&gt;&gt;moviesCheckBox2.Name" xml:space="preserve">
-    <value>moviesCheckBox2</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;nameLabel.Name" xml:space="preserve">
-    <value>nameLabel</value>
-  </data>
-  <data name="&gt;&gt;emailRichTextBox.Name" xml:space="preserve">
-    <value>emailRichTextBox</value>
-  </data>
-  <data name="richTextBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;nameLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="passwordLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="moviesCheckBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 94</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Повторите пароль:</value>
-  </data>
-  <data name="&gt;&gt;pictureSelectButton.Name" xml:space="preserve">
-    <value>pictureSelectButton</value>
-  </data>
-  <data name="moviesCheckBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 464</value>
-  </data>
-  <data name="moviesCheckBox4.Text" xml:space="preserve">
-    <value>Мстители</value>
-  </data>
-  <data name="passwordLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>382, 38</value>
-  </data>
-  <data name="emailLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>NewUserForm</value>
-  </data>
-  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="loginVKLabel.Text" xml:space="preserve">
-    <value>Войти через VK</value>
-  </data>
-  <data name="&gt;&gt;moviesCheckBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="richTextBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 231</value>
-  </data>
-  <data name="&gt;&gt;emailLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="nameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 100</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="&gt;&gt;richTextBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureSelectButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;emailLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;richTextBox2.Name" xml:space="preserve">
-    <value>richTextBox2</value>
-  </data>
-  <data name="nameLabel.Text" xml:space="preserve">
-    <value>Введите имя пользователя:</value>
-  </data>
-  <data name="&gt;&gt;moviesCheckBox1.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="richTextBox3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="moviesCheckBox4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 10.8pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;pictureSelectButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="richTextBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>382, 34</value>
-  </data>
-  <data name="passwordLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="moviesCheckBox3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 10.8pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;richTextBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;emailRichTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;loginButton.Name" xml:space="preserve">
+    <value>loginButton</value>
   </data>
   <data name="&gt;&gt;loginButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="moviesCheckBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;loginButton.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="filmSelectLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="&gt;&gt;loginButton.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>492, 100</value>
+  <data name="passwordLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
   <data name="passwordLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>52, 190</value>
   </data>
-  <data name="&gt;&gt;moviesCheckBox3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="passwordLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>382, 38</value>
   </data>
-  <data name="&gt;&gt;nameLabel.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="passwordLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
   </data>
-  <data name="pictureSelectButton.Text" xml:space="preserve">
-    <value>Выбрать изображение профиля:</value>
+  <data name="passwordLabel.Text" xml:space="preserve">
+    <value>Введите пароль:</value>
   </data>
-  <data name="&gt;&gt;moviesCheckBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="passwordLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
-  <data name="richTextBox3.Text" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;passwordLabel.Name" xml:space="preserve">
+    <value>passwordLabel</value>
   </data>
-  <data name="moviesCheckBox2.Text" xml:space="preserve">
-    <value>Ёлки</value>
+  <data name="&gt;&gt;passwordLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;nameLabel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;passwordLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="pictureSelectButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 46</value>
+  <data name="&gt;&gt;passwordLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="emailRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>277, 34</value>
+  <data name="richTextBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>MovieMate</value>
+  <data name="richTextBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 231</value>
+  </data>
+  <data name="richTextBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 34</value>
+  </data>
+  <data name="richTextBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="richTextBox2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;richTextBox2.Name" xml:space="preserve">
+    <value>richTextBox2</value>
   </data>
   <data name="&gt;&gt;richTextBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;richTextBox2.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="nameLabel.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="&gt;&gt;richTextBox2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 277</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 38</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Повторите пароль:</value>
   </data>
   <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="&gt;&gt;filmSelectLabel.Name" xml:space="preserve">
-    <value>filmSelectLabel</value>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="richTextBox3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="richTextBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 318</value>
+  </data>
+  <data name="richTextBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>382, 34</value>
+  </data>
+  <data name="richTextBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="richTextBox3.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;richTextBox3.Name" xml:space="preserve">
+    <value>richTextBox3</value>
+  </data>
+  <data name="&gt;&gt;richTextBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;richTextBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;richTextBox3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="emailLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="emailLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
   <data name="emailLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>492, 373</value>
+  </data>
+  <data name="emailLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 38</value>
+  </data>
+  <data name="emailLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="emailLabel.Text" xml:space="preserve">
+    <value>Введите почту:</value>
+  </data>
+  <data name="emailLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;emailLabel.Name" xml:space="preserve">
+    <value>emailLabel</value>
+  </data>
+  <data name="&gt;&gt;emailLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emailLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;emailLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="emailRichTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="emailRichTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="emailRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>492, 414</value>
+  </data>
+  <data name="emailRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 34</value>
+  </data>
+  <data name="emailRichTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="emailRichTextBox.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;emailRichTextBox.Name" xml:space="preserve">
+    <value>emailRichTextBox</value>
+  </data>
+  <data name="&gt;&gt;emailRichTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emailRichTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;emailRichTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 20</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>828, 598</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1728,109 +1845,16 @@
         QvVsjaUAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="&gt;&gt;filmSelectLabel.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>846, 645</value>
   </data>
-  <data name="&gt;&gt;loginButton.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Регистрация</value>
   </data>
-  <data name="loginVKLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>343, 499</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>NewUserForm</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 277</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="moviesCheckBox3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;filmSelectLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;richTextBox3.Name" xml:space="preserve">
-    <value>richTextBox3</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="moviesCheckBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 29</value>
-  </data>
-  <data name="&gt;&gt;loginVKLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;emailLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="passwordLabel.Text" xml:space="preserve">
-    <value>Введите пароль:</value>
-  </data>
-  <data name="&gt;&gt;richTextBox1.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="moviesCheckBox1.Text" xml:space="preserve">
-    <value>Кунг-фу панда</value>
-  </data>
-  <data name="moviesCheckBox4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;loginVKLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="richTextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>382, 34</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="richTextBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>382, 34</value>
-  </data>
-  <data name="loginButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>364, 527</value>
-  </data>
-  <data name="moviesCheckBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>233, 429</value>
-  </data>
-  <data name="moviesCheckBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>233, 464</value>
-  </data>
-  <data name="moviesCheckBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;moviesCheckBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="filmSelectLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>382, 41</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 20</value>
-  </data>
-  <data name="moviesCheckBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 29</value>
-  </data>
-  <data name="&gt;&gt;loginButton.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;moviesCheckBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;loginButton.Name" xml:space="preserve">
-    <value>loginButton</value>
-  </data>
-  <data name="&gt;&gt;moviesCheckBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="moviesCheckBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="richTextBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;moviesCheckBox3.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>
