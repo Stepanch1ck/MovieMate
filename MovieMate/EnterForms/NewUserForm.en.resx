@@ -209,7 +209,7 @@
     <value>Log in via VK</value>
   </data>
   <data name="loginButton.Text" xml:space="preserve">
-    <value>Log In</value>
+    <value>Register</value>
   </data>
   <data name="passwordLabel.Text" xml:space="preserve">
     <value>Enter the password:</value>

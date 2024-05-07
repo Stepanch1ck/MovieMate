@@ -182,4 +182,7 @@
   <data name="englishButton.Text" xml:space="preserve">
     <value>English</value>
   </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Log In</value>
+  </data>
 </root>

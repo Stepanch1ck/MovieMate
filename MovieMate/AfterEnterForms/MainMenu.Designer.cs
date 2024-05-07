@@ -76,6 +76,7 @@
             // filmsDataGridView
             // 
             resources.ApplyResources(filmsDataGridView, "filmsDataGridView");
+            filmsDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             filmsDataGridView.BackgroundColor = SystemColors.AppWorkspace;
             filmsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             filmsDataGridView.Columns.AddRange(new DataGridViewColumn[] { filmName, Year, Grade });
