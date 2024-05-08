@@ -118,35 +118,90 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="moviesCheckBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 322</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="moviesCheckBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
   <data name="moviesCheckBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 29</value>
+    <value>134, 24</value>
   </data>
   <data name="moviesCheckBox1.Text" xml:space="preserve">
     <value>Kung-Fu panda</value>
   </data>
+  <data name="moviesCheckBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 348</value>
+  </data>
+  <data name="moviesCheckBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
   <data name="moviesCheckBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 29</value>
+    <value>131, 24</value>
   </data>
   <data name="moviesCheckBox2.Text" xml:space="preserve">
     <value>Christmas trees</value>
   </data>
+  <data name="moviesCheckBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 322</value>
+  </data>
+  <data name="moviesCheckBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
   <data name="moviesCheckBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 29</value>
+    <value>109, 24</value>
   </data>
   <data name="moviesCheckBox3.Text" xml:space="preserve">
     <value>Afterburner</value>
   </data>
+  <data name="moviesCheckBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 348</value>
+  </data>
+  <data name="moviesCheckBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
   <data name="moviesCheckBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 29</value>
+    <value>92, 24</value>
   </data>
   <data name="moviesCheckBox4.Text" xml:space="preserve">
     <value>Avengers</value>
   </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 75</value>
+  </data>
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 161</value>
+  </data>
+  <data name="nameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 75</value>
+  </data>
+  <data name="nameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 28</value>
+  </data>
   <data name="nameLabel.Text" xml:space="preserve">
     <value>Enter the user name:</value>
   </data>
+  <data name="pictureSelectButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>442, 241</value>
+  </data>
+  <data name="pictureSelectButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="pictureSelectButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 34</value>
+  </data>
   <data name="pictureSelectButton.Text" xml:space="preserve">
     <value>Select image for profile:</value>
+  </data>
+  <data name="filmSelectLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 278</value>
+  </data>
+  <data name="filmSelectLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 31</value>
   </data>
   <data name="filmSelectLabel.Text" xml:space="preserve">
     <value>Choose the movies you like :</value>
@@ -205,20 +260,105 @@
         c4xx+NL4U8G2nhIXQtdR1O8+07Sxvrjzdu3P3eBjqc/hXR0d6AACinjiigD/2Q==
 </value>
   </data>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 2</value>
+  </data>
+  <data name="pictureBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 70</value>
+  </data>
+  <data name="loginVKLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 374</value>
+  </data>
+  <data name="loginVKLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 19</value>
+  </data>
   <data name="loginVKLabel.Text" xml:space="preserve">
     <value>Log in via VK</value>
+  </data>
+  <data name="loginButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>318, 395</value>
+  </data>
+  <data name="loginButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="loginButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 47</value>
   </data>
   <data name="loginButton.Text" xml:space="preserve">
     <value>Register</value>
   </data>
+  <data name="passwordLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 142</value>
+  </data>
+  <data name="passwordLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 28</value>
+  </data>
   <data name="passwordLabel.Text" xml:space="preserve">
     <value>Enter the password:</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 208</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 28</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Repeat the password:</value>
   </data>
+  <data name="emailLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 280</value>
+  </data>
+  <data name="emailLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 28</value>
+  </data>
   <data name="emailLabel.Text" xml:space="preserve">
     <value>Enter your E-mail:</value>
+  </data>
+  <data name="NameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 106</value>
+  </data>
+  <data name="NameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="NameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="PasswordTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 173</value>
+  </data>
+  <data name="PasswordTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 23</value>
+  </data>
+  <data name="PasswordTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="PasswordRepeatTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 241</value>
+  </data>
+  <data name="PasswordRepeatTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 23</value>
+  </data>
+  <data name="PasswordRepeatTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="MailTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 311</value>
+  </data>
+  <data name="MailTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 23</value>
+  </data>
+  <data name="MailTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>726, 454</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1365,5 +1505,8 @@
         AAAAAADoGgEsAAAAAAAAdI0AFgAAAAAAALpGAAsAAAAAAABd+38AAAD//1NRgp8AAAAGSURBVAMATyc6
         QvVsjaUAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>742, 493</value>
   </data>
 </root>

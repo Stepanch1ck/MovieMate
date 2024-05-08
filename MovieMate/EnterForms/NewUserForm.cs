@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
+﻿using MovieMate.DBConnect;
+using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using MovieMate.DBConnect;
+using System.Text.RegularExpressions;
 
 namespace MovieMate
 {
@@ -17,14 +11,14 @@ namespace MovieMate
         public NewUserForm()
         {
             InitializeComponent();
-            richTextBox1.KeyDown += richTextBox1_KeyDown;
+            NameTextBox.KeyDown += richTextBox1_KeyDown;
         }
 
         void NewUserForm_Load(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(richTextBox1.Text))
+            if (!string.IsNullOrEmpty(NameTextBox.Text))
             {
-                selectedNickname = richTextBox1.Text.ToString();
+                selectedNickname = NameTextBox.Text.ToString();
                 using (var context = new MovieDbContext())
                 {
                     var newUser = new Person { Nickname = selectedNickname };
@@ -80,11 +74,11 @@ namespace MovieMate
         {
             if (e.KeyCode == Keys.Enter)
             {
-                var enteredText = richTextBox1.Text.Trim();
+                var enteredText = NameTextBox.Text.Trim();
                 if (!string.IsNullOrEmpty(enteredText))
                 {
                     SaveTextToDatabase(enteredText);
-                    richTextBox1.Clear();
+                    NameTextBox.Clear();
                 }
             }
         }
@@ -125,18 +119,48 @@ namespace MovieMate
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            string nickname = richTextBox1.Text.Trim();
+            
+            string password = PasswordTextBox.Text;
+            string passwordRepeat = PasswordRepeatTextBox.Text;
             string idMovieLike = GetSelectedMovieIds();
+            string nickname = NameTextBox.Text.Trim();
             byte[] picture = GetPictureData();
+            string mail = MailTextBox.Text;
 
+            if (!IsValidEmail(mail))
+            {
+                MessageBox.Show("Введите корректный адрес электронной почты!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (string.IsNullOrEmpty(nickname))
+            {
+                MessageBox.Show("Имя не должно быть пустым!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (password != passwordRepeat)
+            {
+                MessageBox.Show("Пароли не совпадают!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (!IsValidPassword(password))
+            {
+                MessageBox.Show("Пароль должен содержать минимум 8 символов, включая хотя бы одну заглавную букву, одну строчную букву и одну цифру!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string hashedPassword = HashPassword(password);
 
             using (var context = new MovieDbContext())
             {
                 var newUser = new Person
                 {
+
                     Nickname = nickname,
                     IdMovieLike = idMovieLike,
-                    Picture = picture
+                    PasswordHash = hashedPassword,
+                    Picture = picture,
+                    Email = mail
                 };
                 context.People.Add(newUser);
                 context.SaveChanges();
@@ -146,6 +170,29 @@ namespace MovieMate
             var mainMenu = new MainMenu(nickname);
             mainMenu.Show();
             this.Close();
+        }
+        private bool IsValidEmail(string email)
+        {
+            string emailRegex = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            return Regex.IsMatch(email, emailRegex);
+        }
+        private bool IsValidPassword(string password)
+        {
+            string passwordRegex = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$";
+            return Regex.IsMatch(password, passwordRegex);
+        }
+        private string HashPassword(string password)
+        {
+            using (SHA256 sha256Hash = SHA256.Create())
+            {
+                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    builder.Append(bytes[i].ToString("x2"));
+                }
+                return builder.ToString();
+            }
         }
     }
 }

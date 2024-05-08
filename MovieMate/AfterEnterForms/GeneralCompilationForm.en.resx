@@ -257,7 +257,21 @@
         vyuIQtGr+K3zGLz00v8Dh/rBDc9ntxgAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 9</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 70</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="favoritesButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEQAAABECAIAAAC3cQTlAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAG
         TQAABk0Beyl31gAABvVJREFUaEPtmktIVV0Ux01NS0vTxJCMzEeEoiAUlpOEIAwhGgWBEgkNQlIrn4iV
@@ -292,6 +306,25 @@
         KSkp5h8Uy8KOjDJKLxQAGQlOQ49xskB7pwSzRpaBVzLkMassDoWpFkchK7KrW9v8J8kyWFj4F13Sa/7C
         7nQwAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="favoritesButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="favoritesButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="favoritesButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 84</value>
+  </data>
+  <data name="favoritesButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="favoritesButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 51</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="favoritesButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="mainMenuButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -338,6 +371,18 @@
         Nz1haCTjAgvN9qYjS+xOYfD3TDrcKZoBEIsFvlk5kZUMbskI//WsRFYy/0X8j8hMTf0DohFhmL+hoGMA
         AAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="mainMenuButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="mainMenuButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 140</value>
+  </data>
+  <data name="mainMenuButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="mainMenuButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 51</value>
   </data>
   <data name="blackListButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -419,6 +464,18 @@
         RK5CYII=
 </value>
   </data>
+  <data name="blackListButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="blackListButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 195</value>
+  </data>
+  <data name="blackListButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="blackListButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 51</value>
+  </data>
   <data name="generalCompilationButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEUAAABECAYAAADX0fiMAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
@@ -450,21 +507,95 @@
         NkG0KoBdAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="openFavButton.Text" xml:space="preserve">
+  <data name="generalCompilationButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="generalCompilationButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 250</value>
+  </data>
+  <data name="generalCompilationButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="generalCompilationButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 51</value>
+  </data>
+  <data name="FavouritesDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 106</value>
+  </data>
+  <data name="FavouritesDataGridView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="FavouritesDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>430, 162</value>
+  </data>
+  <data name="openCompButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="openCompButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 7.8pt</value>
+  </data>
+  <data name="openCompButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="openCompButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 70</value>
+  </data>
+  <data name="openCompButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="openCompButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 32</value>
+  </data>
+  <data name="openCompButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="openCompButton.Text" xml:space="preserve">
     <value>Open General Compilation</value>
+  </data>
+  <data name="addFilmToCompilation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 70</value>
+  </data>
+  <data name="addFilmToCompilation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="addFilmToCompilation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 32</value>
   </data>
   <data name="addFilmToCompilation.Text" xml:space="preserve">
     <value>Add a movie to a selection</value>
   </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>449, 70</value>
+  </data>
+  <data name="button2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 32</value>
+  </data>
   <data name="button2.Text" xml:space="preserve">
     <value>Delete a movie from the collection</value>
+  </data>
+  <data name="menuLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>368, 309</value>
+  </data>
+  <data name="menuLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 22</value>
   </data>
   <data name="menuLabel.Text" xml:space="preserve">
     <value>Compilations</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="selectCompilationButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
+  </data>
+  <data name="selectCompilationButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 273</value>
+  </data>
+  <data name="selectCompilationButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="selectCompilationButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 32</value>
   </data>
   <data name="selectCompilationButton.Text" xml:space="preserve">
     <value>Select compilation</value>
@@ -472,10 +603,40 @@
   <data name="createCompilationButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
+  <data name="createCompilationButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 273</value>
+  </data>
+  <data name="createCompilationButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="createCompilationButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 32</value>
+  </data>
   <data name="createCompilationButton.Text" xml:space="preserve">
     <value>Create compilation</value>
   </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>449, 9</value>
+  </data>
+  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 32</value>
+  </data>
   <data name="button1.Text" xml:space="preserve">
     <value>Send by email</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>596, 344</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>612, 383</value>
   </data>
 </root>

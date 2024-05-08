@@ -19,6 +19,8 @@ public partial class MovieDbContext : DbContext
 
     public virtual DbSet<Person> People { get; set; }
 
+    public virtual DbSet<Compilation> Compilations { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlite(@"Data Source=../../../DBConnect/MovieDB.db");
@@ -65,9 +67,33 @@ public partial class MovieDbContext : DbContext
             entity.Property(e => e.Nickname)
                 .HasColumnType("VARCHAR(255)")
                 .HasColumnName("nickname");
+            entity.Property(e => e.PasswordHash)
+                .HasColumnType("VARCHAR")
+                .HasColumnName("PasswordHash");
+            entity.Property(e => e.Email)
+                .HasColumnType("VARCHAR")
+                .HasColumnName("Email");
             entity.Property(e => e.Picture)
                 .HasColumnType("IMAGE")
                 .HasColumnName("picture");
+
+        });
+
+        modelBuilder.Entity<Compilation>(entity =>
+        {
+            entity.ToTable("Compilation");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.IdMovie)
+                .HasColumnType("VARCHAR(255)")
+                .HasColumnName("idMovie");
+            entity.Property(e => e.IdPerson)
+                .HasColumnType("VARCHAR")
+                .HasColumnName("idPerson");
+            entity.Property(e => e.Name)
+                .HasColumnType("VARCHAR(255)")
+                .HasColumnName("name");
+            
 
         });
 

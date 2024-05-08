@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
+﻿
 namespace MovieMate.DBConnect;
 
 public partial class Person
@@ -8,6 +6,10 @@ public partial class Person
     public int Id { get; set; }
 
     public string Nickname { get; set; } = null!;
+
+    public string PasswordHash { get; set; } = null!;
+
+    public string? Email { get; set; }
 
     public string? IdMovieLike { get; set; }
 

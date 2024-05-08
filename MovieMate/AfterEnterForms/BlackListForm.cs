@@ -60,8 +60,8 @@ namespace MovieMate
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MainMenu blackListForm = new MainMenu(UserNickname);
-            blackListForm.Show();
+            MainMenu mainMenu = new MainMenu(UserNickname);
+            mainMenu.Show();
             this.Close();
         }
 

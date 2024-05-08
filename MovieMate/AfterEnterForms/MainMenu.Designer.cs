@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             secondNicknameLabel = new Label();
-            button1 = new Button();
-            favoritesButton = new Button();
-            button3 = new Button();
+            RecomendationButton = new Button();
+            FavoritesButton = new Button();
+            BlackLIstButton = new Button();
             filmsDataGridView = new DataGridView();
             filmName = new DataGridViewTextBoxColumn();
             Year = new DataGridViewTextBoxColumn();
@@ -40,11 +40,11 @@
             openButton = new Button();
             favouritesButton = new Button();
             addBlackListButton = new Button();
-            pictureBox1 = new PictureBox();
+            MainPictureBox = new PictureBox();
             menuLabel = new Label();
-            generalCompilationButton = new Button();
+            CompilationButton = new Button();
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)MainPictureBox).BeginInit();
             SuspendLayout();
             // 
             // secondNicknameLabel
@@ -53,25 +53,26 @@
             secondNicknameLabel.Name = "secondNicknameLabel";
             secondNicknameLabel.Click += secondNicknameLabel_Click;
             // 
-            // button1
+            // RecomendationButton
             // 
-            resources.ApplyResources(button1, "button1");
-            button1.Name = "button1";
-            button1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(RecomendationButton, "RecomendationButton");
+            RecomendationButton.Name = "RecomendationButton";
+            RecomendationButton.UseVisualStyleBackColor = true;
+            RecomendationButton.Click += RecomendationButton_Click;
             // 
-            // favoritesButton
+            // FavoritesButton
             // 
-            resources.ApplyResources(favoritesButton, "favoritesButton");
-            favoritesButton.Name = "favoritesButton";
-            favoritesButton.UseVisualStyleBackColor = true;
-            favoritesButton.Click += favoritesButton_Click;
+            resources.ApplyResources(FavoritesButton, "FavoritesButton");
+            FavoritesButton.Name = "FavoritesButton";
+            FavoritesButton.UseVisualStyleBackColor = true;
+            FavoritesButton.Click += favoritesButton_Click;
             // 
-            // button3
+            // BlackLIstButton
             // 
-            resources.ApplyResources(button3, "button3");
-            button3.Name = "button3";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            resources.ApplyResources(BlackLIstButton, "BlackLIstButton");
+            BlackLIstButton.Name = "BlackLIstButton";
+            BlackLIstButton.UseVisualStyleBackColor = true;
+            BlackLIstButton.Click += button3_Click;
             // 
             // filmsDataGridView
             // 
@@ -125,11 +126,11 @@
             addBlackListButton.UseVisualStyleBackColor = false;
             addBlackListButton.Click += addBlackListButton_Click;
             // 
-            // pictureBox1
+            // MainPictureBox
             // 
-            resources.ApplyResources(pictureBox1, "pictureBox1");
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.TabStop = false;
+            resources.ApplyResources(MainPictureBox, "MainPictureBox");
+            MainPictureBox.Name = "MainPictureBox";
+            MainPictureBox.TabStop = false;
             // 
             // menuLabel
             // 
@@ -138,42 +139,42 @@
             menuLabel.ForeColor = Color.White;
             menuLabel.Name = "menuLabel";
             // 
-            // generalCompilationButton
+            // CompilationButton
             // 
-            resources.ApplyResources(generalCompilationButton, "generalCompilationButton");
-            generalCompilationButton.Name = "generalCompilationButton";
-            generalCompilationButton.UseVisualStyleBackColor = true;
-            generalCompilationButton.Click += generalCompilationButton_Click;
+            resources.ApplyResources(CompilationButton, "CompilationButton");
+            CompilationButton.Name = "CompilationButton";
+            CompilationButton.UseVisualStyleBackColor = true;
+            CompilationButton.Click += generalCompilationButton_Click;
             // 
             // MainMenu
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            Controls.Add(generalCompilationButton);
+            Controls.Add(CompilationButton);
             Controls.Add(menuLabel);
-            Controls.Add(pictureBox1);
+            Controls.Add(MainPictureBox);
             Controls.Add(addBlackListButton);
             Controls.Add(favouritesButton);
             Controls.Add(openButton);
             Controls.Add(filmsDataGridView);
-            Controls.Add(button3);
-            Controls.Add(favoritesButton);
-            Controls.Add(button1);
+            Controls.Add(BlackLIstButton);
+            Controls.Add(FavoritesButton);
+            Controls.Add(RecomendationButton);
             Controls.Add(secondNicknameLabel);
             ForeColor = Color.Black;
             Name = "MainMenu";
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)MainPictureBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
         private Label secondNicknameLabel;
-        private Button button1;
-        private Button favoritesButton;
-        private Button button3;
+        private Button RecomendationButton;
+        private Button FavoritesButton;
+        private Button BlackLIstButton;
         private DataGridView filmsDataGridView;
         private DataGridViewTextBoxColumn filmName;
         private DataGridViewTextBoxColumn Year;
@@ -181,8 +182,8 @@
         private Button openButton;
         private Button favouritesButton;
         private Button addBlackListButton;
-        private PictureBox pictureBox1;
+        private PictureBox MainPictureBox;
         private Label menuLabel;
-        private Button generalCompilationButton;
+        private Button CompilationButton;
     }
 }

@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Reflection.Emit;
 using System.Windows.Forms;
 using MovieMate.DBConnect;
+using MovieMate.EnterForms;
 
 namespace MovieMate
 {
@@ -75,13 +76,13 @@ namespace MovieMate
             newUserForm.Show();
         }
 
-        private void enterUserButton_Click(object sender, EventArgs e)
+        private void enterButton_Click(object sender, EventArgs e)
         {
             if (listBox1.SelectedItem != null)
             {
                 selectedNickname = listBox1.SelectedItem.ToString();
-                MainMenu mainMenu = new MainMenu(selectedNickname);
-                mainMenu.Show();
+                LogInForm logIn = new LogInForm(selectedNickname);
+                logIn.Show();
             }
         }
 

@@ -1,20 +1,25 @@
-﻿using System;
+﻿using MovieMate.DBConnect;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+
 
 namespace MovieMate
 {
     public partial class UserInfo : Form
     {
-        public UserInfo()
+        public string UserNickname { get; set; }
+        MovieDbContext db = new MovieDbContext();
+        Person currentUser;
+
+        public UserInfo(string nickname)
         {
             InitializeComponent();
+            UserNickname = nickname;
+            currentUser = db.People.FirstOrDefault(p => p.Nickname == UserNickname);
+            UserNameTextBox.Text = nickname;
+            EmailTextBox.Text = currentUser.Email;
         }
     }
 }

@@ -43,23 +43,7 @@ namespace MovieMate
             DisplaySimilarMovies(idMovieLike);
         }
 
-        void filmsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            var allFilms = db.Movies.ToList();
-            filmsDataGridView.DataSource = allFilms;
-            filmsDataGridView.Refresh();
 
-        }
-
-        void filmsDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-            var selectedMovieId = Convert.ToInt32(filmsDataGridView.Rows[e.RowIndex].Cells["Id"].Value);
-            Movie selectedMovie = db.Movies.Find(selectedMovieId);
-            var idMovieLike = currentUser.IdMovieLike;
-            DisplaySimilarMovies(idMovieLike);
-
-        }
 
         void DisplaySimilarMovies(string idMovieLike)
         {
@@ -74,23 +58,37 @@ namespace MovieMate
                 return;
 
             }
-            List<int> movieIds = idMovieLike.Split(',').Select(int.Parse).ToList();
+            else
+            {
+                List<int> movieIds = idMovieLike.Split(',').Select(int.Parse).ToList();
+                List<int> blacklistedMovieIds = new List<int>();
 
-            var likedGenres = db.Movies
+                if (!string.IsNullOrEmpty(currentUser.IdBlackList))
+                {
+                    blacklistedMovieIds = currentUser.IdBlackList.Split(',').Select(int.Parse).ToList();
+                }
+
+                var likedGenres = db.Movies
                 .Where(m => movieIds.Contains(m.Id))
                 .Select(m => m.Genre)
                 .Distinct()
                 .ToList();
 
-            var similarMovies = db.Movies
-                .Where(m => likedGenres.Contains(m.Genre) && !movieIds.Contains(m.Id))
-                .ToList();
+                var similarMovies = db.Movies
+                    .Where(m => likedGenres.Contains(m.Genre)
+                        && !movieIds.Contains(m.Id)
+                        && !blacklistedMovieIds.Contains(m.Id))
+                    .ToList();
 
-            filmsDataGridView.Rows.Clear();
-            foreach (var movie in similarMovies)
-            {
-                filmsDataGridView.Rows.Add(movie.Name, movie.Year, movie.Grade);
+                filmsDataGridView.Rows.Clear();
+                foreach (var movie in similarMovies)
+                {
+                    filmsDataGridView.Rows.Add(movie.Name, movie.Year, movie.Grade);
+                }
             }
+
+
+
         }
 
 
@@ -198,8 +196,15 @@ namespace MovieMate
 
         private void secondNicknameLabel_Click(object sender, EventArgs e)
         {
-            UserInfo info = new UserInfo();
+            UserInfo info = new UserInfo(currentUser.Nickname);
             info.Show();
+        }
+
+        private void RecomendationButton_Click(object sender, EventArgs e)
+        {
+            MainMenu mainMenu = new MainMenu(UserNickname);
+            mainMenu.Show();
+            this.Close();
         }
     }
 }

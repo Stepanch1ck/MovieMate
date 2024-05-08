@@ -33,8 +33,8 @@
             nameLabel = new Label();
             label2 = new Label();
             accountTypeLabel = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            UserNameTextBox = new TextBox();
+            EmailTextBox = new TextBox();
             textBox3 = new TextBox();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)userImage).BeginInit();
@@ -63,15 +63,15 @@
             resources.ApplyResources(accountTypeLabel, "accountTypeLabel");
             accountTypeLabel.Name = "accountTypeLabel";
             // 
-            // textBox1
+            // UserNameTextBox
             // 
-            resources.ApplyResources(textBox1, "textBox1");
-            textBox1.Name = "textBox1";
+            resources.ApplyResources(UserNameTextBox, "UserNameTextBox");
+            UserNameTextBox.Name = "UserNameTextBox";
             // 
-            // textBox2
+            // EmailTextBox
             // 
-            resources.ApplyResources(textBox2, "textBox2");
-            textBox2.Name = "textBox2";
+            resources.ApplyResources(EmailTextBox, "EmailTextBox");
+            EmailTextBox.Name = "EmailTextBox";
             // 
             // textBox3
             // 
@@ -91,8 +91,8 @@
             BackColor = Color.White;
             Controls.Add(pictureBox1);
             Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(EmailTextBox);
+            Controls.Add(UserNameTextBox);
             Controls.Add(accountTypeLabel);
             Controls.Add(label2);
             Controls.Add(nameLabel);
@@ -110,8 +110,8 @@
         private Label nameLabel;
         private Label label2;
         private Label accountTypeLabel;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox UserNameTextBox;
+        private TextBox EmailTextBox;
         private TextBox textBox3;
         private PictureBox pictureBox1;
     }

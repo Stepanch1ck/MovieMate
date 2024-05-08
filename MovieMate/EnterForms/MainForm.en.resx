@@ -117,70 +117,99 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="listBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="listBox1.ItemHeight" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="listBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>279, 153</value>
+    <value>244, 115</value>
   </data>
-  <data name="nickNameLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="listBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="listBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 139</value>
   </data>
   <data name="nickNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>279, 90</value>
+    <value>244, 68</value>
   </data>
   <data name="nickNameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>226, 60</value>
+    <value>178, 47</value>
   </data>
   <data name="nickNameLabel.Text" xml:space="preserve">
     <value>Nickname</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="newUserButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 9</value>
+  </data>
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 348</value>
   </data>
   <data name="newUserButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 365</value>
+    <value>263, 274</value>
+  </data>
+  <data name="newUserButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="newUserButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 32</value>
   </data>
   <data name="newUserButton.Text" xml:space="preserve">
     <value>New User</value>
   </data>
-  <data name="enterUserButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
   <data name="enterUserButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 423</value>
+    <value>263, 317</value>
+  </data>
+  <data name="enterUserButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="enterUserButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 32</value>
   </data>
   <data name="enterUserButton.Text" xml:space="preserve">
     <value>Log In</value>
   </data>
-  <data name="russianButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
   <data name="russianButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="russianButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 9</value>
+  </data>
+  <data name="russianButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
   <data name="russianButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 36</value>
-  </data>
-  <data name="russianButton.Text" xml:space="preserve">
-    <value>Русский</value>
-  </data>
-  <data name="englishButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+    <value>70, 27</value>
   </data>
   <data name="englishButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="englishButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 36</value>
+  <data name="englishButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>376, 9</value>
   </data>
-  <data name="englishButton.Text" xml:space="preserve">
-    <value>English</value>
+  <data name="englishButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="englishButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 27</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>460, 366</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Log In</value>

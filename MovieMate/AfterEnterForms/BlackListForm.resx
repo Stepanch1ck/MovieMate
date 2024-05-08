@@ -151,13 +151,17 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="BlackListDataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 147</value>
+    <value>142, 110</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BlackListDataGridView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="BlackListDataGridView.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
   <data name="BlackListDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>490, 216</value>
+    <value>429, 162</value>
   </data>
   <data name="BlackListDataGridView.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -174,7 +178,7 @@
   <data name="&gt;&gt;BlackListDataGridView.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="RecomendationButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
         JC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIy
@@ -206,28 +210,34 @@
         HFAH0GOlFLRQAUYHpRRQAnHoKOPQUUUAHHoKOPQUUUAHHoKWiigAooooA//Z
 </value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 186</value>
+  <data name="RecomendationButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 68</value>
+  <data name="RecomendationButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 140</value>
   </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+  <data name="RecomendationButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="RecomendationButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 51</value>
+  </data>
+  <data name="RecomendationButton.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
+  <data name="&gt;&gt;RecomendationButton.Name" xml:space="preserve">
+    <value>RecomendationButton</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+  <data name="&gt;&gt;RecomendationButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;RecomendationButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;RecomendationButton.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="BlackListButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
         JC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIy
@@ -267,28 +277,34 @@
         kUSLhEjXaqj0AHQVNRRQAUUUUAf/2Q==
 </value>
   </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 260</value>
+  <data name="BlackListButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 68</value>
+  <data name="BlackListButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 195</value>
   </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+  <data name="BlackListButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="BlackListButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 51</value>
+  </data>
+  <data name="BlackListButton.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
+  <data name="&gt;&gt;BlackListButton.Name" xml:space="preserve">
+    <value>BlackListButton</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+  <data name="&gt;&gt;BlackListButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;BlackListButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;BlackListButton.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="button3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="FavoriteListButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAKQApAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
         JC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIy
@@ -316,25 +332,31 @@
         iiigAooooAy7/QtL1LUrG/vLKKa7sJC9tMwO6Mkc4x/I8dD1rUoooAKKKKAP/9k=
 </value>
   </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 112</value>
+  <data name="FavoriteListButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 68</value>
+  <data name="FavoriteListButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 84</value>
   </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+  <data name="FavoriteListButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="FavoriteListButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 51</value>
+  </data>
+  <data name="FavoriteListButton.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
+  <data name="&gt;&gt;FavoriteListButton.Name" xml:space="preserve">
+    <value>FavoriteListButton</value>
   </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+  <data name="&gt;&gt;FavoriteListButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;FavoriteListButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;FavoriteListButton.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="pictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -423,10 +445,16 @@
 </value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+    <value>10, 9</value>
+  </data>
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 94</value>
+    <value>102, 70</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -450,10 +478,13 @@
     <value>Segoe UI, 7.8pt</value>
   </data>
   <data name="deleteBlackList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 98</value>
+    <value>448, 74</value>
+  </data>
+  <data name="deleteBlackList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="deleteBlackList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 43</value>
+    <value>123, 32</value>
   </data>
   <data name="deleteBlackList.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -477,10 +508,13 @@
     <value>Top, Right</value>
   </data>
   <data name="openButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 98</value>
+    <value>295, 74</value>
+  </data>
+  <data name="openButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="openButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 43</value>
+    <value>123, 32</value>
   </data>
   <data name="openButton.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -507,10 +541,10 @@
     <value>Segoe UI, 10.8pt, style=Bold</value>
   </data>
   <data name="blacklistLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>420, 412</value>
+    <value>368, 309</value>
   </data>
   <data name="blacklistLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 30</value>
+    <value>204, 22</value>
   </data>
   <data name="blacklistLabel.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -533,7 +567,7 @@
   <data name="&gt;&gt;blacklistLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="generalCompilationButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="CompilationButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEUAAABECAYAAADX0fiMAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
         MAAA6mAAADqYAAAXcJy6UTwAAAAHdElNRQfoBQUPGBEqCrObAAAFsklEQVR4Xu2cechtUxiHP/M8yzyT
@@ -564,38 +598,44 @@
         NkG0KoBdAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="generalCompilationButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="CompilationButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="CompilationButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="generalCompilationButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 334</value>
+  <data name="CompilationButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 250</value>
   </data>
-  <data name="generalCompilationButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 68</value>
+  <data name="CompilationButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="generalCompilationButton.TabIndex" type="System.Int32, mscorlib">
+  <data name="CompilationButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 51</value>
+  </data>
+  <data name="CompilationButton.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="&gt;&gt;generalCompilationButton.Name" xml:space="preserve">
-    <value>generalCompilationButton</value>
+  <data name="&gt;&gt;CompilationButton.Name" xml:space="preserve">
+    <value>CompilationButton</value>
   </data>
-  <data name="&gt;&gt;generalCompilationButton.Type" xml:space="preserve">
+  <data name="&gt;&gt;CompilationButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;generalCompilationButton.Parent" xml:space="preserve">
+  <data name="&gt;&gt;CompilationButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;generalCompilationButton.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;CompilationButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 20</value>
+    <value>7, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>679, 451</value>
+    <value>594, 338</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1743,7 +1783,6 @@
         QvVsjaUAAAAASUVORK5CYII=
 </value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>

@@ -33,14 +33,14 @@
             filmName = new DataGridViewTextBoxColumn();
             year = new DataGridViewTextBoxColumn();
             grade = new DataGridViewTextBoxColumn();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            RecomendationButton = new Button();
+            BlackListButton = new Button();
+            FavoriteListButton = new Button();
             pictureBox1 = new PictureBox();
             deleteBlackList = new Button();
             openButton = new Button();
             blacklistLabel = new Label();
-            generalCompilationButton = new Button();
+            CompilationButton = new Button();
             ((System.ComponentModel.ISupportInitialize)BlackListDataGridView).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -70,25 +70,25 @@
             resources.ApplyResources(grade, "grade");
             grade.Name = "grade";
             // 
-            // button1
+            // RecomendationButton
             // 
-            resources.ApplyResources(button1, "button1");
-            button1.Name = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            resources.ApplyResources(RecomendationButton, "RecomendationButton");
+            RecomendationButton.Name = "RecomendationButton";
+            RecomendationButton.UseVisualStyleBackColor = true;
+            RecomendationButton.Click += button1_Click;
             // 
-            // button2
+            // BlackListButton
             // 
-            resources.ApplyResources(button2, "button2");
-            button2.Name = "button2";
-            button2.UseVisualStyleBackColor = true;
+            resources.ApplyResources(BlackListButton, "BlackListButton");
+            BlackListButton.Name = "BlackListButton";
+            BlackListButton.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // FavoriteListButton
             // 
-            resources.ApplyResources(button3, "button3");
-            button3.Name = "button3";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            resources.ApplyResources(FavoriteListButton, "FavoriteListButton");
+            FavoriteListButton.Name = "FavoriteListButton";
+            FavoriteListButton.UseVisualStyleBackColor = true;
+            FavoriteListButton.Click += button3_Click;
             // 
             // pictureBox1
             // 
@@ -121,26 +121,26 @@
             blacklistLabel.ForeColor = Color.White;
             blacklistLabel.Name = "blacklistLabel";
             // 
-            // generalCompilationButton
+            // CompilationButton
             // 
-            resources.ApplyResources(generalCompilationButton, "generalCompilationButton");
-            generalCompilationButton.Name = "generalCompilationButton";
-            generalCompilationButton.UseVisualStyleBackColor = true;
-            generalCompilationButton.Click += generalCompilationButton_Click;
+            resources.ApplyResources(CompilationButton, "CompilationButton");
+            CompilationButton.Name = "CompilationButton";
+            CompilationButton.UseVisualStyleBackColor = true;
+            CompilationButton.Click += generalCompilationButton_Click;
             // 
             // BlackListForm
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            Controls.Add(generalCompilationButton);
+            Controls.Add(CompilationButton);
             Controls.Add(blacklistLabel);
             Controls.Add(openButton);
             Controls.Add(deleteBlackList);
             Controls.Add(pictureBox1);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(FavoriteListButton);
+            Controls.Add(BlackListButton);
+            Controls.Add(RecomendationButton);
             Controls.Add(BlackListDataGridView);
             Name = "BlackListForm";
             ((System.ComponentModel.ISupportInitialize)BlackListDataGridView).EndInit();
@@ -150,9 +150,9 @@
 
         #endregion
         private DataGridView BlackListDataGridView;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button RecomendationButton;
+        private Button BlackListButton;
+        private Button FavoriteListButton;
         private PictureBox pictureBox1;
         private DataGridViewTextBoxColumn filmName;
         private DataGridViewTextBoxColumn year;
@@ -160,6 +160,6 @@
         private Button deleteBlackList;
         private Button openButton;
         private Label blacklistLabel;
-        private Button generalCompilationButton;
+        private Button CompilationButton;
     }
 }

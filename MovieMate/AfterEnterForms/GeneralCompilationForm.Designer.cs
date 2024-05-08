@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GeneralCompilationForm));
             pictureBox1 = new PictureBox();
-            button3 = new Button();
+            favoritesButton = new Button();
             mainMenuButton = new Button();
             blackListButton = new Button();
             generalCompilationButton = new Button();
             FavouritesDataGridView = new DataGridView();
-            openFavButton = new Button();
+            openCompButton = new Button();
             addFilmToCompilation = new Button();
             button2 = new Button();
             menuLabel = new Label();
@@ -52,11 +52,12 @@
             pictureBox1.Name = "pictureBox1";
             pictureBox1.TabStop = false;
             // 
-            // button3
+            // favoritesButton
             // 
-            resources.ApplyResources(button3, "button3");
-            button3.Name = "button3";
-            button3.UseVisualStyleBackColor = true;
+            resources.ApplyResources(favoritesButton, "favoritesButton");
+            favoritesButton.Name = "favoritesButton";
+            favoritesButton.UseVisualStyleBackColor = true;
+            favoritesButton.Click += button3_Click;
             // 
             // mainMenuButton
             // 
@@ -84,14 +85,14 @@
             FavouritesDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             FavouritesDataGridView.Name = "FavouritesDataGridView";
             // 
-            // openFavButton
+            // openCompButton
             // 
-            resources.ApplyResources(openFavButton, "openFavButton");
-            openFavButton.BackColor = Color.Black;
-            openFavButton.ForeColor = Color.White;
-            openFavButton.Name = "openFavButton";
-            openFavButton.UseVisualStyleBackColor = false;
-            openFavButton.Click += openFavButton_Click;
+            resources.ApplyResources(openCompButton, "openCompButton");
+            openCompButton.BackColor = Color.Black;
+            openCompButton.ForeColor = Color.White;
+            openCompButton.Name = "openCompButton";
+            openCompButton.UseVisualStyleBackColor = false;
+            openCompButton.Click += openFavButton_Click;
             // 
             // addFilmToCompilation
             // 
@@ -151,12 +152,12 @@
             Controls.Add(menuLabel);
             Controls.Add(button2);
             Controls.Add(addFilmToCompilation);
-            Controls.Add(openFavButton);
+            Controls.Add(openCompButton);
             Controls.Add(FavouritesDataGridView);
             Controls.Add(generalCompilationButton);
             Controls.Add(blackListButton);
             Controls.Add(mainMenuButton);
-            Controls.Add(button3);
+            Controls.Add(favoritesButton);
             Controls.Add(pictureBox1);
             Name = "GeneralCompilationForm";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -168,7 +169,7 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private Button button3;
+        private Button favoritesButton;
         private Button mainMenuButton;
         private Button blackListButton;
         private Button generalCompilationButton;
@@ -176,7 +177,7 @@
         private DataGridViewTextBoxColumn filmName;
         private DataGridViewTextBoxColumn Year;
         private DataGridViewTextBoxColumn Grade;
-        private Button openFavButton;
+        private Button openCompButton;
         private Button addFilmToCompilation;
         private Button button2;
         private Label menuLabel;
