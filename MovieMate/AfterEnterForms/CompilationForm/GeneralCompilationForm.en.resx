@@ -487,38 +487,17 @@
   <data name="generalCompilationButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>37, 333</value>
   </data>
-  <data name="filmsDataGridView.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="filmsDataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 141</value>
-  </data>
-  <data name="filmsDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>491, 216</value>
-  </data>
-  <data name="openCompButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
   <data name="openCompButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="openCompButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 93</value>
-  </data>
   <data name="openCompButton.Text" xml:space="preserve">
     <value>Open Compilation</value>
-  </data>
-  <data name="MovieListCompilation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
   </data>
   <data name="MovieListCompilation.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 7.8pt</value>
   </data>
   <data name="MovieListCompilation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="MovieListCompilation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>339, 93</value>
   </data>
   <data name="MovieListCompilation.Text" xml:space="preserve">
     <value>Movie List</value>
@@ -529,26 +508,14 @@
   <data name="menuLabel.Text" xml:space="preserve">
     <value>Compilations</value>
   </data>
-  <data name="createCompilationButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="createCompilationButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 363</value>
-  </data>
   <data name="createCompilationButton.Text" xml:space="preserve">
     <value>Create compilation</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
     <value>Send by email</value>
   </data>
-  <data name="UserListButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
   <data name="UserListButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="UserListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>513, 93</value>
   </data>
   <data name="UserListButton.Text" xml:space="preserve">
     <value>User List</value>

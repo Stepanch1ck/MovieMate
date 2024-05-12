@@ -283,6 +283,32 @@
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <data name="favoritesButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEUAAABECAMAAADgDwi+AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
+        MAAA6mAAADqYAAAXcJy6UTwAAAHjUExURf////7+/v39/dXV1YuLi2ZmZmJiYmFhYWlpaZqamuLi4vz8
+        /J+fnyIiIgAAAAICAjY2NsTExMHBwRYWFmpqaqCfoPf390hISAEBAQcHBwkJCQgICAUFBXx8fPb29kdH
+        RwoKCo+Pj7m5ubi4uGtra3p6eg4ODsjIyJWVlXt7e0ZGRsbGxpOTk+Xl5e/v79DQ0D09PV5eXujo6MnJ
+        yTIyMlVVVePj4ywrLEtLS9zc3CUlJUJCQtbW1q+vryAgIDw8PNLS0qenpxkZGTQ0NMrKyj8/PywsLC0t
+        LcPDw/r6+paWlhEREVRUVMvLyyYmJrq6uvj4+IyMjF1dXefn59HR0Ts7O7Ozs/X19YGBgQQEBGhoaOzs
+        7EBAQBwcHKurq/Pz83h4eHFxcfHx8dra2hcXF6Ojo/Dw8ODg4FFRURMTE5iYmObm5ltbWw8PD42NjQ0N
+        Devr62RkZAMDAwsLC4WFhcXFxeHh4WxsbN3d3RUVFZ6envLy8nR0dAYGBnNzc5SUlNvb20NDQ6ampvT0
+        9O7u7paVlh0dHa2trff294iIiH5+frW1tfn5+ZCQkEdGRyoqKr29vZmZmfv7+zAwMKGhoTc3N83Nzamo
+        qScnJ4eHhxISEtPT07S0tLy8vNfX14SEhFRTVB8VF8gAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAAHdElN
+        RQfoBQUOIhaQBZJ2AAACqUlEQVRYR+2X6VtSQRSHZ9BwIQ6mJVcCI3JN06w026y0jbSiKBXNXCu1iLR9
+        MbPNdtv37U/tnHsHHpYBhk89Pc99P8CdOb/7cma4Vy/M5H+DWxShrHFKMjwvf5nVai1QobCoWK6xLbeD
+        Oo6SFVymKS0TAUVKiiUa20pRVcWxSrKmcidooFW4ViMuV9o3fEXcpPFILJVr0OJd61ungK+KLNVyC0BN
+        rRhloY4s9TLLerI0iFEWGslSLQbxmBbTIsG0yDEtckyLHNMi519ZNjSJgzhytjRvbNmU8g85V8vmLaC1
+        tiVrcrSUbqV8+zaW+NyUm8W3neIAO3YmdpOLhe/qoDSxe09CNzlYLHs7KYxoAF374rtRtXB8cjUeOvcf
+        0DUHD4kKodyL/3A3RbWetiNddABHj4kKombhLHC8hpKOE0HGTp6iQ+joja1JsZe+fi8FQwODtKt5p2kA
+        Q2eiGjXL8EgF5dyjY7SnnI07caTBxFmbscdKlnOj+mNxxciwPsQzz0+iRYOpab8+oWIZHAhRytvfZ3wy
+        LerCRQdpwpcCNJfZEm7ATLDFQaFIPp4Q3QjOLs/MkubK1UocZOnlGmPXe/D3AEB3ndF8jKYbIdK4PLjM
+        rJab7foO3Lpti/YR5c7dOarM3Rtj85kttfcX8E2DzgeWxLuYeOhxkSZU+OhxRku4yLgynizypL8FOk+f
+        RUgzO/OcQmktbrx1cE/sL1INOi9fhXXNBIbkltfk1yVLb8Q3nIr/7ZQeIerFXDzvCowawHv8utNY8E7/
+        UEbdINq0mEygN0IlgI+fxIQcy+chcgB8GZd8FA98/YY1x8L3tMshOOc/lkhiX5Q1zJn/Z5WztTGYdjkG
+        WP31+8+kpxl9YioenOPleL1mlhh1f9J1HYd+ejZHDOWgIoz9Bc5moqcVdFCkAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="favoritesButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 112</value>
   </data>
@@ -752,9 +778,6 @@
   <data name="&gt;&gt;UserListButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>en</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
