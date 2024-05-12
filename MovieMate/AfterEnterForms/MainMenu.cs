@@ -189,7 +189,7 @@ namespace MovieMate
 
         private void generalCompilationButton_Click(object sender, EventArgs e)
         {
-            GeneralCompilationForm gf = new GeneralCompilationForm();
+            GeneralCompilationForm gf = new GeneralCompilationForm(UserNickname);
             gf.Show();
             this.Close();
         }
