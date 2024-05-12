@@ -118,149 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="createCompilationButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 43</value>
-  </data>
-  <data name="menuLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;selectCompilationButton.Name" xml:space="preserve">
-    <value>selectCompilationButton</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="generalCompilationButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="createCompilationButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 7.8pt</value>
-  </data>
-  <data name="selectCompilationButton.Text" xml:space="preserve">
-    <value>Выбрать подборку</value>
-  </data>
-  <data name="mainMenuButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 186</value>
-  </data>
-  <data name="&gt;&gt;generalCompilationButton.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>MovieMate</value>
-  </data>
-  <data name="&gt;&gt;mainMenuButton.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;blackListButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;createCompilationButton.Name" xml:space="preserve">
-    <value>createCompilationButton</value>
-  </data>
-  <data name="&gt;&gt;favoritesButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;openCompButton.Name" xml:space="preserve">
-    <value>openCompButton</value>
-  </data>
-  <data name="menuLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 30</value>
-  </data>
-  <data name="&gt;&gt;menuLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DeleteMovButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="mainMenuButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="blackListButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 68</value>
-  </data>
-  <data name="MovieListCompilation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 70</value>
-  </data>
-  <data name="&gt;&gt;FavouritesDataGridView.Name" xml:space="preserve">
-    <value>FavouritesDataGridView</value>
-  </data>
-  <data name="&gt;&gt;UserListButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MovieListCompilation.Name" xml:space="preserve">
-    <value>MovieListCompilation</value>
-  </data>
-  <data name="&gt;&gt;blackListButton.Name" xml:space="preserve">
-    <value>blackListButton</value>
-  </data>
-  <data name="&gt;&gt;openCompButton.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;addFilmToCompilation.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;DeleteMovButton.Name" xml:space="preserve">
-    <value>DeleteMovButton</value>
-  </data>
-  <data name="favoritesButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 84</value>
-  </data>
-  <data name="openFavButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 43</value>
-  </data>
-  <data name="blackListButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;FavouritesDataGridView.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="FavouritesDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>491, 216</value>
-  </data>
-  <data name="&gt;&gt;selectCompilationButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;UserListButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;createCompilationButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="createCompilationButton.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 20</value>
-  </data>
-  <data name="createCompilationButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 7.8pt</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Отправить на почту</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="UserListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>285, 272</value>
-  </data>
-  <data name="menuLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>421, 412</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHUAAABeCAIAAACSDcweAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAK
@@ -400,14 +257,125 @@
         vyuIQtGr+K3zGLz00v8Dh/rBDc9ntxgAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="filmsDataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 106</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="selectCompilationButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 7.8pt</value>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
   </data>
-  <data name="openFavButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 7.8pt</value>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 94</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="favoritesButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 112</value>
+  </data>
+  <data name="favoritesButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 68</value>
+  </data>
+  <data name="favoritesButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;favoritesButton.Name" xml:space="preserve">
+    <value>favoritesButton</value>
+  </data>
+  <data name="&gt;&gt;favoritesButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;favoritesButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;favoritesButton.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="mainMenuButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="mainMenuButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mainMenuButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 186</value>
+  </data>
+  <data name="mainMenuButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 68</value>
+  </data>
+  <data name="mainMenuButton.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;mainMenuButton.Name" xml:space="preserve">
+    <value>mainMenuButton</value>
+  </data>
+  <data name="&gt;&gt;mainMenuButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mainMenuButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mainMenuButton.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="blackListButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="blackListButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -489,198 +457,29 @@
         RK5CYII=
 </value>
   </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="blackListButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="blackListButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 260</value>
+  </data>
+  <data name="blackListButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 68</value>
   </data>
-  <data name="menuLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="DeleteMovButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>449, 70</value>
-  </data>
-  <data name="&gt;&gt;favoritesButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;openCompButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mainMenuButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+  <data name="blackListButton.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 94</value>
-  </data>
-  <data name="button2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="selectCompilationButton.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="menuLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="openFavButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="DeleteMovButton.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="&gt;&gt;blackListButton.Name" xml:space="preserve">
+    <value>blackListButton</value>
   </data>
   <data name="&gt;&gt;blackListButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;MovieListCompilation.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="selectCompilationButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 364</value>
-  </data>
-  <data name="addFilmToCompilation.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 7.8pt</value>
-  </data>
-  <data name="&gt;&gt;filmsDataGridView.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;filmsDataGridView.Parent" xml:space="preserve">
+  <data name="&gt;&gt;blackListButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="mainMenuButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 68</value>
-  </data>
-  <data name="&gt;&gt;addFilmToCompilation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="filmsDataGridView.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="mainMenuButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        AAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="openFavButton.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;createCompilationButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;generalCompilationButton.Name" xml:space="preserve">
-    <value>generalCompilationButton</value>
-  </data>
-  <data name="&gt;&gt;filmsDataGridView.Name" xml:space="preserve">
-    <value>filmsDataGridView</value>
-  </data>
-  <data name="filmsDataGridView.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="FavouritesDataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 142</value>
-  </data>
-  <data name="&gt;&gt;openCompButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>513, 12</value>
-  </data>
-  <data name="FavouritesDataGridView.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="addFilmToCompilation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="&gt;&gt;openFavButton.Name" xml:space="preserve">
-    <value>openFavButton</value>
-  </data>
-  <data name="menuLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.8pt, style=Bold</value>
-  </data>
-  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="menuLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;mainMenuButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="openCompButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 70</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="&gt;&gt;generalCompilationButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="generalCompilationButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 334</value>
+  <data name="&gt;&gt;blackListButton.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="generalCompilationButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -713,261 +512,245 @@
         NkG0KoBdAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="FavouritesDataGridView.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="selectCompilationButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 112</value>
-  </data>
-  <data name="&gt;&gt;openFavButton.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;MovieListCompilation.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="addFilmToCompilation.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="UserListButton.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="&gt;&gt;menuLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>513, 93</value>
-  </data>
-  <data name="&gt;&gt;favoritesButton.Name" xml:space="preserve">
-    <value>favoritesButton</value>
-  </data>
-  <data name="&gt;&gt;createCompilationButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="blackListButton.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>679, 451</value>
-  </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="favoritesButton.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="button3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        7nQwAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="openFavButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="&gt;&gt;favoritesButton.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;selectCompilationButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="addFilmToCompilation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="generalCompilationButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="selectCompilationButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 43</value>
-  </data>
-  <data name="&gt;&gt;addFilmToCompilation.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="FavouritesDataGridView.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="selectCompilationButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;DeleteMovButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="createCompilationButton.Text" xml:space="preserve">
-    <value>Создать подборку</value>
-  </data>
-  <data name="&gt;&gt;selectCompilationButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mainMenuButton.Name" xml:space="preserve">
-    <value>mainMenuButton</value>
-  </data>
-  <data name="openFavButton.Text" xml:space="preserve">
-    <value>Открыть общую подборку</value>
-  </data>
-  <data name="&gt;&gt;UserListButton.Name" xml:space="preserve">
-    <value>UserListButton</value>
-  </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>Удалить фильм из подборки</value>
-  </data>
-  <data name="&gt;&gt;MovieListCompilation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="openCompButton.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 43</value>
-  </data>
-  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;openFavButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="mainMenuButton.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="addFilmToCompilation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>339, 93</value>
-  </data>
-  <data name="&gt;&gt;FavouritesDataGridView.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>GeneralCompilationForm</value>
-  </data>
-  <data name="&gt;&gt;UserListButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="&gt;&gt;openFavButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 7.8pt</value>
-  </data>
-  <data name="addFilmToCompilation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 43</value>
-  </data>
-  <data name="&gt;&gt;blackListButton.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="createCompilationButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>310, 364</value>
-  </data>
-  <data name="blackListButton.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="blackListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 260</value>
-  </data>
-  <data name="&gt;&gt;DeleteMovButton.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="MovieListCompilation.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;addFilmToCompilation.Name" xml:space="preserve">
-    <value>addFilmToCompilation</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="generalCompilationButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 334</value>
   </data>
   <data name="generalCompilationButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 68</value>
   </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="generalCompilationButton.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
-  <data name="menuLabel.Text" xml:space="preserve">
-    <value>Подборки</value>
+  <data name="&gt;&gt;generalCompilationButton.Name" xml:space="preserve">
+    <value>generalCompilationButton</value>
   </data>
-  <data name="createCompilationButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>697, 498</value>
-  </data>
-  <data name="addFilmToCompilation.Text" xml:space="preserve">
-    <value>Добавить фильм в подборку</value>
+  <data name="&gt;&gt;generalCompilationButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;generalCompilationButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 43</value>
+  <data name="&gt;&gt;generalCompilationButton.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="&gt;&gt;menuLabel.Name" xml:space="preserve">
-    <value>menuLabel</value>
+  <data name="filmsDataGridView.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="generalCompilationButton.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="filmsDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 141</value>
+  </data>
+  <data name="filmsDataGridView.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="filmsDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 216</value>
+  </data>
+  <data name="filmsDataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;filmsDataGridView.Name" xml:space="preserve">
+    <value>filmsDataGridView</value>
   </data>
   <data name="&gt;&gt;filmsDataGridView.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;filmsDataGridView.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;filmsDataGridView.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="openCompButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="openCompButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 7.8pt</value>
+  </data>
+  <data name="openCompButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 93</value>
+  </data>
+  <data name="openCompButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 43</value>
+  </data>
+  <data name="openCompButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="openCompButton.Text" xml:space="preserve">
+    <value>Открыть подборку</value>
+  </data>
+  <data name="&gt;&gt;openCompButton.Name" xml:space="preserve">
+    <value>openCompButton</value>
+  </data>
+  <data name="&gt;&gt;openCompButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openCompButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;openCompButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="MovieListCompilation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="MovieListCompilation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 93</value>
+  </data>
+  <data name="MovieListCompilation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 43</value>
+  </data>
+  <data name="MovieListCompilation.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="MovieListCompilation.Text" xml:space="preserve">
+    <value>Список фильмов</value>
+  </data>
+  <data name="&gt;&gt;MovieListCompilation.Name" xml:space="preserve">
+    <value>MovieListCompilation</value>
+  </data>
+  <data name="&gt;&gt;MovieListCompilation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MovieListCompilation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MovieListCompilation.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="menuLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="menuLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.8pt, style=Bold</value>
+  </data>
+  <data name="menuLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="menuLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>421, 412</value>
+  </data>
+  <data name="menuLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 30</value>
+  </data>
+  <data name="menuLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="menuLabel.Text" xml:space="preserve">
+    <value>Подборки</value>
+  </data>
+  <data name="menuLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;menuLabel.Name" xml:space="preserve">
+    <value>menuLabel</value>
+  </data>
   <data name="&gt;&gt;menuLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="&gt;&gt;menuLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="createCompilationButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="createCompilationButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 7.8pt</value>
+  </data>
+  <data name="createCompilationButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="openFavButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 93</value>
+  <data name="createCompilationButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 363</value>
   </data>
-  <data name="&gt;&gt;FavouritesDataGridView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="createCompilationButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 43</value>
+  </data>
+  <data name="createCompilationButton.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="createCompilationButton.Text" xml:space="preserve">
+    <value>Создать подборку</value>
+  </data>
+  <data name="&gt;&gt;createCompilationButton.Name" xml:space="preserve">
+    <value>createCompilationButton</value>
+  </data>
+  <data name="&gt;&gt;createCompilationButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;createCompilationButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;createCompilationButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 7.8pt</value>
+  </data>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>513, 12</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 43</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Отправить на почту</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="UserListButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="UserListButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 7.8pt</value>
+  </data>
+  <data name="UserListButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>513, 93</value>
+  </data>
+  <data name="UserListButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 43</value>
+  </data>
+  <data name="UserListButton.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="UserListButton.Text" xml:space="preserve">
+    <value>Список пользователей</value>
+  </data>
+  <data name="&gt;&gt;UserListButton.Name" xml:space="preserve">
+    <value>UserListButton</value>
+  </data>
+  <data name="&gt;&gt;UserListButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserListButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;UserListButton.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>en</value>
@@ -975,4 +758,26 @@
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 20</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>679, 451</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>697, 498</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>MovieMate</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>GeneralCompilationForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

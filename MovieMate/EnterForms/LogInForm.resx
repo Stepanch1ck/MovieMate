@@ -117,187 +117,157 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="nickNameLabel.Text" xml:space="preserve">
-    <value>Имя</value>
-  </data>
-  <data name="&gt;&gt;enterUserButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;russianButton.Name" xml:space="preserve">
-    <value>russianButton</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="englishButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>425, 12</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MainForm</value>
-  </data>
-  <data name="enterUserButton.Text" xml:space="preserve">
-    <value>Войти</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="&gt;&gt;newUserButton.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;roundedButton.Type" xml:space="preserve">
+    <value>MovieMate.RoundedButton, MovieMate, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="roundedButton.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;russianButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="NickNameLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 16.2pt</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;NickNameLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;listBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="NickNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 64</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="EnterButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 39</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>526, 488</value>
+  <data name="PasswordTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>254, 27</value>
   </data>
-  <data name="&gt;&gt;newUserButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="PasswordTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
-  <data name="nickNameLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="EnterButton.Text" xml:space="preserve">
+    <value>Войти</value>
   </data>
-  <data name="&gt;&gt;nickNameLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="PasswordRounded.Text" xml:space="preserve">
+    <value>Введите пароль:</value>
   </data>
-  <data name="&gt;&gt;enterUserButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="enterUserButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>279, 383</value>
-  </data>
-  <data name="&gt;&gt;englishButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;englishButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;enterUserButton.Name" xml:space="preserve">
-    <value>enterUserButton</value>
-  </data>
-  <data name="&gt;&gt;russianButton.Parent" xml:space="preserve">
+  <data name="&gt;&gt;NickNameLabel.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="nickNameLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 25.800001pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;newUserButton.Name" xml:space="preserve">
-    <value>newUserButton</value>
-  </data>
-  <data name="englishButton.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="russianButton.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;englishButton.Name" xml:space="preserve">
-    <value>englishButton</value>
-  </data>
-  <data name="&gt;&gt;nickNameLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;nickNameLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="newUserButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>279, 325</value>
-  </data>
-  <data name="&gt;&gt;enterUserButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="listBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>279, 106</value>
-  </data>
-  <data name="nickNameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 60</value>
-  </data>
-  <data name="&gt;&gt;listBox1.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="russianButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>279, 12</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 20</value>
   </data>
-  <data name="&gt;&gt;nickNameLabel.Name" xml:space="preserve">
-    <value>nickNameLabel</value>
+  <data name="&gt;&gt;roundedButton.Name" xml:space="preserve">
+    <value>roundedButton</value>
   </data>
-  <data name="&gt;&gt;listBox1.Parent" xml:space="preserve">
+  <data name="EnterButton.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="roundedButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 47</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>326, 377</value>
+  </data>
+  <data name="PasswordRounded.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;PasswordTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="NickNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 37</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>344, 424</value>
+  </data>
+  <data name="&gt;&gt;NickNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;roundedButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;listBox1.Name" xml:space="preserve">
-    <value>listBox1</value>
+  <data name="&gt;&gt;roundedButton.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="nickNameLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="&gt;&gt;EnterButton.Type" xml:space="preserve">
+    <value>MovieMate.RoundedButton, MovieMate, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+  <data name="&gt;&gt;PasswordTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PasswordTextBox.Name" xml:space="preserve">
+    <value>PasswordTextBox</value>
+  </data>
+  <data name="&gt;&gt;PasswordRounded.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PasswordRounded.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 180</value>
+  </data>
+  <data name="NickNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="NickNameLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="PasswordRounded.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 37</value>
+  </data>
+  <data name="&gt;&gt;EnterButton.Name" xml:space="preserve">
+    <value>EnterButton</value>
+  </data>
+  <data name="&gt;&gt;PasswordRounded.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;PasswordRounded.Name" xml:space="preserve">
+    <value>PasswordRounded</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>LogInForm</value>
+  </data>
+  <data name="NickNameLabel.Text" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="&gt;&gt;PasswordRounded.Type" xml:space="preserve">
+    <value>MovieMate.RoundedButton, MovieMate, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;EnterButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="roundedButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 83</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>344, 424</value>
+  </data>
+  <data name="&gt;&gt;PasswordTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PasswordTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 223</value>
+  </data>
+  <data name="EnterButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 279</value>
+  </data>
+  <data name="&gt;&gt;EnterButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;NickNameLabel.Name" xml:space="preserve">
+    <value>NickNameLabel</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Form1</value>
   </data>
-  <data name="listBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>226, 184</value>
-  </data>
-  <data name="newUserButton.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="nickNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>279, 31</value>
-  </data>
-  <data name="&gt;&gt;englishButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="enterUserButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 42</value>
-  </data>
-  <data name="newUserButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 42</value>
-  </data>
-  <data name="enterUserButton.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="listBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;russianButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;newUserButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 464</value>
-  </data>
-  <data name="newUserButton.Text" xml:space="preserve">
-    <value>Новый пользователь</value>
-  </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>en</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>en</value>
   </metadata>
 </root>

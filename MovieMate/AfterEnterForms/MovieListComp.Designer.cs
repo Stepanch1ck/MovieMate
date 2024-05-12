@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MovieListComp));
             menuLabel = new Label();
             MovieListBox = new ListBox();
             AddMovieButton = new Button();
@@ -36,59 +37,41 @@
             // 
             // menuLabel
             // 
-            menuLabel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            resources.ApplyResources(menuLabel, "menuLabel");
             menuLabel.BackColor = Color.Black;
-            menuLabel.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             menuLabel.ForeColor = Color.White;
-            menuLabel.ImeMode = ImeMode.NoControl;
-            menuLabel.Location = new Point(-1, -2);
             menuLabel.Name = "menuLabel";
-            menuLabel.Size = new Size(287, 49);
-            menuLabel.TabIndex = 33;
-            menuLabel.Text = "Список фильмов";
-            menuLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // MovieListBox
             // 
+            resources.ApplyResources(MovieListBox, "MovieListBox");
             MovieListBox.FormattingEnabled = true;
-            MovieListBox.ItemHeight = 15;
-            MovieListBox.Location = new Point(12, 50);
             MovieListBox.Name = "MovieListBox";
-            MovieListBox.Size = new Size(261, 139);
-            MovieListBox.TabIndex = 34;
             MovieListBox.SelectedIndexChanged += MovieListBox_SelectedIndexChanged;
             // 
             // AddMovieButton
             // 
-            AddMovieButton.Location = new Point(24, 205);
+            resources.ApplyResources(AddMovieButton, "AddMovieButton");
             AddMovieButton.Name = "AddMovieButton";
-            AddMovieButton.Size = new Size(107, 53);
-            AddMovieButton.TabIndex = 35;
-            AddMovieButton.Text = "Добавить новый фильм";
             AddMovieButton.UseVisualStyleBackColor = true;
             AddMovieButton.Click += AddMovieButton_Click;
             // 
             // deleteMovieButton
             // 
-            deleteMovieButton.Location = new Point(157, 205);
+            resources.ApplyResources(deleteMovieButton, "deleteMovieButton");
             deleteMovieButton.Name = "deleteMovieButton";
-            deleteMovieButton.Size = new Size(97, 53);
-            deleteMovieButton.TabIndex = 36;
-            deleteMovieButton.Text = "Удалить из текущих";
             deleteMovieButton.UseVisualStyleBackColor = true;
             deleteMovieButton.Click += deleteMovieButton_Click;
             // 
             // MovieListComp
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(285, 279);
             Controls.Add(deleteMovieButton);
             Controls.Add(AddMovieButton);
             Controls.Add(MovieListBox);
             Controls.Add(menuLabel);
             Name = "MovieListComp";
-            Text = "MovieListComp";
             ResumeLayout(false);
         }
 

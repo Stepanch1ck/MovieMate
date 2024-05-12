@@ -43,8 +43,8 @@
             // 
             // userImage
             // 
-            resources.ApplyResources(userImage, "userImage");
             userImage.BackColor = Color.DarkGray;
+            resources.ApplyResources(userImage, "userImage");
             userImage.Name = "userImage";
             userImage.TabStop = false;
             // 

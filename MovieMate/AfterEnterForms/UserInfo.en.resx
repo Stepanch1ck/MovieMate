@@ -119,66 +119,40 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="userImage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 9</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="userImage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>11, 12</value>
   </data>
   <data name="userImage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 154</value>
+    <value>206, 205</value>
   </data>
   <data name="nameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 113</value>
+    <value>251, 151</value>
   </data>
   <data name="nameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 15</value>
+    <value>78, 20</value>
   </data>
   <data name="nameLabel.Text" xml:space="preserve">
     <value>Username:</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 148</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 15</value>
-  </data>
-  <data name="accountTypeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 75</value>
+    <value>264, 197</value>
   </data>
   <data name="accountTypeLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 15</value>
+    <value>101, 20</value>
   </data>
   <data name="accountTypeLabel.Text" xml:space="preserve">
     <value>Account Type:</value>
   </data>
-  <data name="UserNameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+  <data name="UserNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>369, 148</value>
   </data>
   <data name="UserNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 23</value>
+    <value>172, 27</value>
   </data>
   <data name="EmailTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>323, 146</value>
-  </data>
-  <data name="EmailTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>369, 195</value>
   </data>
   <data name="EmailTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 23</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="EmailTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>323, 75</value>
-  </data>
-  <data name="textBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 23</value>
+    <value>172, 27</value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -234,19 +208,7 @@
         c4xx+NL4U8G2nhIXQtdR1O8+07Sxvrjzdu3P3eBjqc/hXR0d6AACinjiigD/2Q==
 </value>
   </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>294, 0</value>
-  </data>
-  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 73</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>499, 176</value>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>588, 282</value>
   </data>
 </root>

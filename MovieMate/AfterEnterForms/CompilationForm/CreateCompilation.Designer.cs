@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateCompilation));
             menuLabel = new Label();
             NameCompTextBox = new TextBox();
             CreateButton = new Button();
@@ -35,45 +36,31 @@
             // 
             // menuLabel
             // 
-            menuLabel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            resources.ApplyResources(menuLabel, "menuLabel");
             menuLabel.BackColor = Color.Black;
-            menuLabel.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             menuLabel.ForeColor = Color.White;
-            menuLabel.ImeMode = ImeMode.NoControl;
-            menuLabel.Location = new Point(-3, -1);
             menuLabel.Name = "menuLabel";
-            menuLabel.Size = new Size(225, 49);
-            menuLabel.TabIndex = 30;
-            menuLabel.Text = "Создание подборки";
-            menuLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // NameCompTextBox
             // 
-            NameCompTextBox.Location = new Point(12, 71);
+            resources.ApplyResources(NameCompTextBox, "NameCompTextBox");
             NameCompTextBox.Name = "NameCompTextBox";
-            NameCompTextBox.Size = new Size(193, 23);
-            NameCompTextBox.TabIndex = 31;
             // 
             // CreateButton
             // 
-            CreateButton.Location = new Point(69, 113);
+            resources.ApplyResources(CreateButton, "CreateButton");
             CreateButton.Name = "CreateButton";
-            CreateButton.Size = new Size(75, 23);
-            CreateButton.TabIndex = 34;
-            CreateButton.Text = "Создать";
             CreateButton.UseVisualStyleBackColor = true;
             CreateButton.Click += CreateButton_Click;
             // 
             // CreateCompilation
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(219, 168);
             Controls.Add(CreateButton);
             Controls.Add(NameCompTextBox);
             Controls.Add(menuLabel);
             Name = "CreateCompilation";
-            Text = "CreateCompilation";
             ResumeLayout(false);
             PerformLayout();
         }

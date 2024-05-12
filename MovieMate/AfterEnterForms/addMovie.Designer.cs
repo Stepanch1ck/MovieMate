@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addMovie));
             menuLabel = new Label();
             MovieListBox = new ListBox();
             movieAddButton = new Button();
@@ -35,48 +36,33 @@
             // 
             // menuLabel
             // 
-            menuLabel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            resources.ApplyResources(menuLabel, "menuLabel");
             menuLabel.BackColor = Color.Black;
-            menuLabel.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             menuLabel.ForeColor = Color.White;
-            menuLabel.ImeMode = ImeMode.NoControl;
-            menuLabel.Location = new Point(-2, -6);
             menuLabel.Name = "menuLabel";
-            menuLabel.Size = new Size(267, 49);
-            menuLabel.TabIndex = 32;
-            menuLabel.Text = "Добавление фильма";
-            menuLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // MovieListBox
             // 
+            resources.ApplyResources(MovieListBox, "MovieListBox");
             MovieListBox.FormattingEnabled = true;
-            MovieListBox.ItemHeight = 15;
-            MovieListBox.Location = new Point(12, 56);
             MovieListBox.Name = "MovieListBox";
-            MovieListBox.Size = new Size(239, 124);
-            MovieListBox.TabIndex = 33;
             MovieListBox.SelectedIndexChanged += MovieListBox_SelectedIndexChanged;
             // 
             // movieAddButton
             // 
-            movieAddButton.Location = new Point(92, 218);
+            resources.ApplyResources(movieAddButton, "movieAddButton");
             movieAddButton.Name = "movieAddButton";
-            movieAddButton.Size = new Size(75, 23);
-            movieAddButton.TabIndex = 34;
-            movieAddButton.Text = "Добавить";
             movieAddButton.UseVisualStyleBackColor = true;
             movieAddButton.Click += movieAddButton_Click;
             // 
             // addMovie
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(263, 274);
             Controls.Add(movieAddButton);
             Controls.Add(MovieListBox);
             Controls.Add(menuLabel);
             Name = "addMovie";
-            Text = "addMovie";
             ResumeLayout(false);
         }
 
