@@ -151,13 +151,17 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="FavouritesDataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 147</value>
+    <value>142, 110</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="FavouritesDataGridView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="FavouritesDataGridView.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
   <data name="FavouritesDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>490, 216</value>
+    <value>429, 162</value>
   </data>
   <data name="FavouritesDataGridView.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -206,11 +210,17 @@
         HFAH0GOlFLRQAUYHpRRQAnHoKOPQUUUAHHoKOPQUUUAHHoKWiigAooooA//Z
 </value>
   </data>
+  <data name="mainMenuButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="mainMenuButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 186</value>
+    <value>32, 140</value>
+  </data>
+  <data name="mainMenuButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="mainMenuButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 68</value>
+    <value>60, 51</value>
   </data>
   <data name="mainMenuButton.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -270,11 +280,17 @@
         kUSLhEjXaqj0AHQVNRRQAUUUUAf/2Q==
 </value>
   </data>
+  <data name="blackListButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="blackListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 260</value>
+    <value>32, 195</value>
+  </data>
+  <data name="blackListButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="blackListButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 68</value>
+    <value>60, 51</value>
   </data>
   <data name="blackListButton.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -319,11 +335,17 @@
         iiigAooooAy7/QtL1LUrG/vLKKa7sJC9tMwO6Mkc4x/I8dD1rUoooAKKKKAP/9k=
 </value>
   </data>
+  <data name="button3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 112</value>
+    <value>32, 84</value>
+  </data>
+  <data name="button3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 68</value>
+    <value>60, 51</value>
   </data>
   <data name="button3.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -339,6 +361,9 @@
   </data>
   <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="pictureBox1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -395,10 +420,16 @@
 </value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+    <value>10, 9</value>
+  </data>
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 94</value>
+    <value>107, 71</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -419,10 +450,13 @@
     <value>Top, Right</value>
   </data>
   <data name="openFavButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 98</value>
+    <value>295, 74</value>
+  </data>
+  <data name="openFavButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="openFavButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 43</value>
+    <value>123, 32</value>
   </data>
   <data name="openFavButton.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -449,10 +483,13 @@
     <value>Segoe UI, 7.8pt</value>
   </data>
   <data name="deleteFavButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 98</value>
+    <value>448, 74</value>
+  </data>
+  <data name="deleteFavButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="deleteFavButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 43</value>
+    <value>123, 32</value>
   </data>
   <data name="deleteFavButton.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -479,10 +516,10 @@
     <value>Segoe UI, 10.8pt, style=Bold</value>
   </data>
   <data name="favoriteLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>420, 412</value>
+    <value>368, 309</value>
   </data>
   <data name="favoriteLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 30</value>
+    <value>204, 22</value>
   </data>
   <data name="favoriteLabel.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -536,6 +573,9 @@
         NkG0KoBdAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="generalCompilationButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="generalCompilationButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEUAAABECAYAAADX0fiMAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
@@ -568,10 +608,13 @@
 </value>
   </data>
   <data name="generalCompilationButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 334</value>
+    <value>32, 250</value>
+  </data>
+  <data name="generalCompilationButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="generalCompilationButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 68</value>
+    <value>60, 51</value>
   </data>
   <data name="generalCompilationButton.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -592,13 +635,16 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 20</value>
+    <value>7, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>679, 451</value>
+    <value>596, 344</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>697, 498</value>
+    <value>612, 383</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>MovieMate</value>
