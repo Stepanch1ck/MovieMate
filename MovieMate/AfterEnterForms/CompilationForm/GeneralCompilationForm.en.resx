@@ -312,6 +312,9 @@
   <data name="favoritesButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>37, 112</value>
   </data>
+  <data name="favoritesButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 68</value>
+  </data>
   <data name="mainMenuButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEQAAABECAIAAAC3cQTlAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -487,17 +490,38 @@
   <data name="generalCompilationButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>37, 333</value>
   </data>
+  <data name="filmsDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 142</value>
+  </data>
+  <data name="filmsDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 216</value>
+  </data>
+  <data name="openCompButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7.8pt</value>
+  </data>
   <data name="openCompButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="openCompButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 93</value>
+  </data>
+  <data name="openCompButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 43</value>
   </data>
   <data name="openCompButton.Text" xml:space="preserve">
     <value>Open Compilation</value>
   </data>
   <data name="MovieListCompilation.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 7.8pt</value>
+    <value>Microsoft Sans Serif, 7.8pt</value>
   </data>
   <data name="MovieListCompilation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="MovieListCompilation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 93</value>
+  </data>
+  <data name="MovieListCompilation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 43</value>
   </data>
   <data name="MovieListCompilation.Text" xml:space="preserve">
     <value>Movie List</value>
@@ -508,14 +532,35 @@
   <data name="menuLabel.Text" xml:space="preserve">
     <value>Compilations</value>
   </data>
+  <data name="createCompilationButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 364</value>
+  </data>
   <data name="createCompilationButton.Text" xml:space="preserve">
     <value>Create compilation</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Send by email</value>
+  <data name="SendEmailButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 7.8pt</value>
+  </data>
+  <data name="SendEmailButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>513, 12</value>
+  </data>
+  <data name="SendEmailButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 43</value>
+  </data>
+  <data name="SendEmailButton.Text" xml:space="preserve">
+    <value>Send by Email</value>
+  </data>
+  <data name="UserListButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7.8pt</value>
   </data>
   <data name="UserListButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="UserListButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>513, 93</value>
+  </data>
+  <data name="UserListButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 43</value>
   </data>
   <data name="UserListButton.Text" xml:space="preserve">
     <value>User List</value>
