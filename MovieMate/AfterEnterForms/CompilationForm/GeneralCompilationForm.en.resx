@@ -258,14 +258,10 @@
 </value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 9</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>11, 12</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 70</value>
+    <value>117, 93</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
@@ -313,11 +309,8 @@
   <data name="favoritesButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="favoritesButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="favoritesButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 51</value>
+  <data name="favoritesButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 112</value>
   </data>
   <data name="mainMenuButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -369,13 +362,7 @@
     <value>Stretch</value>
   </data>
   <data name="mainMenuButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 140</value>
-  </data>
-  <data name="mainMenuButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="mainMenuButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 51</value>
+    <value>37, 187</value>
   </data>
   <data name="blackListButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -461,13 +448,7 @@
     <value>Stretch</value>
   </data>
   <data name="blackListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 195</value>
-  </data>
-  <data name="blackListButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="blackListButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 51</value>
+    <value>37, 260</value>
   </data>
   <data name="generalCompilationButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -504,43 +485,13 @@
     <value>Stretch</value>
   </data>
   <data name="generalCompilationButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 250</value>
-  </data>
-  <data name="generalCompilationButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="generalCompilationButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 51</value>
-  </data>
-  <data name="filmsDataGridView.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="filmsDataGridView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="filmsDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>430, 162</value>
-  </data>
-  <data name="openCompButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="openCompButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 7.8pt</value>
+    <value>37, 333</value>
   </data>
   <data name="openCompButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="openCompButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="openCompButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 32</value>
-  </data>
   <data name="openCompButton.Text" xml:space="preserve">
     <value>Open Compilation</value>
-  </data>
-  <data name="MovieListCompilation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
   </data>
   <data name="MovieListCompilation.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 7.8pt</value>
@@ -548,92 +499,31 @@
   <data name="MovieListCompilation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="MovieListCompilation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="MovieListCompilation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 32</value>
-  </data>
   <data name="MovieListCompilation.Text" xml:space="preserve">
     <value>Movie List</value>
   </data>
-  <data name="menuLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>368, 309</value>
-  </data>
   <data name="menuLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 22</value>
+    <value>233, 29</value>
   </data>
   <data name="menuLabel.Text" xml:space="preserve">
     <value>Compilations</value>
   </data>
-  <data name="createCompilationButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="createCompilationButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 272</value>
-  </data>
-  <data name="createCompilationButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="createCompilationButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 32</value>
-  </data>
   <data name="createCompilationButton.Text" xml:space="preserve">
     <value>Create compilation</value>
   </data>
-  <data name="SendEmailButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="SendEmailButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 7.8pt</value>
-  </data>
-  <data name="SendEmailButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="SendEmailButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>449, 9</value>
-  </data>
-  <data name="SendEmailButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="SendEmailButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 32</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="SendEmailButton.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="SendEmailButton.Text" xml:space="preserve">
+  <data name="button1.Text" xml:space="preserve">
     <value>Send by email</value>
-  </data>
-  <data name="UserListButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="UserListButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 7.8pt</value>
   </data>
   <data name="UserListButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="UserListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>449, 70</value>
-  </data>
-  <data name="UserListButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="UserListButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 32</value>
-  </data>
   <data name="UserListButton.Text" xml:space="preserve">
     <value>User List</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>596, 344</value>
+    <value>681, 459</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>612, 383</value>
+    <value>697, 495</value>
   </data>
 </root>

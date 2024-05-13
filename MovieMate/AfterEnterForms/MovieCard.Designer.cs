@@ -40,8 +40,8 @@
             // 
             // moviePictureBox
             // 
-            resources.ApplyResources(moviePictureBox, "moviePictureBox");
             moviePictureBox.BackColor = SystemColors.ActiveBorder;
+            resources.ApplyResources(moviePictureBox, "moviePictureBox");
             moviePictureBox.Name = "moviePictureBox";
             moviePictureBox.TabStop = false;
             // 

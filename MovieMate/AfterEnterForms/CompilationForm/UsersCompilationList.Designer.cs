@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsersCompilationList));
             menuLabel = new Label();
             UserListBox = new ListBox();
             AddUserButton = new Button();
@@ -36,59 +37,41 @@
             // 
             // menuLabel
             // 
-            menuLabel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            resources.ApplyResources(menuLabel, "menuLabel");
             menuLabel.BackColor = Color.Black;
-            menuLabel.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             menuLabel.ForeColor = Color.White;
-            menuLabel.ImeMode = ImeMode.NoControl;
-            menuLabel.Location = new Point(0, -3);
             menuLabel.Name = "menuLabel";
-            menuLabel.Size = new Size(261, 49);
-            menuLabel.TabIndex = 32;
-            menuLabel.Text = "Список пользователей";
-            menuLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // UserListBox
             // 
+            resources.ApplyResources(UserListBox, "UserListBox");
             UserListBox.FormattingEnabled = true;
-            UserListBox.ItemHeight = 15;
-            UserListBox.Location = new Point(12, 49);
             UserListBox.Name = "UserListBox";
-            UserListBox.Size = new Size(236, 139);
-            UserListBox.TabIndex = 33;
             UserListBox.SelectedIndexChanged += UserListBox_SelectedIndexChanged;
             // 
             // AddUserButton
             // 
-            AddUserButton.Location = new Point(24, 196);
+            resources.ApplyResources(AddUserButton, "AddUserButton");
             AddUserButton.Name = "AddUserButton";
-            AddUserButton.Size = new Size(107, 53);
-            AddUserButton.TabIndex = 34;
-            AddUserButton.Text = "Добавить новых пользователей";
             AddUserButton.UseVisualStyleBackColor = true;
             AddUserButton.Click += AddUserButton_Click;
             // 
             // deleteUserButton
             // 
-            deleteUserButton.Location = new Point(139, 196);
+            resources.ApplyResources(deleteUserButton, "deleteUserButton");
             deleteUserButton.Name = "deleteUserButton";
-            deleteUserButton.Size = new Size(97, 53);
-            deleteUserButton.TabIndex = 35;
-            deleteUserButton.Text = "Удалить из текущих";
             deleteUserButton.UseVisualStyleBackColor = true;
             deleteUserButton.Click += deleteUserButton_Click;
             // 
             // UsersCompilationList
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(260, 257);
             Controls.Add(deleteUserButton);
             Controls.Add(AddUserButton);
             Controls.Add(UserListBox);
             Controls.Add(menuLabel);
             Name = "UsersCompilationList";
-            Text = "UsersCompilationList";
             ResumeLayout(false);
         }
 

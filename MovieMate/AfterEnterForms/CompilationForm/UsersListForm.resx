@@ -119,14 +119,21 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>299, 455</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>86, 31</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Открыть</value>
   </data>
   <data name="&gt;&gt;button1.Name" xml:space="preserve">
     <value>button1</value>
@@ -145,17 +152,13 @@
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="filmsDataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 58</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="filmsDataGridView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+    <value>12, 77</value>
   </data>
   <data name="filmsDataGridView.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
   <data name="filmsDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>578, 305</value>
+    <value>661, 354</value>
   </data>
   <data name="filmsDataGridView.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -182,16 +185,16 @@
     <value>NoControl</value>
   </data>
   <data name="menuLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 7</value>
+    <value>12, 9</value>
   </data>
   <data name="menuLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>578, 49</value>
+    <value>661, 65</value>
   </data>
   <data name="menuLabel.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
   <data name="menuLabel.Text" xml:space="preserve">
-    <value>Общая подборка</value>
+    <value>Выбранная подборка</value>
   </data>
   <data name="menuLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -212,13 +215,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
+    <value>8, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>598, 374</value>
+    <value>683, 499</value>
   </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>701, 546</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>MovieMate</value>

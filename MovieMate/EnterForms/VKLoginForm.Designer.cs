@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VKLoginForm));
             pictureBox1 = new PictureBox();
             passwordLabel = new Label();
             phoneNumberLabel = new Label();
@@ -39,67 +40,48 @@
             // 
             // pictureBox1
             // 
+            resources.ApplyResources(pictureBox1, "pictureBox1");
             pictureBox1.Image = Properties.Resources.VK_LOGO;
-            pictureBox1.Location = new Point(125, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(125, 96);
-            pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            
             // 
             // passwordLabel
             // 
+            resources.ApplyResources(passwordLabel, "passwordLabel");
             passwordLabel.BackColor = Color.Black;
             passwordLabel.ForeColor = Color.White;
-            passwordLabel.Location = new Point(65, 240);
             passwordLabel.Name = "passwordLabel";
-            passwordLabel.Size = new Size(254, 32);
-            passwordLabel.TabIndex = 1;
-            passwordLabel.Text = "Enter the password:";
-            passwordLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // phoneNumberLabel
             // 
+            resources.ApplyResources(phoneNumberLabel, "phoneNumberLabel");
             phoneNumberLabel.BackColor = Color.Black;
             phoneNumberLabel.ForeColor = Color.White;
-            phoneNumberLabel.Location = new Point(65, 149);
             phoneNumberLabel.Name = "phoneNumberLabel";
-            phoneNumberLabel.Size = new Size(254, 32);
-            phoneNumberLabel.TabIndex = 2;
-            phoneNumberLabel.Text = "Enter the phone number:";
-            phoneNumberLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(65, 184);
+            resources.ApplyResources(textBox1, "textBox1");
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(254, 27);
-            textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(65, 275);
+            resources.ApplyResources(textBox2, "textBox2");
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(254, 27);
-            textBox2.TabIndex = 4;
             // 
             // button1
             // 
+            resources.ApplyResources(button1, "button1");
             button1.BackColor = Color.Black;
             button1.ForeColor = Color.White;
-            button1.Location = new Point(140, 334);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 5;
-            button1.Text = "Log In";
             button1.UseVisualStyleBackColor = false;
             // 
             // VKLoginForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(382, 450);
             Controls.Add(button1);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
@@ -107,7 +89,6 @@
             Controls.Add(passwordLabel);
             Controls.Add(pictureBox1);
             Name = "VKLoginForm";
-            Text = "VKLoginForm";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
