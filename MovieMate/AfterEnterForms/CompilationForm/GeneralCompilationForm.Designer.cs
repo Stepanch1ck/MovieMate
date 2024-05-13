@@ -39,7 +39,7 @@
             MovieListCompilation = new Button();
             menuLabel = new Label();
             createCompilationButton = new Button();
-            button1 = new Button();
+            SendEmailButton = new Button();
             UserListButton = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).BeginInit();
@@ -121,13 +121,14 @@
             createCompilationButton.UseVisualStyleBackColor = false;
             createCompilationButton.Click += createCompilationButton_Click;
             // 
-            // button1
+            // SendEmailButton
             // 
-            resources.ApplyResources(button1, "button1");
-            button1.BackColor = Color.Black;
-            button1.ForeColor = Color.White;
-            button1.Name = "button1";
-            button1.UseVisualStyleBackColor = false;
+            resources.ApplyResources(SendEmailButton, "SendEmailButton");
+            SendEmailButton.BackColor = Color.Black;
+            SendEmailButton.ForeColor = Color.White;
+            SendEmailButton.Name = "SendEmailButton";
+            SendEmailButton.UseVisualStyleBackColor = false;
+            SendEmailButton.Click += SendEmailButton_Click;
             // 
             // UserListButton
             // 
@@ -144,7 +145,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             Controls.Add(UserListButton);
-            Controls.Add(button1);
+            Controls.Add(SendEmailButton);
             Controls.Add(createCompilationButton);
             Controls.Add(menuLabel);
             Controls.Add(MovieListCompilation);
@@ -178,7 +179,7 @@
         private Button MovieListCompilation;
         private Label menuLabel;
         private Button createCompilationButton;
-        private Button button1;
+        private Button SendEmailButton;
         private Button UserListButton;
     }
 }
