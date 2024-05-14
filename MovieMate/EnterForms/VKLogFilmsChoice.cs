@@ -27,13 +27,15 @@ namespace MovieMate.EnterForms
                     MainMenu mainMenu = new MainMenu(user.Nickname);
                     mainMenu.Show();
                     this.Close();
-                    
+
                 }
                 else
                 {
                     MessageBox.Show("Пользователь не найден!");
                 }
             }
+            
+        }
         private string GetSelectedMovieIds()
         {
             List<string> selectedIds = new List<string>();
