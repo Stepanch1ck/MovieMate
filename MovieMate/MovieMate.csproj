@@ -27,6 +27,7 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="NuGet.Frameworks" Version="6.9.1" />
     <PackageReference Include="VkApi" Version="0.0.5" />
+    <PackageReference Include="VkNet" Version="1.78.0" />
     <PackageReference Include="xunit" Version="2.7.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.5.8">
       <PrivateAssets>all</PrivateAssets>

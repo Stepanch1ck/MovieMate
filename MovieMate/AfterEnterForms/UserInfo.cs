@@ -20,6 +20,23 @@ namespace MovieMate
             currentUser = db.People.FirstOrDefault(p => p.Nickname == UserNickname);
             UserNameTextBox.Text = nickname;
             EmailTextBox.Text = currentUser.Email;
+            if (currentUser.Picture != null)
+            {
+                pictureBox1.Image = Image.FromStream(new MemoryStream(currentUser.Picture));
+            }
+            else
+            {
+
+                pictureBox1.Image = null;
+            }
+            if (currentUser.VkId == null)
+            {
+                VkORnoVktextBox.Text = "Без Вконтакте";
+            }
+            else
+            {
+                VkORnoVktextBox.Text = "Выполнен вход через ВК";
+            }
         }
     }
 }

@@ -148,36 +148,27 @@
     <value>222, 24</value>
   </data>
   <data name="phoneNumberLabel.Text" xml:space="preserve">
-    <value>Введите номер телефона:</value>
+    <value>Введите номер телефона или почту:</value>
   </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 138</value>
-  </data>
-  <data name="textBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="LoginTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="LoginTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>223, 23</value>
   </data>
-  <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 206</value>
-  </data>
-  <data name="textBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="PasswordTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="PasswordTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>223, 23</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>122, 250</value>
-  </data>
-  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="VKLoginbutton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="VKLoginbutton.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 22</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
+  <data name="VKLoginbutton.Text" xml:space="preserve">
     <value>Войти</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
@@ -185,9 +176,6 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>336, 344</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>352, 383</value>

@@ -18,4 +18,6 @@ public partial class Person
     public string? IdFavorites { get; set; }
 
     public byte[]? Picture { get; set; }
+
+    public string? VkId { get; set; }
 }

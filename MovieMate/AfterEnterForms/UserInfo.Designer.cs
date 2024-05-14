@@ -35,7 +35,7 @@
             accountTypeLabel = new Label();
             UserNameTextBox = new TextBox();
             EmailTextBox = new TextBox();
-            textBox3 = new TextBox();
+            VkORnoVktextBox = new TextBox();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)userImage).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -67,16 +67,19 @@
             // 
             resources.ApplyResources(UserNameTextBox, "UserNameTextBox");
             UserNameTextBox.Name = "UserNameTextBox";
+            UserNameTextBox.ReadOnly = true;
             // 
             // EmailTextBox
             // 
             resources.ApplyResources(EmailTextBox, "EmailTextBox");
             EmailTextBox.Name = "EmailTextBox";
+            EmailTextBox.ReadOnly = true;
             // 
-            // textBox3
+            // VkORnoVktextBox
             // 
-            resources.ApplyResources(textBox3, "textBox3");
-            textBox3.Name = "textBox3";
+            resources.ApplyResources(VkORnoVktextBox, "VkORnoVktextBox");
+            VkORnoVktextBox.Name = "VkORnoVktextBox";
+            VkORnoVktextBox.ReadOnly = true;
             // 
             // pictureBox1
             // 
@@ -90,7 +93,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             Controls.Add(pictureBox1);
-            Controls.Add(textBox3);
+            Controls.Add(VkORnoVktextBox);
             Controls.Add(EmailTextBox);
             Controls.Add(UserNameTextBox);
             Controls.Add(accountTypeLabel);
@@ -112,7 +115,7 @@
         private Label accountTypeLabel;
         private TextBox UserNameTextBox;
         private TextBox EmailTextBox;
-        private TextBox textBox3;
+        private TextBox VkORnoVktextBox;
         private PictureBox pictureBox1;
     }
 }

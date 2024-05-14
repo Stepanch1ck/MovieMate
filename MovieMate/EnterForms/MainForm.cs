@@ -3,6 +3,7 @@ using System.Reflection.Emit;
 using System.Windows.Forms;
 using MovieMate.DBConnect;
 using MovieMate.EnterForms;
+using VkNet;
 
 namespace MovieMate
 {
@@ -81,8 +82,22 @@ namespace MovieMate
             if (listBox1.SelectedItem != null)
             {
                 selectedNickname = listBox1.SelectedItem.ToString();
-                LogInForm logIn = new LogInForm(selectedNickname);
-                logIn.Show();
+
+                using (var context = new MovieDbContext())
+                {
+                    var user = context.People.FirstOrDefault(p => p.Nickname == selectedNickname);
+
+                    if (user != null && !string.IsNullOrEmpty(user.VkId))
+                    {
+                        VKLoginForm vkLoginForm = new VKLoginForm();
+                        vkLoginForm.Show();
+                    }
+                    else
+                    {
+                        LogInForm logIn = new LogInForm(selectedNickname);
+                        logIn.Show();
+                    }
+                }
             }
         }
 

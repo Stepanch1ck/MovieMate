@@ -32,9 +32,9 @@
             pictureBox1 = new PictureBox();
             passwordLabel = new Label();
             phoneNumberLabel = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            button1 = new Button();
+            LoginTextBox = new TextBox();
+            PasswordTextBox = new TextBox();
+            VKLoginbutton = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -59,32 +59,33 @@
             phoneNumberLabel.ForeColor = Color.White;
             phoneNumberLabel.Name = "phoneNumberLabel";
             // 
-            // textBox1
+            // LoginTextBox
             // 
-            resources.ApplyResources(textBox1, "textBox1");
-            textBox1.Name = "textBox1";
+            resources.ApplyResources(LoginTextBox, "LoginTextBox");
+            LoginTextBox.Name = "LoginTextBox";
             // 
-            // textBox2
+            // PasswordTextBox
             // 
-            resources.ApplyResources(textBox2, "textBox2");
-            textBox2.Name = "textBox2";
+            resources.ApplyResources(PasswordTextBox, "PasswordTextBox");
+            PasswordTextBox.Name = "PasswordTextBox";
             // 
-            // button1
+            // VKLoginbutton
             // 
-            resources.ApplyResources(button1, "button1");
-            button1.BackColor = Color.Black;
-            button1.ForeColor = Color.White;
-            button1.Name = "button1";
-            button1.UseVisualStyleBackColor = false;
+            resources.ApplyResources(VKLoginbutton, "VKLoginbutton");
+            VKLoginbutton.BackColor = Color.Black;
+            VKLoginbutton.ForeColor = Color.White;
+            VKLoginbutton.Name = "VKLoginbutton";
+            VKLoginbutton.UseVisualStyleBackColor = false;
+            VKLoginbutton.Click += VKLoginbutton_Click;
             // 
             // VKLoginForm
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(VKLoginbutton);
+            Controls.Add(PasswordTextBox);
+            Controls.Add(LoginTextBox);
             Controls.Add(phoneNumberLabel);
             Controls.Add(passwordLabel);
             Controls.Add(pictureBox1);
@@ -99,8 +100,8 @@
         private PictureBox pictureBox1;
         private Label passwordLabel;
         private Label phoneNumberLabel;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Button button1;
+        private TextBox LoginTextBox;
+        private TextBox PasswordTextBox;
+        private Button VKLoginbutton;
     }
 }

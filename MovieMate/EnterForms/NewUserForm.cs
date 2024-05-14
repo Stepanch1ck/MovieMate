@@ -105,16 +105,17 @@ namespace MovieMate
                 openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    pictureBox1.Image = Image.FromFile(openFileDialog.FileName);
+                    pictureBox1.Image = System.Drawing.Image.FromFile(openFileDialog.FileName);
                 }
             }
         }
 
         private void loginVKLabel_Click(object sender, EventArgs e)
         {
-            VKLoginForm vk = new VKLoginForm();
-            vk.Show();
+            VKLoginForm loginForm = new VKLoginForm();
+            loginForm.ShowDialog();
             this.Close();
+            
         }
 
         private void loginButton_Click(object sender, EventArgs e)

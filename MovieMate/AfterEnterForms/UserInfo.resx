@@ -119,10 +119,14 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="userImage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+    <value>10, 9</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="userImage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="userImage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 206</value>
+    <value>180, 154</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="userImage.TabIndex" type="System.Int32, mscorlib">
@@ -144,10 +148,10 @@
     <value>True</value>
   </data>
   <data name="nameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>224, 151</value>
+    <value>196, 113</value>
   </data>
   <data name="nameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 20</value>
+    <value>112, 15</value>
   </data>
   <data name="nameLabel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -171,10 +175,10 @@
     <value>True</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>224, 198</value>
+    <value>196, 148</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 20</value>
+    <value>44, 15</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -198,10 +202,10 @@
     <value>True</value>
   </data>
   <data name="accountTypeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>224, 100</value>
+    <value>196, 75</value>
   </data>
   <data name="accountTypeLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 20</value>
+    <value>81, 15</value>
   </data>
   <data name="accountTypeLabel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -222,10 +226,13 @@
     <value>4</value>
   </data>
   <data name="UserNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 151</value>
+    <value>337, 113</value>
+  </data>
+  <data name="UserNameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="UserNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 27</value>
+    <value>151, 23</value>
   </data>
   <data name="UserNameTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -243,10 +250,13 @@
     <value>3</value>
   </data>
   <data name="EmailTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 198</value>
+    <value>337, 148</value>
+  </data>
+  <data name="EmailTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="EmailTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 27</value>
+    <value>151, 23</value>
   </data>
   <data name="EmailTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -263,25 +273,28 @@
   <data name="&gt;&gt;EmailTextBox.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 100</value>
+  <data name="VkORnoVktextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 75</value>
   </data>
-  <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 27</value>
+  <data name="VkORnoVktextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
-  <data name="textBox3.TabIndex" type="System.Int32, mscorlib">
+  <data name="VkORnoVktextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 23</value>
+  </data>
+  <data name="VkORnoVktextBox.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
-    <value>textBox3</value>
+  <data name="&gt;&gt;VkORnoVktextBox.Name" xml:space="preserve">
+    <value>VkORnoVktextBox</value>
   </data>
-  <data name="&gt;&gt;textBox3.Type" xml:space="preserve">
+  <data name="&gt;&gt;VkORnoVktextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;VkORnoVktextBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;VkORnoVktextBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -339,10 +352,17 @@
 </value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>336, 0</value>
+    <value>306, -2</value>
+  </data>
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 97</value>
+    <value>100, 73</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -363,20 +383,19 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 20</value>
+    <value>7, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>570, 235</value>
+    <value>500, 182</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>588, 282</value>
+    <value>516, 221</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>588, 282</value>
+    <value>516, 221</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>UserInfo</value>

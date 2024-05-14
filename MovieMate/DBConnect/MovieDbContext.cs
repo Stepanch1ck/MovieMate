@@ -76,6 +76,9 @@ public partial class MovieDbContext : DbContext
             entity.Property(e => e.Picture)
                 .HasColumnType("IMAGE")
                 .HasColumnName("picture");
+            entity.Property(e => e.VkId)
+                .HasColumnType("VARCHAR")
+                .HasColumnName("VkId");
 
         });
 
