@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Data;
+using MovieMate.AfterEnterForms.CompilationForm;
 using MovieMate.DBConnect;
 
 namespace MovieMate
@@ -17,6 +10,8 @@ namespace MovieMate
         MovieDbContext db = new MovieDbContext();
         Person currentUser;
         Movie selectedMovie;
+        CompilationManager compilationManager;
+        Compilation defaultCompilation;
         public FavouritesListForm(string nickname)
         {
             InitializeComponent();
@@ -24,6 +19,8 @@ namespace MovieMate
             currentUser = db.People.FirstOrDefault(p => p.Nickname == UserNickname);
             var idFavorites = currentUser.IdFavorites;
             DisplaySimilarMovies(idFavorites);
+            compilationManager = new CompilationManager(db);
+            defaultCompilation = db.Compilations.FirstOrDefault(c => c.Id == 1);
         }
 
         private void FavouritesListForm_Load(object sender, EventArgs e)
@@ -107,6 +104,7 @@ namespace MovieMate
             }
             db.SaveChanges();
             DisplaySimilarMovies(currentUser.IdFavorites);
+            compilationManager.CheckAndRemoveFromCompilationIfNotInFavorites(defaultCompilation, selectedMovie.Id, currentUser.Id);
 
             MessageBox.Show("Фильм удален из избранного!");
         }

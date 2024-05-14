@@ -1,18 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
-using MovieMate.DBConnect;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Configuration;
+﻿using MovieMate.DBConnect;
 using System.Data;
-using System.Drawing;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+using MovieMate.AfterEnterForms.CompilationForm;
 
 namespace MovieMate
 {
@@ -23,6 +11,8 @@ namespace MovieMate
         MovieDbContext db = new MovieDbContext();
         Person currentUser;
         Movie selectedMovie;
+        CompilationManager compilationManager;
+        Compilation defaultCompilation;
         public MainMenu(string nickname)
         {
 
@@ -32,6 +22,20 @@ namespace MovieMate
             var idMovieLike = currentUser.IdMovieLike;
             DisplaySimilarMovies(idMovieLike);
             secondNicknameLabel.Text = nickname;
+            compilationManager = new CompilationManager(db);
+
+
+            defaultCompilation = db.Compilations.FirstOrDefault(c => c.Id == 1);
+            if (defaultCompilation != null && !defaultCompilation.IdPerson.Split(',').Contains(currentUser.Id.ToString()));
+            defaultCompilation.IdPerson += "," + currentUser.Id;
+            if (defaultCompilation != null && !string.IsNullOrEmpty(currentUser.IdFavorites))
+            {
+                foreach (var movieId in currentUser.IdFavorites.Split(',').Select(int.Parse))
+                {
+                    compilationManager.AddMovieToCompilation(defaultCompilation, movieId, currentUser.Id);
+                }
+            }
+            db.SaveChanges();
         }
 
 
@@ -41,6 +45,8 @@ namespace MovieMate
         {
             var idMovieLike = currentUser.IdMovieLike;
             DisplaySimilarMovies(idMovieLike);
+            
+            
         }
 
 
@@ -157,7 +163,7 @@ namespace MovieMate
             }
             db.SaveChanges();
             DisplaySimilarMovies(currentUser.IdMovieLike);
-
+            compilationManager.AddMovieToCompilation(defaultCompilation, selectedMovie.Id, currentUser.Id);
             MessageBox.Show("Фильм добавлен в избранное!");
         }
 
@@ -183,7 +189,8 @@ namespace MovieMate
             }
             db.SaveChanges();
             DisplaySimilarMovies(currentUser.IdMovieLike);
-
+            
+            compilationManager.CheckAndRemoveBlacklistedMovies(defaultCompilation);
             MessageBox.Show("Фильм добавлен в чёрный список!");
         }
 
@@ -206,5 +213,8 @@ namespace MovieMate
             mainMenu.Show();
             this.Close();
         }
+
+        
+
     }
 }

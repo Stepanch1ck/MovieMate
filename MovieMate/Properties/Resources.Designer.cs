@@ -63,6 +63,16 @@ namespace MovieMate.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap free_icon_bookmarks_1174410 {
+            get {
+                object obj = ResourceManager.GetObject("free-icon-bookmarks-1174410", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap VK_LOGO {
             get {
                 object obj = ResourceManager.GetObject("VK-LOGO", resourceCulture);

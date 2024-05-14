@@ -124,4 +124,7 @@
   <data name="VK-LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\VK-LOGO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="free-icon-bookmarks-1174410" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\free-icon-bookmarks-1174410.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

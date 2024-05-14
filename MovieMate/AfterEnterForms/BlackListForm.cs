@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Data;
+using MovieMate.AfterEnterForms.CompilationForm;
 using MovieMate.DBConnect;
 
 namespace MovieMate
@@ -18,6 +10,8 @@ namespace MovieMate
         MovieDbContext db = new MovieDbContext();
         Person currentUser;
         Movie selectedMovie;
+        CompilationManager compilationManager;
+        Compilation defaultCompilation;
         public BlackListForm(string nickname)
         {
             InitializeComponent();
@@ -25,6 +19,8 @@ namespace MovieMate
             currentUser = db.People.FirstOrDefault(p => p.Nickname == UserNickname);
             var idBlackList = currentUser.IdBlackList;
             DisplaySimilarMovies(idBlackList);
+            compilationManager = new CompilationManager(db);
+            defaultCompilation = db.Compilations.FirstOrDefault(c => c.Id == 1);
         }
 
         private void BlackListForm_Load(object sender, EventArgs e)
@@ -107,6 +103,7 @@ namespace MovieMate
             }
             db.SaveChanges();
             DisplaySimilarMovies(currentUser.IdBlackList);
+            compilationManager.AddMovieToCompilation(defaultCompilation, selectedMovie.Id, currentUser.Id);
 
             MessageBox.Show("Фильм удален из чёрного списка!");
         }

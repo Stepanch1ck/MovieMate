@@ -53,6 +53,7 @@
             // 
             // favoritesButton
             // 
+            favoritesButton.BackgroundImage = Properties.Resources.free_icon_bookmarks_1174410;
             resources.ApplyResources(favoritesButton, "favoritesButton");
             favoritesButton.Name = "favoritesButton";
             favoritesButton.UseVisualStyleBackColor = true;

@@ -4,8 +4,6 @@ using MovieMate.AfterEnterForms;
 using MovieMate.DBConnect;
 using System.Net;
 using System.Net.Mail;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
-using System.Net.Http;
 
 namespace MovieMate
 {
@@ -90,6 +88,8 @@ namespace MovieMate
         {
             var idUser = currentUser.Id;
             DisplaySimilarCompilations(idUser);
+            
+            
         }
 
         private void createCompilationButton_Click(object sender, EventArgs e)
@@ -102,8 +102,15 @@ namespace MovieMate
         {
             if (compilation != null)
             {
-                UsersCompilationList usercomplist = new UsersCompilationList(compilation, UserNickname);
-                usercomplist.Show();
+                if (compilation.Id != 1)
+                {
+                    UsersCompilationList usercomplist = new UsersCompilationList(compilation, UserNickname);
+                    usercomplist.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Это общая подборка, она доступна всем пользователям");
+                } 
             }
             else
             {
@@ -117,8 +124,16 @@ namespace MovieMate
         {
             if (compilation != null)
             {
-                MovieListComp moviecomplist = new MovieListComp(compilation);
-                moviecomplist.Show();
+                if ( compilation.Id!=1)
+                {
+                    MovieListComp moviecomplist = new MovieListComp(compilation);
+                    moviecomplist.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Изменение списка фильмов общей подборки происходит автоматически, вам не нужно редактировать его самому!");
+                }
+                
             }
             else
             {

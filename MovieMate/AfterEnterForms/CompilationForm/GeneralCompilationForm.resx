@@ -262,10 +262,17 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+    <value>10, 9</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 94</value>
+    <value>102, 70</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
@@ -283,37 +290,17 @@
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="favoritesButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEUAAABECAMAAADgDwi+AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
-        MAAA6mAAADqYAAAXcJy6UTwAAAHjUExURf////7+/v39/dXV1YuLi2ZmZmJiYmFhYWlpaZqamuLi4vz8
-        /J+fnyIiIgAAAAICAjY2NsTExMHBwRYWFmpqaqCfoPf390hISAEBAQcHBwkJCQgICAUFBXx8fPb29kdH
-        RwoKCo+Pj7m5ubi4uGtra3p6eg4ODsjIyJWVlXt7e0ZGRsbGxpOTk+Xl5e/v79DQ0D09PV5eXujo6MnJ
-        yTIyMlVVVePj4ywrLEtLS9zc3CUlJUJCQtbW1q+vryAgIDw8PNLS0qenpxkZGTQ0NMrKyj8/PywsLC0t
-        LcPDw/r6+paWlhEREVRUVMvLyyYmJrq6uvj4+IyMjF1dXefn59HR0Ts7O7Ozs/X19YGBgQQEBGhoaOzs
-        7EBAQBwcHKurq/Pz83h4eHFxcfHx8dra2hcXF6Ojo/Dw8ODg4FFRURMTE5iYmObm5ltbWw8PD42NjQ0N
-        Devr62RkZAMDAwsLC4WFhcXFxeHh4WxsbN3d3RUVFZ6envLy8nR0dAYGBnNzc5SUlNvb20NDQ6ampvT0
-        9O7u7paVlh0dHa2trff294iIiH5+frW1tfn5+ZCQkEdGRyoqKr29vZmZmfv7+zAwMKGhoTc3N83Nzamo
-        qScnJ4eHhxISEtPT07S0tLy8vNfX14SEhFRTVB8VF8gAAAAJcEhZcwAACxAAAAsQAa0jvXUAAAAHdElN
-        RQfoBQUOIhaQBZJ2AAACqUlEQVRYR+2X6VtSQRSHZ9BwIQ6mJVcCI3JN06w026y0jbSiKBXNXCu1iLR9
-        MbPNdtv37U/tnHsHHpYBhk89Pc99P8CdOb/7cma4Vy/M5H+DWxShrHFKMjwvf5nVai1QobCoWK6xLbeD
-        Oo6SFVymKS0TAUVKiiUa20pRVcWxSrKmcidooFW4ViMuV9o3fEXcpPFILJVr0OJd61ungK+KLNVyC0BN
-        rRhloY4s9TLLerI0iFEWGslSLQbxmBbTIsG0yDEtckyLHNMi519ZNjSJgzhytjRvbNmU8g85V8vmLaC1
-        tiVrcrSUbqV8+zaW+NyUm8W3neIAO3YmdpOLhe/qoDSxe09CNzlYLHs7KYxoAF374rtRtXB8cjUeOvcf
-        0DUHD4kKodyL/3A3RbWetiNddABHj4kKombhLHC8hpKOE0HGTp6iQ+joja1JsZe+fi8FQwODtKt5p2kA
-        Q2eiGjXL8EgF5dyjY7SnnI07caTBxFmbscdKlnOj+mNxxciwPsQzz0+iRYOpab8+oWIZHAhRytvfZ3wy
-        LerCRQdpwpcCNJfZEm7ATLDFQaFIPp4Q3QjOLs/MkubK1UocZOnlGmPXe/D3AEB3ndF8jKYbIdK4PLjM
-        rJab7foO3Lpti/YR5c7dOarM3Rtj85kttfcX8E2DzgeWxLuYeOhxkSZU+OhxRku4yLgynizypL8FOk+f
-        RUgzO/OcQmktbrx1cE/sL1INOi9fhXXNBIbkltfk1yVLb8Q3nIr/7ZQeIerFXDzvCowawHv8utNY8E7/
-        UEbdINq0mEygN0IlgI+fxIQcy+chcgB8GZd8FA98/YY1x8L3tMshOOc/lkhiX5Q1zJn/Z5WztTGYdjkG
-        WP31+8+kpxl9YioenOPleL1mlhh1f9J1HYd+ejZHDOWgIoz9Bc5moqcVdFCkAAAAAElFTkSuQmCC
-</value>
+  <data name="favoritesButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
   <data name="favoritesButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 112</value>
+    <value>32, 84</value>
+  </data>
+  <data name="favoritesButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="favoritesButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 68</value>
+    <value>60, 51</value>
   </data>
   <data name="favoritesButton.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -376,14 +363,20 @@
         AAAASUVORK5CYII=
 </value>
   </data>
+  <data name="mainMenuButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="mainMenuButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="mainMenuButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 186</value>
+    <value>32, 140</value>
+  </data>
+  <data name="mainMenuButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="mainMenuButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 68</value>
+    <value>60, 51</value>
   </data>
   <data name="mainMenuButton.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -483,14 +476,20 @@
         RK5CYII=
 </value>
   </data>
+  <data name="blackListButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="blackListButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="blackListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 260</value>
+    <value>32, 195</value>
+  </data>
+  <data name="blackListButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="blackListButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 68</value>
+    <value>60, 51</value>
   </data>
   <data name="blackListButton.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -538,14 +537,20 @@
         NkG0KoBdAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="generalCompilationButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="generalCompilationButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="generalCompilationButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 334</value>
+    <value>32, 250</value>
+  </data>
+  <data name="generalCompilationButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="generalCompilationButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 68</value>
+    <value>60, 51</value>
   </data>
   <data name="generalCompilationButton.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -566,13 +571,16 @@
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="filmsDataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 141</value>
+    <value>143, 106</value>
+  </data>
+  <data name="filmsDataGridView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="filmsDataGridView.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
   <data name="filmsDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>491, 216</value>
+    <value>430, 162</value>
   </data>
   <data name="filmsDataGridView.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -596,10 +604,13 @@
     <value>Segoe UI, 7.8pt</value>
   </data>
   <data name="openCompButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 92</value>
+    <value>143, 69</value>
+  </data>
+  <data name="openCompButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="openCompButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 43</value>
+    <value>123, 32</value>
   </data>
   <data name="openCompButton.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -626,10 +637,13 @@
     <value>Segoe UI, 7.8pt</value>
   </data>
   <data name="MovieListCompilation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>339, 93</value>
+    <value>297, 70</value>
+  </data>
+  <data name="MovieListCompilation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="MovieListCompilation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 43</value>
+    <value>123, 32</value>
   </data>
   <data name="MovieListCompilation.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -659,10 +673,10 @@
     <value>NoControl</value>
   </data>
   <data name="menuLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>421, 412</value>
+    <value>368, 309</value>
   </data>
   <data name="menuLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 30</value>
+    <value>204, 22</value>
   </data>
   <data name="menuLabel.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
@@ -695,10 +709,13 @@
     <value>NoControl</value>
   </data>
   <data name="createCompilationButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 363</value>
+    <value>143, 272</value>
+  </data>
+  <data name="createCompilationButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="createCompilationButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 43</value>
+    <value>123, 32</value>
   </data>
   <data name="createCompilationButton.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
@@ -725,10 +742,13 @@
     <value>Segoe UI, 7.8pt</value>
   </data>
   <data name="SendEmailButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>513, 12</value>
+    <value>449, 9</value>
+  </data>
+  <data name="SendEmailButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="SendEmailButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 43</value>
+    <value>123, 32</value>
   </data>
   <data name="SendEmailButton.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -755,10 +775,13 @@
     <value>Segoe UI, 7.8pt</value>
   </data>
   <data name="UserListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>513, 92</value>
+    <value>449, 69</value>
+  </data>
+  <data name="UserListButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="UserListButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 43</value>
+    <value>123, 32</value>
   </data>
   <data name="UserListButton.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -782,17 +805,16 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 20</value>
+    <value>7, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>679, 451</value>
+    <value>596, 344</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>697, 498</value>
+    <value>612, 383</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>MovieMate</value>
