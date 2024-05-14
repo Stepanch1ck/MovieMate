@@ -1,15 +1,6 @@
 ﻿using MovieMate.DBConnect;
 using MovieMate.EnterForms;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using VkNet.Enums.Filters;
 using VkNet.Model;
 
@@ -39,7 +30,6 @@ namespace MovieMate
                     Password = PasswordTextBox.Text,
                 });
 
-                string accessToken = vkApi.Token;
 
                 var user = vkApi.Users.Get(new long[] { vkApi.UserId.Value }, ProfileFields.Photo50).FirstOrDefault();
 
@@ -72,7 +62,7 @@ namespace MovieMate
                         context.SaveChanges();
 
                         MessageBox.Show($"Добро пожаловать, {user.FirstName}! Вы успешно зарегистрировались. Осталось выбрать только понравившиеся фильмы.");
-                        VKLogFilmsChoice vKLogFilmsChoice = new VKLogFilmsChoice(existingUser.VkId);
+                        var vKLogFilmsChoice = new VKLogFilmsChoice(newUser.VkId);
                         this.Close();
                     }
                 }

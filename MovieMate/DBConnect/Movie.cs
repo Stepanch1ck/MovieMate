@@ -1,7 +1,7 @@
 ﻿
 namespace MovieMate.DBConnect;
 
-public partial class Movie
+public class Movie
 {
     public int Id { get; set; }
 

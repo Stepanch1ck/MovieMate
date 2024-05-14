@@ -17,14 +17,14 @@ namespace MovieMate.AfterEnterForms
 
         private void CreateButton_Click(object sender, EventArgs e)
         {
-            string compilationName = NameCompTextBox.Text.Trim();
+            var compilationName = NameCompTextBox.Text.Trim();
 
             if (string.IsNullOrEmpty(compilationName))
             {
                 MessageBox.Show("Пожалуйста введите имя подборки.");
                 return;
             }
-            Compilation newCompilation = new Compilation
+            var newCompilation = new Compilation
             {
                 Name = compilationName,
                 IdPerson = currentUser.Id.ToString() + ','

@@ -13,6 +13,7 @@ namespace MovieMate
         MovieDbContext db = new MovieDbContext();
         Person currentUser;
         Compilation compilation;
+        private string mailAddress = "moviemate@mail.ru";
 
         public GeneralCompilationForm(string nickname)
         {
@@ -25,7 +26,7 @@ namespace MovieMate
 
         private void openFavButton_Click(object sender, EventArgs e)
         {
-            UsersListForm users = new UsersListForm(compilation);
+            var users = new UsersListForm(compilation);
             users.Show();
         }
 
@@ -38,14 +39,14 @@ namespace MovieMate
 
         private void mainMenuButton_Click(object sender, EventArgs e)
         {
-            MainMenu mainMenu = new MainMenu(UserNickname);
+            var mainMenu = new MainMenu(UserNickname);
             mainMenu.Show();
             this.Close();
         }
 
         private void blackListButton_Click(object sender, EventArgs e)
         {
-            BlackListForm blackListForm = new BlackListForm(UserNickname);
+            var blackListForm = new BlackListForm(UserNickname);
             blackListForm.Show();
             this.Close();
         }
@@ -56,13 +57,13 @@ namespace MovieMate
             {
                 filmsDataGridView.Rows[e.RowIndex].Selected = true;
 
-                string selcompilation = filmsDataGridView.Rows[e.RowIndex].Cells["CompilationName"].Value.ToString();
+                var selcompilation = filmsDataGridView.Rows[e.RowIndex].Cells["CompilationName"].Value.ToString();
 
                 compilation = db.Compilations.FirstOrDefault(m => m.Name == selcompilation);
             }
         }
 
-        void DisplaySimilarCompilations(int idUser)
+        public void DisplaySimilarCompilations(int idUser)
         {
             if (idUser == 0)
             {
@@ -94,7 +95,7 @@ namespace MovieMate
 
         private void createCompilationButton_Click(object sender, EventArgs e)
         {
-            CreateCompilation createCompilation = new CreateCompilation(UserNickname);
+            var createCompilation = new CreateCompilation(UserNickname);
             createCompilation.Show();
 
         }
@@ -104,7 +105,7 @@ namespace MovieMate
             {
                 if (compilation.Id != 1)
                 {
-                    UsersCompilationList usercomplist = new UsersCompilationList(compilation, UserNickname);
+                    var usercomplist = new UsersCompilationList(compilation, UserNickname);
                     usercomplist.Show();
                 }
                 else
@@ -146,7 +147,7 @@ namespace MovieMate
         {
             if (compilation != null)
             {
-                string recipientEmail = currentUser.Email;
+                var recipientEmail = currentUser.Email;
                 if (string.IsNullOrEmpty(recipientEmail))
                 {
                     MessageBox.Show("У пользователя не указан адрес электронной почты.");
@@ -157,12 +158,11 @@ namespace MovieMate
                     MessageBox.Show("В подборке нет фильмов, которые можно отправить");
                     return;
                 }
-                string mailAddress = "moviemate@mail.ru";
-                MailAddress frommailaddress = new MailAddress(mailAddress, "MovieMate");
-                MailAddress tomailadress = new MailAddress(recipientEmail);
+                var frommailaddress = new MailAddress(mailAddress, "MovieMate");
+                var tomailadress = new MailAddress(recipientEmail);
 
-                string subject = $"Подборка фильмов: {compilation.Name}";
-                string body = $"Привет!\n\nВот подборка фильмов, которая может тебе понравиться:\n\n";
+                var subject = $"Подборка фильмов: {compilation.Name}";
+                var body = $"Привет!\n\nВот подборка фильмов, которая может тебе понравиться:\n\n";
                 
                 var movieIds = compilation.IdMovie.Split(',').Select(int.Parse).ToList();
 
@@ -174,11 +174,11 @@ namespace MovieMate
                     body += $"- {movie.Name} ({movie.Year})\n";
                 }
 
-                MailMessage mailMessage = new MailMessage(frommailaddress, tomailadress);
+                var mailMessage = new MailMessage(frommailaddress, tomailadress);
                 mailMessage.Subject = subject;  
                 mailMessage.Body = body;
 
-                SmtpClient smtp = new SmtpClient();
+                var smtp = new SmtpClient();
                 smtp.Host = "smtp.mail.ru";
                 smtp.Port = 587;
                 smtp.EnableSsl = true;

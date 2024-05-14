@@ -47,7 +47,7 @@ namespace MovieMate.AfterEnterForms.CompilationForm
             if (string.IsNullOrEmpty(compilation.IdMovie)) return;
 
             var movieIds = compilation.IdMovie.Split(',').Select(int.Parse).ToList();
-            foreach (var movieId in movieIds.ToList())
+            foreach (var movieId in movieIds)
             {
                 if (IsMovieBlacklisted(movieId))
                 {

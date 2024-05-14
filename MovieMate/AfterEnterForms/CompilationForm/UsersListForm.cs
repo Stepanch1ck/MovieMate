@@ -15,7 +15,7 @@ namespace MovieMate
             menuLabel.Text=compilation.Name;
         }
 
-        void DisplaySimilarCompilation(Compilation compilation)
+        public void DisplaySimilarCompilation(Compilation compilation)
         {
             if (compilation == null || string.IsNullOrEmpty(compilation.IdMovie))
             {

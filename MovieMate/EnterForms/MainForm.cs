@@ -1,9 +1,5 @@
-using Microsoft.EntityFrameworkCore;
-using System.Reflection.Emit;
-using System.Windows.Forms;
 using MovieMate.DBConnect;
 using MovieMate.EnterForms;
-using VkNet;
 
 namespace MovieMate
 {
@@ -13,14 +9,14 @@ namespace MovieMate
         public MainForm()
         {
             InitializeComponent();
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            UserListBox.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             RefreshListBox();
 
         }
 
 
 
-        private void Form_Load(object sender, EventArgs e)
+        private void MainForm_Load(object sender, EventArgs e)
         {
             using (var context = new MovieDbContext())
             {
@@ -28,8 +24,8 @@ namespace MovieMate
                 if (context.Database.CanConnect())
                 {
                     var nicknames = context.People.Select(p => p.Nickname).ToList();
-                    listBox1.DisplayMember = "Nickname";
-                    listBox1.DataSource = nicknames;
+                    UserListBox.DisplayMember = "Nickname";
+                    UserListBox.DataSource = nicknames;
                     RefreshListBox();
                 }
                 else
@@ -42,9 +38,9 @@ namespace MovieMate
         }
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listBox1.SelectedItems.Count > 0)
+            if (UserListBox.SelectedItems.Count > 0)
             {
-                selectedNickname = listBox1.SelectedItem.ToString();
+                selectedNickname = UserListBox.SelectedItem.ToString();
                 nickNameLabel.Text = selectedNickname;
                 using (var context = new MovieDbContext())
                 {
@@ -66,22 +62,22 @@ namespace MovieMate
             using (var context = new MovieDbContext())
             {
                 var nicknames = context.People.Select(p => p.Nickname).ToList();
-                listBox1.DataSource = null;
-                listBox1.DataSource = nicknames;
+                UserListBox.DataSource = null;
+                UserListBox.DataSource = nicknames;
             }
         }
 
         private void newUserButton_Click(object sender, EventArgs e)
         {
-            NewUserForm newUserForm = new NewUserForm();
+            var newUserForm = new NewUserForm();
             newUserForm.Show();
         }
 
         private void enterButton_Click(object sender, EventArgs e)
         {
-            if (listBox1.SelectedItem != null)
+            if (UserListBox.SelectedItem != null)
             {
-                selectedNickname = listBox1.SelectedItem.ToString();
+                selectedNickname = UserListBox.SelectedItem.ToString();
 
                 using (var context = new MovieDbContext())
                 {
@@ -89,12 +85,12 @@ namespace MovieMate
 
                     if (user != null && !string.IsNullOrEmpty(user.VkId))
                     {
-                        VKLoginForm vkLoginForm = new VKLoginForm();
+                        var vkLoginForm = new VKLoginForm();
                         vkLoginForm.Show();
                     }
                     else
                     {
-                        LogInForm logIn = new LogInForm(selectedNickname);
+                        var logIn = new LogInForm(selectedNickname);
                         logIn.Show();
                     }
                 }

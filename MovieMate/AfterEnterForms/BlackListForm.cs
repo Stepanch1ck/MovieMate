@@ -49,14 +49,14 @@ namespace MovieMate
 
         private void button3_Click(object sender, EventArgs e)
         {
-            FavouritesListForm favoritesListForm = new FavouritesListForm(UserNickname);
+            var favoritesListForm = new FavouritesListForm(UserNickname);
             favoritesListForm.Show();
             this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MainMenu mainMenu = new MainMenu(UserNickname);
+            var mainMenu = new MainMenu(UserNickname);
             mainMenu.Show();
             this.Close();
         }
@@ -67,8 +67,8 @@ namespace MovieMate
             {
                 BlackListDataGridView.Rows[e.RowIndex].Selected = true;
 
-                string selectedMovieName = BlackListDataGridView.Rows[e.RowIndex].Cells["filmname"].Value.ToString();
-                int selectedMovieYear = Convert.ToInt32(BlackListDataGridView.Rows[e.RowIndex].Cells["Year"].Value);
+                var selectedMovieName = BlackListDataGridView.Rows[e.RowIndex].Cells["filmname"].Value.ToString();
+                var selectedMovieYear = Convert.ToInt32(BlackListDataGridView.Rows[e.RowIndex].Cells["Year"].Value);
 
                 selectedMovie = db.Movies.FirstOrDefault(m => m.Name == selectedMovieName && m.Year == selectedMovieYear);
             }
@@ -82,7 +82,7 @@ namespace MovieMate
                 return;
             }
 
-            int selectedMovieId = selectedMovie.Id;
+            var selectedMovieId = selectedMovie.Id;
             var movieDetailsForm = new MovieCard(selectedMovieId);
             movieDetailsForm.Show();
         }
@@ -110,7 +110,7 @@ namespace MovieMate
 
         private void generalCompilationButton_Click(object sender, EventArgs e)
         {
-            GeneralCompilationForm gf = new GeneralCompilationForm(UserNickname);
+            var gf = new GeneralCompilationForm(UserNickname);
             gf.Show();
             this.Close();
         }

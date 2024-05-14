@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            listBox1 = new ListBox();
+            UserListBox = new ListBox();
             nickNameLabel = new Label();
             pictureBox1 = new PictureBox();
             newUserButton = new Button();
@@ -39,11 +39,11 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // listBox1
+            // UserListBox
             // 
-            resources.ApplyResources(listBox1, "listBox1");
-            listBox1.FormattingEnabled = true;
-            listBox1.Name = "listBox1";
+            resources.ApplyResources(UserListBox, "UserListBox");
+            UserListBox.FormattingEnabled = true;
+            UserListBox.Name = "UserListBox";
             // 
             // nickNameLabel
             // 
@@ -54,8 +54,8 @@
             // 
             // pictureBox1
             // 
-            resources.ApplyResources(pictureBox1, "pictureBox1");
             pictureBox1.BackColor = SystemColors.ButtonShadow;
+            resources.ApplyResources(pictureBox1, "pictureBox1");
             pictureBox1.Name = "pictureBox1";
             pictureBox1.TabStop = false;
             // 
@@ -106,8 +106,9 @@
             Controls.Add(newUserButton);
             Controls.Add(nickNameLabel);
             Controls.Add(pictureBox1);
-            Controls.Add(listBox1);
+            Controls.Add(UserListBox);
             Name = "MainForm";
+            Load += MainForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -125,7 +126,7 @@
 
         #endregion
 
-        private ListBox listBox1;
+        private ListBox UserListBox;
         private Label nickNameLabel;
         private PictureBox pictureBox1;
         private Button button1;

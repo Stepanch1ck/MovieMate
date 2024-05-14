@@ -1,13 +1,5 @@
 ﻿using MovieMate.DBConnect;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace MovieMate.AfterEnterForms
 {
@@ -33,7 +25,7 @@ namespace MovieMate.AfterEnterForms
         {
             if (!string.IsNullOrEmpty(selectedMovie))
             {
-                Movie selectedmovie = db.Movies.FirstOrDefault(p => p.Name == selectedMovie);
+                var selectedmovie = db.Movies.FirstOrDefault(p => p.Name == selectedMovie);
 
                 if (selectedmovie != null)
                 {

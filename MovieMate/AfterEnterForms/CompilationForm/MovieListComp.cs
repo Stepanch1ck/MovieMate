@@ -24,7 +24,7 @@ namespace MovieMate.AfterEnterForms
 
         private void AddMovieButton_Click(object sender, EventArgs e)
         {
-            addMovie movadd = new addMovie(currentCompilation);
+            var movadd = new addMovie(currentCompilation);
             movadd.Show();
             this.Close();
         }
@@ -33,11 +33,11 @@ namespace MovieMate.AfterEnterForms
         {
             if (MovieListBox.SelectedItems.Count > 0)
             {
-                Movie selectedmov = (Movie)MovieListBox.SelectedItem;
+                var selectedmov = (Movie)MovieListBox.SelectedItem;
 
                 List<int> movIds = new List<int>();
                 string[] movIdStrings = currentCompilation.IdMovie.Split(',');
-                foreach (string movIdString in movIdStrings)
+                foreach (var movIdString in movIdStrings)
                 {
                     if (int.TryParse(movIdString, out int movId))
                     {
@@ -50,8 +50,8 @@ namespace MovieMate.AfterEnterForms
                 MovieListBox.Items.Clear();
                 foreach (var movId in currentCompilation.IdMovie.Split(','))
                 {
-                    int movieId = int.Parse(movId);
-                    Movie movie = db.Movies.Find(movieId);
+                    var movieId = int.Parse(movId);
+                    var movie = db.Movies.Find(movieId);
                     if (movie != null)
                     {
                         MovieListBox.Items.Add(movie);
@@ -79,7 +79,7 @@ namespace MovieMate.AfterEnterForms
             {
                 if (int.TryParse(movIdString, out int movId))
                 {
-                    Movie mov = db.Movies.Find(movId);
+                    var mov = db.Movies.Find(movId);
                     if (mov != null)
                     {
                         MovieListBox.Items.Add(mov);

@@ -32,7 +32,7 @@ namespace MovieMate.AfterEnterForms
         {
             if (!string.IsNullOrEmpty(selectedNickname))
             {
-                Person selectedPerson = db.People.FirstOrDefault(p => p.Nickname == selectedNickname);
+                var selectedPerson = db.People.FirstOrDefault(p => p.Nickname == selectedNickname);
 
                 if (selectedPerson != null)
                 {

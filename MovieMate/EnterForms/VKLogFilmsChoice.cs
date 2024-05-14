@@ -13,7 +13,7 @@ namespace MovieMate.EnterForms
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            string idMovieLike = GetSelectedMovieIds();
+            var idMovieLike = GetSelectedMovieIds();
 
             using (var context = new MovieDbContext())
             {
@@ -24,7 +24,7 @@ namespace MovieMate.EnterForms
                     context.SaveChanges();
 
                     MessageBox.Show("Фильмы успешно сохранены!");
-                    MainMenu mainMenu = new MainMenu(user.Nickname);
+                    var mainMenu = new MainMenu(user.Nickname);
                     mainMenu.Show();
                     this.Close();
 

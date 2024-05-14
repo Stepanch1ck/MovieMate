@@ -1,6 +1,6 @@
 ﻿
 namespace MovieMate.DBConnect;
-public partial class Compilation
+public class Compilation
 {
     public int Id { get; set; }
 

@@ -110,7 +110,7 @@ namespace MovieMate
 
         private void button3_Click(object sender, EventArgs e)
         {
-            BlackListForm blackListForm = new BlackListForm(UserNickname);
+            var blackListForm = new BlackListForm(UserNickname);
             blackListForm.Show();
             this.Close();
         }
@@ -136,7 +136,7 @@ namespace MovieMate
                 return;
             }
 
-            int selectedMovieId = selectedMovie.Id;
+            var selectedMovieId = selectedMovie.Id;
             var movieDetailsForm = new MovieCard(selectedMovieId);
             movieDetailsForm.Show();
         }
@@ -196,20 +196,20 @@ namespace MovieMate
 
         private void generalCompilationButton_Click(object sender, EventArgs e)
         {
-            GeneralCompilationForm gf = new GeneralCompilationForm(UserNickname);
+            var gf = new GeneralCompilationForm(UserNickname);
             gf.Show();
             this.Close();
         }
 
         private void secondNicknameLabel_Click(object sender, EventArgs e)
         {
-            UserInfo info = new UserInfo(currentUser.Nickname);
+            var info = new UserInfo(currentUser.Nickname);
             info.Show();
         }
 
         private void RecomendationButton_Click(object sender, EventArgs e)
         {
-            MainMenu mainMenu = new MainMenu(UserNickname);
+            var mainMenu = new MainMenu(UserNickname);
             mainMenu.Show();
             this.Close();
         }

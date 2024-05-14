@@ -112,7 +112,7 @@ namespace MovieMate
 
         private void loginVKLabel_Click(object sender, EventArgs e)
         {
-            VKLoginForm loginForm = new VKLoginForm();
+            var loginForm = new VKLoginForm();
             loginForm.ShowDialog();
             this.Close();
             
@@ -121,12 +121,12 @@ namespace MovieMate
         private void loginButton_Click(object sender, EventArgs e)
         {
             
-            string password = PasswordTextBox.Text;
-            string passwordRepeat = PasswordRepeatTextBox.Text;
-            string idMovieLike = GetSelectedMovieIds();
-            string nickname = NameTextBox.Text.Trim();
+            var password = PasswordTextBox.Text;
+            var passwordRepeat = PasswordRepeatTextBox.Text;
+            var idMovieLike = GetSelectedMovieIds();
+            var nickname = NameTextBox.Text.Trim();
             byte[] picture = GetPictureData();
-            string mail = MailTextBox.Text;
+            var mail = MailTextBox.Text;
 
             if (!IsValidEmail(mail))
             {
@@ -174,12 +174,12 @@ namespace MovieMate
         }
         private bool IsValidEmail(string email)
         {
-            string emailRegex = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            var emailRegex = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
             return Regex.IsMatch(email, emailRegex);
         }
         private bool IsValidPassword(string password)
         {
-            string passwordRegex = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$";
+            var passwordRegex = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$";
             return Regex.IsMatch(password, passwordRegex);
         }
         private string HashPassword(string password)
@@ -187,7 +187,7 @@ namespace MovieMate
             using (SHA256 sha256Hash = SHA256.Create())
             {
                 byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
-                StringBuilder builder = new StringBuilder();
+                var builder = new StringBuilder();
                 for (int i = 0; i < bytes.Length; i++)
                 {
                     builder.Append(bytes[i].ToString("x2"));

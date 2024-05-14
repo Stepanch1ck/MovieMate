@@ -27,7 +27,7 @@ namespace MovieMate.EnterForms
             }
             else
             {
-                MainMenu mainmenu = new MainMenu(currentUser.Nickname);
+                var mainmenu = new MainMenu(currentUser.Nickname);
                 mainmenu.Show();
                 this.Close();
             }
@@ -37,7 +37,7 @@ namespace MovieMate.EnterForms
             using (SHA256 sha256Hash = SHA256.Create())
             {
                 byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
-                StringBuilder builder = new StringBuilder();
+                var builder = new StringBuilder();
                 for (int i = 0; i < bytes.Length; i++)
                 {
                     builder.Append(bytes[i].ToString("x2"));

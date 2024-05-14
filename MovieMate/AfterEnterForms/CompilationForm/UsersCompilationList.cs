@@ -1,5 +1,4 @@
 ﻿using MovieMate.DBConnect;
-using System.Data;
 
 namespace MovieMate.AfterEnterForms
 {
@@ -29,7 +28,7 @@ namespace MovieMate.AfterEnterForms
 
         private void AddUserButton_Click(object sender, EventArgs e)
         {
-            addUser useradd = new addUser(currentCompilation);
+            var useradd = new addUser(currentCompilation);
             useradd.Show();
             this.Close();
         }
@@ -38,7 +37,7 @@ namespace MovieMate.AfterEnterForms
         {
             if (UserListBox.SelectedItems.Count > 0)
             {
-                Person selectedPerson = (Person)UserListBox.SelectedItem;
+                var selectedPerson = (Person)UserListBox.SelectedItem;
                 
                 if (selectedPerson.Id == currentUser.Id)
                 {
@@ -60,8 +59,8 @@ namespace MovieMate.AfterEnterForms
                 UserListBox.Items.Clear();
                 foreach (var userId in currentCompilation.IdPerson.Split(','))
                 {
-                    int personId = int.Parse(userId);
-                    Person person = db.People.Find(personId);
+                    var personId = int.Parse(userId);
+                    var person = db.People.Find(personId);
                     if (person != null)
                     {
                         UserListBox.Items.Add(person);
@@ -86,7 +85,7 @@ namespace MovieMate.AfterEnterForms
             {
                 if (int.TryParse(userIdString, out int userId))
                 {
-                    Person person = db.People.Find(userId);
+                    var person = db.People.Find(userId);
                     if (person != null)
                     {
                         UserListBox.Items.Add(person);
