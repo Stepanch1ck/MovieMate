@@ -40,22 +40,22 @@
             // 
             // pictureBox1
             // 
-            resources.ApplyResources(pictureBox1, "pictureBox1");
             pictureBox1.Image = Properties.Resources.VK_LOGO;
+            resources.ApplyResources(pictureBox1, "pictureBox1");
             pictureBox1.Name = "pictureBox1";
             pictureBox1.TabStop = false;
             // 
             // passwordLabel
             // 
-            resources.ApplyResources(passwordLabel, "passwordLabel");
             passwordLabel.BackColor = Color.Black;
+            resources.ApplyResources(passwordLabel, "passwordLabel");
             passwordLabel.ForeColor = Color.White;
             passwordLabel.Name = "passwordLabel";
             // 
             // phoneNumberLabel
             // 
-            resources.ApplyResources(phoneNumberLabel, "phoneNumberLabel");
             phoneNumberLabel.BackColor = Color.Black;
+            resources.ApplyResources(phoneNumberLabel, "phoneNumberLabel");
             phoneNumberLabel.ForeColor = Color.White;
             phoneNumberLabel.Name = "phoneNumberLabel";
             // 
@@ -71,9 +71,9 @@
             // 
             // VKLoginbutton
             // 
-            resources.ApplyResources(VKLoginbutton, "VKLoginbutton");
             VKLoginbutton.BackColor = Color.Black;
             VKLoginbutton.ForeColor = Color.White;
+            resources.ApplyResources(VKLoginbutton, "VKLoginbutton");
             VKLoginbutton.Name = "VKLoginbutton";
             VKLoginbutton.UseVisualStyleBackColor = false;
             VKLoginbutton.Click += VKLoginbutton_Click;
