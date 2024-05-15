@@ -76,12 +76,14 @@
             RecomendationButton.Name = "RecomendationButton";
             RecomendationButton.UseVisualStyleBackColor = true;
             RecomendationButton.Click += MainMenubutton_Click;
+            RecomendationButton.MouseHover += MainMenuMouseHover;
             // 
             // BlackListButton
             // 
             resources.ApplyResources(BlackListButton, "BlackListButton");
             BlackListButton.Name = "BlackListButton";
             BlackListButton.UseVisualStyleBackColor = true;
+            BlackListButton.MouseHover += BlackListMouseHover;
             // 
             // FavoriteListButton
             // 
@@ -89,6 +91,7 @@
             FavoriteListButton.Name = "FavoriteListButton";
             FavoriteListButton.UseVisualStyleBackColor = true;
             FavoriteListButton.Click += FavListbutton_Click;
+            FavoriteListButton.MouseHover += FavButtonMouseHover;
             // 
             // pictureBox1
             // 
@@ -127,6 +130,7 @@
             CompilationButton.Name = "CompilationButton";
             CompilationButton.UseVisualStyleBackColor = true;
             CompilationButton.Click += generalCompilationButton_Click;
+            CompilationButton.MouseHover += CompilationMouseHover;
             // 
             // BlackListForm
             // 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             secondNicknameLabel = new Label();
             RecomendationButton = new Button();
@@ -43,6 +44,7 @@
             MainPictureBox = new PictureBox();
             menuLabel = new Label();
             CompilationButton = new Button();
+            toolTip1 = new ToolTip(components);
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).BeginInit();
             ((System.ComponentModel.ISupportInitialize)MainPictureBox).BeginInit();
             SuspendLayout();
@@ -51,28 +53,36 @@
             // 
             resources.ApplyResources(secondNicknameLabel, "secondNicknameLabel");
             secondNicknameLabel.Name = "secondNicknameLabel";
+            toolTip1.SetToolTip(secondNicknameLabel, resources.GetString("secondNicknameLabel.ToolTip"));
             secondNicknameLabel.Click += secondNicknameLabel_Click;
+            secondNicknameLabel.MouseHover += UserInfoMouseHover;
             // 
             // RecomendationButton
             // 
             resources.ApplyResources(RecomendationButton, "RecomendationButton");
             RecomendationButton.Name = "RecomendationButton";
+            toolTip1.SetToolTip(RecomendationButton, resources.GetString("RecomendationButton.ToolTip"));
             RecomendationButton.UseVisualStyleBackColor = true;
             RecomendationButton.Click += RecomendationButton_Click;
+            RecomendationButton.MouseHover += MainMenuMouseHover;
             // 
             // FavoritesButton
             // 
             resources.ApplyResources(FavoritesButton, "FavoritesButton");
             FavoritesButton.Name = "FavoritesButton";
+            toolTip1.SetToolTip(FavoritesButton, resources.GetString("FavoritesButton.ToolTip"));
             FavoritesButton.UseVisualStyleBackColor = true;
             FavoritesButton.Click += favoritesButton_Click;
+            FavoritesButton.MouseHover += FavButtonMouseHover;
             // 
             // BlackLIstButton
             // 
             resources.ApplyResources(BlackLIstButton, "BlackLIstButton");
             BlackLIstButton.Name = "BlackLIstButton";
+            toolTip1.SetToolTip(BlackLIstButton, resources.GetString("BlackLIstButton.ToolTip"));
             BlackLIstButton.UseVisualStyleBackColor = true;
             BlackLIstButton.Click += BlackListbutton_Click;
+            BlackLIstButton.MouseHover += BlackListMouseHover;
             // 
             // filmsDataGridView
             // 
@@ -82,6 +92,7 @@
             filmsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             filmsDataGridView.Columns.AddRange(new DataGridViewColumn[] { filmName, Year, Grade });
             filmsDataGridView.Name = "filmsDataGridView";
+            toolTip1.SetToolTip(filmsDataGridView, resources.GetString("filmsDataGridView.ToolTip"));
             filmsDataGridView.CellDoubleClick += filmsDataGridView_CellDoubleClick;
             // 
             // filmName
@@ -105,6 +116,7 @@
             openButton.BackColor = Color.Black;
             openButton.ForeColor = Color.White;
             openButton.Name = "openButton";
+            toolTip1.SetToolTip(openButton, resources.GetString("openButton.ToolTip"));
             openButton.UseVisualStyleBackColor = false;
             openButton.Click += openButton_Click_1;
             // 
@@ -114,6 +126,7 @@
             favouritesButton.BackColor = Color.Black;
             favouritesButton.ForeColor = Color.White;
             favouritesButton.Name = "favouritesButton";
+            toolTip1.SetToolTip(favouritesButton, resources.GetString("favouritesButton.ToolTip"));
             favouritesButton.UseVisualStyleBackColor = false;
             favouritesButton.Click += favouritesButton_Click;
             // 
@@ -123,6 +136,7 @@
             addBlackListButton.BackColor = Color.Black;
             addBlackListButton.ForeColor = Color.White;
             addBlackListButton.Name = "addBlackListButton";
+            toolTip1.SetToolTip(addBlackListButton, resources.GetString("addBlackListButton.ToolTip"));
             addBlackListButton.UseVisualStyleBackColor = false;
             addBlackListButton.Click += addBlackListButton_Click;
             // 
@@ -131,6 +145,7 @@
             resources.ApplyResources(MainPictureBox, "MainPictureBox");
             MainPictureBox.Name = "MainPictureBox";
             MainPictureBox.TabStop = false;
+            toolTip1.SetToolTip(MainPictureBox, resources.GetString("MainPictureBox.ToolTip"));
             // 
             // menuLabel
             // 
@@ -138,13 +153,16 @@
             menuLabel.BackColor = Color.Black;
             menuLabel.ForeColor = Color.White;
             menuLabel.Name = "menuLabel";
+            toolTip1.SetToolTip(menuLabel, resources.GetString("menuLabel.ToolTip"));
             // 
             // CompilationButton
             // 
             resources.ApplyResources(CompilationButton, "CompilationButton");
             CompilationButton.Name = "CompilationButton";
+            toolTip1.SetToolTip(CompilationButton, resources.GetString("CompilationButton.ToolTip"));
             CompilationButton.UseVisualStyleBackColor = true;
             CompilationButton.Click += generalCompilationButton_Click;
+            CompilationButton.MouseHover += CompilationMouseHover;
             // 
             // MainMenu
             // 
@@ -164,6 +182,7 @@
             Controls.Add(secondNicknameLabel);
             ForeColor = Color.Black;
             Name = "MainMenu";
+            toolTip1.SetToolTip(this, resources.GetString("$this.ToolTip"));
             ((System.ComponentModel.ISupportInitialize)filmsDataGridView).EndInit();
             ((System.ComponentModel.ISupportInitialize)MainPictureBox).EndInit();
             ResumeLayout(false);
@@ -185,5 +204,6 @@
         private PictureBox MainPictureBox;
         private Label menuLabel;
         private Button CompilationButton;
+        private ToolTip toolTip1;
     }
 }

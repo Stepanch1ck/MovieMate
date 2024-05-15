@@ -35,7 +35,7 @@
             Grade = new DataGridViewTextBoxColumn();
             mainMenuButton = new Button();
             blackListButton = new Button();
-            button3 = new Button();
+            FavButton = new Button();
             pictureBox1 = new PictureBox();
             openFavButton = new Button();
             deleteFavButton = new Button();
@@ -76,6 +76,7 @@
             mainMenuButton.Name = "mainMenuButton";
             mainMenuButton.UseVisualStyleBackColor = true;
             mainMenuButton.Click += mainMenuButton_Click;
+            mainMenuButton.MouseHover += MainMenuMouseHover;
             // 
             // blackListButton
             // 
@@ -83,12 +84,15 @@
             blackListButton.Name = "blackListButton";
             blackListButton.UseVisualStyleBackColor = true;
             blackListButton.Click += blackListButton_Click;
+            blackListButton.MouseHover += BlackListMouseHover;
             // 
-            // button3
+            // FavButton
             // 
-            resources.ApplyResources(button3, "button3");
-            button3.Name = "button3";
-            button3.UseVisualStyleBackColor = true;
+            resources.ApplyResources(FavButton, "FavButton");
+            FavButton.Name = "FavButton";
+            FavButton.UseVisualStyleBackColor = true;
+            FavButton.Click += openFavButton_Click;
+            FavButton.MouseHover += FavButtonMouseHover;
             // 
             // pictureBox1
             // 
@@ -127,6 +131,7 @@
             generalCompilationButton.Name = "generalCompilationButton";
             generalCompilationButton.UseVisualStyleBackColor = true;
             generalCompilationButton.Click += GenCompbutton_Click;
+            generalCompilationButton.MouseHover += CompilationMouseHover;
             // 
             // FavouritesListForm
             // 
@@ -138,7 +143,7 @@
             Controls.Add(deleteFavButton);
             Controls.Add(openFavButton);
             Controls.Add(pictureBox1);
-            Controls.Add(button3);
+            Controls.Add(FavButton);
             Controls.Add(blackListButton);
             Controls.Add(mainMenuButton);
             Controls.Add(FavouritesDataGridView);
@@ -154,7 +159,7 @@
         private DataGridView FavouritesDataGridView;
         private Button mainMenuButton;
         private Button blackListButton;
-        private Button button3;
+        private Button FavButton;
         private PictureBox pictureBox1;
         private DataGridViewTextBoxColumn filmName;
         private DataGridViewTextBoxColumn Year;

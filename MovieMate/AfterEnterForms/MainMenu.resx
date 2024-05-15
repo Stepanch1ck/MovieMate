@@ -117,111 +117,65 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="secondNicknameLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="Year.HeaderText" xml:space="preserve">
+    <value>Year</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="secondNicknameLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="secondNicknameLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 10.8pt, style=Bold</value>
+  <data name="menuLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 29</value>
   </data>
-  <data name="secondNicknameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>594, 12</value>
+  <data name="MainPictureBox.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="secondNicknameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 25</value>
+  <data name="&gt;&gt;filmName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="secondNicknameLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 20</value>
   </data>
-  <data name="secondNicknameLabel.Text" xml:space="preserve">
-    <value>Имя</value>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>697, 495</value>
   </data>
-  <data name="&gt;&gt;secondNicknameLabel.Name" xml:space="preserve">
-    <value>secondNicknameLabel</value>
+  <data name="CompilationButton.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;secondNicknameLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;favouritesButton.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;secondNicknameLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="favouritesButton.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;secondNicknameLabel.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="addBlackListButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 43</value>
   </data>
-  <data name="RecomendationButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        AAAASUVORK5CYII=
-</value>
+  <data name="&gt;&gt;filmName.Name" xml:space="preserve">
+    <value>filmName</value>
   </data>
-  <data name="RecomendationButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+  <data name="menuLabel.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="RecomendationButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 187</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="filmsDataGridView.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="RecomendationButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 68</value>
+  <data name="BlackLIstButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="RecomendationButton.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;RecomendationButton.Name" xml:space="preserve">
-    <value>RecomendationButton</value>
-  </data>
-  <data name="&gt;&gt;RecomendationButton.Type" xml:space="preserve">
+  <data name="&gt;&gt;openButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;RecomendationButton.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="filmsDataGridView.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;RecomendationButton.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;MainPictureBox.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="FavoritesButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -259,29 +213,283 @@
         7nQwAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="secondNicknameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 25</value>
+  </data>
+  <data name="&gt;&gt;filmsDataGridView.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>681, 459</value>
+  </data>
+  <data name="&gt;&gt;BlackLIstButton.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="secondNicknameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="addBlackListButton.Text" xml:space="preserve">
+    <value>Добавить в черный список</value>
+  </data>
+  <data name="&gt;&gt;addBlackListButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="openButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 43</value>
+  </data>
+  <data name="FavoritesButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 68</value>
+  </data>
+  <data name="addBlackListButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>512, 99</value>
+  </data>
+  <data name="Grade.HeaderText" xml:space="preserve">
+    <value>Grade</value>
+  </data>
+  <data name="&gt;&gt;FavoritesButton.Name" xml:space="preserve">
+    <value>FavoritesButton</value>
+  </data>
+  <data name="RecomendationButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 187</value>
+  </data>
+  <data name="filmsDataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="FavoritesButton.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;filmsDataGridView.Name" xml:space="preserve">
+    <value>filmsDataGridView</value>
+  </data>
+  <data name="&gt;&gt;RecomendationButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;favouritesButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FavoritesButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;BlackLIstButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;secondNicknameLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
   <data name="FavoritesButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="addBlackListButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="addBlackListButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 7.8pt</value>
+  </data>
+  <data name="&gt;&gt;CompilationButton.Name" xml:space="preserve">
+    <value>CompilationButton</value>
+  </data>
+  <data name="BlackLIstButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
   <data name="FavoritesButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>37, 112</value>
   </data>
-  <data name="FavoritesButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="BlackLIstButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 260</value>
+  </data>
+  <data name="openButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 99</value>
+  </data>
+  <data name="openButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="MainPictureBox.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;CompilationButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addBlackListButton.Name" xml:space="preserve">
+    <value>addBlackListButton</value>
+  </data>
+  <data name="favouritesButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="addBlackListButton.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="secondNicknameLabel.Text" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="&gt;&gt;MainPictureBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;secondNicknameLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="menuLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="BlackLIstButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RecomendationButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;Grade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openButton.Name" xml:space="preserve">
+    <value>openButton</value>
+  </data>
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="favouritesButton.Text" xml:space="preserve">
+    <value>Добавить в избранное</value>
+  </data>
+  <data name="menuLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.8pt, style=Bold</value>
+  </data>
+  <data name="menuLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="favouritesButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 43</value>
+  </data>
+  <data name="&gt;&gt;Grade.Name" xml:space="preserve">
+    <value>Grade</value>
+  </data>
+  <data name="&gt;&gt;openButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="CompilationButton.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="filmName.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;menuLabel.Name" xml:space="preserve">
+    <value>menuLabel</value>
+  </data>
+  <data name="filmsDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 216</value>
+  </data>
+  <data name="CompilationButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;RecomendationButton.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;MainPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;secondNicknameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;filmsDataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CompilationButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 68</value>
   </data>
-  <data name="FavoritesButton.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+  <data name="&gt;&gt;openButton.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;FavoritesButton.Name" xml:space="preserve">
-    <value>FavoritesButton</value>
+  <data name="favouritesButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 99</value>
   </data>
-  <data name="&gt;&gt;FavoritesButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
+    <value>toolTip1</value>
+  </data>
+  <data name="openButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="menuLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="secondNicknameLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RecomendationButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 68</value>
+  </data>
+  <data name="addBlackListButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="BlackLIstButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 68</value>
+  </data>
+  <data name="CompilationButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
   <data name="&gt;&gt;FavoritesButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="menuLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>421, 412</value>
+  </data>
+  <data name="RecomendationButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="favouritesButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 7.8pt</value>
+  </data>
+  <data name="CompilationButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        NkG0KoBdAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="MainPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 12</value>
+  </data>
+  <data name="openButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="&gt;&gt;FavoritesButton.ZOrder" xml:space="preserve">
     <value>8</value>
+  </data>
+  <data name="&gt;&gt;MainPictureBox.Name" xml:space="preserve">
+    <value>MainPictureBox</value>
+  </data>
+  <data name="openButton.Text" xml:space="preserve">
+    <value>Отрыть</value>
   </data>
   <data name="BlackLIstButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -363,182 +571,129 @@
         RK5CYII=
 </value>
   </data>
-  <data name="BlackLIstButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="BlackLIstButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="BlackLIstButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 260</value>
-  </data>
-  <data name="BlackLIstButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 68</value>
-  </data>
-  <data name="BlackLIstButton.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;BlackLIstButton.Name" xml:space="preserve">
-    <value>BlackLIstButton</value>
-  </data>
-  <data name="&gt;&gt;BlackLIstButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BlackLIstButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BlackLIstButton.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <metadata name="filmName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Year.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Grade.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="filmsDataGridView.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="filmsDataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 147</value>
-  </data>
-  <data name="filmsDataGridView.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="filmsDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>491, 216</value>
-  </data>
-  <data name="filmsDataGridView.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;filmsDataGridView.Name" xml:space="preserve">
-    <value>filmsDataGridView</value>
-  </data>
-  <data name="&gt;&gt;filmsDataGridView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;filmsDataGridView.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;filmsDataGridView.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <metadata name="filmName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="filmName.HeaderText" xml:space="preserve">
     <value>Name</value>
-  </data>
-  <data name="filmName.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <metadata name="Year.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Year.HeaderText" xml:space="preserve">
-    <value>Year</value>
-  </data>
-  <data name="Year.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <metadata name="Grade.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Grade.HeaderText" xml:space="preserve">
-    <value>Grade</value>
-  </data>
-  <data name="Grade.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="openButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="openButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 99</value>
-  </data>
-  <data name="openButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 43</value>
-  </data>
-  <data name="openButton.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="openButton.Text" xml:space="preserve">
-    <value>Отрыть</value>
-  </data>
-  <data name="&gt;&gt;openButton.Name" xml:space="preserve">
-    <value>openButton</value>
-  </data>
-  <data name="&gt;&gt;openButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;openButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;openButton.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="favouritesButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="favouritesButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 7.8pt</value>
-  </data>
-  <data name="favouritesButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 99</value>
-  </data>
-  <data name="favouritesButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 43</value>
-  </data>
-  <data name="favouritesButton.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="favouritesButton.Text" xml:space="preserve">
-    <value>Добавить в избранное</value>
-  </data>
-  <data name="&gt;&gt;favouritesButton.Name" xml:space="preserve">
-    <value>favouritesButton</value>
-  </data>
-  <data name="&gt;&gt;favouritesButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;favouritesButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;favouritesButton.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="addBlackListButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="addBlackListButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 7.8pt</value>
-  </data>
-  <data name="addBlackListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 99</value>
-  </data>
-  <data name="addBlackListButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 43</value>
-  </data>
-  <data name="addBlackListButton.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="addBlackListButton.Text" xml:space="preserve">
-    <value>Добавить в черный список</value>
-  </data>
-  <data name="&gt;&gt;addBlackListButton.Name" xml:space="preserve">
-    <value>addBlackListButton</value>
   </data>
   <data name="&gt;&gt;addBlackListButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="MainPictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 93</value>
+  </data>
+  <data name="&gt;&gt;CompilationButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="MainPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;filmsDataGridView.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;RecomendationButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="RecomendationButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;menuLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="favouritesButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="RecomendationButton.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>MovieMate</value>
+  </data>
+  <data name="&gt;&gt;Year.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CompilationButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 333</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="secondNicknameLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;CompilationButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="filmsDataGridView.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="secondNicknameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>594, 12</value>
+  </data>
+  <data name="&gt;&gt;favouritesButton.Name" xml:space="preserve">
+    <value>favouritesButton</value>
+  </data>
+  <data name="&gt;&gt;secondNicknameLabel.Name" xml:space="preserve">
+    <value>secondNicknameLabel</value>
+  </data>
+  <data name="&gt;&gt;RecomendationButton.Name" xml:space="preserve">
+    <value>RecomendationButton</value>
+  </data>
+  <data name="&gt;&gt;Year.Name" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="&gt;&gt;favouritesButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;addBlackListButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;addBlackListButton.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="menuLabel.Text" xml:space="preserve">
+    <value>Главное меню</value>
   </data>
   <data name="MainPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -594,120 +749,32 @@
         c4xx+NL4U8G2nhIXQtdR1O8+07Sxvrjzdu3P3eBjqc/hXR0d6AACinjiigD/2Q==
 </value>
   </data>
-  <data name="MainPictureBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 12</value>
+  <data name="filmsDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 147</value>
   </data>
-  <data name="MainPictureBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 93</value>
-  </data>
-  <data name="MainPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="MainPictureBox.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;MainPictureBox.Name" xml:space="preserve">
-    <value>MainPictureBox</value>
-  </data>
-  <data name="&gt;&gt;MainPictureBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MainPictureBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;MainPictureBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="menuLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="menuLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10.8pt, style=Bold</value>
-  </data>
-  <data name="menuLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>421, 412</value>
-  </data>
-  <data name="menuLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 29</value>
-  </data>
-  <data name="menuLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="menuLabel.Text" xml:space="preserve">
-    <value>Главное меню</value>
-  </data>
-  <data name="menuLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;menuLabel.Name" xml:space="preserve">
-    <value>menuLabel</value>
-  </data>
-  <data name="&gt;&gt;menuLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;menuLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="CompilationButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        NkG0KoBdAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="CompilationButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="CompilationButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="CompilationButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 333</value>
-  </data>
-  <data name="CompilationButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 68</value>
-  </data>
-  <data name="CompilationButton.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;CompilationButton.Name" xml:space="preserve">
-    <value>CompilationButton</value>
-  </data>
-  <data name="&gt;&gt;CompilationButton.Type" xml:space="preserve">
+  <data name="&gt;&gt;FavoritesButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;CompilationButton.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="secondNicknameLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10.8pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;CompilationButton.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;BlackLIstButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Grade.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="BlackLIstButton.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;BlackLIstButton.Name" xml:space="preserve">
+    <value>BlackLIstButton</value>
+  </data>
+  <data name="secondNicknameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Year.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>en</value>
@@ -715,43 +782,16 @@
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 20</value>
-  </data>
-  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>681, 459</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>697, 495</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>MovieMate</value>
-  </data>
-  <data name="&gt;&gt;filmName.Name" xml:space="preserve">
-    <value>filmName</value>
-  </data>
-  <data name="&gt;&gt;filmName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Year.Name" xml:space="preserve">
-    <value>Year</value>
-  </data>
-  <data name="&gt;&gt;Year.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Grade.Name" xml:space="preserve">
-    <value>Grade</value>
-  </data>
-  <data name="&gt;&gt;Grade.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MainMenu</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>44, 21</value>
+  </metadata>
+  <metadata name="Grade.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Year.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="filmName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

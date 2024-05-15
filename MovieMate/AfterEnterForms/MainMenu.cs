@@ -157,7 +157,7 @@ namespace MovieMate
             {
                 logger.Error(ex, $"Ошибка при выборе фильма пользователем {UserNickname}.");
                 MessageBox.Show("Ошибка при выборе фильма. Попробуйте перезапустить приложение.");
-            } 
+            }
         }
 
         private void openButton_Click_1(object sender, EventArgs e)
@@ -274,6 +274,41 @@ namespace MovieMate
             mainMenu.Show();
             this.Close();
             logger.Info($"Перезагрузка главной страницы для пользователя {UserNickname}.");
+        }
+
+        private void FavButtonMouseHover(object sender, EventArgs e)
+        {
+            var tooltipFavBut = new ToolTip();
+            tooltipFavBut.Show("Открыть список избранного", FavoritesButton, 0, 0, 2000);
+            logger.Info($"Показывается подсказка избранного списка.");
+        }
+
+        private void MainMenuMouseHover(object sender, EventArgs e)
+        {
+            var tooltipMainMenu = new ToolTip();
+            tooltipMainMenu.Show("Открыть список рекомендаций", RecomendationButton, 0, 0, 2000);
+            logger.Info($"Показывается подсказка списка рекомендаций");
+        }
+
+        private void BlackListMouseHover(object sender, EventArgs e)
+        {
+            var tooltipBlackList = new ToolTip();
+            tooltipBlackList.Show("Открыть черного список", BlackLIstButton, 0, 0, 2000);
+            logger.Info($"Показывается подсказка черного списка");
+        }
+
+        private void CompilationMouseHover(object sender, EventArgs e)
+        {
+            var tooltipCompilationBut = new ToolTip();
+            tooltipCompilationBut.Show("Открыть список подборок", CompilationButton, 0, 0, 2000);
+            logger.Info($"Показывается подсказка списка подборок");
+        }
+
+        private void UserInfoMouseHover(object sender, EventArgs e)
+        {
+            var tooltipUserInfo = new ToolTip();
+            tooltipUserInfo.Show("Открыть информацию о профиле", secondNicknameLabel, 0, 0, 2000);
+            logger.Info($"Показывается подсказка информации о профиле");
         }
     }
 }

@@ -58,6 +58,7 @@
             favoritesButton.Name = "favoritesButton";
             favoritesButton.UseVisualStyleBackColor = true;
             favoritesButton.Click += favoritesButton_Click;
+            favoritesButton.MouseHover += FavButtonMouseHover;
             // 
             // mainMenuButton
             // 
@@ -65,6 +66,7 @@
             mainMenuButton.Name = "mainMenuButton";
             mainMenuButton.UseVisualStyleBackColor = true;
             mainMenuButton.Click += mainMenuButton_Click;
+            mainMenuButton.MouseHover += MainMenuMouseHover;
             // 
             // blackListButton
             // 
@@ -72,12 +74,14 @@
             blackListButton.Name = "blackListButton";
             blackListButton.UseVisualStyleBackColor = true;
             blackListButton.Click += blackListButton_Click;
+            blackListButton.MouseHover += BlackListMouseHover;
             // 
             // generalCompilationButton
             // 
             resources.ApplyResources(generalCompilationButton, "generalCompilationButton");
             generalCompilationButton.Name = "generalCompilationButton";
             generalCompilationButton.UseVisualStyleBackColor = true;
+            generalCompilationButton.MouseHover += CompilationMouseHover;
             // 
             // filmsDataGridView
             // 

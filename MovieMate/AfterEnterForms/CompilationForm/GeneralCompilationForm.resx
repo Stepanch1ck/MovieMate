@@ -604,13 +604,13 @@
     <value>Segoe UI, 7.8pt</value>
   </data>
   <data name="openCompButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 69</value>
+    <value>143, 61</value>
   </data>
   <data name="openCompButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="openCompButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 32</value>
+    <value>123, 40</value>
   </data>
   <data name="openCompButton.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -637,13 +637,13 @@
     <value>Segoe UI, 7.8pt</value>
   </data>
   <data name="MovieListCompilation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 70</value>
+    <value>297, 61</value>
   </data>
   <data name="MovieListCompilation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="MovieListCompilation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 32</value>
+    <value>123, 41</value>
   </data>
   <data name="MovieListCompilation.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -775,13 +775,13 @@
     <value>Segoe UI, 7.8pt</value>
   </data>
   <data name="UserListButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>449, 69</value>
+    <value>449, 61</value>
   </data>
   <data name="UserListButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="UserListButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 32</value>
+    <value>123, 40</value>
   </data>
   <data name="UserListButton.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>

@@ -2,6 +2,7 @@
 using MovieMate.AfterEnterForms.CompilationForm;
 using MovieMate.DBConnect;
 using NLog;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace MovieMate
 {
@@ -169,6 +170,33 @@ namespace MovieMate
             gf.Show();
             this.Close();
             logger.Info($"Переход на страницу 'Подборки' для пользователя {UserNickname}.");
+        }
+        private void FavButtonMouseHover(object sender, EventArgs e)
+        {
+            var tooltipFavBut = new ToolTip();
+            tooltipFavBut.Show("Открыть список избранного", FavoriteListButton, 0, 0, 2000);
+            logger.Info($"Показывается подсказка избранного списка.");
+        }
+
+        private void MainMenuMouseHover(object sender, EventArgs e)
+        {
+            var tooltipMainMenu = new ToolTip();
+            tooltipMainMenu.Show("Открыть список рекомендаций", RecomendationButton, 0, 0, 2000);
+            logger.Info($"Показывается подсказка списка рекомендаций");
+        }
+
+        private void BlackListMouseHover(object sender, EventArgs e)
+        {
+            var tooltipBlackList = new ToolTip();
+            tooltipBlackList.Show("Открыть черного список", BlackListButton, 0, 0, 2000);
+            logger.Info($"Показывается подсказка черного списка");
+        }
+
+        private void CompilationMouseHover(object sender, EventArgs e)
+        {
+            var tooltipCompilationBut = new ToolTip();
+            tooltipCompilationBut.Show("Открыть список подборок", CompilationButton, 0, 0, 2000);
+            logger.Info($"Показывается подсказка списка подборок");
         }
     }
 }
