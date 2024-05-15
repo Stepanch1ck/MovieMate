@@ -1,197 +1,256 @@
 ﻿using MovieMate.DBConnect;
 using System.Data;
 using MovieMate.AfterEnterForms.CompilationForm;
+using NLog;
 
 namespace MovieMate
 {
 
     public partial class MainMenu : Form
     {
+        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
         public string UserNickname { get; set; }
         MovieDbContext db = new MovieDbContext();
         Person currentUser;
         Movie selectedMovie;
         CompilationManager compilationManager;
         Compilation defaultCompilation;
+
         public MainMenu(string nickname)
         {
 
             InitializeComponent();
             UserNickname = nickname;
-            currentUser = db.People.FirstOrDefault(p => p.Nickname == UserNickname);
-            var idMovieLike = currentUser.IdMovieLike;
-            DisplaySimilarMovies(idMovieLike);
-            secondNicknameLabel.Text = nickname;
-            compilationManager = new CompilationManager(db);
-
-
-            defaultCompilation = db.Compilations.FirstOrDefault(c => c.Id == 1);
-            if (defaultCompilation != null && !defaultCompilation.IdPerson.Split(',').Contains(currentUser.Id.ToString()));
-            defaultCompilation.IdPerson += "," + currentUser.Id;
-            if (defaultCompilation != null && !string.IsNullOrEmpty(currentUser.IdFavorites))
+            try
             {
-                foreach (var movieId in currentUser.IdFavorites.Split(',').Select(int.Parse))
+                currentUser = db.People.FirstOrDefault(p => p.Nickname == UserNickname);
+                logger.Info($"Пользователь {UserNickname} авторизован.");
+                var idMovieLike = currentUser.IdMovieLike;
+                DisplaySimilarMovies(idMovieLike);
+                secondNicknameLabel.Text = nickname;
+                compilationManager = new CompilationManager(db);
+
+                defaultCompilation = db.Compilations.FirstOrDefault(c => c.Id == 1);
+                if (defaultCompilation != null && !defaultCompilation.IdPerson.Split(',').Contains(currentUser.Id.ToString())) ;
+                defaultCompilation.IdPerson += "," + currentUser.Id;
+                logger.Info($"Пользователь {UserNickname} добавлен в общую компиляцию.");
+
+                if (defaultCompilation != null && !string.IsNullOrEmpty(currentUser.IdFavorites))
                 {
-                    compilationManager.AddMovieToCompilation(defaultCompilation, movieId, currentUser.Id);
+                    foreach (var movieId in currentUser.IdFavorites.Split(',').Select(int.Parse))
+                    {
+                        compilationManager.AddMovieToCompilation(defaultCompilation, movieId, currentUser.Id);
+                        logger.Info($"Фильм с ID {movieId} добавлен в общую компиляцию пользователя {UserNickname}.");
+                    }
                 }
+                db.SaveChanges();
+                logger.Info($"Данные пользователя {UserNickname} обновлены.");
             }
-            db.SaveChanges();
+            catch (Exception ex)
+            {
+                logger.Error(ex, $"Ошибка при авторизации пользователя {UserNickname}.");
+                MessageBox.Show("Ошибка при авторизации. Попробуйте перезапустить приложение.");
+                this.Close();
+            }
         }
 
-
-
-
-        void MainMenu_Load(object sender, EventArgs e)
+        public void MainMenu_Load(object sender, EventArgs e)
         {
-            var idMovieLike = currentUser.IdMovieLike;
-            DisplaySimilarMovies(idMovieLike);
-            
-            
+            try
+            {
+                var idMovieLike = currentUser.IdMovieLike;
+                DisplaySimilarMovies(idMovieLike);
+                logger.Info($"Отображение похожих фильмов для пользователя {UserNickname}.");
+            }
+            catch (Exception ex)
+            {
+                logger.Error(ex, $"Ошибка при отображении похожих фильмов для пользователя {UserNickname}.");
+                MessageBox.Show("Ошибка при отображении фильмов. Попробуйте перезапустить приложение.");
+            }
         }
 
-
-
-        void DisplaySimilarMovies(string idMovieLike)
+        public void DisplaySimilarMovies(string idMovieLike)
         {
-            if (string.IsNullOrEmpty(idMovieLike))
+            try
             {
-                var allMovies = db.Movies.ToList();
-                filmsDataGridView.Rows.Clear();
-                foreach (var movie in allMovies)
+                if (string.IsNullOrEmpty(idMovieLike))
                 {
-                    filmsDataGridView.Rows.Add(movie.Name, movie.Year, movie.Grade);
+                    var allMovies = db.Movies.ToList();
+                    filmsDataGridView.Rows.Clear();
+                    foreach (var movie in allMovies)
+                    {
+                        filmsDataGridView.Rows.Add(movie.Name, movie.Year, movie.Grade);
+                    }
+                    logger.Info($"Отображение всех фильмов для пользователя {UserNickname}.");
+                    return;
+
                 }
-                return;
-
-            }
-            else
-            {
-                List<int> movieIds = idMovieLike.Split(',').Select(int.Parse).ToList();
-                List<int> blacklistedMovieIds = new List<int>();
-
-                if (!string.IsNullOrEmpty(currentUser.IdBlackList))
+                else
                 {
-                    blacklistedMovieIds = currentUser.IdBlackList.Split(',').Select(int.Parse).ToList();
-                }
+                    List<int> movieIds = idMovieLike.Split(',').Select(int.Parse).ToList();
+                    List<int> blacklistedMovieIds = new List<int>();
 
-                var likedGenres = db.Movies
-                .Where(m => movieIds.Contains(m.Id))
-                .Select(m => m.Genre)
-                .Distinct()
-                .ToList();
+                    if (!string.IsNullOrEmpty(currentUser.IdBlackList))
+                    {
+                        blacklistedMovieIds = currentUser.IdBlackList.Split(',').Select(int.Parse).ToList();
+                    }
 
-                var similarMovies = db.Movies
-                    .Where(m => likedGenres.Contains(m.Genre)
-                        && !movieIds.Contains(m.Id)
-                        && !blacklistedMovieIds.Contains(m.Id))
+                    var likedGenres = db.Movies
+                    .Where(m => movieIds.Contains(m.Id))
+                    .Select(m => m.Genre)
+                    .Distinct()
                     .ToList();
 
-                filmsDataGridView.Rows.Clear();
-                foreach (var movie in similarMovies)
-                {
-                    filmsDataGridView.Rows.Add(movie.Name, movie.Year, movie.Grade);
+                    var similarMovies = db.Movies
+                        .Where(m => likedGenres.Contains(m.Genre)
+                            && !movieIds.Contains(m.Id)
+                            && !blacklistedMovieIds.Contains(m.Id))
+                        .ToList();
+
+                    filmsDataGridView.Rows.Clear();
+                    foreach (var movie in similarMovies)
+                    {
+                        filmsDataGridView.Rows.Add(movie.Name, movie.Year, movie.Grade);
+                    }
+                    logger.Info($"Отображение похожих фильмов для пользователя {UserNickname}.");
                 }
             }
-
-
-
+            catch (Exception ex)
+            {
+                logger.Error(ex, $"Ошибка при отображении похожих фильмов для пользователя {UserNickname}.");
+                MessageBox.Show("Ошибка при отображении фильмов. Попробуйте перезапустить приложение.");
+            }
         }
 
-
-
-        void favoritesButton_Click(object sender, EventArgs e)
+        public void favoritesButton_Click(object sender, EventArgs e)
         {
             var favouritesListForm = new FavouritesListForm(UserNickname);
             favouritesListForm.Show();
             this.Close();
+            logger.Info($"Переход на страницу 'Избранное' для пользователя {UserNickname}.");
         }
 
-
-
-        private void button3_Click(object sender, EventArgs e)
+        private void BlackListbutton_Click(object sender, EventArgs e)
         {
             var blackListForm = new BlackListForm(UserNickname);
             blackListForm.Show();
             this.Close();
+            logger.Info($"Переход на страницу 'Чёрный список' для пользователя {UserNickname}.");
         }
 
         private void filmsDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
+            try
             {
-                filmsDataGridView.Rows[e.RowIndex].Selected = true;
+                if (e.RowIndex >= 0)
+                {
+                    filmsDataGridView.Rows[e.RowIndex].Selected = true;
 
-                string selectedMovieName = filmsDataGridView.Rows[e.RowIndex].Cells["filmname"].Value.ToString();
-                int selectedMovieYear = Convert.ToInt32(filmsDataGridView.Rows[e.RowIndex].Cells["Year"].Value);
+                    string selectedMovieName = filmsDataGridView.Rows[e.RowIndex].Cells["filmname"].Value.ToString();
+                    int selectedMovieYear = Convert.ToInt32(filmsDataGridView.Rows[e.RowIndex].Cells["Year"].Value);
 
-                selectedMovie = db.Movies.FirstOrDefault(m => m.Name == selectedMovieName && m.Year == selectedMovieYear);
+                    selectedMovie = db.Movies.FirstOrDefault(m => m.Name == selectedMovieName && m.Year == selectedMovieYear);
+                    logger.Info($"Фильм {selectedMovieName} ({selectedMovieYear}) выбран пользователем {UserNickname}.");
+                }
             }
+            catch (Exception ex)
+            {
+                logger.Error(ex, $"Ошибка при выборе фильма пользователем {UserNickname}.");
+                MessageBox.Show("Ошибка при выборе фильма. Попробуйте перезапустить приложение.");
+            } 
         }
 
         private void openButton_Click_1(object sender, EventArgs e)
         {
-            if (selectedMovie == null)
+            try
             {
-                MessageBox.Show("Пожалуйста выберите фильм!");
-                return;
-            }
+                if (selectedMovie == null)
+                {
+                    MessageBox.Show("Пожалуйста выберите фильм!");
+                    return;
+                }
 
-            var selectedMovieId = selectedMovie.Id;
-            var movieDetailsForm = new MovieCard(selectedMovieId);
-            movieDetailsForm.Show();
+                var selectedMovieId = selectedMovie.Id;
+                var movieDetailsForm = new MovieCard(selectedMovieId);
+                movieDetailsForm.Show();
+                logger.Info($"Открытие карточки фильма {selectedMovie.Name} ({selectedMovie.Year}) пользователем {UserNickname}.");
+            }
+            catch (Exception ex)
+            {
+                logger.Error(ex, $"Ошибка при открытии карточки фильма пользователем {UserNickname}.");
+                MessageBox.Show("Ошибка при открытии карточки фильма. Попробуйте перезапустить приложение.");
+            }
         }
 
         private void favouritesButton_Click(object sender, EventArgs e)
         {
-            if (selectedMovie == null)
+            try
             {
-                MessageBox.Show("Выберите фильм двойным кликом!");
-                return;
+                if (selectedMovie == null)
+                {
+                    MessageBox.Show("Выберите фильм двойным кликом!");
+                    return;
+                }
+                if (currentUser.IdFavorites != null && currentUser.IdFavorites.Contains(selectedMovie.Id.ToString()))
+                {
+                    MessageBox.Show("Этот фильм уже в избранном!");
+                    return;
+                }
+                if (currentUser.IdFavorites == null)
+                {
+                    currentUser.IdFavorites = selectedMovie.Id.ToString();
+                }
+                else
+                {
+                    currentUser.IdFavorites += "," + selectedMovie.Id;
+                }
+                db.SaveChanges();
+                DisplaySimilarMovies(currentUser.IdMovieLike);
+                compilationManager.AddMovieToCompilation(defaultCompilation, selectedMovie.Id, currentUser.Id);
+                MessageBox.Show("Фильм добавлен в избранное!");
+                logger.Info($"Фильм {selectedMovie.Name} ({selectedMovie.Year}) добавлен в избранное пользователем {UserNickname}.");
             }
-            if (currentUser.IdFavorites != null && currentUser.IdFavorites.Contains(selectedMovie.Id.ToString()))
+            catch (Exception ex)
             {
-                MessageBox.Show("Этот фильм уже в избранном!");
-                return;
+                logger.Error(ex, $"Ошибка при добавлении фильма в избранное пользователем {UserNickname}.");
+                MessageBox.Show("Ошибка при добавлении фильма в избранное. Попробуйте перезапустить приложение.");
             }
-            if (currentUser.IdFavorites == null)
-            {
-                currentUser.IdFavorites = selectedMovie.Id.ToString();
-            }
-            else
-            {
-                currentUser.IdFavorites += "," + selectedMovie.Id;
-            }
-            db.SaveChanges();
-            DisplaySimilarMovies(currentUser.IdMovieLike);
-            compilationManager.AddMovieToCompilation(defaultCompilation, selectedMovie.Id, currentUser.Id);
-            MessageBox.Show("Фильм добавлен в избранное!");
         }
 
         private void addBlackListButton_Click(object sender, EventArgs e)
         {
-            if (selectedMovie == null)
+            try
             {
-                MessageBox.Show("Выберите фильм двойным кликом!");
-                return;
+                if (selectedMovie == null)
+                {
+                    MessageBox.Show("Выберите фильм двойным кликом!");
+                    return;
+                }
+                if (currentUser.IdBlackList != null && currentUser.IdBlackList.Contains(selectedMovie.Id.ToString()))
+                {
+                    MessageBox.Show("Этот фильм уже в чёрном списке!");
+                    return;
+                }
+                if (currentUser.IdBlackList == null)
+                {
+                    currentUser.IdBlackList = selectedMovie.Id.ToString();
+                }
+                else
+                {
+                    currentUser.IdBlackList += "," + selectedMovie.Id;
+                }
+                db.SaveChanges();
+                DisplaySimilarMovies(currentUser.IdMovieLike);
+
+                compilationManager.CheckAndRemoveBlacklistedMovies(defaultCompilation);
+                MessageBox.Show("Фильм добавлен в чёрный список!");
+                logger.Info($"Фильм {selectedMovie.Name} ({selectedMovie.Year}) добавлен в чёрный список пользователем {UserNickname}.");
             }
-            if (currentUser.IdBlackList != null && currentUser.IdBlackList.Contains(selectedMovie.Id.ToString()))
+            catch (Exception ex)
             {
-                MessageBox.Show("Этот фильм уже в чёрном списке!");
-                return;
+                logger.Error(ex, $"Ошибка при добавлении фильма в чёрный список пользователем {UserNickname}.");
+                MessageBox.Show("Ошибка при добавлении фильма в чёрный список. Попробуйте перезапустить приложение.");
             }
-            if (currentUser.IdBlackList == null)
-            {
-                currentUser.IdBlackList = selectedMovie.Id.ToString();
-            }
-            else
-            {
-                currentUser.IdBlackList += "," + selectedMovie.Id;
-            }
-            db.SaveChanges();
-            DisplaySimilarMovies(currentUser.IdMovieLike);
-            
-            compilationManager.CheckAndRemoveBlacklistedMovies(defaultCompilation);
-            MessageBox.Show("Фильм добавлен в чёрный список!");
         }
 
         private void generalCompilationButton_Click(object sender, EventArgs e)
@@ -199,12 +258,14 @@ namespace MovieMate
             var gf = new GeneralCompilationForm(UserNickname);
             gf.Show();
             this.Close();
+            logger.Info($"Переход на страницу 'Подборки' для пользователя {UserNickname}.");
         }
 
         private void secondNicknameLabel_Click(object sender, EventArgs e)
         {
             var info = new UserInfo(currentUser.Nickname);
             info.Show();
+            logger.Info($"Открытие страницы профиля пользователя {UserNickname}.");
         }
 
         private void RecomendationButton_Click(object sender, EventArgs e)
@@ -212,9 +273,7 @@ namespace MovieMate
             var mainMenu = new MainMenu(UserNickname);
             mainMenu.Show();
             this.Close();
+            logger.Info($"Перезагрузка главной страницы для пользователя {UserNickname}.");
         }
-
-        
-
     }
 }

@@ -72,7 +72,7 @@
             resources.ApplyResources(BlackLIstButton, "BlackLIstButton");
             BlackLIstButton.Name = "BlackLIstButton";
             BlackLIstButton.UseVisualStyleBackColor = true;
-            BlackLIstButton.Click += button3_Click;
+            BlackLIstButton.Click += BlackListbutton_Click;
             // 
             // filmsDataGridView
             // 

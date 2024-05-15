@@ -75,7 +75,7 @@
             resources.ApplyResources(RecomendationButton, "RecomendationButton");
             RecomendationButton.Name = "RecomendationButton";
             RecomendationButton.UseVisualStyleBackColor = true;
-            RecomendationButton.Click += button1_Click;
+            RecomendationButton.Click += MainMenubutton_Click;
             // 
             // BlackListButton
             // 
@@ -88,7 +88,7 @@
             resources.ApplyResources(FavoriteListButton, "FavoriteListButton");
             FavoriteListButton.Name = "FavoriteListButton";
             FavoriteListButton.UseVisualStyleBackColor = true;
-            FavoriteListButton.Click += button3_Click;
+            FavoriteListButton.Click += FavListbutton_Click;
             // 
             // pictureBox1
             // 

@@ -126,7 +126,7 @@
             resources.ApplyResources(generalCompilationButton, "generalCompilationButton");
             generalCompilationButton.Name = "generalCompilationButton";
             generalCompilationButton.UseVisualStyleBackColor = true;
-            generalCompilationButton.Click += button1_Click;
+            generalCompilationButton.Click += GenCompbutton_Click;
             // 
             // FavouritesListForm
             // 
