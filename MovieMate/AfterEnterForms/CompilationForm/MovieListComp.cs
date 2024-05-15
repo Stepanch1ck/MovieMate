@@ -1,9 +1,11 @@
 ﻿using MovieMate.DBConnect;
+using NLog;
 
 namespace MovieMate.AfterEnterForms
 {
     public partial class MovieListComp : Form
     {
+        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
         public string selectedMovie = string.Empty;
         MovieDbContext db = new MovieDbContext();
         Compilation currentCompilation;
@@ -27,64 +29,84 @@ namespace MovieMate.AfterEnterForms
             var movadd = new addMovie(currentCompilation);
             movadd.Show();
             this.Close();
+            logger.Info($"Открытие формы добавления фильма в {currentCompilation.Name}.");
         }
 
         private void deleteMovieButton_Click(object sender, EventArgs e)
         {
-            if (MovieListBox.SelectedItems.Count > 0)
+            try
             {
-                var selectedmov = (Movie)MovieListBox.SelectedItem;
-
-                List<int> movIds = new List<int>();
-                string[] movIdStrings = currentCompilation.IdMovie.Split(',');
-                foreach (var movIdString in movIdStrings)
+                logger.Info("Кнопка 'Удалить фильм' нажата.");
+                if (MovieListBox.SelectedItems.Count > 0)
                 {
-                    if (int.TryParse(movIdString, out int movId))
+                    var selectedmov = (Movie)MovieListBox.SelectedItem;
+
+                    List<int> movIds = new List<int>();
+                    string[] movIdStrings = currentCompilation.IdMovie.Split(',');
+                    foreach (var movIdString in movIdStrings)
                     {
-                        movIds.Add(movId);
+                        if (int.TryParse(movIdString, out int movId))
+                        {
+                            movIds.Add(movId);
+                        }
+                    }
+                    movIds.Remove(selectedmov.Id);
+                    currentCompilation.IdPerson = string.Join(",", movIds);
+
+                    MovieListBox.Items.Clear();
+                    foreach (var movId in currentCompilation.IdMovie.Split(','))
+                    {
+                        var movieId = int.Parse(movId);
+                        var movie = db.Movies.Find(movieId);
+                        if (movie != null)
+                        {
+                            MovieListBox.Items.Add(movie);
+                        }
                     }
                 }
-                movIds.Remove(selectedmov.Id);
-                currentCompilation.IdPerson = string.Join(",", movIds);
-
-                MovieListBox.Items.Clear();
-                foreach (var movId in currentCompilation.IdMovie.Split(','))
+                else
                 {
-                    var movieId = int.Parse(movId);
-                    var movie = db.Movies.Find(movieId);
-                    if (movie != null)
-                    {
-                        MovieListBox.Items.Add(movie);
-                    }
+                    logger.Warn("Пользователь пытается удалить фильм, но не выбрал фильм.");
+                    MessageBox.Show("Пожалуйста, выберите фильм.");
                 }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Пожалуйста, выберите фильм.");
+                logger.Error(ex, "Ошибка при удалении фильма.");
+                MessageBox.Show("Произошла ошибка при удалении фильма. Пожалуйста, попробуйте снова.");
             }
         }
 
         private void LoadMovieListBox()
         {
-            MovieListBox.Items.Clear();
-            MovieListBox.DisplayMember = "Name";
-
-            if (string.IsNullOrEmpty(currentCompilation.IdMovie))
+            try
             {
-                return;
-            }
-            string[] movIdStrings = currentCompilation.IdMovie.Split(',');
+                logger.Info("Загрузка списка фильмов.");
+                MovieListBox.Items.Clear();
+                MovieListBox.DisplayMember = "Name";
 
-            foreach (string movIdString in movIdStrings)
-            {
-                if (int.TryParse(movIdString, out int movId))
+                if (string.IsNullOrEmpty(currentCompilation.IdMovie))
                 {
-                    var mov = db.Movies.Find(movId);
-                    if (mov != null)
+                    return;
+                }
+                string[] movIdStrings = currentCompilation.IdMovie.Split(',');
+
+                foreach (string movIdString in movIdStrings)
+                {
+                    if (int.TryParse(movIdString, out int movId))
                     {
-                        MovieListBox.Items.Add(mov);
+                        var mov = db.Movies.Find(movId);
+                        if (mov != null)
+                        {
+                            MovieListBox.Items.Add(mov);
+                        }
                     }
                 }
+            }
+            catch (Exception ex)
+            {
+                logger.Error(ex, "Ошибка при загрузке списка фильмов.");
+                MessageBox.Show("Произошла ошибка при загрузке списка фильмов. Пожалуйста, попробуйте снова.");
             }
         }
     }

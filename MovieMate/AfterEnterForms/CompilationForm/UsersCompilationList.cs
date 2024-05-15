@@ -56,6 +56,7 @@ namespace MovieMate.AfterEnterForms
         {
             try
             {
+                logger.Info("Кнопка 'Удалить пользователя' нажата.");
                 if (UserListBox.SelectedItems.Count > 0)
                 {
                     var selectedPerson = (Person)UserListBox.SelectedItem;
@@ -90,6 +91,7 @@ namespace MovieMate.AfterEnterForms
                 }
                 else
                 {
+                    logger.Warn("Пользователь пытается удалить пользователя, но не выбрал его.");
                     MessageBox.Show("Пожалуйста, выберите пользователя.");
                 }
             }
