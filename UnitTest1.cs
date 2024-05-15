@@ -1,49 +1,51 @@
-using System;
-
+using Xunit;
+using MovieMate;
 namespace MovieMateTest
 {
-    [TestClass]
     public class UnitTest1
     {
-            MainMenu m = new MainMenu();
-            Person currentUser = new Person();
-            Movie selectedMovie = new Movie();
-            [TestMethod]
-            // добавление в избранное
-            public void TestMethod1()
-            {
-                currentUser = new Person { Id = 1, IdFavorites = "1,2" };
-                selectedMovie = new Movie { Id = 2 };
-                m.addToFavouritesButton_Click();
-                Assert.IsTrue(currentUser.IdFavourites == selectedMovie.Id);
-            }
-            // добавление в чёрный список
-            public void TestMethod2()
-            {
-                currentUser = new User { Id = 1, IdBlackList = "1,2" };
-                selectedMovie = new Movie { Id = 2 };
-                m.addToBlackListButton_Click();
-                Assert.IsTrue(currentUser.IdBlackList == selectedMovie.Id);
-            }
-            // удалить из избранного
-            public void TestMethod3()
-            {
-                currentUser.IdFavorites = "1,2,3,4,5";
-                selectedMovie = new Movie { Id = 3 };
-                List<int> movieIds = currentUser.IdFavorites.Split(',').Select(int.Parse).ToList();
-                movieIds.Remove(selectedMovie.Id);
-                currentUser.IdFavorites = string.Join(",", movieIds);
-                Assert.IsFalse(currentUser.IdFavorites.Contains(selectedMovie.Id.ToString()));
-            }
-            //удалить из чёрного списка
-            public void TestMethod4()
-            {
-                currentUser.IdBlackList = "1,2,3,4,5";
-                selectedMovie = new Movie { Id = 3 };
-                List<int> movieIds = currentUser.IdBlackList.Split(',').Select(int.Parse).ToList();
-                movieIds.Remove(selectedMovie.Id);
-                currentUser.IdBlackList = string.Join(",", movieIds);
-                Assert.IsFalse(currentUser.IdBlackList.Contains(selectedMovie.Id.ToString()));
-            }
+        MainForm m = new MainForm();
+        addMovie d = new addMovie();
+        addUser u = new addUser();
+        CreateCompilation r = new CreateCompilation();
+        [Fact]
+        public void RussianLocalizationTest()
+        {
+            var b = new System.Globalization.CultureInfo("ru");
+            var c = m.russianButton_Click();
+            Assert.Equal(b, c);
+        }
+        [Fact]
+        public void EnglishLocalizationTest()
+        {
+            var b = new System.Globalization.CultureInfo("en");
+            var c = m.englishButton_Click();
+            Assert.Equal(b, c);
+        }
+        [Fact]
+        public void AddMovieTest()
+        {
+            var a = db.Movies.FirstOrDefault(p => p.Name == a);
+            var b = currentCompilation.IdMovie += "," + a.Id;
+            var c = d.movieAddButton_Click();
+            Assert.Equal(b, c);
+        }
+        [Fact]
+        public void AddUserTest()
+        {
+            var a = db.People.FirstOrDefault(p => p.Nickname == selectedNickname);
+            var b = currentCompilation.IdPerson += "," + a.Id;
+            var c = u.userAddButton_Click();
+            Assert.Equal(b, c);
+        }
+        [Fact]
+        public void CreateCompilationTest()
+        {
+            var a = NameCompTextBox.Text.Trim();
+            var newCompilation = new Compilation();
+            var b = db.Compilations.Add(newCompilation);
+            var c = r.CreateButton_Click();
+            Assert.Equal(b, c);
         }
     }
+}
