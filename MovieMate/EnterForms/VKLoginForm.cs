@@ -58,7 +58,7 @@ namespace MovieMate
                         Logger.Info($"Создаем нового пользователя {user.FirstName}");
                         var newUser = new Person
                         {
-                            Nickname = $"{user.FirstName} {user.LastName}",
+                            Nickname = $"{user.FirstName}",
                             VkId = vkApi.UserId.Value.ToString(),
                         };
                         try
@@ -82,6 +82,7 @@ namespace MovieMate
                         Logger.Info($"Пользователь {user.FirstName} успешно зарегистрирован");
                         MessageBox.Show($"Добро пожаловать, {user.FirstName}! Вы успешно зарегистрировались. Осталось выбрать только понравившиеся фильмы.");
                         var vKLogFilmsChoice = new VKLogFilmsChoice(newUser.VkId);
+                        vKLogFilmsChoice.Show();
                         this.Close();
                     }
                 }

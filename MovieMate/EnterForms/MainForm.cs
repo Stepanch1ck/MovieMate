@@ -20,6 +20,7 @@ namespace MovieMate
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            
             logger.Info("Загрузка формы MainForm.");
             try
             {
